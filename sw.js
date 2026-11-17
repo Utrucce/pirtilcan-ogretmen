@@ -1,4 +1,4 @@
-// Pırtılcan Öğretmen - PWA Service Worker (Offline First)
+// Pırtılcan Öğretmen - Çevrimdışı Hizmet Çalışanı (Offline First)
 const CACHE_NAME = 'pirtilcan-ogretmen-v2-scratch';
 
 const STATIC_ASSETS = [

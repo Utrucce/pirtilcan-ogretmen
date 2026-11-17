@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Pırtılcan Öğretmen - MEB Maarif Modeli Asistanı</title>
 
-  <!-- PWA & Mobile Web Meta Tags -->
+  <!-- Mobil Web ve Çevrimdışı Kurulum Meta Etiketleri -->
   <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#0B0715">
   <meta name="mobile-web-app-capable" content="yes">
@@ -15,20 +15,20 @@
   <link rel="apple-touch-icon" href="./assets/pirtilcan_logo.png">
   <link rel="icon" type="image/png" href="./assets/pirtilcan_logo.png">
 
-  <!-- Core App Stylesheet -->
+  <!-- Ana Stil Dosyası -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- Dynamic Educational Wallpaper Layer -->
+  <!-- Dinamik Eğitim Duvar Kağıdı Katmanı -->
   <div id="appWallpaperLayer"></div>
   <div id="appOverlayVignette"></div>
 
-  <!-- App Main Layout Container -->
+  <!-- Uygulama Ana Düzen Çerçevesi -->
   <div class="app-layout">
 
     <!-- ======================================================================
-         TOP HEADER (Öğretmen Bilgisi, Maskot, Hafta Rozeti & Ayarlar)
+         ÜST BAŞLIK ALANI (Öğretmen Bilgisi, Maskot, Hafta Rozeti & Ayarlar)
          ====================================================================== -->
     <header class="top-header">
       <div class="teacher-profile-col" onclick="openModal('modalSettings')" title="Profili & Temayı Düzenle">
@@ -37,11 +37,11 @@
         </div>
         <div class="teacher-meta-info">
           <div class="teacher-name-title">
-            <span id="headerTeacherName">Sertan Çubukçu</span>
+            <span id="headerTeacherName">Öğretmenim</span>
             <span style="font-size:12px; color:var(--neon-cyan);">✓</span>
           </div>
-          <div class="teacher-branch-sub" id="headerTeacherBranch">Bilişim Teknolojileri</div>
-          <div class="teacher-school-sub" id="headerTeacherSchool">Cumhuriyet Ortaokulu</div>
+          <div class="teacher-branch-sub" id="headerTeacherBranch">Branş Belirtilmedi</div>
+          <div class="teacher-school-sub" id="headerTeacherSchool">Okul Belirtilmedi</div>
         </div>
       </div>
 
@@ -50,17 +50,17 @@
           <span>📅</span>
           <span id="headerWeekText">6. Hafta</span>
         </div>
-        <button class="btn-header-icon" onclick="openModal('modalSettings')" title="Ayarlar & Tema">
+        <button class="btn-header-icon" onclick="openModal('modalSettings')" title="Ayarlar, Profil & Tema">
           ⚙️
         </button>
       </div>
     </header>
 
     <!-- ======================================================================
-         SELÇUKLU YILDIZI GEOMETRİK HİKÂYE ÇUBUĞU (STORY BAR)
+         SELÇUKLU YILDIZI GEOMETRİK HİKÂYE ÇUBUĞU
          ====================================================================== -->
     <section class="story-scroll-container">
-      <!-- Story 1: Günün Maarif Sözü -->
+      <!-- Hikâye 1: Günün Maarif Sözü -->
       <div class="story-item-card" onclick="openStoryDialog('quote')">
         <div class="story-star-ring">
           <div class="story-star-inner">📜</div>
@@ -68,7 +68,7 @@
         <span class="story-item-title">Günün Sözü</span>
       </div>
 
-      <!-- Story 2: Günün Pedagojik Bilgisi -->
+      <!-- Hikâye 2: Günün Pedagojik Bilgisi -->
       <div class="story-item-card" onclick="openStoryDialog('tip')">
         <div class="story-star-ring">
           <div class="story-star-inner">💡</div>
@@ -76,7 +76,7 @@
         <span class="story-item-title">Günün Bilgisi</span>
       </div>
 
-      <!-- Story 3: Canlı Eğitim Radyosu -->
+      <!-- Hikâye 3: Canlı Eğitim Radyosu -->
       <div class="story-item-card" onclick="openRadioDialog()">
         <div class="story-star-ring radio-pulse" id="radioRing">
           <div class="story-star-inner">📻</div>
@@ -84,20 +84,20 @@
         <span class="story-item-title" id="radioStatusLabel">Eğitim Radyosu</span>
       </div>
 
-      <!-- Story 4: Nöbet Durumu -->
+      <!-- Hikâye 4: Nöbet Durumu -->
       <div class="story-item-card" onclick="openModal('modalDutyEdit')">
         <div class="story-star-ring">
           <div class="story-star-inner">🚩</div>
         </div>
-        <span class="story-item-title">Nöbet: <span id="storyDutyShort">2. Kat</span></span>
+        <span class="story-item-title">Nöbet: <span id="storyDutyShort">Belirtilmedi</span></span>
       </div>
 
-      <!-- Story 5: PWA / Çevrimdışı Durumu -->
-      <div class="story-item-card" onclick="triggerPwaPrompt()">
+      <!-- Hikâye 5: Çevrimdışı Çalışma & Cihaza Kurulum -->
+      <div class="story-item-card" onclick="triggerAppInstallPrompt()">
         <div class="story-star-ring">
           <div class="story-star-inner">⚡</div>
         </div>
-        <span class="story-item-title">PWA Çevrimdışı</span>
+        <span class="story-item-title">İnternetsiz Mod</span>
       </div>
     </section>
 
@@ -110,52 +110,17 @@
       <div class="maarif-card realtime-card">
         <div class="realtime-left">
           <div class="realtime-clock" id="liveClockDisplay">08:45:00</div>
-          <div class="realtime-date" id="liveDateDisplay">18 Kasım 2026, Çarşamba</div>
+          <div class="realtime-date" id="liveDateDisplay">Yükleniyor...</div>
         </div>
         <div class="duty-pill" onclick="openModal('modalDutyEdit')">
           <span>🚩</span>
-          <span id="cardDutyLocationText">Nöbet: 2. Kat Koridor</span>
+          <span id="cardDutyLocationText">Nöbet: Belirtilmedi</span>
         </div>
       </div>
 
-      <!-- Canlı Ders & Öğrenme Çıktısı Odak Alanı -->
-      <div class="maarif-card active-lesson-card">
-        <div class="lesson-top-row">
-          <div class="lesson-title-badge">
-            <span class="pulse-dot"></span>
-            <span class="lesson-name" id="activeLessonName">Bilişim Teknolojileri ve Yazılım</span>
-            <span class="lesson-class-badge" id="activeLessonClass">7-A</span>
-          </div>
-          <div class="lesson-bell-time">
-            <span>⏱️</span>
-            <span id="activeLessonCountdown">Zile: 24 dk</span>
-          </div>
-        </div>
-
-        <div class="outcome-box">
-          <div class="outcome-tag">
-            <span>🎯</span>
-            <span id="activeOutcomeTheme">BİLİŞİMSEL DÜŞÜNME VE PROGRAMLAMA</span>
-          </div>
-          <div class="outcome-text" id="activeOutcomeDesc">
-            BT.7.3. Algoritma ve akış şemaları tasarlayarak problem çözme basamaklarını yönetebilme.
-          </div>
-        </div>
-
-        <div class="lesson-quick-actions">
-          <button class="btn-lesson-action" onclick="quickTakeAttendance()">
-            <span>📋</span>
-            <span>Yoklama Al</span>
-          </button>
-          <button class="btn-lesson-action" onclick="openQuickLottery()">
-            <span>🎯</span>
-            <span>Adil Kura</span>
-          </button>
-          <button class="btn-lesson-action" onclick="openQuickPomodoro()">
-            <span>⏱️</span>
-            <span>Ders Zili</span>
-          </button>
-        </div>
+      <!-- Canlı Ders & Öğrenme Çıktısı Odak Alanı (Mock Veri İçermez, Dinamik Hesaplanır) -->
+      <div class="maarif-card active-lesson-card" id="activeLessonCardContainer">
+        <!-- JS ile gerçek ders varsa dolu, yoksa resmi karşılama kutusu basılır -->
       </div>
 
       <!-- Haftalık Ders Programı Tablosu -->
@@ -166,7 +131,7 @@
             <span>Haftalık Ders Programı</span>
           </div>
           <button class="btn-lesson-action" onclick="openModal('modalScheduleEdit')" style="padding:5px 10px; font-size:11px;">
-            ✏️ Düzenle
+            ✏️ Ders Programı Düzenle
           </button>
         </div>
 
@@ -174,7 +139,7 @@
         <div class="schedule-day-tabs" id="scheduleDayTabsContainer">
           <button class="schedule-day-tab" data-day="1" onclick="switchScheduleDay(1)">Pazartesi</button>
           <button class="schedule-day-tab" data-day="2" onclick="switchScheduleDay(2)">Salı</button>
-          <button class="schedule-day-tab active" data-day="3" onclick="switchScheduleDay(3)">Çarşamba</button>
+          <button class="schedule-day-tab" data-day="3" onclick="switchScheduleDay(3)">Çarşamba</button>
           <button class="schedule-day-tab" data-day="4" onclick="switchScheduleDay(4)">Perşembe</button>
           <button class="schedule-day-tab" data-day="5" onclick="switchScheduleDay(5)">Cuma</button>
         </div>
@@ -211,6 +176,10 @@
         <!-- Filtreleme Alanı: Sınıf, Branş, Hafta -->
         <div class="curriculum-filter-bar">
           <select id="curriculumGradeSelect" class="filter-select" onchange="onGradeChange()">
+            <option value="1">1. Sınıf</option>
+            <option value="2">2. Sınıf</option>
+            <option value="3">3. Sınıf</option>
+            <option value="4">4. Sınıf</option>
             <option value="5">5. Sınıf</option>
             <option value="6">6. Sınıf</option>
             <option value="7" selected>7. Sınıf</option>
@@ -222,11 +191,11 @@
           </select>
 
           <select id="curriculumSubjectSelect" class="filter-select" onchange="onSubjectChange()">
-            <!-- Dinamik branşlar -->
+            <!-- Dinamik branşlar resmi MEB indeksinden yüklenir -->
           </select>
 
           <select id="curriculumWeekSelect" class="filter-select" onchange="onWeekChange()">
-            <!-- 1-36. Haftalar -->
+            <!-- 1-36. Eğitim Haftaları -->
           </select>
         </div>
 
@@ -238,7 +207,7 @@
 
         <!-- Çıktılar Listesi -->
         <div class="outcomes-list" id="curriculumOutcomesList">
-          <!-- Dinamik öğrenme çıktıları kartları -->
+          <!-- Resmi MEB JSON verileri buraya basılır -->
         </div>
       </div>
 
@@ -251,57 +220,16 @@
       
       <div class="classroom-header-bar">
         <div class="classroom-tabs" id="classroomTabsContainer">
-          <!-- Sınıf butonları: 5-A, 6-B, 7-A, 8-B... -->
+          <!-- Öğretmenin eklediği gerçek sınıflar listelenir -->
         </div>
         <button class="btn-lesson-action" onclick="openModal('modalClassEdit')" style="padding:6px 12px; font-size:11.5px; white-space:nowrap;">
-          ➕ Sınıf / Öğrenci
+          ➕ Sınıf Yönetimi
         </button>
       </div>
 
-      <!-- Yoklama Özeti Kartı -->
-      <div class="attendance-summary-card">
-        <div class="stat-chip">
-          <span class="stat-chip-val" id="attTotalCount">28</span>
-          <span class="stat-chip-lbl">Mevcut</span>
-        </div>
-        <div class="stat-chip">
-          <span class="stat-chip-val" id="attPresentCount" style="color:var(--success-green);">26</span>
-          <span class="stat-chip-lbl">Geldi</span>
-        </div>
-        <div class="stat-chip">
-          <span class="stat-chip-val" id="attAbsentCount" style="color:var(--danger-red);">1</span>
-          <span class="stat-chip-lbl">Gelmedi</span>
-        </div>
-        <div class="stat-chip">
-          <span class="stat-chip-val" id="attLateCount" style="color:var(--amber-glow);">1</span>
-          <span class="stat-chip-lbl">Geç</span>
-        </div>
-        <button class="btn-lesson-action" onclick="copyAttendanceToClipboard()" style="padding:6px 10px; font-size:11px;">
-          📋 e-Okul Kopyala
-        </button>
-      </div>
-
-      <!-- Görünüm Seçici: Öğrenci Listesi / Oturma Planı Krokisi -->
-      <div style="display:flex; gap:8px;">
-        <button class="schedule-day-tab active" id="btnViewList" onclick="switchClassView('list')">📋 Liste & Yoklama</button>
-        <button class="schedule-day-tab" id="btnViewSeating" onclick="switchClassView('seating')">🪑 Oturma Planı</button>
-        <button class="schedule-day-tab" onclick="openClassLottery()">🎯 Adil Kura</button>
-        <button class="schedule-day-tab" onclick="openClassGroups()">👥 Takım Kur</button>
-      </div>
-
-      <!-- Öğrenci Listesi -->
-      <div class="student-list-container" id="studentListContainer">
-        <!-- Dinamik öğrenci kartları -->
-      </div>
-
-      <!-- Oturma Planı Krokisi -->
-      <div class="maarif-card" id="seatingPlanContainer" style="display:none;">
-        <div style="font-size:13px; font-weight:700; color:var(--neon-cyan); margin-bottom:6px; text-align:center;">
-          TAHTA / KÜRSÜ DÜZENİ
-        </div>
-        <div class="seating-chart-grid" id="seatingChartGrid">
-          <!-- 3 Kolonlu 2'li masa düzeni -->
-        </div>
+      <!-- Sınıf İçeriği Kapsayıcısı -->
+      <div id="classroomContentWrapper">
+        <!-- Dinamik render edilir -->
       </div>
 
     </section>
@@ -311,6 +239,38 @@
          ====================================================================== -->
     <section id="panelEvraklar" class="view-panel">
       
+      <!-- 1. Muallim Hüviyetnâmesi (Öğretmen Profil Vitrini - TeacherProfileScreen) -->
+      <div class="maarif-card" style="margin-bottom:14px; text-align:center;">
+        <div style="display:flex; justify-content:center; margin-bottom:10px;">
+          <div style="width:72px; height:72px; border-radius:50%; border:2.5px solid var(--neon-cyan); overflow:hidden; background:rgba(0,245,212,0.1); display:flex; align-items:center; justify-content:center; box-shadow:0 0 15px rgba(0,245,212,0.3);">
+            <img id="profileCardMascotImg" src="./assets/pirtilcan_selcuklu_turkuaz.png" alt="Pırtılcan" style="width:100%; height:100%; object-fit:contain;">
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; gap:8px;">
+          <div style="font-size:18px; font-weight:800; color:#FFF;" id="profileCardName">Öğretmenim</div>
+          <button onclick="openModal('modalSettings')" style="background:none; border:none; color:var(--neon-gold); cursor:pointer; font-size:14px;" title="Profili Düzenle">✏️</button>
+        </div>
+        <div style="font-size:13px; font-weight:700; color:var(--neon-cyan); margin-top:2px;" id="profileCardBranch">Branş Belirtilmedi</div>
+        <div style="font-size:12px; color:var(--text-secondary); margin-top:2px;" id="profileCardSchool">Okul Belirtilmedi</div>
+        <div style="font-size:11px; color:rgba(255,255,255,0.55); margin-top:3px;" id="profileCardExtra">İl / İlçe Belirtilmedi • Rehberlik: Yok</div>
+
+        <div style="display:flex; justify-content:space-around; margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.08);">
+          <div style="text-align:center;">
+            <div style="font-size:15px; font-weight:800; color:var(--neon-purple);" id="profileBadgeWeeklyHours">0 Saat</div>
+            <div style="font-size:10.5px; color:var(--text-secondary);">Haftalık Ders</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:15px; font-weight:800; color:var(--neon-cyan);" id="profileBadgeClassCount">0 Sınıf</div>
+            <div style="font-size:10.5px; color:var(--text-secondary);">Kayıtlı Sınıf</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:15px; font-weight:800; color:#FF9E00;" id="profileBadgeDutyDay">Yok</div>
+            <div style="font-size:10.5px; color:var(--text-secondary);">Nöbet Günü</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. MEB Resmî Evrak & Tutanak Sihirbazı -->
       <div class="maarif-card">
         <div class="schedule-section-header">
           <div class="section-title">
@@ -328,7 +288,7 @@
 
         <!-- Kategori Çubuğu -->
         <div class="docs-category-scroll" id="docCategoryScroll">
-          <!-- Dinamik kategori hapları -->
+          <!-- 21 Resmi Kategori Hapları -->
         </div>
 
         <!-- Belge Şablon Kartları Grid -->
@@ -342,22 +302,22 @@
   </div><!-- /app-layout -->
 
   <!-- ======================================================================
-       BOTTOM NAVIGATION BAR (4 TAB + PARLAYAN MERKEZ MASKOT BUTONU)
+       ALT MENÜ (BOTTOM NAVIGATION) + MERKEZ PARLAYAN MASKOT BUTONU
        ====================================================================== -->
   <nav class="bottom-nav-bar">
-    <!-- Tab 1: Dersim -->
+    <!-- Sekme 1: Dersim -->
     <button class="bottom-nav-btn active" id="navBtnDersim" onclick="switchMainTab('Dersim')">
       <span class="bottom-nav-icon">🏫</span>
       <span class="bottom-nav-label">Dersim</span>
     </button>
 
-    <!-- Tab 2: Planlar -->
+    <!-- Sekme 2: Planlar -->
     <button class="bottom-nav-btn" id="navBtnPlanlar" onclick="switchMainTab('Planlar')">
       <span class="bottom-nav-icon">📖</span>
       <span class="bottom-nav-label">Planlar</span>
     </button>
 
-    <!-- Center Floating Button: Pırtılcan Öğretmen Çantası -->
+    <!-- Merkez Yüzen Buton: Pırtılcan Öğretmen Çantası -->
     <div class="center-mascot-wrapper">
       <button class="center-mascot-btn" onclick="openModal('modalToolsHub')" title="Pırtılcan Öğretmen Çantası (Akıllı Araçlar)">
         <img id="centerMascotImg" src="./assets/pirtilcan_selcuklu_turkuaz.png" alt="Pırtılcan" class="center-mascot-img">
@@ -365,13 +325,13 @@
       <span class="center-btn-label">Çantam</span>
     </div>
 
-    <!-- Tab 3: Sınıflar -->
+    <!-- Sekme 3: Sınıflar -->
     <button class="bottom-nav-btn" id="navBtnSiniflar" onclick="switchMainTab('Siniflar')">
       <span class="bottom-nav-icon">👥</span>
       <span class="bottom-nav-label">Sınıflar</span>
     </button>
 
-    <!-- Tab 4: Evraklar -->
+    <!-- Sekme 4: Evraklar -->
     <button class="bottom-nav-btn" id="navBtnEvraklar" onclick="switchMainTab('Evraklar')">
       <span class="bottom-nav-icon">📄</span>
       <span class="bottom-nav-label">Evraklar</span>
@@ -379,7 +339,7 @@
   </nav>
 
   <!-- ======================================================================
-       FLOATING ACTION BUTTONS (AI CHAT & KÜTÜPHANE)
+       YÜZEN YARDIMCI BUTONLAR (AI MASASI & KÜTÜPHANE)
        ====================================================================== -->
   <div class="floating-actions-box">
     <button class="fab-btn ai-btn" onclick="openModal('modalAiChat')" title="Pırtılcan AI Masası (Sohbet & Rehberlik)">
@@ -405,10 +365,10 @@
         <div style="background:rgba(20,14,35,0.7); border:1px solid rgba(0,245,212,0.25); border-radius:18px; padding:20px; text-align:center;">
           <div style="font-size:36px; margin-bottom:10px;" id="storyModalIcon">📜</div>
           <div style="font-size:16px; font-weight:700; color:#FFF; line-height:1.6; font-style:italic;" id="storyModalQuote">
-            "İlim ilim bilmektir, ilim kendin bilmektir..."
+            Yükleniyor...
           </div>
           <div style="font-size:13px; font-weight:800; color:var(--neon-gold); margin-top:12px;" id="storyModalAuthor">
-            — Yunus Emre
+            —
           </div>
           <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;" id="storyModalCategory">
             Maarif & Hikmet
@@ -482,7 +442,7 @@
       </div>
       <div class="modal-body-scroll">
         <div class="tools-hub-grid" id="toolsHubGrid">
-          <!-- 20+ Akıllı Araç Kutusu JS ile dinamik render edilir -->
+          <!-- 20+ Akıllı Araç Kutusu -->
         </div>
       </div>
     </div>
@@ -499,7 +459,7 @@
         <button class="btn-close-modal" onclick="closeModal('modalAiChat')">&times;</button>
       </div>
       <div class="modal-body-scroll" id="aiChatMessagesContainer" style="display:flex; flex-direction:column; gap:12px;">
-        <!-- Mesajlar buraya akacak -->
+        <!-- Mesajlar -->
       </div>
       <div style="padding:12px 16px; border-top:1px solid var(--glass-border); background:rgba(15,10,24,0.95); display:flex; gap:8px;">
         <input type="text" id="aiChatInput" class="form-control" placeholder="Öğretmenim, maarif modeli veya sınıf yönetimi hakkında bir soru sorun..." onkeydown="if(event.key==='Enter') sendAiChatMessage()">
@@ -522,15 +482,23 @@
         <!-- Profil Bilgileri -->
         <div class="form-group">
           <label class="form-label">Öğretmen Adı Soyadı</label>
-          <input type="text" id="settingsTeacherName" class="form-control" value="Sertan Çubukçu">
+          <input type="text" id="settingsTeacherName" class="form-control" placeholder="Adınızı ve soyadınızı yazın">
         </div>
         <div class="form-group">
           <label class="form-label">Branş</label>
-          <input type="text" id="settingsTeacherBranch" class="form-control" value="Bilişim Teknolojileri">
+          <input type="text" id="settingsTeacherBranch" class="form-control" placeholder="Branşınızı yazın (Örn: Türkçe, Matematik...)">
         </div>
         <div class="form-group">
           <label class="form-label">Okul Adı</label>
-          <input type="text" id="settingsTeacherSchool" class="form-control" value="Cumhuriyet Ortaokulu">
+          <input type="text" id="settingsTeacherSchool" class="form-control" placeholder="Okulunuzun adını yazın">
+        </div>
+        <div class="form-group">
+          <label class="form-label">İl / İlçe</label>
+          <input type="text" id="settingsTeacherCity" class="form-control" placeholder="İl ve İlçe yazın">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Rehberlik Sınıfı</label>
+          <input type="text" id="settingsTeacherGuideClass" class="form-control" placeholder="Örn: 8-A (Yoksa boş bırakın)">
         </div>
 
         <!-- Pırtılcan Maskot Kostümü (10 Kostüm) -->
@@ -576,16 +544,17 @@
         <div class="form-group">
           <label class="form-label">Nöbet Günü</label>
           <select id="dutyDaySelect" class="form-control">
+            <option value="Yok">Nöbetim Yok</option>
             <option value="Pazartesi">Pazartesi</option>
             <option value="Salı">Salı</option>
-            <option value="Çarşamba" selected>Çarşamba</option>
+            <option value="Çarşamba">Çarşamba</option>
             <option value="Perşembe">Perşembe</option>
             <option value="Cuma">Cuma</option>
           </select>
         </div>
         <div class="form-group">
           <label class="form-label">Nöbet Bölgesi / Yeri</label>
-          <input type="text" id="dutyLocationInput" class="form-control" value="2. Kat Koridor">
+          <input type="text" id="dutyLocationInput" class="form-control" placeholder="Örn: 2. Kat Koridor, Bahçe...">
         </div>
         <button class="btn-primary-action" onclick="saveDutyInfo()">
           💾 Nöbet Bilgisini Kaydet
@@ -596,46 +565,93 @@
 
   <!-- Modal 7: Ders Programı Düzenleme -->
   <div class="modal-overlay" id="modalScheduleEdit">
-    <div class="modal-content-box">
+    <div class="modal-content-box" style="max-width:680px;">
       <div class="modal-header-row">
         <div class="modal-title-text">📅 Ders Programı Ekle / Düzenle</div>
         <button class="btn-close-modal" onclick="closeModal('modalScheduleEdit')">&times;</button>
       </div>
       <div class="modal-body-scroll">
-        <div class="form-group">
-          <label class="form-label">Gün</label>
-          <select id="slotDaySelect" class="form-control">
-            <option value="1">Pazartesi</option>
-            <option value="2">Salı</option>
-            <option value="3">Çarşamba</option>
-            <option value="4">Perşembe</option>
-            <option value="5">Cuma</option>
-          </select>
+        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); border-radius:14px; padding:14px; margin-bottom:16px;">
+          <div style="font-size:13px; font-weight:700; color:var(--neon-cyan); margin-bottom:10px;">➕ Yeni Ders Saati Ekle</div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:8px;">
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label">Gün</label>
+              <select id="slotDaySelect" class="form-control">
+                <option value="1">Pazartesi</option>
+                <option value="2">Salı</option>
+                <option value="3">Çarşamba</option>
+                <option value="4">Perşembe</option>
+                <option value="5">Cuma</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label">Ders Sırası (1-8)</label>
+              <input type="number" id="slotNumberInput" class="form-control" min="1" max="8" value="1">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label">Ders Adı</label>
+              <input type="text" id="slotSubjectInput" class="form-control" placeholder="Ders adı yazın">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label">Sınıf</label>
+              <input type="text" id="slotClassInput" class="form-control" placeholder="Sınıf/Şube yazın">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label class="form-label">Saat (Örn: 08:30 - 09:10)</label>
+              <input type="text" id="slotTimeInput" class="form-control" placeholder="08:30 - 09:10">
+            </div>
+          </div>
+          <button class="btn-primary-action" onclick="saveScheduleSlot()" style="margin-top:12px;">
+            ➕ Programa Ekle
+          </button>
         </div>
-        <div class="form-group">
-          <label class="form-label">Ders Sırası (1-8)</label>
-          <input type="number" id="slotNumberInput" class="form-control" min="1" max="8" value="1">
+
+        <div style="font-size:13px; font-weight:700; color:#FFF; margin-bottom:8px;">Mevcut Ders Saatleriniz:</div>
+        <div id="scheduleManageList" style="display:flex; flex-direction:column; gap:6px;">
+          <!-- Ekli dersler ve silme tuşları -->
         </div>
-        <div class="form-group">
-          <label class="form-label">Ders Adı</label>
-          <input type="text" id="slotSubjectInput" class="form-control" value="Bilişim Teknolojileri">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Sınıf / Şube</label>
-          <input type="text" id="slotClassInput" class="form-control" value="7-A">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Saat Aralığı (Örn: 08:30 - 09:10)</label>
-          <input type="text" id="slotTimeInput" class="form-control" value="08:30 - 09:10">
-        </div>
-        <button class="btn-primary-action" onclick="saveScheduleSlot()">
-          ➕ Dersi Kaydet
-        </button>
       </div>
     </div>
   </div>
 
-  <!-- Modal 8: MEB Resmî Evrak Düzenleme & A4 Önizleme -->
+  <!-- Modal 8: Sınıf ve Öğrenci Yönetimi -->
+  <div class="modal-overlay" id="modalClassEdit">
+    <div class="modal-content-box" style="max-width:680px;">
+      <div class="modal-header-row">
+        <div class="modal-title-text">👥 Sınıf & Öğrenci Yönetimi</div>
+        <button class="btn-close-modal" onclick="closeModal('modalClassEdit')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <!-- Yeni Sınıf Ekle -->
+        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); border-radius:14px; padding:14px; margin-bottom:16px;">
+          <div style="font-size:13px; font-weight:700; color:var(--neon-cyan); margin-bottom:8px;">➕ Yeni Sınıf / Şube Ekle</div>
+          <div style="display:flex; gap:8px;">
+            <input type="text" id="newClassNameInput" class="form-control" placeholder="Sınıf/Şube adı yazın">
+            <button class="btn-primary-action" onclick="addNewClassSubmit()" style="width:140px; white-space:nowrap;">Sınıf Ekle</button>
+          </div>
+        </div>
+
+        <!-- Seçili Sınıfa Öğrenci Ekle -->
+        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); border-radius:14px; padding:14px; margin-bottom:16px;">
+          <div style="font-size:13px; font-weight:700; color:var(--neon-gold); margin-bottom:8px;">
+            ➕ Seçili Sınıfa Öğrenci Ekle (<span id="manageClassTitle">Sınıf Seçiniz</span>)
+          </div>
+          <div style="display:grid; grid-template-columns:100px 1fr 120px; gap:8px;">
+            <input type="text" id="newStudentNumberInput" class="form-control" placeholder="Okul No">
+            <input type="text" id="newStudentNameInput" class="form-control" placeholder="Öğrenci Adı Soyadı">
+            <button class="btn-primary-action" onclick="addStudentSubmit()">Öğrenci Ekle</button>
+          </div>
+        </div>
+
+        <div style="font-size:13px; font-weight:700; color:#FFF; margin-bottom:8px;">Mevcut Sınıflarınız ve Silme:</div>
+        <div id="classManageList" style="display:flex; flex-wrap:wrap; gap:8px;">
+          <!-- Ekli sınıflar -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: MEB Resmî Evrak Düzenleme & A4 Önizleme -->
   <div class="modal-overlay" id="modalDocEdit">
     <div class="modal-content-box" style="max-width:760px; height:88vh;">
       <div class="modal-header-row">
@@ -672,7 +688,7 @@
     </div>
   </div>
 
-  <!-- Modal 9: Dijital Kütüphane & Utrucce Kitapları -->
+  <!-- Modal 10: Dijital Kütüphane & Utrucce Kitapları -->
   <div class="modal-overlay" id="modalLibrary">
     <div class="modal-content-box" style="height:85vh;">
       <div class="modal-header-row">
@@ -687,7 +703,7 @@
     </div>
   </div>
 
-  <!-- Modal 10: Dinamik Araç Konteyner Modalı (Karekod, Pomodoro, Kura vb.) -->
+  <!-- Modal 11: Dinamik Araç Konteyner Modalı (Karekod, Pomodoro, Kura vb.) -->
   <div class="modal-overlay" id="modalToolContainer">
     <div class="modal-content-box" id="toolContainerBox">
       <div class="modal-header-row">
@@ -703,7 +719,7 @@
   <!-- Resmi Evrak A4 Yazdırma Şablonu -->
   <div id="printSection"></div>
 
-  <!-- Core App Scripts: Data & Application Logic -->
+  <!-- Çekirdek Veri & Mantık Komut Dosyaları -->
   <script src="./assets/app_data.js"></script>
   <script src="./script.js"></script>
 </body>
