@@ -1,0 +1,1662 @@
+[
+  {
+    "id": "meb_gov",
+    "name": "MEB Resmî Portalı",
+    "url": "https://www.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "🏛️",
+    "badge": "Bakanlık",
+    "description": "Millî Eğitim Bakanlığı ana sayfası; resmî duyurular, genelgeler, basın açıklamaları ve haberler.",
+    "tags": [
+      "MEB",
+      "Duyuru",
+      "Mevzuat",
+      "Bakanlık"
+    ]
+  },
+  {
+    "id": "mebbis",
+    "name": "MEBBİS Portalı",
+    "url": "https://mebbis.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "🔑",
+    "badge": "Özlük & Modüller",
+    "description": "Hizmet içi eğitim başvuruları, e-Personel özlük dosyası, e-Yatırım ve öğretmen bilgi modülleri.",
+    "tags": [
+      "MEBBİS",
+      "Hizmet İçi",
+      "Özlük",
+      "Başvuru"
+    ]
+  },
+  {
+    "id": "e_okul",
+    "name": "e-Okul Yönetim Bilgi Sistemi",
+    "url": "https://e-okul.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "🏫",
+    "badge": "Not & Devamsızlık",
+    "description": "Öğrenci not girişleri, devamsızlık kayıtları, gelişim raporları, karne ve şube rehberlik işlemleri.",
+    "tags": [
+      "e-Okul",
+      "Not",
+      "Devamsızlık",
+      "Karne"
+    ]
+  },
+  {
+    "id": "eba",
+    "name": "EBA (Eğitim Bilişim Ağı)",
+    "url": "https://www.eba.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "🌐",
+    "badge": "Ders & Video",
+    "description": "Müfredatla tam uyumlu dijital ders içerikleri, etkileşimli konu anlatımları, testler ve video arşivi.",
+    "tags": [
+      "EBA",
+      "Ders",
+      "Video",
+      "Test"
+    ]
+  },
+  {
+    "id": "e_mufredat",
+    "name": "e-Müfredat Portalı",
+    "url": "https://e-mufredat.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "📋",
+    "badge": "Zümre & Plan",
+    "description": "Zümre öğretmenler kurulu kararları, yıllık çerçeve planları ve okul idaresi kurul onay sistemi.",
+    "tags": [
+      "Müfredat",
+      "Zümre",
+      "Kurul",
+      "Yıllık Plan"
+    ]
+  },
+  {
+    "id": "ogm_materyal",
+    "name": "ÖGM Materyal (Ortaöğretim)",
+    "url": "https://ogmmateryal.eba.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "📘",
+    "badge": "Soru & 3 Boyutlu",
+    "description": "Etkileşimli MEB ders kitapları, 3 boyutlu modeller, deney videoları ve zenginleştirilmiş soru bankası.",
+    "tags": [
+      "ÖGM",
+      "Soru Bankası",
+      "3 Boyutlu",
+      "Lise"
+    ]
+  },
+  {
+    "id": "ttkb",
+    "name": "Talim ve Terbiye Kurulu",
+    "url": "https://ttkb.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "📜",
+    "badge": "Maarif Modeli",
+    "description": "2026-2027 Türkiye Yüzyılı Maarif Modeli öğretim programları, öğrenme çıktıları ve onaylı ders kitapları.",
+    "tags": [
+      "TTKB",
+      "Maarif Modeli",
+      "Kitap",
+      "Program"
+    ]
+  },
+  {
+    "id": "odsgm",
+    "name": "ÖDSGM (Ölçme ve Sınav Hizmetleri)",
+    "url": "https://odsgm.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "📊",
+    "badge": "Ortak Sınavlar",
+    "description": "Ülke ve il geneli ortak yazılı sınav senaryoları, konu soru dağılım tabloları ve örnek açık uçlu sorular.",
+    "tags": [
+      "ÖDSGM",
+      "Ortak Sınav",
+      "Açık Uçlu",
+      "Barem"
+    ]
+  },
+  {
+    "id": "dys",
+    "name": "DYS (Doküman Yönetim Sistemi)",
+    "url": "https://dys.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "📑",
+    "badge": "Resmî Evrak",
+    "description": "Okul ve ilçe MEM resmî yazışmaları, gelen-giden evrak akışı, zimmet ve e-İmza takibi.",
+    "tags": [
+      "DYS",
+      "Evrak",
+      "Yazışma",
+      "e-İmza"
+    ]
+  },
+  {
+    "id": "osym_gis",
+    "name": "ÖSYM Görevli İşlemleri (GİS)",
+    "url": "https://gis.osym.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "✍️",
+    "badge": "Sınav Görevi",
+    "description": "YKS, KPSS, DGS, MSÜ sınavlarında salon başkanı ve gözetmenlik görev talepleri ve ücret bordrosu.",
+    "tags": [
+      "ÖSYM",
+      "GİS",
+      "Sınav Görevi",
+      "Gözetmen"
+    ]
+  },
+  {
+    "id": "meb_personel",
+    "name": "Personel Genel Müdürlüğü",
+    "url": "https://personel.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "👥",
+    "badge": "Atama & Tayin",
+    "description": "Öğretmen il içi ve il dışı isteğe bağlı yer değiştirme, mazeret tayini ve norm kadro kılavuzları.",
+    "tags": [
+      "Personel",
+      "Atama",
+      "Tayin",
+      "Norm Kadro"
+    ]
+  },
+  {
+    "id": "harezmi",
+    "name": "Harezmi Eğitim Modeli",
+    "url": "https://harezmi.meb.gov.tr",
+    "categoryId": "meb_official",
+    "icon": "💡",
+    "badge": "Disiplinlerarası",
+    "description": "Disiplinlerarası problem çözme, algoritmik düşünme, robotik ve teknoloji tasarımı proje portalı.",
+    "tags": [
+      "Harezmi",
+      "Algoritma",
+      "STEM",
+      "Robotik"
+    ]
+  },
+  {
+    "id": "notion",
+    "name": "Notion Eğitim & Planlayıcı",
+    "url": "https://www.notion.so",
+    "categoryId": "productivity",
+    "icon": "📓",
+    "badge": "Ders Ajandası",
+    "description": "Ders planları, zümre toplantı notları, öğrenci takip veri tabanları ve çalışma takvimi.",
+    "tags": [
+      "Notion",
+      "Ajanda",
+      "Plan",
+      "Not",
+      "Veri Tabanı"
+    ]
+  },
+  {
+    "id": "miro",
+    "name": "Miro Beyaz Tahta & Akış",
+    "url": "https://miro.com",
+    "categoryId": "productivity",
+    "icon": "💡",
+    "badge": "Beyin Fırtınası",
+    "description": "Sınıf içi ortak zihin haritaları, kavram diyagramları, proje akış şemaları ve görsel planlama.",
+    "tags": [
+      "Miro",
+      "Beyaz Tahta",
+      "Zihin Haritası",
+      "Diyagram"
+    ]
+  },
+  {
+    "id": "trello",
+    "name": "Trello Proje & Görev Panosu",
+    "url": "https://trello.com",
+    "categoryId": "productivity",
+    "icon": "📋",
+    "badge": "Kanban Panosu",
+    "description": "Zümre işleri, okul kulüp görevleri, etkinlik hazırlıkları ve yapılacaklar listesi takibi.",
+    "tags": [
+      "Trello",
+      "Görev",
+      "İş Listesi",
+      "Kanban",
+      "Proje"
+    ]
+  },
+  {
+    "id": "loom",
+    "name": "Loom Ekran Kaydedici",
+    "url": "https://www.loom.com",
+    "categoryId": "productivity",
+    "icon": "🎥",
+    "badge": "Mikro Ders",
+    "description": "Öğrencilere soru çözümleri, ödev açıklamaları ve 5 dakikalık mikro ders anlatım videoları çekin.",
+    "tags": [
+      "Loom",
+      "Ekran Kaydı",
+      "Video",
+      "Soru Çözümü"
+    ]
+  },
+  {
+    "id": "google_classroom",
+    "name": "Google Classroom",
+    "url": "https://classroom.google.com",
+    "categoryId": "productivity",
+    "icon": "🧑‍🏫",
+    "badge": "Sınıf Yönetimi",
+    "description": "Ödev dağıtma, sınıf içi duyurular, doküman paylaşımı ve e-posta bildirimli dijital sınıf.",
+    "tags": [
+      "Classroom",
+      "Google",
+      "Ödev",
+      "Duyuru",
+      "Sınıf"
+    ]
+  },
+  {
+    "id": "coggle",
+    "name": "Coggle Kavram Haritası",
+    "url": "https://coggle.it",
+    "categoryId": "productivity",
+    "icon": "🧠",
+    "badge": "Zihin Haritası",
+    "description": "Ders konularını renki dallara ayıran, akılda kalıcı kavram ve zihin haritaları çıkarma aracı.",
+    "tags": [
+      "Coggle",
+      "Zihin Haritası",
+      "Kavram",
+      "Özet"
+    ]
+  },
+  {
+    "id": "slido",
+    "name": "Slido Canlı Soru & Anket",
+    "url": "https://www.sli.do",
+    "categoryId": "productivity",
+    "icon": "🙋",
+    "badge": "Canlı Katılım",
+    "description": "Derslerde veya veli toplantılarında katılımcıların anonim soru sorup oylama yaptığı canlı araç.",
+    "tags": [
+      "Slido",
+      "Soru Cevap",
+      "Oylama",
+      "Toplantı"
+    ]
+  },
+  {
+    "id": "deepl",
+    "name": "DeepL Yüksek Doğruluklu Çeviri",
+    "url": "https://www.deepl.com/translator",
+    "categoryId": "productivity",
+    "icon": "🌐",
+    "badge": "Akademik Çeviri",
+    "description": "Yabancı bilimsel makaleleri, eğitim araştırmalarını ve dokümanları doğal akıcılıkla Türkçe'ye çevirir.",
+    "tags": [
+      "DeepL",
+      "Çeviri",
+      "İngilizce",
+      "Makale"
+    ]
+  },
+  {
+    "id": "ilovepdf",
+    "name": "iLovePDF Belge Düzenleyici",
+    "url": "https://www.ilovepdf.com/tr",
+    "categoryId": "productivity",
+    "icon": "📑",
+    "badge": "PDF Düzenle",
+    "description": "PDF sınav kağıtlarını birleştirin, sayfaları ayırın, boyutu küçültün veya Word formatına çevirin.",
+    "tags": [
+      "PDF",
+      "Word",
+      "Dönüştürücü",
+      "Belge",
+      "Evrak"
+    ]
+  },
+  {
+    "id": "scribbr",
+    "name": "Scribbr Kaynakça & İntihal",
+    "url": "https://www.scribbr.com",
+    "categoryId": "productivity",
+    "icon": "📚",
+    "badge": "Kaynakça Üretici",
+    "description": "Öğrenci proje ödevleri ve TÜBİTAK raporları için APA formatında kaynakça hazırlama.",
+    "tags": [
+      "Scribbr",
+      "Kaynakça",
+      "APA",
+      "Özgünlük",
+      "Tez"
+    ]
+  },
+  {
+    "id": "canva_edu",
+    "name": "Canva Öğretmen (Eğitim)",
+    "url": "https://www.canva.com/tr_tr/egitim/",
+    "categoryId": "ai_tools",
+    "icon": "🎨",
+    "badge": "Ücretsiz Pro",
+    "description": "Öğretmenler için ücretsiz Canva Pro; afiş, çalışma kağıdı, sunum, diploma ve pano grafikleri tasarlayın.",
+    "tags": [
+      "Canva",
+      "Tasarım",
+      "Sunum",
+      "Afiş",
+      "Çalışma Kağıdı"
+    ]
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT (OpenAI)",
+    "url": "https://chatgpt.com",
+    "categoryId": "ai_tools",
+    "icon": "🤖",
+    "badge": "Ders Asistanı",
+    "description": "Ders akış planı, etkinlik senaryoları, rubrik taslakları, öykü ve pedagojik metin üretimi yapay zekâsı.",
+    "tags": [
+      "ChatGPT",
+      "Yapay Zekâ",
+      "Ders Planı",
+      "Senaryo"
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com",
+    "categoryId": "ai_tools",
+    "icon": "✨",
+    "badge": "Akıllı Arama",
+    "description": "Hızlı akademik araştırma, görsel çözümleme, özet çıkarma ve çok dilli ders içeriği üretici.",
+    "tags": [
+      "Gemini",
+      "Google",
+      "Araştırma",
+      "Çeviri"
+    ]
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "url": "https://www.perplexity.ai",
+    "categoryId": "ai_tools",
+    "icon": "🔍",
+    "badge": "Kaynakçalı Bilgi",
+    "description": "Cevaplarında bilimsel ve resmî akademik kaynakçalar sunan güvenilir arama ve sentez motoru.",
+    "tags": [
+      "Perplexity",
+      "Kaynak",
+      "Bilim",
+      "Makale"
+    ]
+  },
+  {
+    "id": "claude",
+    "name": "Claude AI (Anthropic)",
+    "url": "https://claude.ai",
+    "categoryId": "ai_tools",
+    "icon": "🧠",
+    "badge": "Derin Metin",
+    "description": "Uzun edebi ve resmî metin analizi, açık uçlu soru kurgulama ve pedagojik geri bildirim asistanı.",
+    "tags": [
+      "Claude",
+      "Analiz",
+      "Soru",
+      "Metin"
+    ]
+  },
+  {
+    "id": "gamma_app",
+    "name": "Gamma App (AI Sunum)",
+    "url": "https://gamma.app",
+    "categoryId": "ai_tools",
+    "icon": "📑",
+    "badge": "Tek Tıkla Slayt",
+    "description": "Yapay zekâ ile saniyeler içinde etkileyici görsel ders sunumları, internet sayfaları ve dokümanlar.",
+    "tags": [
+      "Gamma",
+      "Sunum",
+      "Slayt",
+      "İnfografik"
+    ]
+  },
+  {
+    "id": "padlet",
+    "name": "Padlet Dijital Pano",
+    "url": "https://padlet.com",
+    "categoryId": "ai_tools",
+    "icon": "📌",
+    "badge": "İşbirlikçi Duvar",
+    "description": "Sınıf içi ortak fikir duvarı, ödev teslim panosu, görsel galeri ve interaktif beyin fırtınası.",
+    "tags": [
+      "Padlet",
+      "Pano",
+      "İşbirliği",
+      "Duvar"
+    ]
+  },
+  {
+    "id": "wordwall",
+    "name": "Wordwall Oyun & Etkinlik",
+    "url": "https://wordwall.net/tr",
+    "categoryId": "ai_tools",
+    "icon": "🎡",
+    "badge": "Oyun Şablonları",
+    "description": "Çarkıfelek, kutu açma, eşleştirme, adam asmaca ve labirent tarzı dakikalar içinde eğitici oyunlar.",
+    "tags": [
+      "Wordwall",
+      "Oyun",
+      "Çark",
+      "Eğlenceli Ders"
+    ]
+  },
+  {
+    "id": "genially",
+    "name": "Genially İnteraktif İçerik",
+    "url": "https://genially.com",
+    "categoryId": "ai_tools",
+    "icon": "🎮",
+    "badge": "Kaçış Oyunları",
+    "description": "Sınıf içi kaçış oyunları (escape room), etkileşimli resimler, yarışmalar ve animasyonlu infografikler.",
+    "tags": [
+      "Genially",
+      "Escape Room",
+      "İnteraktif",
+      "Oyun"
+    ]
+  },
+  {
+    "id": "phet",
+    "name": "PhET İnteraktif Simülasyonlar",
+    "url": "https://phet.colorado.edu/tr/",
+    "categoryId": "stem_science",
+    "icon": "🧪",
+    "badge": "Sanal Deney",
+    "description": "Colorado Üniversitesi Türkçe fizik, kimya, biyoloji ve matematik interaktif deney simülasyonları.",
+    "tags": [
+      "PhET",
+      "Fizik",
+      "Kimya",
+      "Biyoloji",
+      "Deney"
+    ]
+  },
+  {
+    "id": "biorender",
+    "name": "BioRender Bilimsel Çizim",
+    "url": "https://www.biorender.com",
+    "categoryId": "stem_science",
+    "icon": "🔬",
+    "badge": "Biyoloji & Hücre",
+    "description": "Hücre biyolojisi, genetik, insan anatomisi ve ekosistem için binlerce bilimsel ikon ve çizim şablonu.",
+    "tags": [
+      "BioRender",
+      "Biyoloji",
+      "Hücre",
+      "Genetik",
+      "Anatomi"
+    ]
+  },
+  {
+    "id": "molview",
+    "name": "MolView 3 Boyutlu Kimya Molekülü",
+    "url": "https://molview.org",
+    "categoryId": "stem_science",
+    "icon": "⚗️",
+    "badge": "3 Boyutlu Moleküller",
+    "description": "Kimyasal molekülleri 3 boyutlu modelleyin, bağ açılarını, kristal örgüleri ve spektroskopileri inceleyin.",
+    "tags": [
+      "MolView",
+      "Kimya",
+      "Molekül",
+      "3 Boyutlu",
+      "Atom"
+    ]
+  },
+  {
+    "id": "ptable",
+    "name": "Ptable Dinamik Periyodik Tablo",
+    "url": "https://ptable.com/?lang=tr",
+    "categoryId": "stem_science",
+    "icon": "🧱",
+    "badge": "Canlı Tablo",
+    "description": "Elementlerin elektron dizilimi, fiziksel halleri, izotopları, bileşikleri ve fotoğrafları interaktif tabloda.",
+    "tags": [
+      "Ptable",
+      "Periyodik Tablo",
+      "Element",
+      "Kimya"
+    ]
+  },
+  {
+    "id": "physics_classroom",
+    "name": "The Physics Classroom",
+    "url": "https://www.physicsclassroom.com",
+    "categoryId": "stem_science",
+    "icon": "⚡",
+    "badge": "Fizik Simülatörü",
+    "description": "Mekanik, optik, elektrik, dalgalar ve kuvvet konularında etkileşimli kavram geliştiriciler ve testler.",
+    "tags": [
+      "Physics",
+      "Fizik",
+      "Kuvvet",
+      "Optik",
+      "Elektrik"
+    ]
+  },
+  {
+    "id": "labxchange",
+    "name": "LabXchange (Harvard Sanal Lab)",
+    "url": "https://www.labxchange.org",
+    "categoryId": "stem_science",
+    "icon": "🧫",
+    "badge": "Harvard Deneyleri",
+    "description": "Harvard Üniversitesi destekli biyoteknoloji, gen düzenleme ve fen laboratuvar deney simülasyonları.",
+    "tags": [
+      "LabXchange",
+      "Harvard",
+      "Biyoteknoloji",
+      "Sanal Lab"
+    ]
+  },
+  {
+    "id": "tubitak_bilim_genc",
+    "name": "TÜBİTAK Bilim Genç",
+    "url": "https://bilimgenc.tubitak.gov.tr",
+    "categoryId": "stem_science",
+    "icon": "🔬",
+    "badge": "Popüler Bilim",
+    "description": "TÜBİTAK popüler bilim makaleleri, evde deneyler, bilimsel keşifler ve fuar proje fikirleri.",
+    "tags": [
+      "TÜBİTAK",
+      "Bilim",
+      "Deney",
+      "Proje"
+    ]
+  },
+  {
+    "id": "tubitak_portal",
+    "name": "TÜBİTAK Bilim Toplum Portalı",
+    "url": "https://bilimtoplum-portal.tubitak.gov.tr",
+    "categoryId": "stem_science",
+    "icon": "🚀",
+    "badge": "4006 & Fuarlar",
+    "description": "TÜBİTAK 4006 Bilim Fuarları ve 2204 araştırma projeleri resmî başvuru, takip ve sonuç portalı.",
+    "tags": [
+      "TÜBİTAK 4006",
+      "Bilim Fuarı",
+      "2204",
+      "Proje"
+    ]
+  },
+  {
+    "id": "nasa_eyes",
+    "name": "NASA Eyes on the Solar System",
+    "url": "https://eyes.nasa.gov",
+    "categoryId": "stem_science",
+    "icon": "🪐",
+    "badge": "3 Boyutlu Uzay",
+    "description": "Güneş sistemi, gezegenler, uydular ve NASA uzay araçlarını gerçek zamanlı 3 boyutlu uzay simülasyonunda inceleyin.",
+    "tags": [
+      "NASA",
+      "Gezegen",
+      "Uzay",
+      "Astronomi"
+    ]
+  },
+  {
+    "id": "stellarium",
+    "name": "Stellarium Çevrim İçi Planetaryum",
+    "url": "https://stellarium-web.org",
+    "categoryId": "stem_science",
+    "icon": "✨",
+    "badge": "Canlı Gökyüzü",
+    "description": "Konumunuza göre gece gökyüzünü, takımyıldızları, gezegenleri ve uyduları canlı gösteren planetaryum.",
+    "tags": [
+      "Stellarium",
+      "Yıldızlar",
+      "Planetaryum",
+      "Gökyüzü"
+    ]
+  },
+  {
+    "id": "geogebra",
+    "name": "GeoGebra Dinamik Matematik",
+    "url": "https://www.geogebra.org",
+    "categoryId": "math_geometry",
+    "icon": "📐",
+    "badge": "Geometri & 3 Boyutlu",
+    "description": "Geometri, fonksiyon çizimleri, 3 boyutlu matematik modellemeleri ve dinamik cebir araçları.",
+    "tags": [
+      "GeoGebra",
+      "Matematik",
+      "Geometri",
+      "Grafik"
+    ]
+  },
+  {
+    "id": "desmos",
+    "name": "Desmos Grafik Hesaplayıcı",
+    "url": "https://www.desmos.com/calculator?lang=tr",
+    "categoryId": "math_geometry",
+    "icon": "📈",
+    "badge": "Grafik Çizici",
+    "description": "Fonksiyon grafikleri, denklem sistemleri ve akıllı tahtada etkileşimli sınıf matematik etkinlikleri.",
+    "tags": [
+      "Desmos",
+      "Grafik",
+      "Fonksiyon",
+      "Hesap Makinesi"
+    ]
+  },
+  {
+    "id": "wolfram_alpha",
+    "name": "Wolfram Alpha Bilgi Motoru",
+    "url": "https://www.wolframalpha.com",
+    "categoryId": "math_geometry",
+    "icon": "🔢",
+    "badge": "Bilimsel Hesap",
+    "description": "Adım adım denklem çözümleri, türev, integral, matris işlemleri ve matematiksel istatistik hesaplamaları.",
+    "tags": [
+      "Wolfram",
+      "Matematik",
+      "Denklem",
+      "İntegral",
+      "Türev"
+    ]
+  },
+  {
+    "id": "mathway",
+    "name": "Mathway Adım Adım Matematik",
+    "url": "https://www.mathway.com/tr/Algebra",
+    "categoryId": "math_geometry",
+    "icon": "✏️",
+    "badge": "Adım Adım Çözüm",
+    "description": "Temel matematik, cebir, geometri ve trigonometri sorularının çözüm basamaklarını detaylı gösterir.",
+    "tags": [
+      "Mathway",
+      "Cebir",
+      "Çözüm",
+      "Trigonometri"
+    ]
+  },
+  {
+    "id": "khan_academy_tr",
+    "name": "Khan Academy Türkçe",
+    "url": "https://tr.khanacademy.org",
+    "categoryId": "math_geometry",
+    "icon": "🎓",
+    "badge": "Ücretsiz Ders",
+    "description": "İlkokuldan liseye her seviye matematik konuları, video dersler, pratik testler ve gelişim raporları.",
+    "tags": [
+      "Khan Academy",
+      "Matematik",
+      "Video Ders",
+      "Alıştırma"
+    ]
+  },
+  {
+    "id": "mathisfun",
+    "name": "Math is Fun (Eğlenceli Matematik)",
+    "url": "https://www.mathsisfun.com",
+    "categoryId": "math_geometry",
+    "icon": "🧩",
+    "badge": "Kavram Oyunları",
+    "description": "Matematiksel kavramları bulmacalar, oyunlar ve görsel açıklamalarla sevdiren küresel kaynak.",
+    "tags": [
+      "Math is Fun",
+      "Bulmaca",
+      "Oyun",
+      "Temel Matematik"
+    ]
+  },
+  {
+    "id": "matematik_dunyasi",
+    "name": "Türk Matematik Derneği",
+    "url": "https://www.tmd.org.tr",
+    "categoryId": "math_geometry",
+    "icon": "🏛️",
+    "badge": "TMD & Olimpiyat",
+    "description": "Matematik Dünyası dergisi arşivleri, olimpiyat yarışma soruları, makaleler ve sempozyumlar.",
+    "tags": [
+      "TMD",
+      "Olimpiyat",
+      "Dergi",
+      "Akademi"
+    ]
+  },
+  {
+    "id": "geogebra_geometry",
+    "name": "GeoGebra Geometri Çizim Aracı",
+    "url": "https://www.geogebra.org/geometry",
+    "categoryId": "math_geometry",
+    "icon": "📏",
+    "badge": "Pergel & Cetvel",
+    "description": "Sanal pergel, cetvel ve açıölçer kullanarak geometrik ispatlar ve çizimler yapma platformu.",
+    "tags": [
+      "Geometri",
+      "Cetvel",
+      "Pergel",
+      "Açıölçer",
+      "İspat"
+    ]
+  },
+  {
+    "id": "tinkercad",
+    "name": "Autodesk Tinkercad",
+    "url": "https://www.tinkercad.com",
+    "categoryId": "coding_robotics",
+    "icon": "🖨️",
+    "badge": "3 Boyutlu & Arduino",
+    "description": "3 boyutlu baskı tasarımı, modelleme, blok tabanlı kodlama ve sanal Arduino devre simülasyonları.",
+    "tags": [
+      "Tinkercad",
+      "3 Boyutlu Tasarım",
+      "Arduino",
+      "Devre"
+    ]
+  },
+  {
+    "id": "code_org",
+    "name": "Code.org Bilgisayar Bilimi",
+    "url": "https://code.org",
+    "categoryId": "coding_robotics",
+    "icon": "💻",
+    "badge": "Kodlama Saati",
+    "description": "Her yaş grubu için oyunlaştırma temalı blok kodlama ve bilgisayar bilimi ders müfredatı.",
+    "tags": [
+      "Code.org",
+      "Kodlama",
+      "Bilişim",
+      "Algoritma"
+    ]
+  },
+  {
+    "id": "scratch",
+    "name": "MIT Scratch",
+    "url": "https://scratch.mit.edu",
+    "categoryId": "coding_robotics",
+    "icon": "🐱",
+    "badge": "Oyun Kodlama",
+    "description": "Kendi interaktif animasyonlarını, eğitici hikayelerini ve 2D oyunlarını bloklarla kodlama.",
+    "tags": [
+      "Scratch",
+      "MIT",
+      "Kodlama",
+      "Animasyon"
+    ]
+  },
+  {
+    "id": "makecode",
+    "name": "Microsoft MakeCode (Micro:bit)",
+    "url": "https://makecode.microbit.org",
+    "categoryId": "coding_robotics",
+    "icon": "🕹️",
+    "badge": "Robotik Kod",
+    "description": "BBC micro:bit kartları için blok ve Python tabanlı simülatörlü robotik kodlama ortamı.",
+    "tags": [
+      "MakeCode",
+      "Microbit",
+      "Robotik",
+      "Sensör"
+    ]
+  },
+  {
+    "id": "appinventor",
+    "name": "MIT App Inventor (Mobil Uygulama)",
+    "url": "https://appinventor.mit.edu",
+    "categoryId": "coding_robotics",
+    "icon": "📱",
+    "badge": "Mobil Kodlama",
+    "description": "Öğrencilerin blok kodlama ile kendi çalışan Android cep telefonu uygulamalarını geliştirmesi.",
+    "tags": [
+      "App Inventor",
+      "Mobil",
+      "Android",
+      "Uygulama"
+    ]
+  },
+  {
+    "id": "w3schools",
+    "name": "W3Schools Kod Geliştirme",
+    "url": "https://www.w3schools.com",
+    "categoryId": "coding_robotics",
+    "icon": "🌐",
+    "badge": "HTML, CSS & Python",
+    "description": "Örneklerle HTML, CSS, JavaScript ve Python kodlama dili temel ders kütüphanesi.",
+    "tags": [
+      "W3Schools",
+      "HTML",
+      "Python",
+      "Ağ Kodlama"
+    ]
+  },
+  {
+    "id": "replit",
+    "name": "Replit Çevrimiçi Kod Derleyici",
+    "url": "https://replit.com",
+    "categoryId": "coding_robotics",
+    "icon": "⚙️",
+    "badge": "Bulut Kodlama",
+    "description": "Python, C++, Java kodlarını hiçbir program yüklemeden doğrudan tarayıcıda derleyip çalıştırma.",
+    "tags": [
+      "Replit",
+      "Python",
+      "Derleyici",
+      "Bulut Kodlama"
+    ]
+  },
+  {
+    "id": "bilisim_ogretmeni",
+    "name": "Bilişim Öğretmenleri Ağı",
+    "url": "https://www.bilisimogretmeni.com",
+    "categoryId": "coding_robotics",
+    "icon": "🔌",
+    "badge": "Ders Föyleri",
+    "description": "Bilişim teknolojileri ve yazılım dersi için çalışma kağıtları, yıllık planlar ve sınav soruları.",
+    "tags": [
+      "Bilişim",
+      "Donanım",
+      "Yazılım",
+      "Sınav Sorusu"
+    ]
+  },
+  {
+    "id": "tdk_sozluk",
+    "name": "TDK Güncel Türkçe Sözlük",
+    "url": "https://sozluk.gov.tr",
+    "categoryId": "literature_language",
+    "icon": "📖",
+    "badge": "Resmî TDK",
+    "description": "Türk Dil Kurumu resmî sözlüğü, atasözleri, deyimler sözlüğü ve güncel imla/yazım kılavuzu.",
+    "tags": [
+      "TDK",
+      "Sözlük",
+      "İmla",
+      "Yazım Kuralı",
+      "Deyimler"
+    ]
+  },
+  {
+    "id": "kubbealti",
+    "name": "Kubbealtı Lugatı (Lugatim)",
+    "url": "https://lugatim.com",
+    "categoryId": "literature_language",
+    "icon": "📜",
+    "badge": "Köken & Lugat",
+    "description": "Kelimelerin köken bilgisi (etimoloji), edebi örnek cümleleri ve derin Türkçe anlam zenginliği.",
+    "tags": [
+      "Kubbealtı",
+      "Lugat",
+      "Etimoloji",
+      "Edebiyat"
+    ]
+  },
+  {
+    "id": "antoloji",
+    "name": "Antoloji.com Şiir Kütüphanesi",
+    "url": "https://www.antoloji.com",
+    "categoryId": "literature_language",
+    "icon": "🖋️",
+    "badge": "Şiir Külliyatı",
+    "description": "Binlerce Türk ve dünya şairinin şiirleri, şair hayatları, edebi akımlar ve şiir seslendirmeleri.",
+    "tags": [
+      "Antoloji",
+      "Şiir",
+      "Şair",
+      "Edebiyat"
+    ]
+  },
+  {
+    "id": "vikikaynak",
+    "name": "Vikikaynak (Türkçe Metinler)",
+    "url": "https://tr.wikisource.org",
+    "categoryId": "literature_language",
+    "icon": "📚",
+    "badge": "Açık Metinler",
+    "description": "Telif süresi dolmuş klasik romanlar, nutuklar, tarihi fermanlar, şiir kitapları ve birincil kaynaklar.",
+    "tags": [
+      "Vikikaynak",
+      "Klasikler",
+      "Kitap",
+      "Nutuk"
+    ]
+  },
+  {
+    "id": "edebiyatogretmeni",
+    "name": "Edebiyat Öğretmeni Portalı",
+    "url": "https://www.edebiyatogretmeni.org",
+    "categoryId": "literature_language",
+    "icon": "✒️",
+    "badge": "Tahlil & Föy",
+    "description": "Edebi akımlar, şiir incelemeleri, tiyatro metinleri, roman özetleri ve zümre yıllık planları.",
+    "tags": [
+      "Edebiyat",
+      "Şiir Tahlili",
+      "Roman",
+      "Tiyatro"
+    ]
+  },
+  {
+    "id": "turkedebiyati_org",
+    "name": "Türk Edebiyatı İsimler Sözlüğü",
+    "url": "https://teis.yesevi.edu.tr",
+    "categoryId": "literature_language",
+    "icon": "🏺",
+    "badge": "Ahmet Yesevi",
+    "description": "Başlangıçtan günümüze tüm Türk şair ve yazarlarının kapsamlı akademik biyografi ansiklopedisi.",
+    "tags": [
+      "TEİS",
+      "Biyografi",
+      "Şairler",
+      "Yazarlar",
+      "Akademi"
+    ]
+  },
+  {
+    "id": "etimolojiturkce",
+    "name": "Etimoloji Türkçe (Nişanyan)",
+    "url": "https://www.etimolojiturkce.com",
+    "categoryId": "literature_language",
+    "icon": "🌱",
+    "badge": "Kelime Kökeni",
+    "description": "Türkçe sözcüklerin tarihsel evrimi, köken dili (Arapça, Farsça, Fransızca, Türkçe) ve ilk yazılı tanıkları.",
+    "tags": [
+      "Etimoloji",
+      "Köken",
+      "Kelime Tarihi",
+      "Dilbilim"
+    ]
+  },
+  {
+    "id": "dilimizinzenginlikleri",
+    "name": "Dilimizin Zenginlikleri Projesi",
+    "url": "https://ogm.meb.gov.tr/www/dilimizin-zenginlikleri-projesi/icerik/5092",
+    "categoryId": "literature_language",
+    "icon": "💎",
+    "badge": "MEB Projesi",
+    "description": "MEB Dilimizin Zenginlikleri projesi etkinlik kılavuzları, Dede Korkut okumaları ve sözlük tasarımları.",
+    "tags": [
+      "Dilimizin Zenginlikleri",
+      "MEB",
+      "Dede Korkut",
+      "Safahat"
+    ]
+  },
+  {
+    "id": "duolingo_schools",
+    "name": "Duolingo Okullar İçin (Schools)",
+    "url": "https://schools.duolingo.com",
+    "categoryId": "foreign_languages",
+    "icon": "🦉",
+    "badge": "Sınıf Takibi",
+    "description": "Öğrencilere seviyeli dil ödevleri verin, kelime puanlarını ve haftalık çalışma sürelerini canlı izleyin.",
+    "tags": [
+      "Duolingo",
+      "İngilizce",
+      "Almanca",
+      "Oyunlaştırılmış"
+    ]
+  },
+  {
+    "id": "british_council",
+    "name": "British Council LearnEnglish",
+    "url": "https://learnenglishkids.britishcouncil.org",
+    "categoryId": "foreign_languages",
+    "icon": "🇬🇧",
+    "badge": "Çocuk & Genç",
+    "description": "İngilizce şarkılar, interaktif hikayeler, kelime oyunları ve yazdırılabilir ders çalışma kağıtları.",
+    "tags": [
+      "British Council",
+      "İngilizce",
+      "Çalışma Kağıdı",
+      "Şarkı"
+    ]
+  },
+  {
+    "id": "cambridge_english",
+    "name": "Cambridge English Öğretmen Kaynakları",
+    "url": "https://www.cambridgeenglish.org/teaching-english/",
+    "categoryId": "foreign_languages",
+    "icon": "📘",
+    "badge": "Resmî Cambridge",
+    "description": "A1-C2 seviye İngilizce ders planları, sınıf içi konuşma etkinlikleri ve deneme sınavları.",
+    "tags": [
+      "Cambridge",
+      "İngilizce",
+      "Ders Planı",
+      "Etkinlik"
+    ]
+  },
+  {
+    "id": "oxford_learners",
+    "name": "Oxford Learner's Dictionaries",
+    "url": "https://www.oxfordlearnersdictionaries.com",
+    "categoryId": "foreign_languages",
+    "icon": "🗣️",
+    "badge": "Telaffuz & Cümle",
+    "description": "İngiliz ve Amerikan telaffuz sesleri, fonetik yazılışlar, collocation ve seviyeli örnek cümleler.",
+    "tags": [
+      "Oxford",
+      "Sözlük",
+      "Telaffuz",
+      "İngilizce"
+    ]
+  },
+  {
+    "id": "lyrics_training",
+    "name": "Lingclip (LyricsTraining)",
+    "url": "https://lingclip.com",
+    "categoryId": "foreign_languages",
+    "icon": "🎵",
+    "badge": "Müzikle Dil",
+    "description": "Popüler İngilizce ve yabancı şarkılar eşliğinde kelime boşluk doldurma ve dinleme (listening) oyunu.",
+    "tags": [
+      "Müzik",
+      "Şarkı",
+      "Listening",
+      "Dinleme"
+    ]
+  },
+  {
+    "id": "engvid",
+    "name": "EngVid İngilizce Video Dersleri",
+    "url": "https://www.engvid.com",
+    "categoryId": "foreign_languages",
+    "icon": "🎬",
+    "badge": "Video Dersler",
+    "description": "Ana dili İngilizce olan deneyimli eğitmenlerden binlerce ücretsiz dilbilgisi, telaffuz ve kelime videosu.",
+    "tags": [
+      "EngVid",
+      "Video",
+      "Grammar",
+      "Vocabulary"
+    ]
+  },
+  {
+    "id": "linguee",
+    "name": "Linguee İki Dilli Sözlük",
+    "url": "https://www.linguee.com",
+    "categoryId": "foreign_languages",
+    "icon": "🔍",
+    "badge": "Cümle Bağlamı",
+    "description": "Aradığınız kelimenin resmî iki dilli metinlerde gerçek hayatta nasıl çevrildiğini cümle içinde görün.",
+    "tags": [
+      "Linguee",
+      "Bağlam",
+      "Cümle Çeviri",
+      "Örnekler"
+    ]
+  },
+  {
+    "id": "sanal_muze",
+    "name": "T.C. Kültür Sanal Müzeleri",
+    "url": "https://sanalmuze.gov.tr",
+    "categoryId": "social_history_geo",
+    "icon": "🏺",
+    "badge": "360° Sanal Tur",
+    "description": "Anıtkabir, Efes, Göbeklitepe, Topkapı Sarayı ve müzelerin akıllı tahtada 360 derece sanal gezintisi.",
+    "tags": [
+      "Sanal Müze",
+      "360 Tur",
+      "Anıtkabir",
+      "Tarih",
+      "Kültür"
+    ]
+  },
+  {
+    "id": "turkiye_kultur",
+    "name": "Türkiye Kültür Portalı",
+    "url": "https://www.kulturportali.gov.tr",
+    "categoryId": "social_history_geo",
+    "icon": "🇹🇷",
+    "badge": "Kültür Envanteri",
+    "description": "81 ilimizin tarihi, yöresel kültürü, halk oyunları, türküleri ve somut olmayan mirası.",
+    "tags": [
+      "Kültür Portalı",
+      "İllerimiz",
+      "Gelenek",
+      "Coğrafya"
+    ]
+  },
+  {
+    "id": "trt_arsiv",
+    "name": "TRT Arşiv Portalı",
+    "url": "https://www.trtarsiv.com",
+    "categoryId": "social_history_geo",
+    "icon": "📻",
+    "badge": "Görsel & Ses",
+    "description": "Cumhuriyet tarihi görüntüleri, edebi belgeseller, radyo tiyatroları ve unutulmaz röportajlar.",
+    "tags": [
+      "TRT Arşiv",
+      "Belgesel",
+      "Tarih",
+      "Radyo"
+    ]
+  },
+  {
+    "id": "milli_kutuphane",
+    "name": "Milli Kütüphane Dijital Arşivi",
+    "url": "https://dijitalkutuphane.mkutup.gov.tr",
+    "categoryId": "social_history_geo",
+    "icon": "🏛️",
+    "badge": "Tarihi Arşiv",
+    "description": "Tarihi gazeteler, dergiler, el yazması nadir eserler, haritalar ve telifsiz kaynaklar koleksiyonu.",
+    "tags": [
+      "Milli Kütüphane",
+      "Arşiv",
+      "Gazete",
+      "Tarih"
+    ]
+  },
+  {
+    "id": "google_earth",
+    "name": "Google Earth Eğitim Keşfi",
+    "url": "https://earth.google.com/web/",
+    "categoryId": "social_history_geo",
+    "icon": "🌍",
+    "badge": "3 Boyutlu Dünya Turu",
+    "description": "Yerkürenin 3 boyutlu uydu görüntüleri, dağlar, nehirler, tarihi şehirler ve etkileşimli coğrafya keşifleri.",
+    "tags": [
+      "Google Earth",
+      "Coğrafya",
+      "Harita",
+      "3 Boyutlu Uydu"
+    ]
+  },
+  {
+    "id": "worldmapper",
+    "name": "Worldmapper Tematik Haritalar",
+    "url": "https://worldmapper.org",
+    "categoryId": "social_history_geo",
+    "icon": "🗺️",
+    "badge": "Veri Haritaları",
+    "description": "Nüfus, su kaynakları, ekonomi, iklim ve enerji verilerine göre yeniden boyutlanan tematik haritalar.",
+    "tags": [
+      "Worldmapper",
+      "Tematik Harita",
+      "Nüfus",
+      "İklim"
+    ]
+  },
+  {
+    "id": "tarihportali",
+    "name": "Tarih Portalı (Öğretmen)",
+    "url": "https://tarihportali.net",
+    "categoryId": "social_history_geo",
+    "icon": "🛡️",
+    "badge": "Tarih Föyleri",
+    "description": "Tarih ve İnkılap Tarihi dersi yıllık planları, dilsiz haritalar, testler ve konu kronolojileri.",
+    "tags": [
+      "Tarih",
+      "İnkılap Tarihi",
+      "Harita",
+      "Kronoloji"
+    ]
+  },
+  {
+    "id": "ttk",
+    "name": "Türk Tarih Kurumu",
+    "url": "https://www.ttk.gov.tr",
+    "categoryId": "social_history_geo",
+    "icon": "📜",
+    "badge": "Resmî TTK",
+    "description": "Resmî Türk tarih araştırmaları, dijital kütüphane, tarihi belgeler ve bilimsel monografiler.",
+    "tags": [
+      "TTK",
+      "Tarih",
+      "Belge",
+      "Arşiv",
+      "Araştırma"
+    ]
+  },
+  {
+    "id": "arts_and_culture",
+    "name": "Google Arts & Culture",
+    "url": "https://artsandculture.google.com",
+    "categoryId": "arts_music_pe",
+    "icon": "🎨",
+    "badge": "Dünya Müzeleri",
+    "description": "Dünyanın en ünlü müzelerini, tablolarını, heykellerini ve sanat akımlarını ultra yüksek çözünürlükte inceleyin.",
+    "tags": [
+      "Sanat",
+      "Müze",
+      "Ressamlar",
+      "Tablolar",
+      "Kültür"
+    ]
+  },
+  {
+    "id": "autodraw",
+    "name": "Google AutoDraw",
+    "url": "https://www.autodraw.com",
+    "categoryId": "arts_music_pe",
+    "icon": "🖌️",
+    "badge": "Yapay Zekâ Çizim",
+    "description": "Akıllı tahtada kabataslak çizdiğiniz karalamaları saniyeler içinde profesyonel çizimlere çevirir.",
+    "tags": [
+      "AutoDraw",
+      "Çizim",
+      "Resim",
+      "Görsel Sanatlar"
+    ]
+  },
+  {
+    "id": "chrome_music_lab",
+    "name": "Chrome Music Lab",
+    "url": "https://musiclab.chromeexperiments.com",
+    "categoryId": "arts_music_pe",
+    "icon": "🎹",
+    "badge": "Müzik Deneyleri",
+    "description": "Ritim, melodi, ses dalgaları, akorlar ve armoniyi görsel deneylerle öğreten eğlenceli müzik laboratuvarı.",
+    "tags": [
+      "Music Lab",
+      "Müzik",
+      "Ritim",
+      "Nota",
+      "Ses"
+    ]
+  },
+  {
+    "id": "flat_io",
+    "name": "Flat.io Müzik Notası Yazıcı",
+    "url": "https://flat.io",
+    "categoryId": "arts_music_pe",
+    "icon": "🎼",
+    "badge": "Sanal Partisyon",
+    "description": "Tarayıcıda kolayca porte üzerine nota yazın, piyano veya flüt sesleriyle dinletin ve öğrencilere ödev verin.",
+    "tags": [
+      "Flat.io",
+      "Nota",
+      "Porte",
+      "Partisyon",
+      "Müzik"
+    ]
+  },
+  {
+    "id": "genc_spor",
+    "name": "Okul Sporları Portalı",
+    "url": "https://okulsportal.gsb.gov.tr",
+    "categoryId": "arts_music_pe",
+    "icon": "⚽",
+    "badge": "GSB Okul Ligi",
+    "description": "Okul spor müsabakaları, fikstürler, branş talimatları, sporcu lisans işlemleri ve sonuçlar.",
+    "tags": [
+      "Okul Sporları",
+      "Beden Eğitimi",
+      "Lisans",
+      "Fikstür"
+    ]
+  },
+  {
+    "id": "artbreeder",
+    "name": "Artbreeder Görsel Karışım",
+    "url": "https://www.artbreeder.com",
+    "categoryId": "arts_music_pe",
+    "icon": "🖼️",
+    "badge": "Portre & Sanat",
+    "description": "Yapay zekâ ile tarihi kişilerin portrelerini canlandırın, manzaralar ve sanat eserleri türetin.",
+    "tags": [
+      "Artbreeder",
+      "Portre",
+      "Sanat",
+      "Tasarım"
+    ]
+  },
+  {
+    "id": "diyanet_kuran",
+    "name": "Diyanet Kur'an-ı Kerim Portalı",
+    "url": "https://kuran.diyanet.gov.tr",
+    "categoryId": "religious_culture",
+    "icon": "📖",
+    "badge": "Resmî Mushaf",
+    "description": "Diyanet İşleri Başkanlığı resmî mushafı, çoklu Türkçe mealler, ayet tefsirleri ve sesli tilavetler.",
+    "tags": [
+      "Diyanet",
+      "Kur'an",
+      "Meal",
+      "Tefsir",
+      "Ayet"
+    ]
+  },
+  {
+    "id": "islamansiklopedisi",
+    "name": "TDV İslâm Ansiklopedisi",
+    "url": "https://islamansiklopedisi.org.tr",
+    "categoryId": "religious_culture",
+    "icon": "🏛️",
+    "badge": "Akademik Ansiklopedi",
+    "description": "Türkiye Diyanet Vakfı'nın 44 ciltlik güvenilir akademik İslâm tarihi, medeniyet ve şahsiyetler ansiklopedisi.",
+    "tags": [
+      "TDV",
+      "Ansiklopedi",
+      "Tarih",
+      "Siyer",
+      "Medeniyet"
+    ]
+  },
+  {
+    "id": "diyanet_fetva",
+    "name": "Din İşleri Yüksek Kurulu",
+    "url": "https://kurul.diyanet.gov.tr",
+    "categoryId": "religious_culture",
+    "icon": "⚖️",
+    "badge": "Resmî Kurul",
+    "description": "Dini sorular ve fetvalar arşivi, güncel ilmihal bilgileri, dini günler takvimi ve fıkhi açıklamalar.",
+    "tags": [
+      "Fetva",
+      "İlmihal",
+      "Fıkıh",
+      "Diyanet"
+    ]
+  },
+  {
+    "id": "dinogretimi",
+    "name": "Din Öğretimi Genel Müdürlüğü (DÖGM)",
+    "url": "https://dogm.meb.gov.tr",
+    "categoryId": "religious_culture",
+    "icon": "🌙",
+    "badge": "MEB DÖGM",
+    "description": "İmam hatip okulları ve DKAB ders materyalleri, yarışma kılavuzları, etkinlik planları ve bültenler.",
+    "tags": [
+      "DÖGM",
+      "MEB",
+      "İmam Hatip",
+      "DKAB",
+      "Materyal"
+    ]
+  },
+  {
+    "id": "dinkulturu_org",
+    "name": "DKAB Öğretmenleri Portalı",
+    "url": "https://dinkulturu.org",
+    "categoryId": "religious_culture",
+    "icon": "✨",
+    "badge": "Ders Materyali",
+    "description": "Din Kültürü ve Ahlak Bilgisi dersi için sunumlar, bulmacalar, yazılı sınav soruları ve yıllık planlar.",
+    "tags": [
+      "DKAB",
+      "Din Kültürü",
+      "Sunum",
+      "Yazılı Sınav"
+    ]
+  },
+  {
+    "id": "orgm_meb",
+    "name": "Özel Eğitim ve Rehberlik Hizmetleri",
+    "url": "https://orgm.meb.gov.tr",
+    "categoryId": "guidance_special_ed",
+    "icon": "🧠",
+    "badge": "MEB ORGM",
+    "description": "RAM raporları, RİBA anketleri, BEP kılavuzları, psikososyal destek paketleri ve rehberlik yönergeleri.",
+    "tags": [
+      "ORGM",
+      "Rehberlik",
+      "RAM",
+      "RİBA",
+      "Özel Eğitim"
+    ]
+  },
+  {
+    "id": "bep_rehberi",
+    "name": "MEB BEP Hazırlama Rehberi",
+    "url": "https://orgm.meb.gov.tr/meb_iys_dosyalar/2021_11/26105825_BEP_Rehberi.pdf",
+    "categoryId": "guidance_special_ed",
+    "icon": "📑",
+    "badge": "BEP Kılavuzu",
+    "description": "Bireyselleştirilmiş Eğitim Programı (BEP) hazırlama ilkeleri, hedefler ve sınıf içi uyarlamalar rehberi.",
+    "tags": [
+      "BEP",
+      "Kaynaştırma",
+      "Özel Eğitim",
+      "Kılavuz"
+    ]
+  },
+  {
+    "id": "tohumotizm",
+    "name": "Tohum Otizm Eğitim Portalı",
+    "url": "https://www.tohumotizmportali.org",
+    "categoryId": "guidance_special_ed",
+    "icon": "🧩",
+    "badge": "Otizm Eğitimi",
+    "description": "Otizm spektrum bozukluğu olan ve gelişimsel desteğe ihtiyaç duyan çocuklara yönelik ücretsiz modüller.",
+    "tags": [
+      "Tohum Otizm",
+      "Özel Eğitim",
+      "Gelişim",
+      "Destek"
+    ]
+  },
+  {
+    "id": "yesilay_tbm",
+    "name": "Türkiye Bağımlılıkla Mücadele (TBM)",
+    "url": "https://www.tbm.org.tr",
+    "categoryId": "guidance_special_ed",
+    "icon": "🛡️",
+    "badge": "Yeşilay & TBM",
+    "description": "Teknoloji, tütün ve madde bağımlılığına karşı sınıfta uygulanacak rehberlik sunumları ve etkinlikleri.",
+    "tags": [
+      "Yeşilay",
+      "TBM",
+      "Rehberlik",
+      "Bağımlılık",
+      "Farkındalık"
+    ]
+  },
+  {
+    "id": "mesleki_bilgi",
+    "name": "Ulusal Mesleki Bilgi Sistemi (MBS)",
+    "url": "https://mbs.meb.gov.tr",
+    "categoryId": "guidance_special_ed",
+    "icon": "💼",
+    "badge": "Kariyer & Meslek",
+    "description": "Öğrencilere yönelik ilgi ve yetenek envanterleri, lise/üniversite alan tercihleri ve meslek tanıtımları.",
+    "tags": [
+      "MBS",
+      "Kariyer",
+      "Meslek",
+      "Rehberlik",
+      "Tercih"
+    ]
+  },
+  {
+    "id": "kahoot",
+    "name": "Kahoot! Canlı Bilgi Yarışması",
+    "url": "https://kahoot.com",
+    "categoryId": "assessment",
+    "icon": "🏆",
+    "badge": "Canlı Soru-Cevap",
+    "description": "Öğrencilerin akıllı tahta veya telefonla yarıştığı müzikli, tatlı rekabetli canlı soru-cevap platformu.",
+    "tags": [
+      "Kahoot",
+      "Yarışma",
+      "Soru-Cevap",
+      "Canlı Ders"
+    ]
+  },
+  {
+    "id": "quizizz",
+    "name": "Quizizz Sınav & Değerlendirme",
+    "url": "https://quizizz.com",
+    "categoryId": "assessment",
+    "icon": "⏱️",
+    "badge": "Bireysel Hız",
+    "description": "Öğrencilerin kendi hızlarında çözdüğü, anlık dönütlü, eğlenceli ve detaylı raporlu test aracı.",
+    "tags": [
+      "Quizizz",
+      "Test",
+      "Değerlendirme",
+      "Rapor"
+    ]
+  },
+  {
+    "id": "mentimeter",
+    "name": "Mentimeter Canlı Oylama",
+    "url": "https://www.mentimeter.com",
+    "categoryId": "assessment",
+    "icon": "☁️",
+    "badge": "Kelime Bulutu",
+    "description": "Derse giriş ve fikir toplamada anlık kelime bulutları, hızlı anketler ve etkileşimli sınıf oylamaları.",
+    "tags": [
+      "Mentimeter",
+      "Kelime Bulutu",
+      "Anket",
+      "Oylama"
+    ]
+  },
+  {
+    "id": "plickers",
+    "name": "Plickers Kağıt Kodlu Soru-Cevap",
+    "url": "https://www.plickers.com",
+    "categoryId": "assessment",
+    "icon": "🎴",
+    "badge": "Cihaz Gerektirmez",
+    "description": "Öğrencide telefon olmasa bile; kağıt kartları öğretmen kamerasıyla tarayarak anında notlandırma.",
+    "tags": [
+      "Plickers",
+      "Kart",
+      "Optik",
+      "Telefonsuz"
+    ]
+  },
+  {
+    "id": "google_forms",
+    "name": "Google Formlar (Sınav & Anket)",
+    "url": "https://docs.google.com/forms",
+    "categoryId": "assessment",
+    "icon": "📝",
+    "badge": "Otomatik Puan",
+    "description": "Otomatik puanlanan çevrim içi deneme sınavları, veli izin anketleri ve sınıf bilgi formları.",
+    "tags": [
+      "Google Forms",
+      "Sınav",
+      "Anket",
+      "Puanlama"
+    ]
+  },
+  {
+    "id": "liveworksheets",
+    "name": "Liveworksheets İnteraktif Kağıt",
+    "url": "https://www.liveworksheets.com",
+    "categoryId": "assessment",
+    "icon": "📄",
+    "badge": "Sesli & İnteraktif",
+    "description": "Standart çalışma kağıtlarını sesli, çoktan seçmeli, sürükle-bırak interaktif dijital ödevlere çevirir.",
+    "tags": [
+      "Liveworksheets",
+      "Çalışma Kağıdı",
+      "Ödev",
+      "Dijital"
+    ]
+  },
+  {
+    "id": "socrative",
+    "name": "Socrative Sınıf Kontrolü",
+    "url": "https://www.socrative.com",
+    "categoryId": "assessment",
+    "icon": "🚀",
+    "badge": "Çıkış Bileti",
+    "description": "Ders sonunda öğrenmeyi test eden çıkış bileti (exit ticket) ve uzay yarışı mini sınavları.",
+    "tags": [
+      "Socrative",
+      "Çıkış Bileti",
+      "Sınav",
+      "Ölçme"
+    ]
+  },
+  {
+    "id": "egitimhane",
+    "name": "Eğitimhane Paylaşım Portalı",
+    "url": "https://www.egitimhane.com",
+    "categoryId": "community_docs",
+    "icon": "📂",
+    "badge": "Plan & Doküman",
+    "description": "Öğretmenler arası yıllık planlar, yazılı sınav soruları, çalışma kağıtları ve sınıf etkinlikleri arşivi.",
+    "tags": [
+      "Eğitimhane",
+      "Yazılı Sınav",
+      "Föy",
+      "Paylaşım"
+    ]
+  },
+  {
+    "id": "evrakburada",
+    "name": "Evrakburada Resmî Şablonlar",
+    "url": "https://www.evrakburada.com",
+    "categoryId": "community_docs",
+    "icon": "📁",
+    "badge": "MEB Şablonları",
+    "description": "MEB yönetmeliklerine uygun zümre tutanakları, kulüp evrakları, izin dilekçeleri ve çizelgeler.",
+    "tags": [
+      "Evrakburada",
+      "Şablon",
+      "Tutanak",
+      "Dilekçe"
+    ]
+  },
+  {
+    "id": "memurlar_net",
+    "name": "Memurlar.net Öğretmen Bölümü",
+    "url": "https://www.memurlar.net/kategori/ogretmen/",
+    "categoryId": "community_docs",
+    "icon": "📰",
+    "badge": "Mevzuat & Haklar",
+    "description": "Öğretmen maaş katsayıları, ek ders hesaplama haberleri, tayin kılavuzları ve özlük mevzuatı.",
+    "tags": [
+      "Memurlar.net",
+      "Özlük Hakları",
+      "Maaş",
+      "Mevzuat"
+    ]
+  },
+  {
+    "id": "mebpersonel",
+    "name": "Mebpersonel Haberleri",
+    "url": "https://www.mebpersonel.org",
+    "categoryId": "community_docs",
+    "icon": "📢",
+    "badge": "MEB Gündemi",
+    "description": "Bakanlık kulisleri, atama ve yer değiştirme haberleri, müfredat değişiklikleri ve duyurular.",
+    "tags": [
+      "Mebpersonel",
+      "Haber",
+      "Atama",
+      "Gündem"
+    ]
+  },
+  {
+    "id": "kamuajans",
+    "name": "Kamuajans Eğitim Haberleri",
+    "url": "https://www.kamuajans.com",
+    "categoryId": "community_docs",
+    "icon": "🗞️",
+    "badge": "Eğitim Gündemi",
+    "description": "Ek ders ücretleri, sınav görevlendirme takvimi, idarecilik ve bakanlık genelgeleri takibi.",
+    "tags": [
+      "Kamuajans",
+      "Ek Ders",
+      "Bordro",
+      "İdareci"
+    ]
+  },
+  {
+    "id": "resmi_gazete",
+    "name": "T.C. Resmî Gazete",
+    "url": "https://www.resmigazete.gov.tr",
+    "categoryId": "community_docs",
+    "icon": "📜",
+    "badge": "Yasal Mevzuat",
+    "description": "Yürürlüğe giren yeni MEB yönetmelikleri, kanunlar, genelgeler ve resmî atama kararları.",
+    "tags": [
+      "Resmî Gazete",
+      "Kanun",
+      "Yönetmelik",
+      "Mevzuat"
+    ]
+  }
+]

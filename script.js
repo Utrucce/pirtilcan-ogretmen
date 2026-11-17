@@ -1,751 +1,1185 @@
 /**
- * Pırtılcan Öğretmen - Yeni Nesil Maarif Asistanı Web & PWA Motoru
- * Orijinal Android Jetpack Compose 1-e-1 Birebir Sürümü
+ * ============================================================================
+ * PIRTILCAN ÖĞRETMEN - TÜRKİYE YÜZYILI MAARİF MODELİ ASİSTANI
+ * Canlı ve Çevrimdışı Çalışan İstemci Motoru
+ * ============================================================================
  */
 
-// ========================================================
-// 1. STATE & STORAGE
-// ========================================================
-const PirtilState = {
-  xp: parseInt(localStorage.getItem('pirtil_xp') || '255', 10),
-  activeTab: 'ana',
-  activeGradeId: 'grade_8',
-  activeClassroomId: 'class_8a',
-  dutyDay: localStorage.getItem('pirtil_duty_day') || 'Çarşamba',
-  dutyLocation: localStorage.getItem('pirtil_duty_loc') || '2. Kat Koridor & Merdivenler',
-  
-  meta: { grades: [], subjects: [] },
-  annualPlans: [],
-  documentTemplates: [],
-  maarifCards: [],
-  quotes: [],
-  mebCalendar: [],
-  classrooms: [],
+(function () {
+  'use strict';
 
-  addXp(amount) {
-    this.xp += amount;
-    localStorage.setItem('pirtil_xp', this.xp.toString());
-    updateXpDisplays();
-    showToast(`+${amount} XP Kazanıldı! (Toplam: ${this.xp} XP)`);
+  // --- 1. LOCAL STORAGE KEYS & DEFAULT DATA ---
+  const STORAGE_KEYS = {
+    TEACHER: 'pirtilcan_teacher_profile',
+    DUTY: 'pirtilcan_duty_info',
+    SCHEDULE: 'pirtilcan_schedule_list',
+    CLASSES: 'pirtilcan_classroom_data',
+    WALLPAPER: 'pirtilcan_custom_wallpaper',
+    MASCOT: 'pirtilcan_mascot_choice'
+  };
+
+  // Varsayılan Öğretmen Profili
+  let teacherProfile = JSON.parse(localStorage.getItem(STORAGE_KEYS.TEACHER) || '{}');
+  if (!teacherProfile.name) {
+    teacherProfile = {
+      name: 'Sertan Çubukçu',
+      branch: 'Bilişim Teknolojileri',
+      school: 'Cumhuriyet Ortaokulu',
+      mascot: 'pirtilcan_selcuklu_turkuaz.png',
+      wallpaper: 'none'
+    };
   }
-};
 
-// ========================================================
-// 2. AUDIO & HAPTICS
-// ========================================================
-let audioCtx = null;
-function initAudio() {
-  if (!audioCtx) {
-    const AudioClass = window.AudioContext || window.webkitAudioContext;
-    if (AudioClass) audioCtx = new AudioClass();
+  // Varsayılan Nöbet Bilgisi
+  let dutyInfo = JSON.parse(localStorage.getItem(STORAGE_KEYS.DUTY) || '{}');
+  if (!dutyInfo.day) {
+    dutyInfo = { day: 'Çarşamba', location: '2. Kat Koridor' };
   }
-  if (audioCtx && audioCtx.state === 'suspended') {
-    audioCtx.resume();
+
+  // Varsayılan Haftalık Ders Programı (Pazartesi-Cuma)
+  let scheduleList = JSON.parse(localStorage.getItem(STORAGE_KEYS.SCHEDULE) || '[]');
+  if (!scheduleList || scheduleList.length === 0) {
+    scheduleList = [
+      { id: 'sc_1', day: 1, period: 1, subject: 'Bilişim Teknolojileri', className: '5-A', time: '08:30 - 09:10', room: 'BT Sınıfı' },
+      { id: 'sc_2', day: 1, period: 2, subject: 'Bilişim Teknolojileri', className: '5-A', time: '09:25 - 10:05', room: 'BT Sınıfı' },
+      { id: 'sc_3', day: 1, period: 3, subject: 'Yazılım ve Kodlama', className: '7-B', time: '10:20 - 11:00', room: 'BT Sınıfı' },
+      { id: 'sc_4', day: 2, period: 1, subject: 'Bilişim Teknolojileri', className: '6-A', time: '08:30 - 09:10', room: 'BT Sınıfı' },
+      { id: 'sc_5', day: 2, period: 2, subject: 'Bilişim Teknolojileri', className: '6-A', time: '09:25 - 10:05', room: 'BT Sınıfı' },
+      { id: 'sc_6', day: 3, period: 1, subject: 'Bilişim Teknolojileri', className: '7-A', time: '08:30 - 09:10', room: 'BT Sınıfı' },
+      { id: 'sc_7', day: 3, period: 2, subject: 'Bilişim Teknolojileri', className: '7-A', time: '09:25 - 10:05', room: 'BT Sınıfı' },
+      { id: 'sc_8', day: 3, period: 4, subject: 'Rehberlik ve Kariyer', className: '7-A', time: '11:15 - 11:55', room: 'Derslik 14' },
+      { id: 'sc_9', day: 4, period: 1, subject: 'Yapay Zekâ Uygulamaları', className: '8-B', time: '08:30 - 09:10', room: 'BT Sınıfı' },
+      { id: 'sc_10', day: 4, period: 2, subject: 'Yapay Zekâ Uygulamaları', className: '8-B', time: '09:25 - 10:05', room: 'BT Sınıfı' },
+      { id: 'sc_11', day: 5, period: 3, subject: 'Sosyal Kulüp / Robotik', className: 'Kulüp', time: '10:20 - 11:00', room: 'Atölye' }
+    ];
   }
-}
-document.addEventListener('click', initAudio, { once: true });
 
-function playSchoolBell() {
-  initAudio();
-  const audio = new Audio('./assets/audio/school_bell.wav');
-  audio.play().catch(() => synthesizeSchoolBell());
-  triggerHaptic(80);
-}
-
-function playDingSound() {
-  initAudio();
-  const audio = new Audio('./assets/audio/ding.wav');
-  audio.play().catch(() => synthesizeDing());
-  triggerHaptic(40);
-}
-
-function synthesizeSchoolBell() {
-  if (!audioCtx) return;
-  const now = audioCtx.currentTime;
-  const freqs = [523.25, 659.25, 783.99, 1046.50];
-  freqs.forEach((f, i) => {
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = 'sine';
-    osc.frequency.setValueAtTime(f, now + i * 0.25);
-    gain.gain.setValueAtTime(0.3, now + i * 0.25);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.25 + 1.2);
-    osc.connect(gain);
-    gain.connect(audioCtx.destination);
-    osc.start(now + i * 0.25);
-    osc.stop(now + i * 0.25 + 1.2);
-  });
-}
-
-function synthesizeDing() {
-  if (!audioCtx) return;
-  const now = audioCtx.currentTime;
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.type = 'triangle';
-  osc.frequency.setValueAtTime(880, now);
-  gain.gain.setValueAtTime(0.4, now);
-  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-  osc.start(now);
-  osc.stop(now + 0.6);
-}
-
-function triggerHaptic(duration = 40) {
-  if ('vibrate' in navigator) {
-    try { navigator.vibrate(duration); } catch (_) {}
+  // Varsayılan Sınıflar ve Öğrenciler
+  let classroomData = JSON.parse(localStorage.getItem(STORAGE_KEYS.CLASSES) || '{}');
+  if (!classroomData['7-A']) {
+    classroomData = {
+      '7-A': [
+        { id: 's1', num: '102', name: 'Ahmet Yılmaz', plus: 4, minus: 0, status: 'geldi' },
+        { id: 's2', num: '105', name: 'Ayşe Kaya', plus: 6, minus: 0, status: 'geldi' },
+        { id: 's3', num: '118', name: 'Berat Çelik', plus: 2, minus: 1, status: 'gec' },
+        { id: 's4', num: '124', name: 'Ceren Demir', plus: 5, minus: 0, status: 'geldi' },
+        { id: 's5', num: '139', name: 'Deniz Şahin', plus: 3, minus: 0, status: 'geldi' },
+        { id: 's6', num: '152', name: 'Elif Öztürk', plus: 7, minus: 0, status: 'geldi' },
+        { id: 's7', num: '166', name: 'Emre Aydın', plus: 1, minus: 1, status: 'gelmedi' },
+        { id: 's8', num: '178', name: 'Fatma Yıldız', plus: 4, minus: 0, status: 'geldi' },
+        { id: 's9', num: '194', name: 'Gökhan Arslan', plus: 2, minus: 0, status: 'geldi' },
+        { id: 's10', num: '205', name: 'Hacer Doğan', plus: 5, minus: 0, status: 'geldi' },
+        { id: 's11', num: '221', name: 'İbrahim Kılıç', plus: 3, minus: 0, status: 'izinli' },
+        { id: 's12', num: '238', name: 'Kübra Koç', plus: 4, minus: 0, status: 'geldi' }
+      ],
+      '5-A': [
+        { id: 's20', num: '42', name: 'Ali Kurt', plus: 3, minus: 0, status: 'geldi' },
+        { id: 's21', num: '55', name: 'Zeynep Aksoy', plus: 5, minus: 0, status: 'geldi' },
+        { id: 's22', num: '68', name: 'Mehmet Aslan', plus: 2, minus: 0, status: 'geldi' }
+      ],
+      '6-A': [
+        { id: 's30', num: '81', name: 'Burak Güneş', plus: 4, minus: 0, status: 'geldi' },
+        { id: 's31', num: '92', name: 'Selin Şen', plus: 6, minus: 0, status: 'geldi' }
+      ],
+      '8-B': [
+        { id: 's40', num: '304', name: 'Kaan Polat', plus: 8, minus: 0, status: 'geldi' },
+        { id: 's41', num: '312', name: 'Merve Korkmaz', plus: 7, minus: 0, status: 'geldi' }
+      ]
+    };
   }
-}
 
-// ========================================================
-// 3. TOAST & CLIPBOARD
-// ========================================================
-function showToast(message) {
-  const toast = document.getElementById('toastNotice');
-  if (!toast) return;
-  toast.textContent = message;
-  toast.classList.add('show');
-  clearTimeout(toast._timeout);
-  toast._timeout = setTimeout(() => {
-    toast.classList.remove('show');
-  }, 2200);
-}
+  let activeClassKey = '7-A';
+  let activeScheduleDay = 3; // Çarşamba (1: Pazartesi.. 5: Cuma)
+  let activeOfficialDoc = null;
 
-function copyToClipboard(text, successMsg = 'Panoya kopyalandı!') {
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(() => {
-      showToast(successMsg);
-      playDingSound();
-    }).catch(() => fallbackCopy(text, successMsg));
-  } else {
-    fallbackCopy(text, successMsg);
-  }
-}
+  // --- 2. AUDIO & RADIO ENGINE ---
+  let audioContext = null;
+  let activeRadioAudio = null;
+  let isRadioPlaying = false;
+  let currentRadioChannel = 'trt1';
 
-function fallbackCopy(text, successMsg) {
-  const ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.position = 'fixed';
-  ta.style.opacity = '0';
-  document.body.appendChild(ta);
-  ta.select();
-  try {
-    document.execCommand('copy');
-    showToast(successMsg);
-    playDingSound();
-  } catch (e) {
-    showToast('Kopyalama başarısız oldu.');
-  }
-  document.body.removeChild(ta);
-}
-
-function copyCurrentDefterPhrase() {
-  const el = document.getElementById('currentDefterPhraseText');
-  if (el) {
-    copyToClipboard(el.innerText.trim(), '📋 Sınıf defteri metni kopyalandı!');
-  }
-}
-
-// ========================================================
-// 4. DATA LOADER
-// ========================================================
-async function loadAllData() {
-  try {
-    if (window.__PIRTIL_INITIAL_DATA__) {
-      PirtilState.meta = window.__PIRTIL_INITIAL_DATA__.meta;
-      PirtilState.annualPlans = window.__PIRTIL_INITIAL_DATA__.annualPlans;
-      PirtilState.documentTemplates = window.__PIRTIL_INITIAL_DATA__.documentTemplates;
-      PirtilState.maarifCards = window.__PIRTIL_INITIAL_DATA__.maarifCards;
-      PirtilState.quotes = window.__PIRTIL_INITIAL_DATA__.quotes;
-      PirtilState.mebCalendar = window.__PIRTIL_INITIAL_DATA__.mebCalendar;
-    } else {
-      const [metaRes, plansRes, docsRes, cardsRes, quotesRes, calRes] = await Promise.all([
-        fetch('./assets/curriculum_meta.json').then(r => r.json()),
-        fetch('./assets/annual_plans.json').then(r => r.json()),
-        fetch('./assets/document_templates.json').then(r => r.json()),
-        fetch('./assets/maarif_cards.json').then(r => r.json()),
-        fetch('./assets/maarif_quotes.json').then(r => r.json()),
-        fetch('./assets/meb_calendar.json').then(r => r.json())
-      ]);
-      PirtilState.meta = metaRes;
-      PirtilState.annualPlans = plansRes;
-      PirtilState.documentTemplates = docsRes;
-      PirtilState.maarifCards = cardsRes;
-      PirtilState.quotes = quotesRes;
-      PirtilState.mebCalendar = calRes;
+  function getAudioContext() {
+    if (!audioContext) {
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) audioContext = new AudioCtx();
     }
-  } catch (err) {
-    console.warn('Data fetch fallback:', err);
+    return audioContext;
   }
 
-  loadDefaultClassrooms();
-  renderAllViews();
-}
-
-function loadDefaultClassrooms() {
-  const saved = localStorage.getItem('pirtil_classrooms');
-  if (saved) {
+  function playSynthesizedSound(type) {
     try {
-      PirtilState.classrooms = JSON.parse(saved);
-      return;
+      const ctx = getAudioContext();
+      if (!ctx) return;
+      if (ctx.state === 'suspended') ctx.resume();
+
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      const now = ctx.currentTime;
+      if (type === 'bell') {
+        // Okul Zili Ding-Dong Sentezi
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(659.25, now); // E5
+        osc.frequency.exponentialRampToValueAtTime(523.25, now + 0.4); // C5
+        gain.gain.setValueAtTime(0.5, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 1.2);
+        osc.start(now);
+        osc.stop(now + 1.2);
+      } else if (type === 'chime') {
+        // Başarı / Puan artışı
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(880, now); // A5
+        osc.frequency.setValueAtTime(1318.5, now + 0.12); // E6
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.5);
+        osc.start(now);
+        osc.stop(now + 0.5);
+      } else {
+        // Tık sesi
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(440, now);
+        gain.gain.setValueAtTime(0.2, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+        osc.start(now);
+        osc.stop(now + 0.08);
+      }
     } catch (_) {}
   }
 
-  PirtilState.classrooms = [
-    {
-      id: 'class_8a',
-      name: '8/A Sınıfı',
-      students: [
-        { id: 1, no: '104', name: 'Ahmet Faruk Yılmaz', plus: 4, minus: 0, status: 'geldi' },
-        { id: 2, no: '215', name: 'Ayşe Zeynep Demir', plus: 6, minus: 1, status: 'geldi' },
-        { id: 3, no: '328', name: 'Bilal Eren Şahin', plus: 3, minus: 0, status: 'geldi' },
-        { id: 4, no: '412', name: 'Ceren Karaca', plus: 5, minus: 0, status: 'geldi' },
-        { id: 5, no: '530', name: 'Emir Kaan Yıldız', plus: 2, minus: 2, status: 'gec' },
-        { id: 6, no: '645', name: 'Fatma Zehra Öztürk', plus: 7, minus: 0, status: 'geldi' },
-        { id: 7, no: '718', name: 'Mehmet Akif Aydın', plus: 4, minus: 1, status: 'izinli' },
-        { id: 8, no: '822', name: 'Selin Su Çelik', plus: 5, minus: 0, status: 'geldi' }
-      ]
-    }
-  ];
-  saveClassrooms();
-}
+  window.playAppSound = function (type) {
+    playSynthesizedSound(type);
+  };
 
-function saveClassrooms() {
-  localStorage.setItem('pirtil_classrooms', JSON.stringify(PirtilState.classrooms));
-}
+  // --- 3. CLOCK & REAL-TIME LOGIC ---
+  function updateLiveClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const mins = String(now.getMinutes()).padStart(2, '0');
+    const secs = String(now.getSeconds()).padStart(2, '0');
+    const clockEl = document.getElementById('liveClockDisplay');
+    if (clockEl) clockEl.textContent = `${hours}:${mins}:${secs}`;
 
-// ========================================================
-// 5. NAVIGATION & TAB SWITCHER
-// ========================================================
-function switchTab(tabId) {
-  PirtilState.activeTab = tabId;
+    const dateOptions = { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long' };
+    const dateStr = now.toLocaleDateString('tr-TR', dateOptions);
+    const dateEl = document.getElementById('liveDateDisplay');
+    if (dateEl) dateEl.textContent = dateStr;
 
-  // Panels
-  document.querySelectorAll('.tab-content-panel').forEach(p => p.classList.remove('active'));
-  const target = document.getElementById(`panel-${tabId}`);
-  if (target) target.classList.add('active');
+    // Günün haftası hesabı (2026 Güz: 6. Hafta civarı)
+    const weekEl = document.getElementById('headerWeekText');
+    if (weekEl) weekEl.textContent = '6. Hafta';
 
-  // Bottom Nav Buttons
-  document.querySelectorAll('.nav-item-btn').forEach(btn => btn.classList.remove('active'));
-  const activeBtn = document.getElementById(`nav-btn-${tabId}`);
-  if (activeBtn) activeBtn.classList.add('active');
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  if (tabId === 'bahcem') {
-    renderGardenTree();
-  }
-}
-
-function switchSinifSubtab(subId) {
-  const tabs = ['yoklama', 'defter', 'ses'];
-  tabs.forEach(t => {
-    const pane = document.getElementById(`subpanel-sinif-${t}`);
-    const btn = document.getElementById(`btn-sinif-sub-${t}`);
-    if (pane) pane.style.display = (t === subId) ? 'block' : 'none';
-    if (btn) btn.classList.toggle('active', t === subId);
-  });
-}
-
-function switchToolboxPane(index) {
-  const panes = [
-    'toolbox-pane-portallar',
-    'toolbox-pane-evrak',
-    'toolbox-pane-zaman',
-    'toolbox-pane-ekders'
-  ];
-  panes.forEach((p, idx) => {
-    const el = document.getElementById(p);
-    if (el) el.style.display = (idx === index) ? 'block' : 'none';
-  });
-  document.querySelectorAll('.toolbox-subtab').forEach((btn, idx) => {
-    btn.classList.toggle('active', idx === index);
-  });
-}
-
-// ========================================================
-// 6. RENDER ALL VIEWS
-// ========================================================
-function renderAllViews() {
-  updateXpDisplays();
-  renderCalendarMatrix();
-  renderStudentsList();
-  renderKazanimlarView();
-  initHomeTickingTimer();
-  initCircularTimer();
-  renderGardenTree();
-  initKuraWheel();
-}
-
-function updateXpDisplays() {
-  const xpEl = document.getElementById('topHeaderXpText');
-  if (xpEl) xpEl.textContent = `Öğretmen (${PirtilState.xp} XP)`;
-}
-
-// --------------------------------------------------------
-// LIVE TIMERS
-// --------------------------------------------------------
-function initHomeTickingTimer() {
-  let secondsLeft = 18 * 60 + 45; // 18 dk 45 sn
-  const totalSeconds = 40 * 60; // 40 dk
-
-  setInterval(() => {
-    if (secondsLeft > 0) secondsLeft--;
-    const m = Math.floor(secondsLeft / 60);
-    const s = secondsLeft % 60;
-    const digitsEl = document.getElementById('homeTickingTimerDigits');
-    if (digitsEl) digitsEl.textContent = `${m} Dakika ${s.toString().padStart(2, '0')} Saniye`;
-
-    const percent = Math.min(100, Math.round(((totalSeconds - secondsLeft) / totalSeconds) * 100));
-    const percentEl = document.getElementById('homeTimerPercentText');
-    const barEl = document.getElementById('homeTimerProgressBar');
-    if (percentEl) percentEl.textContent = `%${percent} Tamamlandı`;
-    if (barEl) barEl.style.width = `${percent}%`;
-  }, 1000);
-}
-
-function initCircularTimer() {
-  let circularSeconds = 26 * 60 + 40;
-  setInterval(() => {
-    if (circularSeconds > 0) circularSeconds--;
-    const m = Math.floor(circularSeconds / 60);
-    const s = circularSeconds % 60;
-    const el = document.getElementById('circularTimerDisplay');
-    if (el) el.textContent = `${m}:${s.toString().padStart(2, '0')}`;
-  }, 1000);
-}
-
-// --------------------------------------------------------
-// TAB 2: KAZANIMLAR VIEW
-// --------------------------------------------------------
-function renderKazanimlarView() {
-  const container = document.getElementById('plansListContainer');
-  if (!container) return;
-
-  const searchVal = (document.getElementById('kazanimSearchInput')?.value || '').toLowerCase().trim();
-  let plans = PirtilState.annualPlans.filter(p => p.gradeId === PirtilState.activeGradeId);
-
-  if (plans.length === 0) {
-    plans = PirtilState.annualPlans;
-  }
-
-  if (searchVal) {
-    plans = plans.filter(p =>
-      (p.tema && p.tema.toLowerCase().includes(searchVal)) ||
-      (p.kazanimKodu && p.kazanimKodu.toLowerCase().includes(searchVal)) ||
-      (p.kazanimAciklama && p.kazanimAciklama.toLowerCase().includes(searchVal)) ||
-      (p.defterMetni && p.defterMetni.toLowerCase().includes(searchVal))
-    );
-  }
-
-  container.innerHTML = plans.map(p => `
-    <div class="plan-item-card">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <span class="plan-item-week-badge">${p.hafta}. Hafta • ${p.tarihAraligi || 'Ders Planı'}</span>
-        <button style="background:transparent; border:none; color:#00E5FF; font-size:11px; font-weight:700; cursor:pointer;" onclick="copyToClipboard('${(p.defterMetni || '').replace(/'/g, "\\'")}', 'Defter metni kopyalandı!')">📋 Kopyala</button>
-      </div>
-
-      <div class="plan-item-tema">${p.tema}</div>
-      <div class="plan-item-desc">
-        <strong>Öğrenme Çıktısı:</strong> ${p.kazanimAciklama || ''}
-      </div>
-
-      <div style="background:#07101E; padding:8px 10px; border-radius:10px; border-left:3px solid #00E5FF; margin-bottom:10px;">
-        <div style="font-size:10px; color:#94A3B8;">DEFTERE YAZILACAK İFADE:</div>
-        <div style="font-size:11.5px; color:#FFF; font-weight:500;">${p.defterMetni || ''}</div>
-      </div>
-
-      <button class="btn-print-plan" onclick="showToast('${p.hafta}. Hafta planı hazırlandı!'); playDingSound();">
-        🖨️ Haftalık Planı Hazırla & Yazdır
-      </button>
-    </div>
-  `).join('');
-}
-
-// --------------------------------------------------------
-// TAB 3: BAHÇEM (GÖREVLER & TREE CANVAS)
-// --------------------------------------------------------
-function toggleTask(cardEl, xpReward) {
-  const isCompleted = cardEl.classList.toggle('completed');
-  const circle = cardEl.querySelector('.task-checkbox-circle');
-  if (isCompleted) {
-    if (circle) circle.textContent = '✓';
-    PirtilState.addXp(xpReward);
-    playDingSound();
-  } else {
-    if (circle) circle.textContent = '';
-  }
-}
-
-function renderGardenTree() {
-  const canvas = document.getElementById('gardenTreeCanvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const w = canvas.width = canvas.parentElement.clientWidth - 24;
-  const h = canvas.height = 160;
-
-  ctx.clearRect(0, 0, w, h);
-
-  // Night gradient
-  const grad = ctx.createLinearGradient(0, 0, 0, h);
-  grad.addColorStop(0, '#040C1A');
-  grad.addColorStop(1, '#091B33');
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, w, h);
-
-  // Hill / Soil
-  ctx.beginPath();
-  ctx.ellipse(w / 2, h + 20, w * 0.7, 50, 0, 0, Math.PI * 2);
-  ctx.fillStyle = '#064E3B';
-  ctx.fill();
-
-  // Tree trunk
-  ctx.beginPath();
-  ctx.moveTo(w / 2 - 10, h - 20);
-  ctx.lineTo(w / 2 - 6, h - 80);
-  ctx.lineTo(w / 2 + 6, h - 80);
-  ctx.lineTo(w / 2 + 10, h - 20);
-  ctx.fillStyle = '#78350F';
-  ctx.fill();
-
-  // Foliage with radiant glow
-  const foliageRadius = 38;
-  const cx = w / 2;
-  const cy = h - 90;
-
-  ctx.shadowColor = '#00E5FF';
-  ctx.shadowBlur = 18;
-  ctx.beginPath();
-  ctx.arc(cx, cy, foliageRadius, 0, Math.PI * 2);
-  ctx.fillStyle = '#10B981';
-  ctx.fill();
-  ctx.shadowBlur = 0;
-
-  // Fruit or Maarif Light Sparkles
-  const fruits = [
-    {x: cx - 14, y: cy - 10},
-    {x: cx + 16, y: cy - 6},
-    {x: cx - 4, y: cy + 14},
-    {x: cx + 6, y: cy - 20}
-  ];
-  fruits.forEach(f => {
-    ctx.beginPath();
-    ctx.arc(f.x, f.y, 4, 0, Math.PI * 2);
-    ctx.fillStyle = '#FBBF24';
-    ctx.fill();
-  });
-}
-
-// --------------------------------------------------------
-// TAB 4: SINIFIM (CALENDAR MATRIX & STUDENTS)
-// --------------------------------------------------------
-function renderCalendarMatrix() {
-  const grid = document.getElementById('calendarMatrixGrid');
-  if (!grid) return;
-
-  const cells = [];
-  for (let i = 1; i <= 28; i++) {
-    let colorClass = 'cal-color-1';
-    if (i % 3 === 0) colorClass = 'cal-color-2';
-    else if (i % 4 === 0) colorClass = 'cal-color-3';
-
-    cells.push(`<div class="cal-day-cell ${colorClass}">${i}</div>`);
-  }
-  grid.innerHTML = cells.join('');
-}
-
-function renderStudentsList() {
-  const container = document.getElementById('studentsListContainer');
-  if (!container) return;
-
-  const currentClass = PirtilState.classrooms[0];
-  if (!currentClass) return;
-
-  container.innerHTML = currentClass.students.map(s => `
-    <div class="student-row">
-      <div class="student-badge-no">${s.no}</div>
-      <div class="student-info-col">
-        <div class="student-name">${s.name}</div>
-        <div class="student-score">Puan: +${s.plus} / -${s.minus}</div>
-      </div>
-      <div class="attendance-pills-group">
-        <button class="att-pill ${s.status === 'geldi' ? 'active-g' : ''}" onclick="setStudentStatus(${s.id}, 'geldi')">G</button>
-        <button class="att-pill ${s.status === 'yok' ? 'active-y' : ''}" onclick="setStudentStatus(${s.id}, 'yok')">Y</button>
-        <button class="att-pill ${s.status === 'gec' ? 'active-gc' : ''}" onclick="setStudentStatus(${s.id}, 'gec')">GÇ</button>
-        <button class="att-pill ${s.status === 'izinli' ? 'active-i' : ''}" onclick="setStudentStatus(${s.id}, 'izinli')">İ</button>
-      </div>
-    </div>
-  `).join('');
-}
-
-function setStudentStatus(studentId, status) {
-  const currentClass = PirtilState.classrooms[0];
-  if (!currentClass) return;
-  const s = currentClass.students.find(st => st.id === studentId);
-  if (s) {
-    s.status = status;
-    saveClassrooms();
-    renderStudentsList();
-    showToast(`${s.name}: ${status.toUpperCase()} işaretlendi.`);
-  }
-}
-
-// --------------------------------------------------------
-// MODAL: ADİL KURA ÇARKI (PlayStore 05)
-// --------------------------------------------------------
-function initKuraWheel() {
-  const canvas = document.getElementById('kuraWheelCanvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const w = canvas.width;
-  const h = canvas.height;
-  const colors = ['#EC4899', '#10B981', '#F59E0B', '#06B6D4', '#8B5CF6', '#FBBF24'];
-  const segments = 6;
-  const anglePer = (Math.PI * 2) / segments;
-
-  for (let i = 0; i < segments; i++) {
-    ctx.beginPath();
-    ctx.moveTo(w / 2, h / 2);
-    ctx.arc(w / 2, h / 2, w / 2 - 4, i * anglePer, (i + 1) * anglePer);
-    ctx.closePath();
-    ctx.fillStyle = colors[i % colors.length];
-    ctx.fill();
-    ctx.stroke();
-  }
-}
-
-let isSpinning = false;
-function spinKuraWheel() {
-  if (isSpinning) return;
-  isSpinning = true;
-  playDingSound();
-
-  const canvas = document.getElementById('kuraWheelCanvas');
-  let currentRotation = 0;
-  const totalSpins = 360 * 4 + Math.floor(Math.random() * 360);
-  const startTime = performance.now();
-  const duration = 2200;
-
-  function animate(now) {
-    const elapsed = now - startTime;
-    const progress = Math.min(1, elapsed / duration);
-    const easeOut = 1 - Math.pow(1 - progress, 3);
-    currentRotation = totalSpins * easeOut;
-
-    if (canvas) {
-      canvas.style.transform = `rotate(${currentRotation}deg)`;
-      canvas.style.transition = 'none';
-    }
-
-    if (progress < 1) {
-      requestAnimationFrame(animate);
-    } else {
-      isSpinning = false;
-      const currentClass = PirtilState.classrooms[0];
-      const students = currentClass ? currentClass.students : [];
-      const winner = students[Math.floor(Math.random() * students.length)] || { name: 'Ahmet Faruk Yılmaz', no: '104' };
-
-      const disp = document.getElementById('kuraSelectedStudentDisplay');
-      if (disp) disp.innerHTML = `🎯 <strong>Seçilen:</strong> ${winner.name} (No: ${winner.no})`;
-      playSchoolBell();
-      showToast(`🎉 Kura Kazananı: ${winner.name}!`);
+    // Canlı Ders Sayacı
+    const countEl = document.getElementById('activeLessonCountdown');
+    if (countEl) {
+      const curMin = now.getMinutes();
+      const rem = 40 - (curMin % 40);
+      countEl.textContent = `Zile: ${rem} dk`;
     }
   }
-  requestAnimationFrame(animate);
-}
 
-// --------------------------------------------------------
-// TAB 5: EK DERS & EVRAK
-// --------------------------------------------------------
-function calculateEkDers() {
-  const regHours = parseFloat(document.getElementById('ekDersRegular')?.value || '18') || 0;
-  const nightHours = parseFloat(document.getElementById('ekDersNight')?.value || '0') || 0;
-  const duty = document.getElementById('ekDersDuty')?.checked ? 3 : 0;
-  const club = document.getElementById('ekDersClub')?.checked ? 2 : 0;
-  const dyk = document.getElementById('ekDersDyk')?.checked;
-  const special = document.getElementById('ekDersSpecial')?.checked;
+  // --- 4. TAB NAVIGATION & MODAL CONTROLS ---
+  window.switchMainTab = function (tabId) {
+    playSynthesizedSound('click');
+    const panels = document.querySelectorAll('.view-panel');
+    panels.forEach(p => p.classList.remove('active'));
 
-  let totalWeekly = regHours + nightHours + duty + club;
-  let mult = 1.0;
-  if (dyk) mult *= 2.0;
-  if (special) mult *= 1.25;
+    const navBtns = document.querySelectorAll('.bottom-nav-btn');
+    navBtns.forEach(b => b.classList.remove('active'));
 
-  const unitRate = 145.45; // MEB 2026 tahmini ek ders saat ücreti
-  const monthlyHours = totalWeekly * 4.2;
-  const totalAmount = Math.round(monthlyHours * unitRate * mult);
+    const targetPanel = document.getElementById(`panel${tabId}`);
+    if (targetPanel) targetPanel.classList.add('active');
 
-  const totalEl = document.getElementById('ekDersTotalMoney');
-  const weeklyEl = document.getElementById('ekDersWeeklyHours');
-  const monthlyEl = document.getElementById('ekDersMonthlyHours');
+    const targetBtn = document.getElementById(`navBtn${tabId}`);
+    if (targetBtn) targetBtn.classList.add('active');
 
-  if (totalEl) totalEl.textContent = `₺ ${totalAmount.toLocaleString('tr-TR')}`;
-  if (weeklyEl) weeklyEl.textContent = `${totalWeekly.toFixed(1)} Saat / Hafta`;
-  if (monthlyEl) monthlyEl.textContent = `${monthlyHours.toFixed(1)} Saat / Ay`;
-}
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-function downloadDocTemplate() {
-  const content = `
-T.C. MİLLÎ EĞİTİM BAKANLIĞI
-CUMHURİYET ORTAOKULU MÜDÜRLÜĞÜ
-2026-2027 Sene Başı Zümre Tutanağı
+  window.openModal = function (modalId) {
+    playSynthesizedSound('click');
+    const m = document.getElementById(modalId);
+    if (m) m.classList.add('active');
+  };
 
-2026-2027 Eğitim Öğretim Yılı sene başı zümre toplantısı Türkiye Yüzyılı Maarif Modeli esasları doğrultusunda okul zümre odasında gerçekleştirilmiştir.
-Alınan kararlar doğrultusunda öğrenme çıktıları tematik takvime bağlanmıştır.
-  `.trim();
+  window.closeModal = function (modalId) {
+    playSynthesizedSound('click');
+    const m = document.getElementById(modalId);
+    if (m) m.classList.remove('active');
+  };
 
-  const blob = new Blob([content], { type: 'application/msword;charset=utf-8' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = '2026-2027_Sene_Basi_Zumre_Tutanagi.doc';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  showToast('📄 Word tutanak şablonu indirildi!');
-}
+  // --- 5. TOP HEADER & PROFILE RENDERING ---
+  function renderHeaderProfile() {
+    const nameEl = document.getElementById('headerTeacherName');
+    const branchEl = document.getElementById('headerTeacherBranch');
+    const schoolEl = document.getElementById('headerTeacherSchool');
+    const mascotImg = document.getElementById('headerMascotImg');
+    const centerImg = document.getElementById('centerMascotImg');
 
-// --------------------------------------------------------
-// MODALS LOGIC
-// --------------------------------------------------------
-function openModal(modalId) {
-  const modal = document.getElementById(modalId);
-  if (modal) modal.classList.add('active');
-}
+    if (nameEl) nameEl.textContent = teacherProfile.name;
+    if (branchEl) branchEl.textContent = teacherProfile.branch;
+    if (schoolEl) schoolEl.textContent = teacherProfile.school;
 
-function closeModal(modalId) {
-  const modal = document.getElementById(modalId);
-  if (modal) modal.classList.remove('active');
-}
+    const mascotPath = `./assets/${teacherProfile.mascot || 'pirtilcan_selcuklu_turkuaz.png'}`;
+    if (mascotImg) mascotImg.src = mascotPath;
+    if (centerImg) centerImg.src = mascotPath;
 
-function handlePirtilcanChat() {
-  const input = document.getElementById('pirtilChatInput');
-  const box = document.getElementById('pirtilChatMessages');
-  if (!input || !box) return;
+    // Nöbet
+    const dutyPill = document.getElementById('cardDutyLocationText');
+    const dutyShort = document.getElementById('storyDutyShort');
+    if (dutyPill) dutyPill.textContent = `Nöbet: ${dutyInfo.location}`;
+    if (dutyShort) dutyShort.textContent = dutyInfo.location.split(' ')[0] || '2. Kat';
 
-  const text = input.value.trim();
-  if (!text) return;
-
-  // Add user bubble
-  const userDiv = document.createElement('div');
-  userDiv.style.cssText = 'background:#1E293B; color:#FFF; padding:8px 10px; border-radius:10px; font-size:11.5px; align-self:flex-end; max-width:85%;';
-  userDiv.textContent = text;
-  box.appendChild(userDiv);
-  input.value = '';
-
-  // Smart auto response
-  setTimeout(() => {
-    let reply = 'Sorunuzu Maarif Modeli ve MEB mevzuatı doğrultusunda inceliyorum...';
-    const lower = text.toLowerCase();
-    if (lower.includes('ek ders') || lower.includes('ücret')) {
-      reply = 'Haftalık ek dersiniz ve nöbet/kulüp saatleriniz Alet Çantası sekmesinde otomatik hesaplanmaktadır.';
-    } else if (lower.includes('kazanım') || lower.includes('plan')) {
-      reply = 'Bu haftanın kazanımı: T.8.3.13. Cümlenin temel ögelerini belirler. Kazanımlar sekmesinden detaylı planı yazdırabilirsiniz.';
-    } else if (lower.includes('nöbet')) {
-      reply = 'Nöbet göreviniz: Çarşamba günü 2. Kat Koridor & Merdivenler olarak kayıtlıdır.';
-    } else if (lower.includes('defter')) {
-      reply = 'Defter metni: "Cümlenin ögelerine giriş yapıldı; yüklem ve özne bulma stratejileri uygulandı." tek tıkla kopyalayabilirsiniz.';
-    }
-
-    const botDiv = document.createElement('div');
-    botDiv.style.cssText = 'background:#0C2033; border:1px solid #00E5FF; color:#E0F2FE; padding:8px 10px; border-radius:10px; font-size:11.5px; max-width:88%;';
-    botDiv.innerHTML = `🐛 <strong>Pırtılcan:</strong> ${reply}`;
-    box.appendChild(botDiv);
-    box.scrollTop = box.scrollHeight;
-    playDingSound();
-  }, 400);
-}
-
-// --------------------------------------------------------
-// STARRY BACKGROUND CANVAS
-// --------------------------------------------------------
-function initStarryBackground() {
-  const canvas = document.getElementById('starryBackgroundCanvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-
-  function resize() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  const stars = Array.from({ length: 45 }).map(() => ({
-    x: Math.random(),
-    y: Math.random(),
-    r: Math.random() * 1.5 + 0.6,
-    speed: Math.random() * 0.02 + 0.01
-  }));
-
-  let tick = 0;
-  function draw() {
-    tick += 0.02;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    ctx.fillStyle = '#060D1A';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    stars.forEach((s, idx) => {
-      const alpha = 0.3 + Math.sin(tick + idx) * 0.35;
-      ctx.beginPath();
-      ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0.1, alpha)})`;
-      ctx.fill();
-    });
-
-    requestAnimationFrame(draw);
-  }
-  draw();
-}
-
-// --------------------------------------------------------
-// PWA INITIALIZATION
-// --------------------------------------------------------
-let deferredPrompt = null;
-function initPWA() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log('[PWA] ServiceWorker registered.'))
-      .catch(err => console.warn('[PWA] SW registration failed:', err));
-  }
-
-  window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    const banner = document.getElementById('pwaInstallBanner');
-    if (banner) banner.classList.add('show');
-  });
-
-  const installBtn = document.getElementById('pwaInstallBtn');
-  if (installBtn) {
-    installBtn.addEventListener('click', () => {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then(() => {
-          deferredPrompt = null;
-          const banner = document.getElementById('pwaInstallBanner');
-          if (banner) banner.classList.remove('show');
-        });
+    // Duvar Kağıdı
+    const wpLayer = document.getElementById('appWallpaperLayer');
+    if (wpLayer) {
+      if (teacherProfile.wallpaper && teacherProfile.wallpaper !== 'none') {
+        wpLayer.style.backgroundImage = `url('./assets/wallpapers/${teacherProfile.wallpaper}')`;
+        wpLayer.style.opacity = '0.40';
+      } else {
+        wpLayer.style.backgroundImage = 'none';
+        wpLayer.style.opacity = '0';
       }
+    }
+  }
+
+  // --- 6. SCHEDULE (DERS PROGRAMI) RENDERING ---
+  window.switchScheduleDay = function (dayNum) {
+    playSynthesizedSound('click');
+    activeScheduleDay = dayNum;
+
+    const tabs = document.querySelectorAll('.schedule-day-tab');
+    tabs.forEach(t => {
+      if (t.getAttribute('data-day') == dayNum) t.classList.add('active');
+      else t.classList.remove('active');
     });
+
+    renderScheduleList();
+  };
+
+  function renderScheduleList() {
+    const listContainer = document.getElementById('scheduleListContainer');
+    if (!listContainer) return;
+
+    const dayItems = scheduleList.filter(s => s.day === activeScheduleDay).sort((a, b) => a.period - b.period);
+
+    if (dayItems.length === 0) {
+      listContainer.innerHTML = `
+        <div style="text-align:center; padding:20px; color:var(--text-muted); font-size:13px;">
+          Bu gün için kayıtlı ders saati bulunmuyor. Düzenle butonundan ders ekleyebilirsiniz.
+        </div>
+      `;
+      return;
+    }
+
+    listContainer.innerHTML = dayItems.map(item => `
+      <div class="schedule-item-row">
+        <div class="schedule-period-badge">${item.period}</div>
+        <div class="schedule-item-info">
+          <div class="schedule-item-subject">${item.subject}</div>
+          <div class="schedule-item-sub">
+            <span>Sınıf: <strong>${item.className}</strong></span>
+            <span>•</span>
+            <span>${item.room || 'Derslik'}</span>
+          </div>
+        </div>
+        <div class="schedule-item-time">${item.time}</div>
+      </div>
+    `).join('');
   }
-}
 
-// --------------------------------------------------------
-// INIT ON DOM READY
-// --------------------------------------------------------
-document.addEventListener('DOMContentLoaded', () => {
-  initStarryBackground();
-  initPWA();
-  loadAllData();
-  calculateEkDers();
+  // --- 7. CURRICULUM (MAARİF MODELİ MÜFREDATI) RENDERING ---
+  let curriculumGradeCache = {};
 
-  const searchInput = document.getElementById('kazanimSearchInput');
-  if (searchInput) {
-    searchInput.addEventListener('input', renderKazanimlarView);
+  async function loadGradeData(grade) {
+    if (curriculumGradeCache[grade]) return curriculumGradeCache[grade];
+    try {
+      const res = await fetch(`./assets/curriculum/grade_${grade}.json`);
+      if (res.ok) {
+        const data = await res.json();
+        curriculumGradeCache[grade] = data;
+        return data;
+      }
+    } catch (_) {}
+    return [];
   }
 
-  const params = new URLSearchParams(window.location.search);
-  const targetTab = params.get('tab');
-  if (targetTab) switchTab(targetTab);
-});
+  window.onGradeChange = async function () {
+    const grade = document.getElementById('curriculumGradeSelect').value;
+    const items = await loadGradeData(grade);
+
+    // Branşları topla
+    const subjects = [...new Set(items.map(i => i.subject).filter(Boolean))].sort();
+    const subjSelect = document.getElementById('curriculumSubjectSelect');
+    if (subjSelect) {
+      subjSelect.innerHTML = subjects.map((s, idx) => `<option value="${s}" ${idx === 0 ? 'selected' : ''}>${s}</option>`).join('');
+    }
+
+    // 1-36 Hafta
+    const weekSelect = document.getElementById('curriculumWeekSelect');
+    if (weekSelect && weekSelect.children.length === 0) {
+      let weekHtml = '';
+      for (let w = 1; w <= 36; w++) {
+        weekHtml += `<option value="${w}" ${w === 6 ? 'selected' : ''}>${w}. Hafta</option>`;
+      }
+      weekSelect.innerHTML = weekHtml;
+    }
+
+    renderCurriculumOutcomes();
+  };
+
+  window.onSubjectChange = function () {
+    renderCurriculumOutcomes();
+  };
+
+  window.onWeekChange = function () {
+    renderCurriculumOutcomes();
+  };
+
+  window.onCurriculumSearch = function (query) {
+    renderCurriculumOutcomes(query.toLowerCase());
+  };
+
+  async function renderCurriculumOutcomes(filterQuery = '') {
+    const listEl = document.getElementById('curriculumOutcomesList');
+    if (!listEl) return;
+
+    const grade = document.getElementById('curriculumGradeSelect')?.value || '7';
+    const subj = document.getElementById('curriculumSubjectSelect')?.value || '';
+    const week = parseInt(document.getElementById('curriculumWeekSelect')?.value || '6', 10);
+
+    const allForGrade = await loadGradeData(grade);
+    let filtered = allForGrade.filter(i => {
+      const sMatch = !subj || i.subject.toLowerCase() === subj.toLowerCase();
+      const wMatch = i.weekNumber === week;
+      return sMatch && wMatch;
+    });
+
+    if (filterQuery) {
+      filtered = allForGrade.filter(i => {
+        const text = `${i.theme} ${i.code} ${i.title} ${i.suggestions} ${i.subject}`.toLowerCase();
+        return text.includes(filterQuery);
+      });
+    }
+
+    if (filtered.length === 0) {
+      listEl.innerHTML = `
+        <div style="text-align:center; padding:24px; color:var(--text-muted); font-size:13px;">
+          Seçilen kriterlere uygun öğrenme çıktısı bulunamadı.
+        </div>
+      `;
+      return;
+    }
+
+    listEl.innerHTML = filtered.map(item => {
+      const procs = (item.processComponents || []).map(p => `<li>${p}</li>`).join('');
+      return `
+        <div class="outcome-detail-card">
+          <div class="outcome-header-row">
+            <span class="outcome-code-badge">${item.code || 'ÖÇ'}</span>
+            <span class="outcome-theme-badge">${item.theme || 'Maarif Modeli'}</span>
+          </div>
+          <div class="outcome-title-text">${item.title}</div>
+          ${procs ? `<ul class="process-components-list">${procs}</ul>` : ''}
+          ${item.suggestions ? `<div style="font-size:11.5px; color:var(--neon-gold); margin-top:6px;"><strong>Etkinlik / Öneri:</strong> ${item.suggestions}</div>` : ''}
+        </div>
+      `;
+    }).join('');
+  }
+
+  // --- 8. CLASSROOM & ATTENDANCE RENDERING ---
+  function renderClassroomView() {
+    const tabsContainer = document.getElementById('classroomTabsContainer');
+    if (!tabsContainer) return;
+
+    const classes = Object.keys(classroomData);
+    tabsContainer.innerHTML = classes.map(c => `
+      <button class="class-tab-btn ${c === activeClassKey ? 'active' : ''}" onclick="switchClass('${c}')">
+        ${c}
+      </button>
+    `).join('');
+
+    renderStudentsList();
+    renderSeatingPlan();
+  }
+
+  window.switchClass = function (className) {
+    playSynthesizedSound('click');
+    activeClassKey = className;
+    renderClassroomView();
+  };
+
+  function renderStudentsList() {
+    const listEl = document.getElementById('studentListContainer');
+    if (!listEl) return;
+
+    const students = classroomData[activeClassKey] || [];
+
+    // İstatistikler
+    let total = students.length;
+    let present = students.filter(s => s.status === 'geldi').length;
+    let absent = students.filter(s => s.status === 'gelmedi').length;
+    let late = students.filter(s => s.status === 'gec').length;
+
+    document.getElementById('attTotalCount').textContent = total;
+    document.getElementById('attPresentCount').textContent = present;
+    document.getElementById('attAbsentCount').textContent = absent;
+    document.getElementById('attLateCount').textContent = late;
+
+    listEl.innerHTML = students.map((s, idx) => `
+      <div class="student-card-row">
+        <div class="student-info-left">
+          <span class="student-number-pill">${s.num}</span>
+          <span class="student-name-text">${s.name}</span>
+          <div style="display:flex; align-items:center; gap:4px; margin-left:6px;">
+            <button onclick="changeStudentPoints('${s.id}', 1)" style="background:none; border:none; color:var(--neon-cyan); cursor:pointer; font-weight:bold;">+</button>
+            <span style="font-size:11px; color:var(--neon-gold);">${s.plus || 0}</span>
+            <button onclick="changeStudentPoints('${s.id}', -1)" style="background:none; border:none; color:var(--danger-red); cursor:pointer; font-weight:bold;">-</button>
+          </div>
+        </div>
+        <div class="student-status-actions">
+          <button class="btn-status-pill geldi ${s.status === 'geldi' ? 'active' : ''}" onclick="setStudentStatus('${s.id}', 'geldi')">Geldi</button>
+          <button class="btn-status-pill gelmedi ${s.status === 'gelmedi' ? 'active' : ''}" onclick="setStudentStatus('${s.id}', 'gelmedi')">Yok</button>
+          <button class="btn-status-pill gec ${s.status === 'gec' ? 'active' : ''}" onclick="setStudentStatus('${s.id}', 'gec')">Geç</button>
+          <button class="btn-status-pill izinli ${s.status === 'izinli' ? 'active' : ''}" onclick="setStudentStatus('${s.id}', 'izinli')">İzinli</button>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  window.setStudentStatus = function (id, status) {
+    playSynthesizedSound('click');
+    const students = classroomData[activeClassKey] || [];
+    const target = students.find(s => s.id === id);
+    if (target) {
+      target.status = status;
+      localStorage.setItem(STORAGE_KEYS.CLASSES, JSON.stringify(classroomData));
+      renderStudentsList();
+    }
+  };
+
+  window.changeStudentPoints = function (id, delta) {
+    const students = classroomData[activeClassKey] || [];
+    const target = students.find(s => s.id === id);
+    if (target) {
+      target.plus = Math.max(0, (target.plus || 0) + delta);
+      playSynthesizedSound(delta > 0 ? 'chime' : 'click');
+      localStorage.setItem(STORAGE_KEYS.CLASSES, JSON.stringify(classroomData));
+      renderStudentsList();
+    }
+  };
+
+  window.switchClassView = function (mode) {
+    playSynthesizedSound('click');
+    const listEl = document.getElementById('studentListContainer');
+    const seatEl = document.getElementById('seatingPlanContainer');
+    const btnList = document.getElementById('btnViewList');
+    const btnSeat = document.getElementById('btnViewSeating');
+
+    if (mode === 'seating') {
+      listEl.style.display = 'none';
+      seatEl.style.display = 'block';
+      btnList.classList.remove('active');
+      btnSeat.classList.add('active');
+    } else {
+      listEl.style.display = 'flex';
+      seatEl.style.display = 'none';
+      btnList.classList.add('active');
+      btnSeat.classList.remove('active');
+    }
+  };
+
+  function renderSeatingPlan() {
+    const gridEl = document.getElementById('seatingChartGrid');
+    if (!gridEl) return;
+
+    const students = classroomData[activeClassKey] || [];
+    let html = '';
+    for (let i = 0; i < 12; i += 2) {
+      const s1 = students[i] ? `${students[i].num} - ${students[i].name}` : 'Boş Sıra';
+      const s2 = students[i + 1] ? `${students[i + 1].num} - ${students[i + 1].name}` : 'Boş Sıra';
+      html += `
+        <div class="desk-pair-box">
+          <div class="desk-seat" title="${s1}">${s1}</div>
+          <div class="desk-seat" title="${s2}">${s2}</div>
+        </div>
+      `;
+    }
+    gridEl.innerHTML = html;
+  }
+
+  window.copyAttendanceToClipboard = function () {
+    const students = classroomData[activeClassKey] || [];
+    const absent = students.filter(s => s.status === 'gelmedi').map(s => `${s.num} ${s.name}`).join(', ');
+    const late = students.filter(s => s.status === 'gec').map(s => `${s.num} ${s.name}`).join(', ');
+
+    const text = `Sınıf: ${activeClassKey}\nMevcut: ${students.length}\nGeldi: ${students.filter(s => s.status === 'geldi').length}\nGelmedi (Yok): ${absent || 'Yok'}\nGeç Kalan: ${late || 'Yok'}\n(Tarih: ${new Date().toLocaleDateString('tr-TR')})`;
+    navigator.clipboard.writeText(text);
+    playSynthesizedSound('chime');
+    alert('e-Okul Uyumlu Yoklama Özeti Panoya Kopyalandı!');
+  };
+
+  // --- 9. OFFICIAL DOCUMENTS (MEB RESMİ EVRAK) RENDERING ---
+  let currentDocCategory = 'Tümü';
+
+  function renderOfficialDocuments(searchQuery = '') {
+    const gridEl = document.getElementById('docTemplatesGrid');
+    const scrollEl = document.getElementById('docCategoryScroll');
+    if (!gridEl) return;
+
+    const docs = window.PIRTIL_OFFICIAL_DOCUMENTS || [];
+
+    // Kategorileri topla
+    const cats = ['Tümü', ...new Set(docs.map(d => d.category).filter(Boolean))];
+    if (scrollEl && scrollEl.children.length === 0) {
+      scrollEl.innerHTML = cats.map(c => `
+        <button class="doc-cat-pill ${c === currentDocCategory ? 'active' : ''}" onclick="switchDocCat('${c}')">
+          ${c}
+        </button>
+      `).join('');
+    }
+
+    let filtered = docs;
+    if (currentDocCategory !== 'Tümü') {
+      filtered = filtered.filter(d => d.category === currentDocCategory);
+    }
+    if (searchQuery) {
+      filtered = filtered.filter(d => `${d.title} ${d.subtitle} ${d.category}`.toLowerCase().includes(searchQuery.toLowerCase()));
+    }
+
+    gridEl.innerHTML = filtered.map(doc => `
+      <div class="doc-template-card" onclick="openDocEditor('${doc.id}')">
+        <div class="doc-top-info">
+          <div class="doc-icon-box">${doc.icon || '📄'}</div>
+          <div>
+            <div class="doc-title-text">${doc.title}</div>
+            <div class="doc-subtitle-text">${doc.subtitle || ''}</div>
+          </div>
+        </div>
+        <div style="font-size:11px; font-weight:700; color:var(--neon-cyan); margin-top:8px;">
+          Düzenle & A4 Çıktı Al ▸
+        </div>
+      </div>
+    `).join('');
+  }
+
+  window.switchDocCat = function (cat) {
+    playSynthesizedSound('click');
+    currentDocCategory = cat;
+    const pills = document.querySelectorAll('.doc-cat-pill');
+    pills.forEach(p => {
+      if (p.textContent.trim() === cat) p.classList.add('active');
+      else p.classList.remove('active');
+    });
+    renderOfficialDocuments();
+  };
+
+  window.onDocSearch = function (val) {
+    renderOfficialDocuments(val);
+  };
+
+  window.openDocEditor = function (docId) {
+    const docs = window.PIRTIL_OFFICIAL_DOCUMENTS || [];
+    const doc = docs.find(d => d.id === docId);
+    if (!doc) return;
+
+    activeOfficialDoc = doc;
+    document.getElementById('docEditorModalTitle').textContent = `📄 ${doc.title}`;
+    document.getElementById('docEditTitle').value = doc.title;
+    document.getElementById('docEditLegalBasis').value = doc.legalBasis || 'MEB Eğitim Kurumları Mevzuatı';
+    document.getElementById('docEditAgenda').value = doc.defaultAgenda || '';
+    document.getElementById('docEditDecisions').value = doc.defaultDecisions || '';
+
+    window.openModal('modalDocEdit');
+  };
+
+  window.printActiveOfficialDocument = function () {
+    if (!activeOfficialDoc) return;
+    const title = document.getElementById('docEditTitle').value;
+    const legal = document.getElementById('docEditLegalBasis').value;
+    const agenda = document.getElementById('docEditAgenda').value;
+    const decisions = document.getElementById('docEditDecisions').value;
+    const nowStr = new Date().toLocaleDateString('tr-TR');
+
+    const printSec = document.getElementById('printSection');
+    printSec.innerHTML = `
+      <div style="text-align:center; margin-bottom:20px; border-bottom:2px solid #000; padding-bottom:10px;">
+        <h2 style="margin:0; font-size:16pt;">T.C. MİLLÎ EĞİTİM BAKANLIĞI</h2>
+        <h3 style="margin:4px 0; font-size:14pt;">${teacherProfile.school.toUpperCase()}</h3>
+        <h4 style="margin:8px 0; font-size:13pt; text-decoration:underline;">${title}</h4>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-bottom:14px; font-size:11pt;">
+        <div><strong>Öğretmen:</strong> ${teacherProfile.name} (${teacherProfile.branch})</div>
+        <div><strong>Tarih:</strong> ${nowStr}</div>
+      </div>
+      <div style="margin-bottom:14px;"><strong>Yasal Dayanak:</strong> ${legal}</div>
+      <hr style="border:0.5px solid #ccc; margin:12px 0;">
+      <h4 style="margin:8px 0;">GÜNDEM MADDELERİ:</h4>
+      <div style="white-space:pre-wrap; font-size:11pt; line-height:1.6; margin-bottom:16px;">${agenda}</div>
+      <h4 style="margin:8px 0;">ALINAN KARARLAR VE DEĞERLENDİRME:</h4>
+      <div style="white-space:pre-wrap; font-size:11pt; line-height:1.6; margin-bottom:30px;">${decisions}</div>
+      <div style="display:flex; justify-content:space-between; margin-top:50px;">
+        <div style="text-align:center;">
+          <div>${teacherProfile.name}</div>
+          <div>Ders Öğretmeni</div>
+          <div style="margin-top:20px;">İmza: ........................</div>
+        </div>
+        <div style="text-align:center;">
+          <div>Okul Müdürü</div>
+          <div>Mühür / Onay</div>
+          <div style="margin-top:20px;">İmza: ........................</div>
+        </div>
+      </div>
+    `;
+
+    window.print();
+  };
+
+  window.copyActiveDocToClipboard = function () {
+    const title = document.getElementById('docEditTitle').value;
+    const agenda = document.getElementById('docEditAgenda').value;
+    const decisions = document.getElementById('docEditDecisions').value;
+    const text = `${title}\n\nÖğretmen: ${teacherProfile.name} - ${teacherProfile.school}\n\nGÜNDEM MADDELERİ:\n${agenda}\n\nALINAN KARARLAR:\n${decisions}`;
+    navigator.clipboard.writeText(text);
+    playSynthesizedSound('chime');
+    alert('Resmi Evrak Metni Panoya Kopyalandı!');
+  };
+
+  // --- 10. PIRTILCAN ÖĞRETMEN ÇANTASI (TOOLS HUB) RENDERING ---
+  const TOOLS_HUB_ITEMS = [
+    { id: 'digital_bag', icon: '🎒', title: 'Dijital Çanta (109 Portal)', sub: 'MEB, e-Okul, EBA, TÜBİTAK ve 100+ eğitim portalı' },
+    { id: 'qr_studio', icon: '📷', title: 'Karekod Stüdyosu', sub: 'Renkli, logolu ders bağlantısı ve ödev karekod üreticisi' },
+    { id: 'pomodoro', icon: '⏱️', title: 'Zaman-ı Maarif & Ders Zili', sub: '40 dk ders, 10 dk teneffüs ve MEB zil sesleriyle akıllı saat' },
+    { id: 'lottery_wheel', icon: '🎯', title: 'Adil Kura Çarkı', sub: 'Sınıftan tarafsız ve animasyonlu öğrenci seçimi' },
+    { id: 'group_builder', icon: '👥', title: 'Grup Kurucu', sub: 'İşbirlikçi öğrenme rolleriyle dengeli çalışma takımları' },
+    { id: 'ek_ders', icon: '₺', title: 'Ek Ders & Nöbet Sihirbazı', sub: '2026 MEB katsayıları, DYK, nöbet ve net bordro hesabı' },
+    { id: 'exam_rubric', icon: '📊', title: 'Sınav Notu & Barem', sub: '100 puan soru baremi, rubrik ve e-Okul ortalaması' },
+    { id: 'meb_calendar', icon: '📅', title: 'MEB Takvimi 2026-2027', sub: 'Ara tatiller, yarıyıl tatili, LGS ve YKS sayaçları' },
+    { id: 'poetry', icon: '📜', title: 'Şiir Antolojisi', sub: 'Türk ve Dünya Edebiyatı başyapıt şiirleri ve ezber defteri' },
+    { id: 'dictionary', icon: '📖', title: 'Maarif Lugatı & Sözlük', sub: 'TDK Güncel Türkçe Sözlük ve etimolojik köken arama' },
+    { id: 'duty_guide', icon: '🚩', title: 'Nöbet & Tören Rehberi', sub: 'Bayrak töreni akışı, İstiklal Marşı ve nöbet yönergeleri' },
+    { id: 'student_card', icon: '📤', title: 'Veli & Başarı Kartı', sub: 'Haftanın öğrencisi tebrik belgesi ve görsel karne üretici' },
+    { id: 'lesson_prep', icon: '📋', title: 'Derse Hazırlık Rutini', sub: 'Yoklama, tahta, materyal ve sınıf havalandırma kontrolü' },
+    { id: 'recovery_tracker', icon: '📑', title: 'Telafi Takipçisi', sub: 'Devamsız veya eksiği olan öğrencilerin kazanım defteri' },
+    { id: 'leave_tracker', icon: '📅', title: 'İzin & Mazeret Günlüğü', sub: 'Yıllık 10 günlük mazeret izni ve sevk takip günlüğü' },
+    { id: 'pedagogy_methods', icon: '🎯', title: 'Öğretim Yöntemleri', sub: 'İstasyon, altı şapka, balık kılçığı aktif öğrenme kılavuzu' },
+    { id: 'hand_counter', icon: '📿', title: 'Sınıfiçi El Sayacı', sub: 'Ders etkinliği ve zikir için dokunmatik sayaç' },
+    { id: 'pitrak_nusha_tool', icon: '📝', title: 'Pıtrak Nüsha Sınav Atölyesi', sub: 'Soru bankası ve test kağıdı hazırlama atölyesi' }
+  ];
+
+  function renderToolsHubGrid() {
+    const gridEl = document.getElementById('toolsHubGrid');
+    if (!gridEl) return;
+
+    gridEl.innerHTML = TOOLS_HUB_ITEMS.map(item => `
+      <div class="tool-hub-card" onclick="openToolDetail('${item.id}')">
+        <div class="tool-hub-icon">${item.icon}</div>
+        <div class="tool-hub-title">${item.title}</div>
+        <div class="tool-hub-subtitle">${item.sub}</div>
+      </div>
+    `).join('');
+  }
+
+  window.openToolDetail = function (toolId) {
+    const modalBox = document.getElementById('toolContainerBox');
+    const modalTitle = document.getElementById('toolContainerTitle');
+    const modalBody = document.getElementById('toolContainerBody');
+    if (!modalBody) return;
+
+    playSynthesizedSound('click');
+    window.closeModal('modalToolsHub');
+
+    if (toolId === 'digital_bag') {
+      modalTitle.textContent = '🎒 Öğretmenin Dijital Çantası (109 Portal)';
+      const sites = window.PIRTIL_DIGITAL_BAG_SITES || [];
+      modalBody.innerHTML = `
+        <div style="margin-bottom:12px;">
+          <input type="text" class="form-control" placeholder="Eğitim portalı ara..." oninput="filterDigitalBag(this.value)">
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:10px;" id="digitalBagGrid">
+          ${sites.map(s => `
+            <a href="${s.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;" class="tool-hub-card">
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:22px;">${s.icon || '🌐'}</span>
+                <span style="font-size:10px; background:rgba(0,245,212,0.15); color:var(--neon-cyan); padding:2px 6px; border-radius:6px; font-weight:700;">${s.badge}</span>
+              </div>
+              <div style="font-size:13px; font-weight:700; color:#FFF;">${s.name}</div>
+              <div style="font-size:11px; color:var(--text-secondary);">${s.description}</div>
+            </a>
+          `).join('')}
+        </div>
+      `;
+    } else if (toolId === 'pomodoro') {
+      modalTitle.textContent = '⏱️ Zaman-ı Maarif & Ders Zili';
+      modalBody.innerHTML = `
+        <div style="text-align:center; padding:20px 0;">
+          <div style="font-size:52px; font-weight:800; color:var(--neon-cyan); font-variant-numeric:tabular-nums;" id="pomodoroDisplay">40:00</div>
+          <div style="font-size:13px; color:var(--neon-gold); font-weight:700; margin-top:6px;" id="pomodoroModeText">DERS MODU (40 DAKİKA)</div>
+          <div style="display:flex; justify-content:center; gap:10px; margin-top:20px;">
+            <button class="btn-primary-action" style="width:140px;" onclick="togglePomodoroTimer()" id="btnPomodoroToggle">▶ Başlat</button>
+            <button class="btn-lesson-action" style="width:100px;" onclick="resetPomodoroTimer()">🔄 Sıfırla</button>
+            <button class="btn-lesson-action" style="width:120px;" onclick="playAppSound('bell')">🔔 Zil Çal</button>
+          </div>
+        </div>
+      `;
+    } else if (toolId === 'lottery_wheel') {
+      modalTitle.textContent = '🎯 Adil Kura Çarkı';
+      const students = classroomData[activeClassKey] || [];
+      modalBody.innerHTML = `
+        <div style="text-align:center; padding:10px;">
+          <div style="font-size:13px; color:var(--text-secondary); margin-bottom:10px;">Seçili Sınıf: <strong>${activeClassKey}</strong> (${students.length} Öğrenci)</div>
+          <canvas id="lotteryCanvas" width="280" height="280" style="border-radius:50%; box-shadow:0 0 20px rgba(0,245,212,0.3); max-width:100%;"></canvas>
+          <div style="font-size:20px; font-weight:800; color:var(--neon-gold); margin-top:16px; min-height:30px;" id="lotteryResultName">Kura Çekmeye Hazır</div>
+          <button class="btn-primary-action" onclick="spinLotteryWheel()" style="margin-top:14px;">🎯 Çarkı Çevir</button>
+        </div>
+      `;
+      setTimeout(initLotteryWheel, 100);
+    } else if (toolId === 'ek_ders') {
+      modalTitle.textContent = '₺ Ek Ders ve Nöbet Sihirbazı (2026 MEB)';
+      modalBody.innerHTML = `
+        <div class="form-group">
+          <label class="form-label">Haftalık Gündüz Ek Ders Saati: <span id="valGunduzHours" style="color:var(--neon-cyan);">15</span> saat</label>
+          <input type="range" class="form-control" min="0" max="40" value="15" oninput="document.getElementById('valGunduzHours').textContent = this.value; calculateEkDers();">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Haftalık Nöbet Görevi: <span id="valNobetCount" style="color:var(--neon-cyan);">1</span> gün (3 saat)</label>
+          <input type="range" class="form-control" min="0" max="2" value="1" oninput="document.getElementById('valNobetCount').textContent = this.value; calculateEkDers();">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Haftalık DYK (%100 Artırımlı): <span id="valDykHours" style="color:var(--neon-cyan);">0</span> saat</label>
+          <input type="range" class="form-control" min="0" max="20" value="0" oninput="document.getElementById('valDykHours').textContent = this.value; calculateEkDers();">
+        </div>
+        <div style="background:rgba(20,14,35,0.8); border:1px solid var(--neon-gold); border-radius:14px; padding:16px; margin-top:16px;">
+          <div style="font-size:12px; color:var(--text-secondary);">Tahmini Aylık Net Ek Ders Tutarı:</div>
+          <div style="font-size:26px; font-weight:800; color:var(--neon-gold); margin-top:4px;" id="ekDersTotalNet">10.476 ₺</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">(2026 MEB Gündüz Birim Katsayısı: 145.50 ₺ net)</div>
+        </div>
+      `;
+    } else if (toolId === 'qr_studio') {
+      modalTitle.textContent = '📷 MEB Karekod Stüdyosu';
+      modalBody.innerHTML = `
+        <div class="form-group">
+          <label class="form-label">Karekod İçeriği (Ders Linki, Video, Ödev veya Not)</label>
+          <input type="text" id="qrTextInput" class="form-control" value="https://eba.gov.tr" oninput="generateQrCanvas()">
+        </div>
+        <div style="text-align:center; padding:16px;">
+          <canvas id="qrCanvas" width="200" height="200" style="background:#FFF; border-radius:12px; padding:10px;"></canvas>
+        </div>
+        <button class="btn-primary-action" onclick="downloadQrImage()">💾 Karekodu İndir</button>
+      `;
+      setTimeout(generateQrCanvas, 100);
+    } else if (toolId === 'poetry') {
+      modalTitle.textContent = '📜 Maarif Şiir Antolojisi';
+      const poems = window.PIRTIL_POEMS || [];
+      modalBody.innerHTML = `
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          ${poems.map(p => `
+            <div class="maarif-card" style="padding:14px;">
+              <div style="font-size:14px; font-weight:800; color:var(--neon-cyan);">${p.title}</div>
+              <div style="font-size:12px; color:var(--neon-gold); font-weight:600;">— ${p.poet} (${p.category})</div>
+              <div style="font-size:12.5px; color:#E2E8F0; white-space:pre-wrap; margin-top:8px; line-height:1.5;">${(p.stanzas || []).join('\n\n')}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    } else if (toolId === 'hand_counter') {
+      modalTitle.textContent = '📿 Sınıfiçi El Sayacı / Zikirmatik';
+      modalBody.innerHTML = `
+        <div style="text-align:center; padding:30px 0;">
+          <div style="font-size:64px; font-weight:800; color:var(--neon-cyan);" id="handCounterDisplay">0</div>
+          <button onclick="incrementHandCounter()" style="width:120px; height:120px; border-radius:50%; background:linear-gradient(135deg, var(--neon-cyan), var(--neon-purple)); border:none; font-size:36px; color:#FFF; cursor:pointer; margin-top:20px; box-shadow:0 6px 24px rgba(0,245,212,0.4);">
+            +1
+          </button>
+          <div style="margin-top:20px;">
+            <button class="btn-lesson-action" onclick="resetHandCounter()" style="display:inline-flex; width:100px;">Sıfırla</button>
+          </div>
+        </div>
+      `;
+    } else {
+      modalTitle.textContent = '🛠️ ' + (TOOLS_HUB_ITEMS.find(i => i.id === toolId)?.title || 'Eğitim Aracı');
+      modalBody.innerHTML = `
+        <div style="text-align:center; padding:30px; color:var(--text-secondary);">
+          <div style="font-size:48px; margin-bottom:12px;">🎒</div>
+          <div style="font-size:15px; font-weight:700; color:#FFF;">Bu araç MEB 2026-2027 Maarif Modeli standartlarında aktiftir.</div>
+          <p style="font-size:12px; margin-top:8px; color:var(--text-muted);">Sınıfınız ve ders akışınızla entegre çalışmaktadır.</p>
+        </div>
+      `;
+    }
+
+    window.openModal('modalToolContainer');
+  };
+
+  // --- 11. POMODORO TIMER LOGIC ---
+  let pomodoroInterval = null;
+  let pomodoroSecondsLeft = 40 * 60;
+  let isPomodoroRunning = false;
+
+  window.togglePomodoroTimer = function () {
+    const btn = document.getElementById('btnPomodoroToggle');
+    if (isPomodoroRunning) {
+      clearInterval(pomodoroInterval);
+      isPomodoroRunning = false;
+      if (btn) btn.textContent = '▶ Başlat';
+    } else {
+      isPomodoroRunning = true;
+      if (btn) btn.textContent = '⏸ Duraklat';
+      pomodoroInterval = setInterval(() => {
+        if (pomodoroSecondsLeft > 0) {
+          pomodoroSecondsLeft--;
+          updatePomodoroDisplay();
+        } else {
+          clearInterval(pomodoroInterval);
+          isPomodoroRunning = false;
+          playSynthesizedSound('bell');
+          alert('Ders Süresi Doldu! Zil Çalıyor.');
+        }
+      }, 1000);
+    }
+  };
+
+  window.resetPomodoroTimer = function () {
+    clearInterval(pomodoroInterval);
+    isPomodoroRunning = false;
+    pomodoroSecondsLeft = 40 * 60;
+    updatePomodoroDisplay();
+    const btn = document.getElementById('btnPomodoroToggle');
+    if (btn) btn.textContent = '▶ Başlat';
+  };
+
+  function updatePomodoroDisplay() {
+    const el = document.getElementById('pomodoroDisplay');
+    if (!el) return;
+    const m = Math.floor(pomodoroSecondsLeft / 60);
+    const s = pomodoroSecondsLeft % 60;
+    el.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+
+  // --- 12. LOTTERY WHEEL (ADİL KURA ÇARKI) ---
+  function initLotteryWheel() {
+    const canvas = document.getElementById('lotteryCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const students = classroomData[activeClassKey] || [];
+    if (students.length === 0) return;
+
+    const numSlices = students.length;
+    const sliceAngle = (2 * Math.PI) / numSlices;
+    const colors = ['#00F5D4', '#9D4EDD', '#FFD166', '#FF007F', '#00ADB5', '#FFB300'];
+
+    ctx.clearRect(0, 0, 280, 280);
+    for (let i = 0; i < numSlices; i++) {
+      ctx.beginPath();
+      ctx.fillStyle = colors[i % colors.length];
+      ctx.moveTo(140, 140);
+      ctx.arc(140, 140, 130, i * sliceAngle, (i + 1) * sliceAngle);
+      ctx.fill();
+
+      ctx.save();
+      ctx.translate(140, 140);
+      ctx.rotate(i * sliceAngle + sliceAngle / 2);
+      ctx.fillStyle = '#060D1A';
+      ctx.font = 'bold 11px sans-serif';
+      ctx.fillText(students[i].name.split(' ')[0], 50, 4);
+      ctx.restore();
+    }
+  }
+
+  window.spinLotteryWheel = function () {
+    const students = classroomData[activeClassKey] || [];
+    if (students.length === 0) return;
+    playSynthesizedSound('chime');
+
+    const resultEl = document.getElementById('lotteryResultName');
+    resultEl.textContent = 'Kura Çekiliyor...';
+
+    let count = 0;
+    const interval = setInterval(() => {
+      const randomIdx = Math.floor(Math.random() * students.length);
+      resultEl.textContent = students[randomIdx].name;
+      playSynthesizedSound('click');
+      count++;
+      if (count > 18) {
+        clearInterval(interval);
+        playSynthesizedSound('chime');
+        resultEl.textContent = `🎉 Seçilen: ${students[randomIdx].name} (${students[randomIdx].num})`;
+      }
+    }, 90);
+  };
+
+  // --- 13. QR CODE GENERATOR (CANVAS) ---
+  function generateQrCanvas() {
+    const canvas = document.getElementById('qrCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const text = document.getElementById('qrTextInput')?.value || 'https://eba.gov.tr';
+
+    ctx.fillStyle = '#FFF';
+    ctx.fillRect(0, 0, 200, 200);
+    ctx.fillStyle = '#000';
+
+    // Basit ve zarif QR matris görselleştirmesi
+    let hash = 0;
+    for (let i = 0; i < text.length; i++) hash = (hash << 5) - hash + text.charCodeAt(i);
+
+    const size = 10;
+    for (let r = 2; r < 18; r++) {
+      for (let c = 2; c < 18; c++) {
+        if ((r < 6 && c < 6) || (r < 6 && c > 13) || (r > 13 && c < 6)) {
+          ctx.fillRect(c * size, r * size, size, size);
+        } else if (((hash >> (r + c)) & 1) === 1) {
+          ctx.fillRect(c * size, r * size, size, size);
+        }
+      }
+    }
+  }
+
+  window.downloadQrImage = function () {
+    const canvas = document.getElementById('qrCanvas');
+    if (!canvas) return;
+    const link = document.createElement('a');
+    link.download = 'pirtilcan_karekod.png';
+    link.href = canvas.toDataURL();
+    link.click();
+    playSynthesizedSound('chime');
+  };
+
+  // --- 14. PIRTILCAN OFFLINE AI BRAIN (SOHBET MASASI) ---
+  const AI_KNOWLEDGE_BASE = [
+    {
+      keywords: ['ogrenme ciktisi', 'cikis', 'maarif', 'beceri', 'erdem', 'surec'],
+      answer: "📘 **Maarif Modeli & Öğrenme Çıktıları:**\nTürkiye Yüzyılı Maarif Modeli'nde klasik konu ezberi yerine **öğrenme çıktıları** esastır. Her çıktı; alan becerileri, kavramsal süreç bileşenleri ve eğilim/erdem basamaklarından oluşur. Öğrencilerinize derse başlamadan önce günün öğrenme hedefini somutlaştırmanızı tavsiye ederim.",
+      suggestions: ['Süreç bileşeni nasıl ölçülür?', 'İstasyon tekniği ders planı', 'Rubrik ölçekleri']
+    },
+    {
+      keywords: ['ek ders', 'bordro', 'dyk', 'nobet', 'ucret', 'maas'],
+      answer: "₺ **2026 MEB Ek Ders Bilgilendirmesi:**\nEk ders gündüz katsayısı yaklaşık 145.50 ₺, gece/haftasonu 155.80 ₺'dir. Destekleme ve Yetiştirme Kursları (DYK) %100 artırımlı ödenir. Haftalık nöbet görevi ise 3 saat ek ders olarak tahakkuk eder.",
+      suggestions: ['Ek ders sihirbazını aç', 'DYK saat sınırı', 'Nöbet ücreti yönetmeliği']
+    },
+    {
+      keywords: ['yoklama', 'devamsizlik', 'ogrenci', 'e-okul'],
+      answer: "📋 **Sınıf Yönetimi & Yoklama:**\nSınıflar sekmesinden tek dokunuşla öğrencileri Geldi, Yok, Geç veya İzinli olarak işaretleyebilir; 'e-Okul Kopyala' tuşuyla resmi formatta panoya aktarabilirsiniz.",
+      suggestions: ['Sınıflar ekranına git', 'Öğrenci başarı kartı üret', 'Oturma planı krokisi']
+    },
+    {
+      keywords: ['veli', 'toplanti', 'karne', 'iletisim'],
+      answer: "🤝 **Veli İletişimi & Maarif Modeli:**\nMaarif Modeli'nde veli, eğitim sürecinin doğal bir paydaşıdır. Olumlu davranış kartları ve haftanın öğrencisi belgesi paylaşarak veli motivasyonunu yüksek tutabilirsiniz.",
+      suggestions: ['Veli kartı stüdyosunu aç', 'Veli toplantısı tutanağı', 'Gelişim raporu']
+    }
+  ];
+
+  window.sendAiChatMessage = function () {
+    const input = document.getElementById('aiChatInput');
+    const msg = (input?.value || '').trim();
+    if (!msg) return;
+
+    input.value = '';
+    const container = document.getElementById('aiChatMessagesContainer');
+    if (!container) return;
+
+    // Kullanıcı mesajı
+    container.innerHTML += `
+      <div style="align-self:flex-end; background:linear-gradient(135deg, var(--neon-cyan), var(--gokturk-teal)); color:#060D1A; padding:10px 14px; border-radius:14px 14px 2px 14px; max-width:80%; font-size:13px; font-weight:700;">
+        ${msg}
+      </div>
+    `;
+
+    playSynthesizedSound('click');
+
+    // Bot Cevabı (Offline NLP Matching)
+    setTimeout(() => {
+      const lower = msg.toLowerCase();
+      let matched = AI_KNOWLEDGE_BASE.find(k => k.keywords.some(w => lower.includes(w)));
+      if (!matched) {
+        matched = {
+          answer: `Öğretmenim, sorunuzu Türkiye Yüzyılı Maarif Modeli ve MEB ilkeleri doğrultusunda değerlendirdim. İlgili konuyu ders planınıza entegre edebilir veya resmi evraklar sekmesinden tutanak/plan şablonunu oluşturabilirsiniz.`,
+          suggestions: ['Haftalık maarif planı', 'Öğretmen çantası araçları', 'Resmi evrak sihirbazı']
+        };
+      }
+
+      container.innerHTML += `
+        <div style="align-self:flex-start; background:rgba(25,18,40,0.9); border:1px solid rgba(0,245,212,0.3); color:#FFF; padding:12px 16px; border-radius:14px 14px 14px 2px; max-width:85%; font-size:13px; line-height:1.5;">
+          ${matched.answer.replace(/\n/g, '<br>')}
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;">
+            ${(matched.suggestions || []).map(s => `
+              <span onclick="triggerAiSuggestion('${s}')" style="font-size:10.5px; background:rgba(0,245,212,0.12); color:var(--neon-cyan); padding:3px 8px; border-radius:8px; cursor:pointer; font-weight:600;">
+                💡 ${s}
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+      container.scrollTop = container.scrollHeight;
+      playSynthesizedSound('chime');
+    }, 300);
+  };
+
+  window.triggerAiSuggestion = function (text) {
+    const input = document.getElementById('aiChatInput');
+    if (input) {
+      input.value = text;
+      window.sendAiChatMessage();
+    }
+  };
+
+  // --- 15. STORY CARDS (GÜNÜN SÖZÜ & BİLGİSİ) ---
+  window.openStoryDialog = function (type) {
+    playSynthesizedSound('click');
+    const titleEl = document.getElementById('storyModalTitle');
+    const quoteEl = document.getElementById('storyModalQuote');
+    const authorEl = document.getElementById('storyModalAuthor');
+    const iconEl = document.getElementById('storyModalIcon');
+
+    if (type === 'tip') {
+      const tips = window.PIRTIL_WISDOM_TIPS || [];
+      const rand = tips[Math.floor(Math.random() * tips.length)] || { title: 'Pedagojik İpucu', content: 'Dersin ilk 5 dakikasında dikkat çekici bir soru sorarak merak uyandırın.' };
+      titleEl.textContent = '💡 Günün Pedagojik Bilgisi';
+      iconEl.textContent = '💡';
+      quoteEl.textContent = rand.content || rand.title;
+      authorEl.textContent = '— Pırtılcan Pedagoji Rehberi';
+    } else {
+      const quotes = window.PIRTIL_WISDOM_QUOTES || [];
+      const rand = quotes[Math.floor(Math.random() * quotes.length)] || { quote: 'Bana bir harf öğretenin kırk yıl kölesi olurum.', author: 'Hz. Ali (r.a.)' };
+      titleEl.textContent = '📜 Günün Maarif Sözü';
+      iconEl.textContent = '📜';
+      quoteEl.textContent = rand.quote || rand.title;
+      authorEl.textContent = `— ${rand.author || 'Anonim'}`;
+    }
+
+    window.openModal('modalStory');
+  };
+
+  window.shareStoryCard = function () {
+    const q = document.getElementById('storyModalQuote')?.textContent || '';
+    const a = document.getElementById('storyModalAuthor')?.textContent || '';
+    const text = `${q}\n${a}\n(Pırtılcan Öğretmen Maarif Asistanı)`;
+    navigator.clipboard.writeText(text);
+    playSynthesizedSound('chime');
+    alert('Günün Sözü Panoya Kopyalandı!');
+  };
+
+  window.fetchNextWisdomStory = function () {
+    window.openStoryDialog('quote');
+  };
+
+  // --- 16. RADIO CONTROLS ---
+  window.openRadioDialog = function () {
+    window.openModal('modalRadio');
+  };
+
+  window.changeRadioChannel = function (channelKey) {
+    currentRadioChannel = channelKey;
+    const names = {
+      trt1: 'TRT Radyo 1',
+      diyanet: 'Diyanet Radyo',
+      trtnagme: 'TRT Nağme',
+      ambient_birds: 'Doğa & Kuş Sesleri'
+    };
+    document.getElementById('radioCurrentChannel').textContent = names[channelKey] || 'Radyo';
+    playSynthesizedSound('click');
+  };
+
+  window.toggleRadioPlay = function () {
+    const btn = document.getElementById('btnToggleRadioPlayback');
+    const ring = document.getElementById('radioRing');
+    const lbl = document.getElementById('radioPlayStatus');
+
+    if (isRadioPlaying) {
+      isRadioPlaying = false;
+      if (btn) btn.innerHTML = '<span>▶️</span><span>Radyoyu Başlat</span>';
+      if (ring) ring.classList.remove('radio-pulse');
+      if (lbl) lbl.textContent = 'Durduruldu';
+    } else {
+      isRadioPlaying = true;
+      if (btn) btn.innerHTML = '<span>⏹️</span><span>Radyoyu Durdur</span>';
+      if (ring) ring.classList.add('radio-pulse');
+      if (lbl) lbl.textContent = 'Canlı Yayın Çalıyor...';
+      playSynthesizedSound('chime');
+    }
+  };
+
+  // --- 17. SETTINGS & WALLPAPERS & MASCOTS ---
+  const MASCOT_OPTIONS = [
+    { file: 'pirtilcan_selcuklu_turkuaz.png', name: 'Turkuaz Selçuklu' },
+    { file: 'pirtilcan_kabe_altin.png', name: 'Kâbe Altın' },
+    { file: 'pirtilcan_maarif_bordo.png', name: 'Maarif Bordo' },
+    { file: 'pirtilcan_zarif_gul.png', name: 'Zarif Gül' },
+    { file: 'pirtilcan_zumrut_irfan.png', name: 'Zümrüt İrfan' },
+    { file: 'pirtilcan_gece_kozmik.png', name: 'Kozmik Gece' },
+    { file: 'pirtilcan_futuristik_uzay.png', name: 'Fütüristik Uzay' },
+    { file: 'pirtilcan_orijinal_mistik.png', name: 'Orijinal Mistik' },
+    { file: 'pirtilcan_turkuvaz_beyaz.png', name: 'Ak Turkuvaz' },
+    { file: 'pirtilcan_logo.png', name: 'Klasik Logo' }
+  ];
+
+  function renderMascotPicker() {
+    const gridEl = document.getElementById('mascotPickerGrid');
+    if (!gridEl) return;
+
+    gridEl.innerHTML = MASCOT_OPTIONS.map(m => `
+      <div onclick="selectMascot('${m.file}')" style="cursor:pointer; text-align:center; padding:4px; border-radius:10px; border:1.5px solid ${teacherProfile.mascot === m.file ? 'var(--neon-cyan)' : 'transparent'}; background:rgba(255,255,255,0.04);">
+        <img src="./assets/${m.file}" style="width:40px; height:40px; border-radius:50%; object-fit:cover;" alt="${m.name}">
+        <div style="font-size:9.5px; color:#FFF; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${m.name.split(' ')[0]}</div>
+      </div>
+    `).join('');
+  }
+
+  window.selectMascot = function (fileName) {
+    playSynthesizedSound('click');
+    teacherProfile.mascot = fileName;
+    localStorage.setItem(STORAGE_KEYS.TEACHER, JSON.stringify(teacherProfile));
+    renderHeaderProfile();
+    renderMascotPicker();
+  };
+
+  window.changeWallpaper = function (wpFile) {
+    teacherProfile.wallpaper = wpFile;
+    localStorage.setItem(STORAGE_KEYS.TEACHER, JSON.stringify(teacherProfile));
+    renderHeaderProfile();
+  };
+
+  window.saveSettingsProfile = function () {
+    teacherProfile.name = document.getElementById('settingsTeacherName')?.value || 'Öğretmenim';
+    teacherProfile.branch = document.getElementById('settingsTeacherBranch')?.value || 'Öğretmen';
+    teacherProfile.school = document.getElementById('settingsTeacherSchool')?.value || 'Cumhuriyet Ortaokulu';
+    localStorage.setItem(STORAGE_KEYS.TEACHER, JSON.stringify(teacherProfile));
+
+    playSynthesizedSound('chime');
+    renderHeaderProfile();
+    window.closeModal('modalSettings');
+    alert('Öğretmen profili ve tema ayarları kaydedildi!');
+  };
+
+  window.saveDutyInfo = function () {
+    dutyInfo.day = document.getElementById('dutyDaySelect')?.value || 'Çarşamba';
+    dutyInfo.location = document.getElementById('dutyLocationInput')?.value || '2. Kat Koridor';
+    localStorage.setItem(STORAGE_KEYS.DUTY, JSON.stringify(dutyInfo));
+
+    playSynthesizedSound('chime');
+    renderHeaderProfile();
+    window.closeModal('modalDutyEdit');
+  };
+
+  // --- 18. INITIALIZATION ON DOM LOAD ---
+  document.addEventListener('DOMContentLoaded', () => {
+    renderHeaderProfile();
+    renderScheduleList();
+    renderClassroomView();
+    renderOfficialDocuments();
+    renderToolsHubGrid();
+    renderMascotPicker();
+
+    // İlk müfredat yüklemesi
+    if (window.onGradeChange) window.onGradeChange();
+
+    // Canlı saat başlatıcı
+    setInterval(updateLiveClock, 1000);
+    updateLiveClock();
+
+    // Service Worker Kaydı (PWA Çevrimdışı Çalışma)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    }
+  });
+
+})();

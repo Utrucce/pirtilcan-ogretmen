@@ -1,0 +1,52 @@
+[
+  {
+    "id": "meb_official",
+    "title": "MEB & Resmî Portallar",
+    "icon": "🏛️"
+  },
+  {
+    "id": "eba_content",
+    "title": "EBA & Dijital İçerik",
+    "icon": "📚"
+  },
+  {
+    "id": "osym_exams",
+    "title": "ÖSYM & Sınavlar",
+    "icon": "🎯"
+  },
+  {
+    "id": "science_math",
+    "title": "Bilim & Matematik",
+    "icon": "🔬"
+  },
+  {
+    "id": "social_history",
+    "title": "Sosyal, Tarih & Coğrafya",
+    "icon": "🌍"
+  },
+  {
+    "id": "art_music",
+    "title": "Sanat & Müzik",
+    "icon": "🎨"
+  },
+  {
+    "id": "foreign_lang",
+    "title": "Yabancı Dil",
+    "icon": "🗣️"
+  },
+  {
+    "id": "special_guidance",
+    "title": "Rehberlik & Özel Eğitim",
+    "icon": "🧠"
+  },
+  {
+    "id": "teacher_tools",
+    "title": "Öğretmen Araçları & Tasarım",
+    "icon": "🛠️"
+  },
+  {
+    "id": "custom",
+    "title": "Benim Eklediklerim",
+    "icon": "⭐"
+  }
+]

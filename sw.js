@@ -1,5 +1,5 @@
-// Pırtılcan Öğretmen - PWA Service Worker
-const CACHE_NAME = 'pirtilcan-ogretmen-v1';
+// Pırtılcan Öğretmen - PWA Service Worker (Offline First)
+const CACHE_NAME = 'pirtilcan-ogretmen-v2-scratch';
 
 const STATIC_ASSETS = [
   './',
@@ -7,35 +7,34 @@ const STATIC_ASSETS = [
   './styles.css',
   './script.js',
   './manifest.json',
-  './assets/data.js',
-  './assets/pirtilcan_character.png',
-  './assets/pirtilcan_round.png',
-  './assets/pirtilcan_full.png',
-  './assets/icons/icon-192.png',
-  './assets/icons/icon-512.png',
+  './assets/app_data.js',
+  './assets/pirtilcan_logo.png',
+  './assets/pirtilcan_selcuklu_turkuaz.png',
+  './assets/pirtilcan_kabe_altin.png',
+  './assets/pirtilcan_maarif_bordo.png',
+  './assets/pirtilcan_zarif_gul.png',
+  './assets/pirtilcan_zumrut_irfan.png',
+  './assets/digital_bag_sites.json',
+  './assets/official_documents.json',
+  './assets/wisdom_quotes.json',
+  './assets/wisdom_tips.json',
+  './assets/curriculum/curriculum_index.json',
   './assets/audio/school_bell.wav',
-  './assets/audio/ding.wav',
-  './assets/annual_plans.json',
-  './assets/curriculum_meta.json',
-  './assets/document_templates.json',
-  './assets/maarif_cards.json',
-  './assets/maarif_quotes.json',
-  './assets/meb_calendar.json'
+  './assets/audio/chime.wav',
+  './assets/audio/ding.wav'
 ];
 
-// Install Event: Pre-cache static assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('[Pırtılcan SW] Statik varlıklar önbelleğe alınıyor...');
       return cache.addAll(STATIC_ASSETS).catch((err) => {
-        console.warn('[Pırtılcan SW] Bazı dosyalar önbelleğe alınamadı, devam ediliyor:', err);
+        console.warn('[Pırtılcan SW] Bazı dosyalar önbelleğe alınamadı:', err);
       });
     }).then(() => self.skipWaiting())
   );
 });
 
-// Activate Event: Clean old caches
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
@@ -51,9 +50,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch Event: Cache First, fallback to Network
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
@@ -65,14 +62,12 @@ self.addEventListener('fetch', (event) => {
         if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
           return networkResponse;
         }
-        // Clone and store in cache
         const responseToCache = networkResponse.clone();
         caches.open(CACHE_NAME).then((cache) => {
           cache.put(event.request, responseToCache);
         });
         return networkResponse;
       }).catch(() => {
-        // Fallback for html navigation if offline
         if (event.request.mode === 'navigate') {
           return caches.match('./index.html');
         }

@@ -1,23 +1,23 @@
 {
-  "name": "Pırtılcan Öğretmen - MEB Maarif Asistanı",
+  "name": "Pırtılcan Öğretmen - MEB Maarif Modeli Asistanı",
   "short_name": "Pırtılcan",
   "description": "Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli Öğretmen ve Sınıf Yönetim Asistanı",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#030D1B",
-  "theme_color": "#00E5FF",
+  "background_color": "#0B0715",
+  "theme_color": "#00F5D4",
   "categories": ["education", "productivity"],
   "lang": "tr",
   "icons": [
     {
-      "src": "./assets/icons/icon-192.png",
+      "src": "./assets/pirtilcan_logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/icons/icon-512.png",
+      "src": "./assets/pirtilcan_selcuklu_turkuaz.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -25,19 +25,24 @@
   ],
   "shortcuts": [
     {
-      "name": "Kazanımlar",
-      "url": "./index.html?tab=kazanimlar",
-      "description": "Haftalık MEB Kazanımları ve Defter Metinleri"
+      "name": "Dersim",
+      "url": "./index.html?tab=dersim",
+      "description": "Canlı Ders, Ziller ve Haftalık Ders Programı"
     },
     {
-      "name": "Sınıf Defteri",
-      "url": "./index.html?tab=sinifim",
-      "description": "Yoklama ve Sınıf Defteri Yönetimi"
+      "name": "Öğrenme Çıktıları",
+      "url": "./index.html?tab=planlar",
+      "description": "Haftalık MEB Maarif Modeli Öğrenme Çıktıları"
     },
     {
-      "name": "Ek Ders Hesapla",
-      "url": "./index.html?modal=ekders",
-      "description": "Öğretmen Ek Ders Ücret Hesaplayıcı"
+      "name": "Sınıflar & Yoklama",
+      "url": "./index.html?tab=siniflar",
+      "description": "Yoklama ve Sınıf Yönetimi"
+    },
+    {
+      "name": "Resmi Evraklar",
+      "url": "./index.html?tab=evraklar",
+      "description": "Zümre, ŞÖK, Veli Toplantısı ve Evrak Sihirbazı"
     }
   ]
 }

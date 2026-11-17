@@ -4,612 +4,707 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Pırtılcan Öğretmen - MEB Maarif Modeli Asistanı</title>
-  
+
   <!-- PWA & Mobile Web Meta Tags -->
   <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#060D1A">
+  <meta name="theme-color" content="#0B0715">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Pırtılcan">
-  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
-  <link rel="icon" type="image/png" href="./assets/icons/icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="Pırtılcan Öğretmen">
+  <link rel="apple-touch-icon" href="./assets/pirtilcan_logo.png">
+  <link rel="icon" type="image/png" href="./assets/pirtilcan_logo.png">
 
+  <!-- Core App Stylesheet -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- Starry Background Canvas -->
-  <canvas id="starryBackgroundCanvas"></canvas>
+  <!-- Dynamic Educational Wallpaper Layer -->
+  <div id="appWallpaperLayer"></div>
+  <div id="appOverlayVignette"></div>
 
-  <!-- PWA Install Banner -->
-  <div id="pwaInstallBanner" class="pwa-install-banner">
-    <div style="display:flex; align-items:center; gap:8px;">
-      <img src="./assets/pirtilcan_round.png" style="width:32px; height:32px; border-radius:50%;" alt="Pırtılcan">
-      <div>
-        <div style="font-size:11px; font-weight:700; color:#FFF;">Pırtılcan'ı Telefona / Bilgisayara Yükle</div>
-        <div style="font-size:9.5px; color:#38BDF8;">İnternetsiz çalışır, tek tıkla açılır</div>
-      </div>
-    </div>
-    <div style="display:flex; align-items:center; gap:6px;">
-      <button id="pwaInstallBtn" style="background:#00E5FF; color:#000; font-size:10px; font-weight:800; border:none; padding:5px 10px; border-radius:6px; cursor:pointer;">
-        Yükle
-      </button>
-      <button onclick="document.getElementById('pwaInstallBanner').classList.remove('show')" style="background:transparent; border:none; color:#94A3B8; font-size:18px; cursor:pointer; line-height:1; padding:0 2px;" title="Kapat">&times;</button>
-    </div>
-  </div>
+  <!-- App Main Layout Container -->
+  <div class="app-layout">
 
-  <!-- Main App Frame -->
-  <main class="app-container">
-
-    <!-- ====================================================
-         TOP HEADER (Exact Match: pirtilcan_kazanim_real.png)
-         ==================================================== -->
-    <header class="top-header-row">
-      <div class="top-header-left">
-        <img src="./assets/pirtilcan_round.png" class="top-mascot-img" alt="Pırtılcan" onclick="openModal('modalRefik')">
-        <div class="top-title-col">
-          <h1 class="app-main-title">Pırtılcan Öğretmen</h1>
-          <div class="app-sub-title" id="topHeaderWeekSubtitle">2026-2027 MEB • 6. Eğitim Haftası</div>
+    <!-- ======================================================================
+         TOP HEADER (Öğretmen Bilgisi, Maskot, Hafta Rozeti & Ayarlar)
+         ====================================================================== -->
+    <header class="top-header">
+      <div class="teacher-profile-col" onclick="openModal('modalSettings')" title="Profili & Temayı Düzenle">
+        <div class="pirtilcan-avatar-box">
+          <img id="headerMascotImg" src="./assets/pirtilcan_selcuklu_turkuaz.png" alt="Pırtılcan" class="pirtilcan-avatar-img">
+        </div>
+        <div class="teacher-meta-info">
+          <div class="teacher-name-title">
+            <span id="headerTeacherName">Sertan Çubukçu</span>
+            <span style="font-size:12px; color:var(--neon-cyan);">✓</span>
+          </div>
+          <div class="teacher-branch-sub" id="headerTeacherBranch">Bilişim Teknolojileri</div>
+          <div class="teacher-school-sub" id="headerTeacherSchool">Cumhuriyet Ortaokulu</div>
         </div>
       </div>
 
-      <div class="top-xp-pill" onclick="switchTab('bahcem')">
-        <span class="star-icon">★</span>
-        <span id="topHeaderXpText">Öğretmen (255 XP)</span>
+      <div class="header-action-group">
+        <div class="badge-week" id="headerWeekBadge" onclick="jumpToCurrentWeek()" title="Bu haftanın maarif planına git">
+          <span>📅</span>
+          <span id="headerWeekText">6. Hafta</span>
+        </div>
+        <button class="btn-header-icon" onclick="openModal('modalSettings')" title="Ayarlar & Tema">
+          ⚙️
+        </button>
       </div>
     </header>
 
-    <!-- ====================================================
-         TAB 1: ANA SAYFA (Exact Match: pirtilcan_kazanim_real.png)
-         ==================================================== -->
-    <section id="panel-ana" class="tab-content-panel active">
+    <!-- ======================================================================
+         SELÇUKLU YILDIZI GEOMETRİK HİKÂYE ÇUBUĞU (STORY BAR)
+         ====================================================================== -->
+    <section class="story-scroll-container">
+      <!-- Story 1: Günün Maarif Sözü -->
+      <div class="story-item-card" onclick="openStoryDialog('quote')">
+        <div class="story-star-ring">
+          <div class="story-star-inner">📜</div>
+        </div>
+        <span class="story-item-title">Günün Sözü</span>
+      </div>
 
-      <!-- CARD 1: ŞU AN DERSTESİNİZ (Live Hero Card) -->
+      <!-- Story 2: Günün Pedagojik Bilgisi -->
+      <div class="story-item-card" onclick="openStoryDialog('tip')">
+        <div class="story-star-ring">
+          <div class="story-star-inner">💡</div>
+        </div>
+        <span class="story-item-title">Günün Bilgisi</span>
+      </div>
+
+      <!-- Story 3: Canlı Eğitim Radyosu -->
+      <div class="story-item-card" onclick="openRadioDialog()">
+        <div class="story-star-ring radio-pulse" id="radioRing">
+          <div class="story-star-inner">📻</div>
+        </div>
+        <span class="story-item-title" id="radioStatusLabel">Eğitim Radyosu</span>
+      </div>
+
+      <!-- Story 4: Nöbet Durumu -->
+      <div class="story-item-card" onclick="openModal('modalDutyEdit')">
+        <div class="story-star-ring">
+          <div class="story-star-inner">🚩</div>
+        </div>
+        <span class="story-item-title">Nöbet: <span id="storyDutyShort">2. Kat</span></span>
+      </div>
+
+      <!-- Story 5: PWA / Çevrimdışı Durumu -->
+      <div class="story-item-card" onclick="triggerPwaPrompt()">
+        <div class="story-star-ring">
+          <div class="story-star-inner">⚡</div>
+        </div>
+        <span class="story-item-title">PWA Çevrimdışı</span>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TAB 1: DERSİM (CANLI SAAT, TAKVİM, CANLI DERS KARTI & HAFTALIK DERS PROGRAMI)
+         ====================================================================== -->
+    <main id="panelDersim" class="view-panel active">
+      
+      <!-- Gerçek Zamanlı Takvim & Saat Kartı -->
+      <div class="maarif-card realtime-card">
+        <div class="realtime-left">
+          <div class="realtime-clock" id="liveClockDisplay">08:45:00</div>
+          <div class="realtime-date" id="liveDateDisplay">18 Kasım 2026, Çarşamba</div>
+        </div>
+        <div class="duty-pill" onclick="openModal('modalDutyEdit')">
+          <span>🚩</span>
+          <span id="cardDutyLocationText">Nöbet: 2. Kat Koridor</span>
+        </div>
+      </div>
+
+      <!-- Canlı Ders & Öğrenme Çıktısı Odak Alanı -->
       <div class="maarif-card active-lesson-card">
-        <div class="lesson-card-top-row">
-          <div class="live-lesson-badge">
-            <div class="live-green-dot"></div>
-            <span>ŞU AN DERSTESİNİZ</span>
+        <div class="lesson-top-row">
+          <div class="lesson-title-badge">
+            <span class="pulse-dot"></span>
+            <span class="lesson-name" id="activeLessonName">Bilişim Teknolojileri ve Yazılım</span>
+            <span class="lesson-class-badge" id="activeLessonClass">7-A</span>
           </div>
-          <div class="lesson-period-capsule">3. Ders • 10:20 - 11:00</div>
-        </div>
-
-        <div class="lesson-title-big">8/A Sınıfı • Türkçe</div>
-        <div class="lesson-topic-sub">Konu: Fiilimsiler (İsim-Fiil ve Sıfat-Fiil Çalışması)</div>
-
-        <div class="lesson-timer-row">
-          <div>
-            <div class="timer-label">Zil Çalmasına Kalan Süre</div>
-            <div class="timer-digits-gold" id="homeTickingTimerDigits">18 Dakika 45 Saniye</div>
+          <div class="lesson-bell-time">
+            <span>⏱️</span>
+            <span id="activeLessonCountdown">Zile: 24 dk</span>
           </div>
-          <div class="timer-percent-cyan" id="homeTimerPercentText">%55 Tamamlandı</div>
         </div>
 
-        <div class="timer-progress-track">
-          <div class="timer-progress-bar" id="homeTimerProgressBar"></div>
-        </div>
-
-        <div class="next-lesson-alert">
-          <span>🔔</span>
-          <span>Sıradaki: 15 dk Teneffüs, ardından 4. Ders: 7/B Türkçe</span>
-        </div>
-
-        <!-- 3 In-Card Quick Buttons -->
-        <div class="lesson-card-buttons-row">
-          <button class="card-action-btn btn-zil" onclick="playSchoolBell(); showToast('🔔 Ders Zili Çaldı!');">
-            <span>🔔</span>
-            <span>Zil Çal</span>
-          </button>
-
-          <button class="card-action-btn btn-defter" onclick="copyCurrentDefterPhrase();">
-            <span>📋</span>
-            <span>Defter Metni</span>
-          </button>
-
-          <button class="card-action-btn btn-yoklama" onclick="switchTab('sinifim');">
-            <span>👥</span>
-            <span>Yoklama</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- CARD 2: BU HAFTANIN MEB KAZANIMI -->
-      <div class="maarif-card">
-        <div class="kazanim-card-header">
-          <div class="kazanim-card-title">
+        <div class="outcome-box">
+          <div class="outcome-tag">
             <span>🎯</span>
-            <span>Bu Haftanın MEB Kazanımı</span>
+            <span id="activeOutcomeTheme">BİLİŞİMSEL DÜŞÜNME VE PROGRAMLAMA</span>
           </div>
-          <a class="kazanim-card-link" onclick="switchTab('kazanimlar')">Tüm Planlar →</a>
+          <div class="outcome-text" id="activeOutcomeDesc">
+            BT.7.3. Algoritma ve akış şemaları tasarlayarak problem çözme basamaklarını yönetebilme.
+          </div>
         </div>
 
-        <div class="kazanim-tema-text">Tema: Cümlenin Ögeleri (Temel Ögeler)</div>
-        <div class="kazanim-outcome-bullet">
-          • T.8.3.13. Cümlenin temel ögelerini (yüklem ve özne) belirler.
-        </div>
-
-        <!-- Sınıf Defterine Yazılacak Cümle Subbox -->
-        <div class="defter-subbox">
-          <div class="defter-subbox-text-col">
-            <div class="defter-subbox-label">Sınıf Defterine Yazılacak Cümle:</div>
-            <div class="defter-subbox-phrase" id="currentDefterPhraseText">
-              Cümlenin ögelerine giriş yapıldı; yüklem ve özne bulma stratejileri uygulandı.
-            </div>
-          </div>
-          <button class="copy-icon-btn" onclick="copyCurrentDefterPhrase()" title="Defter metnini kopyala">
-            📋
+        <div class="lesson-quick-actions">
+          <button class="btn-lesson-action" onclick="quickTakeAttendance()">
+            <span>📋</span>
+            <span>Yoklama Al</span>
+          </button>
+          <button class="btn-lesson-action" onclick="openQuickLottery()">
+            <span>🎯</span>
+            <span>Adil Kura</span>
+          </button>
+          <button class="btn-lesson-action" onclick="openQuickPomodoro()">
+            <span>⏱️</span>
+            <span>Ders Zili</span>
           </button>
         </div>
       </div>
 
-      <!-- CARD 3: GÜNÜN MAARİF İLHAMI & PEDAGOJİK BİLGİSİ (PlayStore 08) -->
+      <!-- Haftalık Ders Programı Tablosu -->
       <div class="maarif-card">
-        <div style="font-size:12px; font-weight:800; color:#FBBF24; margin-bottom:6px;">💡 GÜNÜN MAARİF İLHAMI</div>
-        <div style="font-size:12.5px; color:#E2E8F0; line-height:1.5; font-style:italic; margin-bottom:8px;">
-          "Mektep, talebenin ruhunu yoğuran mukaddes bir tezgâhtır. Muallim ise o tezgâhta bir sanatkâr gibi sabırla, şefkatle ve irfanla cemiyetin istikbalini dokur."
-        </div>
-        <div style="font-size:11px; color:#38BDF8; font-weight:700; text-align:right; margin-bottom:12px;">— Nurettin Topçu (Türkiye'nin Maarif Davası)</div>
-
-        <div style="border-top:1px dashed #1E2E4A; padding-top:10px;">
-          <div style="font-size:11.5px; font-weight:800; color:#00E5FF; margin-bottom:4px;">🌱 GÜNÜN PEDAGOJİK BİLGİSİ</div>
-          <div style="font-size:12px; color:#CBD5E1; line-height:1.4;">
-            <strong>Yakınsal Gelişim Alanı (Vygotsky):</strong> Öğrencinin bağımsız olarak yapabileceği ile bir rehberin yardımıyla ulaşabileceği potansiyel arasındaki mesafe en verimli öğrenme alanıdır.
+        <div class="schedule-section-header">
+          <div class="section-title">
+            <span>📅</span>
+            <span>Haftalık Ders Programı</span>
           </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ====================================================
-         TAB 2: KAZANIMLAR (Müfredat & Yıllık Planlar - PlayStore 01)
-         ==================================================== -->
-    <section id="panel-kazanimlar" class="tab-content-panel">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-        <div>
-          <div style="font-size:16px; font-weight:800; color:#FFF;">📖 Pırtılcan • Maarif Ders Planları</div>
-          <div style="font-size:11px; color:#38BDF8;">2026-2027 Eğitim Öğretim Yılı • MEB Yıllık Çerçeve Planı</div>
-        </div>
-      </div>
-
-      <!-- Grade Chips -->
-      <div class="grade-chips-row">
-        <button class="grade-chip active" onclick="PirtilState.activeGradeId='grade_8'; renderKazanimlarView(); document.querySelectorAll('.grade-chip').forEach(c=>c.classList.remove('active')); this.classList.add('active');">8. Sınıf Türkçe</button>
-        <button class="grade-chip" onclick="PirtilState.activeGradeId='grade_7'; renderKazanimlarView(); document.querySelectorAll('.grade-chip').forEach(c=>c.classList.remove('active')); this.classList.add('active');">7. Sınıf Matematik</button>
-        <button class="grade-chip" onclick="PirtilState.activeGradeId='grade_6'; renderKazanimlarView(); document.querySelectorAll('.grade-chip').forEach(c=>c.classList.remove('active')); this.classList.add('active');">6. Sınıf Fen</button>
-        <button class="grade-chip" onclick="PirtilState.activeGradeId='grade_5'; renderKazanimlarView(); document.querySelectorAll('.grade-chip').forEach(c=>c.classList.remove('active')); this.classList.add('active');">5. Sınıf Sosyal</button>
-      </div>
-
-      <!-- Search Input -->
-      <div style="margin-bottom:12px;">
-        <input type="text" id="kazanimSearchInput" placeholder="Kazanım kodu (örn. T.8.3.14), konu veya tema ara..." style="width:100%; padding:10px 14px; background:#0B172B; border:1px solid #1E2E4A; border-radius:12px; color:#FFF; font-size:12px; outline:none;">
-      </div>
-
-      <!-- Plans Container -->
-      <div id="plansListContainer"></div>
-    </section>
-
-    <!-- ====================================================
-         TAB 3: BAHÇEM (XP, Vazifeler & Rozetler - pirtilcan_screen_real.png)
-         ==================================================== -->
-    <section id="panel-bahcem" class="tab-content-panel">
-      <!-- Daily Tasks -->
-      <div class="daily-tasks-header">🌿 Bugünkü Maarif Vazifeleri</div>
-
-      <div class="task-item-card completed" onclick="toggleTask(this, 10)">
-        <div class="task-left">
-          <div class="task-checkbox-circle">✓</div>
-          <span>Bugünkü dersin yoklamasını tamamla</span>
-        </div>
-        <div class="task-xp-badge">+10 XP</div>
-      </div>
-
-      <div class="task-item-card completed" onclick="toggleTask(this, 5)">
-        <div class="task-left">
-          <div class="task-checkbox-circle">✓</div>
-          <span>Derste en az 1 öğrenciye sözlü puanı ver</span>
-        </div>
-        <div class="task-xp-badge">+5 XP</div>
-      </div>
-
-      <div class="task-item-card completed" onclick="toggleTask(this, 10)">
-        <div class="task-left">
-          <div class="task-checkbox-circle">✓</div>
-          <span>Günün Maarif Pedagoji kartını oku</span>
-        </div>
-        <div class="task-xp-badge">+10 XP</div>
-      </div>
-
-      <!-- 6 Achievements Badges Grid -->
-      <div class="badges-section-title">
-        <span>🏆</span>
-        <span>Başarı Rozetleri</span>
-      </div>
-
-      <div class="badges-grid">
-        <div class="badge-card unlocked">
-          <div class="badge-star-icon">⭐</div>
-          <div class="badge-name">İlk Adım</div>
-          <div class="badge-desc">İlk haftanın planını tamamla</div>
-        </div>
-
-        <div class="badge-card unlocked">
-          <div class="badge-star-icon">⭐</div>
-          <div class="badge-name">Kazanım Avcısı</div>
-          <div class="badge-desc">25 MEB kazanımı işle</div>
-        </div>
-
-        <div class="badge-card unlocked">
-          <div class="badge-star-icon">⭐</div>
-          <div class="badge-name">Zaman Ustası</div>
-          <div class="badge-desc">Ders zil sayacını düzenli kullan</div>
-        </div>
-
-        <div class="badge-card unlocked">
-          <div class="badge-star-icon">⭐</div>
-          <div class="badge-name">Nöbetin Efendisi</div>
-          <div class="badge-desc">Nöbet takvimini belirle</div>
-        </div>
-
-        <div class="badge-card locked">
-          <div class="badge-star-icon">🔒</div>
-          <div class="badge-name" style="color:#94A3B8;">Pedagoji Üstadı</div>
-          <div class="badge-desc">Tüm Maarif kartlarını oku</div>
-        </div>
-
-        <div class="badge-card locked">
-          <div class="badge-star-icon">🔒</div>
-          <div class="badge-name" style="color:#94A3B8;">Maarif Çınarı</div>
-          <div class="badge-desc">1000 XP seviyesine ulaş</div>
-        </div>
-      </div>
-
-      <!-- Dynamic Tree Canvas -->
-      <div class="garden-canvas-box">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-          <span style="font-size:13px; font-weight:800; color:#10B981;">🌱 Pırtılcan Maarif Çınarı</span>
-          <span style="font-size:11px; color:#38BDF8;" id="gardenTreeLevelText">Seviye: Muallim Fidanı</span>
-        </div>
-        <canvas id="gardenTreeCanvas" class="garden-tree-canvas"></canvas>
-      </div>
-    </section>
-
-    <!-- ====================================================
-         TAB 4: SINIFIM (pirtilcan_home_real.png & PlayStore 05)
-         ==================================================== -->
-    <section id="panel-sinifim" class="tab-content-panel">
-
-      <!-- Bütün Başarımlar Banner -->
-      <div class="achievements-banner-btn" onclick="switchTab('bahcem')">
-        <div class="banner-left">
-          <div class="banner-trophy-icon">🏆</div>
-          <div>
-            <div class="banner-title">Bütün Başarımlar</div>
-            <div class="banner-sub">Öğretmenlik vazifeleri, nişaneler ve ödüller</div>
-          </div>
-        </div>
-        <div style="color:#FBBF24; font-size:16px;">&rsaquo;</div>
-      </div>
-
-      <!-- Subtabs: Yoklama, Defter, Ders Sesi -->
-      <div class="sinif-subtabs-row">
-        <button id="btn-sinif-sub-yoklama" class="sinif-subtab-btn active" onclick="switchSinifSubtab('yoklama')">
-          <span>👥</span><span>Yoklama</span>
-        </button>
-        <button id="btn-sinif-sub-defter" class="sinif-subtab-btn" onclick="switchSinifSubtab('defter')">
-          <span>📖</span><span>Defter</span>
-        </button>
-        <button id="btn-sinif-sub-ses" class="sinif-subtab-btn" onclick="switchSinifSubtab('ses')">
-          <span>🎧</span><span>Ders Sesi</span>
-        </button>
-      </div>
-
-      <!-- Subpanel 1: Yoklama & Aylık Katılım Haritası -->
-      <div id="subpanel-sinif-yoklama">
-        <!-- Aylık Katılım Haritası -->
-        <div class="month-calendar-matrix-card">
-          <div class="month-matrix-header">
-            <div>
-              <div class="month-matrix-title">Aylık Ders & Katılım Haritası</div>
-              <div class="month-matrix-sub">Ekim 2026 • 2026-2027 Maarif Karnesi</div>
-            </div>
-            <div style="font-size:24px;">🏫</div>
-          </div>
-
-          <div class="calendar-days-row">
-            <span>Pzt</span><span>Sal</span><span>Çar</span><span>Per</span><span>Cum</span><span>Cmt</span><span>Paz</span>
-          </div>
-
-          <div class="calendar-cells-grid" id="calendarMatrixGrid"></div>
-
-          <div style="font-size:10px; color:#94A3B8; margin-bottom:10px; display:flex; gap:10px; flex-wrap:wrap;">
-            <span>🟢 1-2 Saat</span>
-            <span>🔵 3-4 Saat</span>
-            <span>🟣 5-6 Saat</span>
-            <span>🟠 7+ Saat</span>
-          </div>
-
-          <button class="btn-share-matrix" onclick="showToast('📥 Sınıf Haritası Görüntüsü Hazırlandı!'); playDingSound();">
-            <span>📥</span>
-            <span>Sınıf Haritasını Resim Olarak Paylaş</span>
+          <button class="btn-lesson-action" onclick="openModal('modalScheduleEdit')" style="padding:5px 10px; font-size:11px;">
+            ✏️ Düzenle
           </button>
         </div>
 
-        <!-- Adil Kura Çarkı Button -->
-        <div style="margin-bottom:12px;">
-          <button style="width:100%; background:linear-gradient(90deg, #F59E0B, #E11D48); color:#FFF; border:none; padding:12px; border-radius:14px; font-size:13px; font-weight:800; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px;" onclick="openModal('modalKura')">
-            <span>🎡</span>
-            <span>Çark-ı Maarif (Adil Kura Çarkı)</span>
-          </button>
+        <!-- Gün Sekmeleri -->
+        <div class="schedule-day-tabs" id="scheduleDayTabsContainer">
+          <button class="schedule-day-tab" data-day="1" onclick="switchScheduleDay(1)">Pazartesi</button>
+          <button class="schedule-day-tab" data-day="2" onclick="switchScheduleDay(2)">Salı</button>
+          <button class="schedule-day-tab active" data-day="3" onclick="switchScheduleDay(3)">Çarşamba</button>
+          <button class="schedule-day-tab" data-day="4" onclick="switchScheduleDay(4)">Perşembe</button>
+          <button class="schedule-day-tab" data-day="5" onclick="switchScheduleDay(5)">Cuma</button>
         </div>
 
-        <!-- Student Attendance List -->
-        <div id="studentsListContainer"></div>
-      </div>
-
-      <!-- Subpanel 2: Defter Metni -->
-      <div id="subpanel-sinif-defter" style="display:none;">
-        <div class="maarif-card">
-          <div style="font-size:13px; font-weight:800; color:#38BDF8; margin-bottom:6px;">RESMİ SINIF DEFTERİ METNİ:</div>
-          <div id="defterMetniFullContent" style="font-size:13px; color:#FFF; line-height:1.5; background:#07101E; padding:12px; border-radius:12px; border:1px dashed #00E5FF; margin-bottom:10px;">
-            Metindeki fiilimsileri bularak türlerini ve cümledeki işlevlerini inceler. Sıfat-fiil ve isim-fiil ekleri karşılaştırmalı olarak kavratılır.
-          </div>
-          <button class="btn-print-plan" onclick="copyToClipboard(document.getElementById('defterMetniFullContent').innerText, 'Sınıf defteri metni kopyalandı!')">
-            📋 Defter Metnini Kopyala
-          </button>
+        <!-- Ders Listesi -->
+        <div class="schedule-list" id="scheduleListContainer">
+          <!-- Dinamik olarak JS ile basılacak -->
         </div>
       </div>
 
-      <!-- Subpanel 3: Ders Sesi -->
-      <div id="subpanel-sinif-ses" style="display:none;">
-        <div class="maarif-card" style="text-align:center;">
-          <div style="font-size:15px; font-weight:800; color:#38BDF8; margin-bottom:6px;">Sınıf Desibel & Sessizlik Ölçer</div>
-          <div style="font-size:38px; margin:10px 0;">🎙️</div>
-          <div style="font-size:13px; color:#CBD5E1; margin-bottom:14px;">Ortam Gürültüsü: <strong style="color:#10B981;">34 dB (Sessiz ve Odaklanmış)</strong></div>
-          
-          <div style="display:flex; justify-content:center; gap:10px;">
-            <button class="card-action-btn btn-zil" style="padding:10px 16px;" onclick="playSchoolBell(); showToast('🔔 Ders Zili Çaldı!');">
-              🔔 Okul Zili Çal
+    </main>
+
+    <!-- ======================================================================
+         TAB 2: PLANLAR (MEB MAARİF MODELİ MÜFREDATI & YILLIK PLANLAR)
+         ====================================================================== -->
+    <section id="panelPlanlar" class="view-panel">
+      
+      <div class="maarif-card">
+        <div class="schedule-section-header">
+          <div class="section-title">
+            <span>📚</span>
+            <span>MEB Maarif Modeli Öğrenme Çıktıları</span>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button class="btn-lesson-action" onclick="printCurriculumPlan()" style="padding:5px 9px; font-size:11px;">
+              🖨️ Yazdır
             </button>
-            <button class="card-action-btn btn-defter" style="padding:10px 16px;" onclick="playDingSound(); showToast('✨ Dikkat Sesi Çaldı!');">
-              ✨ Dikkat / Ding
+            <button class="btn-lesson-action" onclick="copyCurriculumPlan()" style="padding:5px 9px; font-size:11px;">
+              📋 Kopyala
             </button>
           </div>
+        </div>
+
+        <!-- Filtreleme Alanı: Sınıf, Branş, Hafta -->
+        <div class="curriculum-filter-bar">
+          <select id="curriculumGradeSelect" class="filter-select" onchange="onGradeChange()">
+            <option value="5">5. Sınıf</option>
+            <option value="6">6. Sınıf</option>
+            <option value="7" selected>7. Sınıf</option>
+            <option value="8">8. Sınıf</option>
+            <option value="9">9. Sınıf</option>
+            <option value="10">10. Sınıf</option>
+            <option value="11">11. Sınıf</option>
+            <option value="12">12. Sınıf</option>
+          </select>
+
+          <select id="curriculumSubjectSelect" class="filter-select" onchange="onSubjectChange()">
+            <!-- Dinamik branşlar -->
+          </select>
+
+          <select id="curriculumWeekSelect" class="filter-select" onchange="onWeekChange()">
+            <!-- 1-36. Haftalar -->
+          </select>
+        </div>
+
+        <!-- Canlı Arama -->
+        <div class="curriculum-search-box">
+          <span class="search-icon-pos">🔍</span>
+          <input type="text" id="curriculumSearchInput" class="search-input" placeholder="Tema, öğrenme çıktısı veya süreç bileşeni ara..." oninput="onCurriculumSearch(this.value)">
+        </div>
+
+        <!-- Çıktılar Listesi -->
+        <div class="outcomes-list" id="curriculumOutcomesList">
+          <!-- Dinamik öğrenme çıktıları kartları -->
         </div>
       </div>
 
     </section>
 
-    <!-- ====================================================
-         TAB 5: ALET ÇANTASI (PlayStore 02, 04, 06)
-         ==================================================== -->
-    <section id="panel-aletcantasi" class="tab-content-panel">
-
-      <!-- Toolbox Subtabs -->
-      <div class="toolbox-subtabs-row">
-        <button class="toolbox-subtab active" onclick="switchToolboxPane(0)">🧰 Portallar</button>
-        <button class="toolbox-subtab" onclick="switchToolboxPane(1)">📄 Evrak Sihirbazı</button>
-        <button class="toolbox-subtab" onclick="switchToolboxPane(2)">⏱️ Zaman & Nöbet</button>
-        <button class="toolbox-subtab" onclick="switchToolboxPane(3)">💰 Ek Ders</button>
-      </div>
-
-      <!-- Pane 0: Portallar (PlayStore 04) -->
-      <div id="toolbox-pane-portallar" class="toolbox-pane">
-        <div style="font-size:13px; font-weight:800; color:#FFF; margin-bottom:10px;">100+ Resmî Eğitim Portalı & Ders Siteleri</div>
-        <div class="portals-grid">
-          <a href="https://www.eba.gov.tr" target="_blank" class="portal-card">
-            <div class="portal-category">🏛️ MEB & Maarif</div>
-            <div class="portal-sites">EBA, ÖGM, e-Okul, MEBBİS</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
-
-          <a href="https://canva.com" target="_blank" class="portal-card">
-            <div class="portal-category">🎨 Üretkenlik & Araçlar</div>
-            <div class="portal-sites">Canva, Padlet, Kahoot, Quizizz</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
-
-          <a href="https://phet.colorado.edu" target="_blank" class="portal-card">
-            <div class="portal-category">🔬 Bilim & Deney</div>
-            <div class="portal-sites">PhET Simülasyon, TÜBİTAK, NASA</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
-
-          <a href="https://www.geogebra.org" target="_blank" class="portal-card">
-            <div class="portal-category">📐 Matematik & Geometri</div>
-            <div class="portal-sites">GeoGebra, Desmos, Mathigon</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
-
-          <a href="https://scratch.mit.edu" target="_blank" class="portal-card">
-            <div class="portal-category">💻 Kodlama & Bilişim</div>
-            <div class="portal-sites">Scratch, Code.org, Tinkercad</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
-
-          <a href="https://teachablemachine.withgoogle.com" target="_blank" class="portal-card">
-            <div class="portal-category">🤖 Yapay Zekâ Eğitimi</div>
-            <div class="portal-sites">TÜBİTAK AI, Teachable Machine</div>
-            <div class="portal-action-link">Dahili Tarayıcıda Aç &rarr;</div>
-          </a>
+    <!-- ======================================================================
+         TAB 3: SINIFLAR (YOKLAMA, OTURMA PLANI, ADİL KURA & TAKIMLAR)
+         ====================================================================== -->
+    <section id="panelSiniflar" class="view-panel">
+      
+      <div class="classroom-header-bar">
+        <div class="classroom-tabs" id="classroomTabsContainer">
+          <!-- Sınıf butonları: 5-A, 6-B, 7-A, 8-B... -->
         </div>
+        <button class="btn-lesson-action" onclick="openModal('modalClassEdit')" style="padding:6px 12px; font-size:11.5px; white-space:nowrap;">
+          ➕ Sınıf / Öğrenci
+        </button>
       </div>
 
-      <!-- Pane 1: Evrak Sihirbazı (PlayStore 02) -->
-      <div id="toolbox-pane-evrak" class="toolbox-pane" style="display:none;">
-        <div class="maarif-card">
-          <div style="font-size:14px; font-weight:800; color:#FBBF24; margin-bottom:4px;">📄 21 Resmî Belge Sihirbazı</div>
-          <div style="font-size:11px; color:#94A3B8; margin-bottom:10px;">İki Yana Yasla, 1.25 cm Girinti ve Zümre Tutanakları</div>
-          
-          <div style="background:#07101E; padding:12px; border-radius:12px; border:1px solid #1E293B; margin-bottom:12px; font-family:'Times New Roman', serif; font-size:12px; color:#FFF; line-height:1.4;">
-            <div style="text-align:center; font-weight:bold; margin-bottom:6px;">
-              T.C. MİLLÎ EĞİTİM BAKANLIĞI<br>CUMHURİYET ORTAOKULU MÜDÜRLÜĞÜ<br>2026-2027 Sene Başı Zümre Tutanağı
-            </div>
-            <p style="text-indent:1.25cm;">2026-2027 Eğitim Öğretim Yılı sene başı zümre toplantısı Türkiye Yüzyılı Maarif Modeli esasları doğrultusunda okul zümre odasında gerçekleştirilmiştir.</p>
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
-            <button class="btn-print-plan" style="background:#0284C7; color:#FFF;" onclick="downloadDocTemplate()">
-              💾 Word (.doc) İndir
-            </button>
-            <button class="btn-print-plan" style="background:#DC2626; color:#FFF;" onclick="window.print()">
-              🖨️ PDF / Yazdır
-            </button>
-          </div>
+      <!-- Yoklama Özeti Kartı -->
+      <div class="attendance-summary-card">
+        <div class="stat-chip">
+          <span class="stat-chip-val" id="attTotalCount">28</span>
+          <span class="stat-chip-lbl">Mevcut</span>
         </div>
-      </div>
-
-      <!-- Pane 2: Zaman & Nöbet (PlayStore 06) -->
-      <div id="toolbox-pane-zaman" class="toolbox-pane" style="display:none;">
-        <div class="maarif-card">
-          <div style="font-size:14px; font-weight:800; color:#00E5FF; margin-bottom:4px;">⏱️ Zaman-ı Maarif & Nöbet Asistanı</div>
-          <div style="font-size:11px; color:#94A3B8;">40 Dk Ders & 10 Dk Teneffüs Sayacı</div>
-
-          <div class="circular-timer-container">
-            <div class="circular-timer-circle">
-              <div class="circular-time-text" id="circularTimerDisplay">26:40</div>
-              <div class="circular-time-sub">3. Ders • 8/A Sınıfı</div>
-            </div>
-          </div>
-
-          <div style="background:#07101E; border:1px solid #1E293B; border-radius:12px; padding:10px; margin-bottom:10px;">
-            <div style="font-size:12px; font-weight:700; color:#FBBF24;">🛡️ Nöbetçi Öğretmen Görev Kartı</div>
-            <div style="font-size:11px; color:#E2E8F0; margin-top:2px;">Bugünkü Nöbet Yeri: <strong>2. Kat Koridor & Merdivenler</strong></div>
-          </div>
-
-          <div style="background:#07101E; border:1px solid #1E293B; border-radius:12px; padding:10px;">
-            <div style="font-size:12px; font-weight:700; color:#38BDF8;">🚩 Bayrak Töreni & İstiklal Marşı Rehberi</div>
-            <div style="font-size:10.5px; color:#94A3B8; margin-top:2px;">Pazartesi açılış & Cuma kapanış tören talimatları, komutlar ve resmî bayrak protokolü.</div>
-          </div>
+        <div class="stat-chip">
+          <span class="stat-chip-val" id="attPresentCount" style="color:var(--success-green);">26</span>
+          <span class="stat-chip-lbl">Geldi</span>
         </div>
+        <div class="stat-chip">
+          <span class="stat-chip-val" id="attAbsentCount" style="color:var(--danger-red);">1</span>
+          <span class="stat-chip-lbl">Gelmedi</span>
+        </div>
+        <div class="stat-chip">
+          <span class="stat-chip-val" id="attLateCount" style="color:var(--amber-glow);">1</span>
+          <span class="stat-chip-lbl">Geç</span>
+        </div>
+        <button class="btn-lesson-action" onclick="copyAttendanceToClipboard()" style="padding:6px 10px; font-size:11px;">
+          📋 e-Okul Kopyala
+        </button>
       </div>
 
-      <!-- Pane 3: Ek Ders Hesaplayıcı -->
-      <div id="toolbox-pane-ekders" class="toolbox-pane" style="display:none;">
-        <div class="maarif-card">
-          <div style="font-size:14px; font-weight:800; color:#10B981; margin-bottom:8px;">💰 MEB Ek Ders Ücret Hesaplayıcı</div>
-          
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;">
-            <div>
-              <label style="font-size:10.5px; color:#94A3B8;">Gündüz Saati:</label>
-              <input type="number" id="ekDersRegular" value="18" style="width:100%; padding:8px; background:#07101E; border:1px solid #1E293B; border-radius:8px; color:#FFF;" oninput="calculateEkDers()">
-            </div>
-            <div>
-              <label style="font-size:10.5px; color:#94A3B8;">Gece / Hafta Sonu:</label>
-              <input type="number" id="ekDersNight" value="0" style="width:100%; padding:8px; background:#07101E; border:1px solid #1E293B; border-radius:8px; color:#FFF;" oninput="calculateEkDers()">
-            </div>
-          </div>
+      <!-- Görünüm Seçici: Öğrenci Listesi / Oturma Planı Krokisi -->
+      <div style="display:flex; gap:8px;">
+        <button class="schedule-day-tab active" id="btnViewList" onclick="switchClassView('list')">📋 Liste & Yoklama</button>
+        <button class="schedule-day-tab" id="btnViewSeating" onclick="switchClassView('seating')">🪑 Oturma Planı</button>
+        <button class="schedule-day-tab" onclick="openClassLottery()">🎯 Adil Kura</button>
+        <button class="schedule-day-tab" onclick="openClassGroups()">👥 Takım Kur</button>
+      </div>
 
-          <div style="display:flex; flex-direction:column; gap:6px; font-size:11.5px; margin-bottom:12px;">
-            <label style="cursor:pointer;"><input type="checkbox" id="ekDersDuty" onchange="calculateEkDers()"> Nöbet Görevi (+3 Saat)</label>
-            <label style="cursor:pointer;"><input type="checkbox" id="ekDersClub" onchange="calculateEkDers()"> Kulüp / Rehberlik (+2 Saat)</label>
-            <label style="cursor:pointer;"><input type="checkbox" id="ekDersDyk" onchange="calculateEkDers()"> Destekleme Yetiştirme Kursu (DYK - 2 Kat)</label>
-            <label style="cursor:pointer;"><input type="checkbox" id="ekDersSpecial" onchange="calculateEkDers()"> Özel Eğitim / Rehberlik (%25 Artırımlı)</label>
-          </div>
+      <!-- Öğrenci Listesi -->
+      <div class="student-list-container" id="studentListContainer">
+        <!-- Dinamik öğrenci kartları -->
+      </div>
 
-          <div style="background:#07101E; padding:12px; border-radius:12px; text-align:center;">
-            <div style="font-size:11px; color:#94A3B8;">Aylık Toplam Ek Ders:</div>
-            <div id="ekDersTotalMoney" style="font-size:26px; font-weight:800; color:#10B981; margin:4px 0;">₺ 10.999</div>
-            <div style="display:flex; justify-content:space-around; font-size:10.5px; color:#38BDF8;">
-              <span id="ekDersWeeklyHours">18.0 Saat / Hafta</span>
-              <span id="ekDersMonthlyHours">75.6 Saat / Ay</span>
-            </div>
-          </div>
+      <!-- Oturma Planı Krokisi -->
+      <div class="maarif-card" id="seatingPlanContainer" style="display:none;">
+        <div style="font-size:13px; font-weight:700; color:var(--neon-cyan); margin-bottom:6px; text-align:center;">
+          TAHTA / KÜRSÜ DÜZENİ
+        </div>
+        <div class="seating-chart-grid" id="seatingChartGrid">
+          <!-- 3 Kolonlu 2'li masa düzeni -->
         </div>
       </div>
 
     </section>
 
-  </main>
+    <!-- ======================================================================
+         TAB 4: EVRAKLAR (MEB 21 KATEGORİ RESMİ EVRAK & PLAN SİHİRBAZI)
+         ====================================================================== -->
+    <section id="panelEvraklar" class="view-panel">
+      
+      <div class="maarif-card">
+        <div class="schedule-section-header">
+          <div class="section-title">
+            <span>🏛️</span>
+            <span>MEB Resmî Evrak & Tutanak Sihirbazı</span>
+          </div>
+          <span style="font-size:11.5px; color:var(--neon-cyan); font-weight:700;">2026-2027 Uyumlu</span>
+        </div>
 
-  <!-- ====================================================
-       BOTTOM NAVIGATION BAR (Exact Match: 5 Dark Tabs)
-       ==================================================== -->
+        <!-- Canlı Arama -->
+        <div class="curriculum-search-box">
+          <span class="search-icon-pos">🔍</span>
+          <input type="text" id="docSearchInput" class="search-input" placeholder="Zümre, ŞÖK, veli toplantısı, BEP, dilekçe veya tutanak ara..." oninput="onDocSearch(this.value)">
+        </div>
+
+        <!-- Kategori Çubuğu -->
+        <div class="docs-category-scroll" id="docCategoryScroll">
+          <!-- Dinamik kategori hapları -->
+        </div>
+
+        <!-- Belge Şablon Kartları Grid -->
+        <div class="docs-template-grid" id="docTemplatesGrid">
+          <!-- 72 Resmi Şablon Kartı -->
+        </div>
+      </div>
+
+    </section>
+
+  </div><!-- /app-layout -->
+
+  <!-- ======================================================================
+       BOTTOM NAVIGATION BAR (4 TAB + PARLAYAN MERKEZ MASKOT BUTONU)
+       ====================================================================== -->
   <nav class="bottom-nav-bar">
-    <button id="nav-btn-ana" class="nav-item-btn active" onclick="switchTab('ana')">
-      <div class="nav-icon-container">🏠</div>
-      <span>Ana Sayfa</span>
+    <!-- Tab 1: Dersim -->
+    <button class="bottom-nav-btn active" id="navBtnDersim" onclick="switchMainTab('Dersim')">
+      <span class="bottom-nav-icon">🏫</span>
+      <span class="bottom-nav-label">Dersim</span>
     </button>
 
-    <button id="nav-btn-kazanimlar" class="nav-item-btn" onclick="switchTab('kazanimlar')">
-      <div class="nav-icon-container">📖</div>
-      <span>Kazanımlar</span>
+    <!-- Tab 2: Planlar -->
+    <button class="bottom-nav-btn" id="navBtnPlanlar" onclick="switchMainTab('Planlar')">
+      <span class="bottom-nav-icon">📖</span>
+      <span class="bottom-nav-label">Planlar</span>
     </button>
 
-    <button id="nav-btn-bahcem" class="nav-item-btn" onclick="switchTab('bahcem')">
-      <div class="nav-icon-container">🌱</div>
-      <span>Bahçem</span>
+    <!-- Center Floating Button: Pırtılcan Öğretmen Çantası -->
+    <div class="center-mascot-wrapper">
+      <button class="center-mascot-btn" onclick="openModal('modalToolsHub')" title="Pırtılcan Öğretmen Çantası (Akıllı Araçlar)">
+        <img id="centerMascotImg" src="./assets/pirtilcan_selcuklu_turkuaz.png" alt="Pırtılcan" class="center-mascot-img">
+      </button>
+      <span class="center-btn-label">Çantam</span>
+    </div>
+
+    <!-- Tab 3: Sınıflar -->
+    <button class="bottom-nav-btn" id="navBtnSiniflar" onclick="switchMainTab('Siniflar')">
+      <span class="bottom-nav-icon">👥</span>
+      <span class="bottom-nav-label">Sınıflar</span>
     </button>
 
-    <button id="nav-btn-sinifim" class="nav-item-btn" onclick="switchTab('sinifim')">
-      <div class="nav-icon-container">👥</div>
-      <span>Sınıfım</span>
-    </button>
-
-    <button id="nav-btn-aletcantasi" class="nav-item-btn" onclick="switchTab('aletcantasi')">
-      <div class="nav-icon-container">🔧</div>
-      <span>Alet Çantası</span>
+    <!-- Tab 4: Evraklar -->
+    <button class="bottom-nav-btn" id="navBtnEvraklar" onclick="switchMainTab('Evraklar')">
+      <span class="bottom-nav-icon">📄</span>
+      <span class="bottom-nav-label">Evraklar</span>
     </button>
   </nav>
 
-  <!-- ====================================================
-       MODALS
-       ==================================================== -->
+  <!-- ======================================================================
+       FLOATING ACTION BUTTONS (AI CHAT & KÜTÜPHANE)
+       ====================================================================== -->
+  <div class="floating-actions-box">
+    <button class="fab-btn ai-btn" onclick="openModal('modalAiChat')" title="Pırtılcan AI Masası (Sohbet & Rehberlik)">
+      🤖
+    </button>
+    <button class="fab-btn" onclick="openModal('modalLibrary')" title="Dijital Kütüphane & Utrucce">
+      📚
+    </button>
+  </div>
 
-  <!-- Modal: Adil Kura Çarkı (PlayStore 05) -->
-  <div id="modalKura" class="modal-overlay">
-    <div class="modal-card" style="text-align:center;">
-      <button class="modal-close-btn" onclick="closeModal('modalKura')">&times;</button>
-      <div style="font-size:15px; font-weight:800; color:#FBBF24; margin-bottom:4px;">🎡 Çark-ı Maarif & Adil Kura</div>
-      <div style="font-size:11px; color:#94A3B8; margin-bottom:12px;">Sesli Maarif Çarkıyla Tarafsız Öğrenci Seçimi</div>
+  <!-- ======================================================================
+       MODALLAR & DİYALOGLAR
+       ====================================================================== -->
 
-      <!-- Spinning Wheel Canvas -->
-      <div style="position:relative; width:200px; height:200px; margin:0 auto 14px auto;">
-        <canvas id="kuraWheelCanvas" width="200" height="200"></canvas>
-        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:32px; height:32px; background:#0B172B; border:2px solid #FBBF24; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#FFF; font-weight:bold; font-size:14px;">
-          🎯
+  <!-- Modal 1: Story Modal (Günün Sözü / Günün Bilgisi) -->
+  <div class="modal-overlay" id="modalStory">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text" id="storyModalTitle">📜 Günün Maarif Sözü</div>
+        <button class="btn-close-modal" onclick="closeModal('modalStory')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div style="background:rgba(20,14,35,0.7); border:1px solid rgba(0,245,212,0.25); border-radius:18px; padding:20px; text-align:center;">
+          <div style="font-size:36px; margin-bottom:10px;" id="storyModalIcon">📜</div>
+          <div style="font-size:16px; font-weight:700; color:#FFF; line-height:1.6; font-style:italic;" id="storyModalQuote">
+            "İlim ilim bilmektir, ilim kendin bilmektir..."
+          </div>
+          <div style="font-size:13px; font-weight:800; color:var(--neon-gold); margin-top:12px;" id="storyModalAuthor">
+            — Yunus Emre
+          </div>
+          <div style="font-size:11px; color:var(--text-secondary); margin-top:4px;" id="storyModalCategory">
+            Maarif & Hikmet
+          </div>
+        </div>
+
+        <div style="display:flex; gap:10px; margin-top:16px;">
+          <button class="btn-primary-action" onclick="shareStoryCard()">
+            <span>📤</span>
+            <span>Paylaş / Kopyala</span>
+          </button>
+          <button class="btn-lesson-action" onclick="fetchNextWisdomStory()" style="width:140px;">
+            <span>🔄</span>
+            <span>Başka Getir</span>
+          </button>
         </div>
       </div>
-
-      <div id="kuraSelectedStudentDisplay" style="background:#07101E; border:1px solid #1E293B; border-radius:10px; padding:8px; font-size:13px; font-weight:700; color:#38BDF8; margin-bottom:12px;">
-        🎯 Seçilen: Zeynep K. (No: 14)
-      </div>
-
-      <button style="width:100%; background:#FBBF24; color:#04101E; border:none; padding:12px; border-radius:12px; font-size:13px; font-weight:800; cursor:pointer;" onclick="spinKuraWheel()">
-        🎡 ÇARK-I MAARİF'İ ÇEVİR
-      </button>
     </div>
   </div>
 
-  <!-- Modal: Dijital Muallim (Pırtılcan Refik) -->
-  <div id="modalRefik" class="modal-overlay">
-    <div class="modal-card">
-      <button class="modal-close-btn" onclick="closeModal('modalRefik')">&times;</button>
-      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
-        <img src="./assets/pirtilcan_round.png" style="width:44px; height:44px; border-radius:50%; border:2px solid #00E5FF;" alt="Pırtılcan">
-        <div>
-          <div style="font-size:14px; font-weight:800; color:#FFF;">DİJİTAL MUALLİM</div>
-          <div style="font-size:11px; color:#38BDF8;">Pırtılcan Öğretmen Asistanı</div>
-        </div>
+  <!-- Modal 2: Canlı Eğitim Radyosu -->
+  <div class="modal-overlay" id="modalRadio">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text">📻 Canlı Eğitim Radyosu & Odak Ambiyansı</div>
+        <button class="btn-close-modal" onclick="closeModal('modalRadio')">&times;</button>
       </div>
-
-      <div id="pirtilChatMessages" style="height:180px; background:#040E1B; border:1px solid #1E3A5F; border-radius:12px; padding:10px; overflow-y:auto; display:flex; flex-direction:column; gap:6px; margin-bottom:10px;">
-        <div style="background:#0C2033; border:1px solid #00E5FF; color:#E0F2FE; padding:8px 10px; border-radius:10px; font-size:11.5px;">
-          🐛 <strong>Pırtılcan:</strong> Merhaba değerli öğretmenim! Ders kazanımları, defter metinleri, nöbet görevi veya ek ders hesabı için buradayım. Size nasıl yardımcı olabilirim?
+      <div class="modal-body-scroll">
+        <div style="text-align:center; padding:16px 0;">
+          <div style="font-size:42px; margin-bottom:8px;">📻</div>
+          <div style="font-size:16px; font-weight:800; color:#FFF;" id="radioCurrentChannel">TRT Radyo 1</div>
+          <div style="font-size:12px; color:var(--neon-cyan); margin-top:4px;" id="radioPlayStatus">Çalıyor...</div>
         </div>
-      </div>
 
-      <div style="display:flex; gap:6px;">
-        <input type="text" id="pirtilChatInput" placeholder="Pırtılcan'a soru sor..." style="flex:1; padding:8px 10px; background:#07101E; border:1px solid #1E293B; border-radius:8px; color:#FFF; font-size:11.5px; outline:none;" onkeypress="if(event.key==='Enter') handlePirtilcanChat()">
-        <button onclick="handlePirtilcanChat()" style="background:#0284C7; color:#FFF; border:none; padding:0 12px; border-radius:8px; font-weight:700; cursor:pointer;">Gönder</button>
+        <div style="display:flex; flex-direction:column; gap:8px; margin:16px 0;">
+          <button class="btn-lesson-action" onclick="changeRadioChannel('trt1')">
+            <span>📻</span>
+            <span>TRT Radyo 1 (Haber, Kültür & Eğitim)</span>
+          </button>
+          <button class="btn-lesson-action" onclick="changeRadioChannel('diyanet')">
+            <span>🕌</span>
+            <span>Diyanet Radyo (Kıraat, İlahi & Sohbet)</span>
+          </button>
+          <button class="btn-lesson-action" onclick="changeRadioChannel('trtnagme')">
+            <span>🎻</span>
+            <span>TRT Nağme (Klasik Türk Sanat Müziği)</span>
+          </button>
+          <button class="btn-lesson-action" onclick="changeRadioChannel('ambient_birds')">
+            <span>🌳</span>
+            <span>Doğa & Kuş Sesleri (Odaklanma Ambiyansı)</span>
+          </button>
+        </div>
+
+        <button class="btn-primary-action" id="btnToggleRadioPlayback" onclick="toggleRadioPlay()">
+          <span>⏹️</span>
+          <span>Radyoyu Durdur</span>
+        </button>
       </div>
     </div>
   </div>
 
-  <!-- Toast Notice Element -->
-  <div id="toastNotice" class="toast-notice"></div>
+  <!-- Modal 3: Pırtılcan Öğretmen Çantası (Akıllı Araçlar Hub) -->
+  <div class="modal-overlay" id="modalToolsHub">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text">
+          <span>🎒</span>
+          <span>Pırtılcan Öğretmen Çantası (Akıllı Araçlar)</span>
+        </div>
+        <button class="btn-close-modal" onclick="closeModal('modalToolsHub')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div class="tools-hub-grid" id="toolsHubGrid">
+          <!-- 20+ Akıllı Araç Kutusu JS ile dinamik render edilir -->
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="./assets/data.js"></script>
+  <!-- Modal 4: Pırtılcan AI Maarif Masası (Sohbet & Rehberlik) -->
+  <div class="modal-overlay" id="modalAiChat">
+    <div class="modal-content-box" style="height:85vh;">
+      <div class="modal-header-row">
+        <div class="modal-title-text">
+          <img src="./assets/pirtilcan_logo.png" style="width:26px; height:26px; border-radius:50%;" alt="Pırtılcan">
+          <span>Pırtılcan AI Maarif Refiki</span>
+        </div>
+        <button class="btn-close-modal" onclick="closeModal('modalAiChat')">&times;</button>
+      </div>
+      <div class="modal-body-scroll" id="aiChatMessagesContainer" style="display:flex; flex-direction:column; gap:12px;">
+        <!-- Mesajlar buraya akacak -->
+      </div>
+      <div style="padding:12px 16px; border-top:1px solid var(--glass-border); background:rgba(15,10,24,0.95); display:flex; gap:8px;">
+        <input type="text" id="aiChatInput" class="form-control" placeholder="Öğretmenim, maarif modeli veya sınıf yönetimi hakkında bir soru sorun..." onkeydown="if(event.key==='Enter') sendAiChatMessage()">
+        <button class="btn-lesson-action" onclick="sendAiChatMessage()" style="width:48px; flex-shrink:0;">
+          ➤
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Ayarlar & Tema & Duvar Kağıdı Modalı -->
+  <div class="modal-overlay" id="modalSettings">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text">⚙️ Ayarlar, Profil & Tema Tercihleri</div>
+        <button class="btn-close-modal" onclick="closeModal('modalSettings')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        
+        <!-- Profil Bilgileri -->
+        <div class="form-group">
+          <label class="form-label">Öğretmen Adı Soyadı</label>
+          <input type="text" id="settingsTeacherName" class="form-control" value="Sertan Çubukçu">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Branş</label>
+          <input type="text" id="settingsTeacherBranch" class="form-control" value="Bilişim Teknolojileri">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Okul Adı</label>
+          <input type="text" id="settingsTeacherSchool" class="form-control" value="Cumhuriyet Ortaokulu">
+        </div>
+
+        <!-- Pırtılcan Maskot Kostümü (10 Kostüm) -->
+        <div class="form-group">
+          <label class="form-label">Pırtılcan Kostüm & Karakter Seçimi</label>
+          <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:8px; margin-top:6px;" id="mascotPickerGrid">
+            <!-- 10 Maskot seçeneği -->
+          </div>
+        </div>
+
+        <!-- Duvar Kağıdı Seçimi (20 MEB Duvar Kağıdı) -->
+        <div class="form-group" style="margin-top:14px;">
+          <label class="form-label">Eğitim Duvar Kağıdı (20 Tema)</label>
+          <select id="settingsWallpaperSelect" class="form-control" onchange="changeWallpaper(this.value)">
+            <option value="none">Sade Derin Kozmik Arka Plan</option>
+            <option value="bg_edu_minimal_1.jpg">Minimal Maarif 1 (Geometrik Işık)</option>
+            <option value="bg_edu_minimal_2.jpg">Minimal Maarif 2 (Turkuaz Hatlar)</option>
+            <option value="bg_edu_minimal_3.jpg">Minimal Maarif 3 (Altın Kubbe)</option>
+            <option value="bg_edu_minimal_4.jpg">Minimal Maarif 4 (Sade Dalgalar)</option>
+            <option value="bg_edu_minimal_5.jpg">Minimal Maarif 5 (Selçuklu Deseni)</option>
+            <option value="bg_edu_futuristic_1.jpg">Fütüristik Eğitim 1 (Siber Kodlar)</option>
+            <option value="bg_edu_futuristic_2.jpg">Fütüristik Eğitim 2 (Yapay Zeka Laboratuvarı)</option>
+            <option value="bg_edu_futuristic_3.jpg">Fütüristik Eğitim 3 (Kozmik Uzay)</option>
+            <option value="bg_edu_futuristic_4.jpg">Fütüristik Eğitim 4 (Neon Ağlar)</option>
+          </select>
+        </div>
+
+        <button class="btn-primary-action" onclick="saveSettingsProfile()" style="margin-top:14px;">
+          💾 Bilgileri Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Nöbet Düzenleyici -->
+  <div class="modal-overlay" id="modalDutyEdit">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text">🚩 Haftalık Nöbet Yeri & Günü</div>
+        <button class="btn-close-modal" onclick="closeModal('modalDutyEdit')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div class="form-group">
+          <label class="form-label">Nöbet Günü</label>
+          <select id="dutyDaySelect" class="form-control">
+            <option value="Pazartesi">Pazartesi</option>
+            <option value="Salı">Salı</option>
+            <option value="Çarşamba" selected>Çarşamba</option>
+            <option value="Perşembe">Perşembe</option>
+            <option value="Cuma">Cuma</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Nöbet Bölgesi / Yeri</label>
+          <input type="text" id="dutyLocationInput" class="form-control" value="2. Kat Koridor">
+        </div>
+        <button class="btn-primary-action" onclick="saveDutyInfo()">
+          💾 Nöbet Bilgisini Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Ders Programı Düzenleme -->
+  <div class="modal-overlay" id="modalScheduleEdit">
+    <div class="modal-content-box">
+      <div class="modal-header-row">
+        <div class="modal-title-text">📅 Ders Programı Ekle / Düzenle</div>
+        <button class="btn-close-modal" onclick="closeModal('modalScheduleEdit')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div class="form-group">
+          <label class="form-label">Gün</label>
+          <select id="slotDaySelect" class="form-control">
+            <option value="1">Pazartesi</option>
+            <option value="2">Salı</option>
+            <option value="3">Çarşamba</option>
+            <option value="4">Perşembe</option>
+            <option value="5">Cuma</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Ders Sırası (1-8)</label>
+          <input type="number" id="slotNumberInput" class="form-control" min="1" max="8" value="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Ders Adı</label>
+          <input type="text" id="slotSubjectInput" class="form-control" value="Bilişim Teknolojileri">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Sınıf / Şube</label>
+          <input type="text" id="slotClassInput" class="form-control" value="7-A">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Saat Aralığı (Örn: 08:30 - 09:10)</label>
+          <input type="text" id="slotTimeInput" class="form-control" value="08:30 - 09:10">
+        </div>
+        <button class="btn-primary-action" onclick="saveScheduleSlot()">
+          ➕ Dersi Kaydet
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: MEB Resmî Evrak Düzenleme & A4 Önizleme -->
+  <div class="modal-overlay" id="modalDocEdit">
+    <div class="modal-content-box" style="max-width:760px; height:88vh;">
+      <div class="modal-header-row">
+        <div class="modal-title-text" id="docEditorModalTitle">📄 Resmî Evrak Sihirbazı</div>
+        <button class="btn-close-modal" onclick="closeModal('modalDocEdit')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div class="form-group">
+          <label class="form-label">Belge Başlığı</label>
+          <input type="text" id="docEditTitle" class="form-control">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Yasal Dayanak / Mevzuat</label>
+          <input type="text" id="docEditLegalBasis" class="form-control">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Gündem Maddeleri</label>
+          <textarea id="docEditAgenda" class="form-control" style="min-height:120px;"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Alınan Kararlar / Sonuç</label>
+          <textarea id="docEditDecisions" class="form-control" style="min-height:140px;"></textarea>
+        </div>
+
+        <div style="display:flex; gap:10px; margin-top:14px;">
+          <button class="btn-primary-action" onclick="printActiveOfficialDocument()">
+            🖨️ A4 Yazdır / PDF İndir
+          </button>
+          <button class="btn-lesson-action" onclick="copyActiveDocToClipboard()">
+            📋 Panoya Kopyala
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: Dijital Kütüphane & Utrucce Kitapları -->
+  <div class="modal-overlay" id="modalLibrary">
+    <div class="modal-content-box" style="height:85vh;">
+      <div class="modal-header-row">
+        <div class="modal-title-text">🏛️ Dijital Kütüphane & Utrucce Külliyatı</div>
+        <button class="btn-close-modal" onclick="closeModal('modalLibrary')">&times;</button>
+      </div>
+      <div class="modal-body-scroll">
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:12px;" id="libraryBooksGrid">
+          <!-- Utrucce ve Pedagoji Kitapları -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 10: Dinamik Araç Konteyner Modalı (Karekod, Pomodoro, Kura vb.) -->
+  <div class="modal-overlay" id="modalToolContainer">
+    <div class="modal-content-box" id="toolContainerBox">
+      <div class="modal-header-row">
+        <div class="modal-title-text" id="toolContainerTitle">🛠️ Araç</div>
+        <button class="btn-close-modal" onclick="closeModal('modalToolContainer')">&times;</button>
+      </div>
+      <div class="modal-body-scroll" id="toolContainerBody">
+        <!-- Araç arayüzü dinamik yüklenir -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resmi Evrak A4 Yazdırma Şablonu -->
+  <div id="printSection"></div>
+
+  <!-- Core App Scripts: Data & Application Logic -->
+  <script src="./assets/app_data.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

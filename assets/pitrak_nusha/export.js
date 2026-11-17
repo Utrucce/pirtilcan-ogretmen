@@ -26,6 +26,19 @@ window.Exp = (() => {
   }
 
   function fallbackDownload(blob, name) {
+    if (window.AndroidBridge && typeof window.AndroidBridge.shareFileBase64 === 'function') {
+      try {
+        const reader = new FileReader();
+        reader.onloadend = function() {
+          const mime = getMimeType(name, blob);
+          window.AndroidBridge.shareFileBase64(reader.result, name, mime);
+        };
+        reader.readAsDataURL(blob);
+        return;
+      } catch (e) {
+        console.warn('AndroidBridge error:', e);
+      }
+    }
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -113,7 +126,7 @@ window.Exp = (() => {
 
       const canShare = !!(navigator.canShare && fileObj && navigator.canShare({ files: [fileObj] }));
 
-      if (canShare) {
+      if (canShare || window.AndroidBridge) {
         if (shareText) shareText.textContent = isImage ? '📲 Fotoğraflara Kaydet / Paylaş' : '📲 Telefona Kaydet / Paylaş';
       } else {
         if (shareText) shareText.textContent = '⬇️ Dosyayı İndir';

@@ -1,0 +1,3152 @@
+[
+  {
+    "title": "Günün Bilgisi",
+    "text": "Türkiye Yüzyılı Maarif Modeli'nde daima 'Öğrenme Çıktısı' esastır. Amaç ezber bilgi depolamak değil; bilgiyi beceriye, beceriyi erdemli eyleme dönüştürmektir.",
+    "source": "Maarif Modeli Temel Yaklaşımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Erdem-Değer-Eylem Döngüsü: Maarif modelinde değerler izole bir ders olarak değil; tüm disiplinlerin içine yedirilmiş eylemsel tutumlar olarak işlenir.",
+    "source": "Maarif Modeli Değerler Çerçevesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavramsal Beceriler: Öğrencilerin sadece 'ne' olduğunu değil; 'nasıl', 'neden' ve 'hangi bağlamda' sorularını cevaplayabilmesi hedeflenir.",
+    "source": "Maarif Modeli Beceri Çerçevesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Alan Becerileri ve Temel Kabiliyetler: Her dersin kendine has düşünme yöntemi (tarihsel empati, matematiksel modelleme, bilimsel sorgulama) ders içi eylemlere entegre edilir.",
+    "source": "Maarif Modeli Program Tasarımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bütüncül (Holistik) Gelişim: Öğrencinin sadece zihinsel kapasitesi değil; ahlaki, duygusal, bedensel ve estetik boyutları bir bütün olarak geliştirilir.",
+    "source": "Maarif Modeli Felsefesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Farklılaştırılmış Öğretim Yolu: Her sınıfta öğrenme hızları ve ilgileri farklıdır. Zenginleştirme (ileri düzey) ve destekleme (pekiştirme) rotalarıyla her öğrenci kendi zirvesine taşınır.",
+    "source": "Öğretim Tasarımı İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Çıktısı Hiyerarşisi: Bilgiyi hatırlama en alt basamaktır. Analiz, sentez, eleştirel değerlendirme ve özgün ürün ortaya koyma ise asıl hedeflenen üst düzey öğrenme çıktılarıdır.",
+    "source": "Maarif Program Ölçütleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sosyo-Duygusal Beceriler (SDB): Öz farkındalık, öz yönetim, sosyal farkındalık, ilişki becerileri ve sorumlu karar verme; akademik başarı kadar hayat başarısını belirler.",
+    "source": "Sosyo-Duygusal Öğrenme Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yerelden Evrensele Köprü: Kendi kültürel köklerini, Türkçesini ve medeniyet mirasını derinlemesine bilmeyen bir fert, evrensel bilim ve sanata özgün katkı sunamaz.",
+    "source": "Maarif Kültür Tasavvuru",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disiplinlerarası Geçişlilik: Matematik dersindeki bir grafik yorumlama becerisi, fen dersindeki veri analiziyle ve coğrafyadaki nüfus piramidiyle doğrudan ilişkilendirilir.",
+    "source": "Bütünleşik Müfredat İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Okuryazarlık: Günümüz öğrencisi metinden önce görseli tarar. Ders materyallerinde infografikler, şemalar ve zihin haritaları kullanmak kalıcılığı %60 artırır.",
+    "source": "Çağdaş Materyal Tasarımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gelişim Zihniyeti (Growth Mindset): Öğrencilere beynin çalışan bir kas gibi pratik yaptıkça geliştiğini anlatın; zekânın doğuştan sabit bir sınır olmadığını kavrayan çocuk pes etmez.",
+    "source": "Eğitim Psikolojisi Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenci Merkezli Keşif: Öğretmenin 40 dakika aralıksız konuştuğu derslerde öğrenme verimi %20'ye düşer. Öğretmen rehber, öğrenci ise aktif araştırmacı olmalıdır.",
+    "source": "Aktif Öğretim Stratejisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öz Düzenlemeli Öğrenme: Öğrenciye haftalık hedeflerini kendisinin belirlemesi, planını takip etmesi ve gün sonunda kendini puanlaması alışkanlığını kazandırın.",
+    "source": "Öğrenmeyi Öğrenme İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Meta-biliş (Bilişüstü) Farkındalık: Öğrenciye 'Bu problemi çözerken kafanda ilk hangi adımı attın?' diye sorarak kendi düşünme sürecini fark etmesini sağlayın.",
+    "source": "Bilişsel Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Adalet Değeri Eğitimi: Sınıfta kuralların herkese eşit ve istisnasız uygulandığını gören çocuklarda adalet duygusu içselleşir.",
+    "source": "Değerler Eğitimi Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Merhamet ve Yardımlaşma: Başarılı öğrencilerin zorlanan arkadaşlarına ders anlatmasını sağlayan akran koçluğu, iki tarafın da empati ve bilgisini pekiştirir.",
+    "source": "Sosyal Değerler Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sorumluluk Bilinci: Sınıftaki küçük görevler (tahta temizliği, kütüphane düzeni, bitki bakımı) öğrencilere dönüşümlü verilerek aidiyet ve sorumluluk inşa edilir.",
+    "source": "Sınıf İklimi Oluşturma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tasarruf ve Çevre Bilinci: Kağıt israfını önleme, atıkları ayrıştırma ve ışıkları söndürme alışkanlığı derslerde somut uygulamalarla pekiştirilmelidir.",
+    "source": "Sürdürülebilir Maarif",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Vatanseverlik ve Milli Üretim: Fen ve bilişim derslerinde yerli teknoloji projeleri (TÜBİTAK, TEKNOFEST, TUA) örnek verilerek öğrencilere özgüven aşılanmalıdır.",
+    "source": "Milli Teknoloji Hamlesi Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Estetik ve Zarafet Eğitimi: Ders defterlerinin düzeninden sınıf panosunun renk uyumuna kadar her ayrıntı, çocuğun estetik beğenisini şekillendirir.",
+    "source": "Sanatsal Duyarlılık Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dürüstlük ve Akademik Etik: Ödevlerde kaynak gösterme ve kopya çekmeme bilinci ilkokuldan itibaren bir onur meselesi olarak işlenmelidir.",
+    "source": "Akademik Dürüstlük İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sabır ve Sebat (Grit): Zorlu bir matematik problemi veya uzun bir araştırma projesinde pes etmeden devam edebilme gücü, başarının en temel anahtarıdır.",
+    "source": "Angela Duckworth - Azim Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Saygı ve Nezaket Dili: Sınıfta 'Lütfen', 'Teşekkür ederim', 'Özür dilerim' ifadelerini öğretmen ne kadar sık kullanırsa, sınıfın genel dili o kadar nezaketle bezenir.",
+    "source": "Model Olma Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kritik Düşünme Egzersizi: Öğrencilere okudukları bir haber veya metinde 'Yazarın amacı ne? Hangi kanıtları sunuyor? Başka hangi bakış açıları olabilir?' sorularını sordurun.",
+    "source": "Eleştirel Düşünme Becerisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Problem Çözme Basamakları: Sorunu tanımla -> Verileri topla -> Alternatif hipotezler kur -> Çözümü dene -> Sonucu test et. Bu döngü her disiplinde geçerlidir.",
+    "source": "Bilimsel Yöntem Metodolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Sorma Sanatı: Öğrencilerinize 'Anladınız mı?' diye sormak yerine 'Bu konuda kafanızı en çok ne karıştırdı?' diye sorun. İlk soruya herkes evet der, ikinci soru düşünmeyi başlatır.",
+    "source": "Etkili Soru Sorma Stratejisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ters Yüz Edilmiş Öğrenme (Flipped Classroom): Temel teorik bilgiyi kısa bir video veya okuma parçasıyla eve verip, sınıf saatini tamamen tartışma ve problem çözmeye ayırın.",
+    "source": "Harmanlanmış Öğrenme Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme İstasyonları: Sınıfta farklı öğrenme stillerine hitap eden masalar kurun (Görsel İstasyon, Metin Analizi İstasyonu, Uygulama İstasyonu). Gruplar dönüşümlü çalışsın.",
+    "source": "Farklılaştırılmış Eğitim Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Oyunlaştırma (Gamification): Derse küçük puanlama sistemleri, görev rozetleri ve seviye atlama dinamikleri eklemek içsel motivasyonu ve odaklanmayı katbekat artırır.",
+    "source": "Eğitimde Oyunlaştırma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Günlüğü (Reflection Journal): Haftanın son dersinde öğrencilere 5 dakika 'Bu hafta öğrendiğim en şaşırtıcı şey neydi?' diye yazdırın; öğrenilenler kalıcı belleğe geçer.",
+    "source": "Yansıtıcı Düşünme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çoklu Zekâ Dokunuşu: Bir konuyu sadece sözel anlatmayın; görsel bir şema, sayısal bir mantık, ritmik bir vurgu veya bedensel bir canlandırma ile destekleyin.",
+    "source": "Howard Gardner Yaklaşımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ön Bilgileri Harekete Geçirme: Yeni bir konuya girmeden önce K-W-L (Biliyorum - Merak Ediyorum - Öğrendim) tablosu doldurtmak zihni yeni bilgiye açar.",
+    "source": "Bilişsel Köprü Kurma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Anlamlı Öğrenme (David Ausubel): Yeni bilginin kalıcı olması için öğrencinin mevcut bilişsel yapısındaki eski bilgilerle sağlam bağlar kurması şarttır.",
+    "source": "Bilişsel Öğrenme Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Çıktısı Odaklı Rubrik: Not verirken öğrencinin kişiliğini değil, rubrikte tanımlanan somut ölçütleri esas alın; böylece öğrenci neyi geliştirmesi gerektiğini net görür.",
+    "source": "Objektif Değerlendirme İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gelişim Dosyası (Portfolyo): Öğrencinin dönem başından sonuna kadar yaptığı en iyi çalışmaları bir dosyada toplaması, kendi ilerleyişini görmesini sağlar ve özsaygısını yükseltir.",
+    "source": "Bütüncül Değerlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Açık Uçlu Sınav Analizi: Yazılı sınavlarda sadece doğru cevaba puan vermeyin; çözüm yolundaki mantıklı adımlara ara puan vererek süreci ödüllendirin.",
+    "source": "MEB Ölçme ve Değerlendirme Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendini Değerlendirme (Self-Assessment): Öğrenci kendi ödevini teslim etmeden önce belirlenen kontrol listesiyle kontrol ederse, otokontrol ve sorumluluk becerisi gelişir.",
+    "source": "Öz Değerlendirme Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dönüt Zamanlaması: Yapılan bir sınav veya ödevin geri bildirimi ne kadar gecikirse etkisi o kadar azalır. En etkili dönüt, ilk 24-48 saat içinde verilen dönüttür.",
+    "source": "Geri Bildirim Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Grup Çalışmasında Rol Dağılımı: Grup ödevlerinde herkesin somut bir rolü olsun (Lider, Sözcü, Zaman Tutucu, Raportör, Materyal Sorumlusu); böylece bir kişinin sırtına yük binmez.",
+    "source": "İşbirlikçi Öğrenme Dinamiği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hata Odaklı Öğrenme: Sınıfta yapılan hataları kınamak yerine 'Bu harika bir hata, çünkü bize çok önemli bir kuralı hatırlattı' diyerek sınıfta psikolojik güvenlik alanı oluşturun.",
+    "source": "Pozitif Öğrenme İklimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disiplinlerarası STEM Tasarımı: Bir köprü modeli yaptırtırken hem fen (kuvvet-denge), hem matematik (açı-uzunluk), hem teknoloji hem de sanat unsurlarını birleştirin.",
+    "source": "Bütünleşik STEM Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Karikatürü ile Başlama: Tahtaya iki farklı görüş savunan iki karikatür karakteri çizin ve öğrencilere 'Sizce hangisi haklı, neden?' diye sorarak tartışma başlatın.",
+    "source": "Kavram Karikatürleri Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi Demokrasi Kültürü: Sınıf kurallarını sene başında öğretmen tek başına dikte etmemeli; öğrencilerle birlikte tartışarak ortak kararla panoya asmalıdır.",
+    "source": "Demokratik Sınıf Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye İsmiyle Hitap Etmek: İsmiyle hitap edilen öğrencinin beyninde limbik sistem güven sinyali üretir; bağ kurma ve dinleme isteği anında artar.",
+    "source": "Nöro-Pedagoji Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Ayak İzi Farkındalığı: Öğrencilere sosyal medyada paylaştıkları her bilginin kalıcı bir dijital iz bıraktığını ve ilerideki hayatlarını etkileyebileceğini kavratın.",
+    "source": "Dijital Vatandaşlık Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kütüphane Kültürü: Ayda en az bir dersi okul kütüphanesinde işleyin; rafların arasında kitap kokusunu içine çeken çocukta kitap sevgisi somutlaşır.",
+    "source": "Okuma Kültürü İnşası",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bilinçli Teknoloji Kullanımı: Akıllı tahta bir TV ekranı değildir; interaktif simülasyonlar, 3D modeller ve keşif araçları için kullanılmalıdır.",
+    "source": "Eğitim Teknolojileri İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sosyal Sorumluluk Projeleri: Öğrencileri bir huzurevi ziyareti, fidan dikimi veya sokak hayvanlarına yardım projesine dâhil etmek kalplerinde merhamet filizlendirir.",
+    "source": "Toplumsal Hizmet Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kültürel Miras Gezileri: Tarih ve medeniyet derslerini sınıftan çıkarıp müzelere, tarihi camilere ve ören yerlerine taşımak bilgiyi somut ve unutulmaz kılar.",
+    "source": "Mekân Odaklı Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bilişsel Yük Kuramı: Bir derste öğrencilerin çalışma belleğine aynı anda 4-5 yeni kavramdan fazlasını yüklemek öğrenmeyi kilitler. Bilgiyi mikro parçalara (chunking) bölerek sunun.",
+    "source": "John Sweller - Bilişsel Yük Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Aralıklı Tekrar (Spaced Repetition): Bir konuyu tek seferde saatlerce çalışmak yerine, 1 gün, 3 gün, 1 hafta ve 1 ay arayla 10'ar dakika tekrar etmek kalıcılığı 4 kat artırır.",
+    "source": "Hermann Ebbinghaus Unutma Eğrisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Geri Çağırma Pratiği (Retrieval Practice): Notları tekrar tekrar okumak pasif bir yanılsamadır. Asıl öğrenme, zihni zorlayıp bilgiyi hafızadan geri çağırmaya çalışırken (mini testler, boş kağıda hatırladıklarını yazma) gerçekleşir.",
+    "source": "Bilişsel Bellek Araştırmaları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çift Kodlama Teorisi (Dual Coding): Bilgi hem sözel (kelimeler) hem de görsel (şema, resim, grafik) olarak sunulduğunda beyinde iki ayrı kanaldan kodlanır ve hatırlanması kolaylaşır.",
+    "source": "Allan Paivio - Çift Kodlama",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çapraz Öğrenme (Interleaving): Aynı tip matematik problemlerini art arda çözmek yerine, farklı problem türlerini karışık çözmek öğrencilerin hangi stratejiyi seçeceğini ayırt etmesini sağlar.",
+    "source": "Robert Bjork - İstenen Zorluklar",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bekleme Süresi (Wait Time): Sınıfa soru sorduktan sonra en az 3 ila 5 saniye sessizce bekleyin. Araştırmalar, bekleme süresi tanındığında cevap kalitesinin ve çekingen öğrencilerin katılımının 3 kat arttığını göstermektedir.",
+    "source": "Mary Budd Rowe Araştırması",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İlgi Çekici Başlangıç (The Hook): Derse asla doğrudan 'Kitapları açın sayfa 40' diyerek başlamayın. Bir merak uyandırıcı soru, 30 saniyelik bir görsel veya günlük hayattan şaşırtıcı bir tezat ile başlayın.",
+    "source": "Sınıf Yönetimi & Motivasyon",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çıkış Kartı (Exit Ticket): Dersin son 3 dakikasında tahtaya iki soru yazın: 'Bugün en iyi anladığın şey neydi?' ve 'Hala kafanı kurcalayan soru nedir?'. Birer kağıda yazdırıp çıkarken toplayın.",
+    "source": "Biçimlendirici Değerlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akran Öğrenmesi (Peer Tutoring): Bir konuyu en iyi öğrenme yolu, onu bir başkasına anlatmaktır. Bir öğrenme çıktısını kavrayan öğrencileri eşleştirerek mini rehberlik rolü verin.",
+    "source": "İşbirlikçi Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Düşün-Eşleş-Paylaş (Think-Pair-Share): Soru sorduktan sonra tüm sınıfa doğrudan söz vermek yerine 30 sn sessiz düşünme, 1 dk yanındakiyle tartışma ve ardından ortak paylaşım yaptırın. Katılım %100'e çıkar.",
+    "source": "Aktif Öğrenme Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Priming (Zihinsel Hazırlık): Gelecek haftanın konusunun anahtar bir kavramını bu haftadan tahtanın köşesine bir bilmece gibi asın; zihin farkında olmadan arka planda kavramı taramaya başlar.",
+    "source": "Bilişsel Psikoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Pomodoro Tekniği: Zihinsel odaklanma 25 dakikadan sonra düşüşe geçer. 25 dakika yoğun çalışma ve 5 dakika zihinsel dinlenme döngüsü bilişsel tazelik sağlar.",
+    "source": "Zaman Yönetimi Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hikâyeleştirme Etkisi (Storytelling): Beyin izole formülleri ve maddeleri unutur; fakat bir hikâyenin kahramanını, çatışmasını ve çözümünü asla unutmaz. Bilgiyi bir hikâye örgüsü içine yerleştirin.",
+    "source": "Nöro-Anlatı Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mnemonic (Hafıza Çivileri): Karmaşık sıralamaları veya listeleri akılda tutmak için akrostişler, tekerlemeler ve görsel benzetmeler kullanmak hafızanın yükünü hafifletir.",
+    "source": "Hafıza Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Uyku ve Bellek Konsolidasyonu: Gün içinde öğrenilen bilgiler gece derin uykuda (özellikle REM ve yavaş dalga uykusunda) geçici bellekten kalıcı kortekse aktarılır. Uykusuzluk öğrenmeyi siler.",
+    "source": "Nöro-Biyoloji Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Amigdala ve Öğrenme Bağı: Korku, tehdit veya alay edilme riski altındaki bir sınıfta amigdala alarm verir ve prefrontal kortekse giden kan akışı kesilir. Tehdit altındaki beyin öğrenemez.",
+    "source": "Duygusal Nörobilim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dopamin ve Merak: Bir öğrenci merak ettiği bir sorunun cevabını keşfettiğinde beyin dopamin salgılar; bu hormon hem öğrenme zevkini artırır hem de o anki sinirsel bağlantıyı mühürler.",
+    "source": "Nöro-Kimyasal Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Hiyerarşi (Figma ve Tasarım İlkesi): Tahtaya yazı yazarken ana başlıkları büyük ve renkli, alt maddeleri girintili ve maddeler halinde yazmak gözün bilgiyi tarama hızını 2 katına çıkarır.",
+    "source": "Görsel Ergonomi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Feynman Tekniği: Bir konuyu gerçekten anlayıp anlamadığınızı test etmek için, konuyu hiç bilmeyen 10 yaşındaki bir çocuğa hiç yabancı terim kullanmadan anlatmaya çalışın.",
+    "source": "Richard Feynman Öğrenme Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bilişsel Çatışma (Cognitive Dissonance): Öğrencilerin bildiğini sandığı bir konuda şaşırtıcı bir tezat veya beklenmedik bir deney sonucu gösterin; zihindeki merak ateşi anında alevlenir.",
+    "source": "Jean Piaget - Dengeleme Süreci",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sokratik Çürütme: Yanlış bir cevap veren öğrenciye doğrudan 'Yanlış' demek yerine, 'Peki böyle düşünürsek şu durumda ne olur?' diyerek kendi hatasını kendi mantığıyla buldurun.",
+    "source": "Sokratik Diyalog Yöntemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Yanılgılarını Teşhis Etme: Yeni konuya başlamadan önce 3 maddelik mini teşhis testi yapın; öğrencilerin kafasındaki hatalı ön kabuller düzeltilmeden üzerine doğru bilgi inşa edilemez.",
+    "source": "Teşhis Edici Değerlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Açıklayıcı Sorgulama (Elaborative Interrogation): Öğrenciye bir olguyu ezberletmek yerine 'Bu neden doğrudur? Neden bu şekilde gerçekleşir?' diye sordurarak derin anlamlandırma sağlayın.",
+    "source": "Bilişsel Stratejiler",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendi Kendine Açıklama (Self-Explanation): Bir matematik problemini çözerken öğrencinin her adımda 'Şimdi bunu yapıyorum çünkü...' diyerek sesli düşünmesini sağlayın.",
+    "source": "Metakognitif Pratik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Üretim Etkisi (Generation Effect): Boşluk doldurma veya bir cümleyi tamamlayarak üretilen bir kelime, sadece hazır okunan bir kelimeden %30 daha iyi hatırlanır.",
+    "source": "Bellek Araştırmaları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Test Etkisi (Testing Effect): Test olmak sadece ölçme aracı değildir; bizzat kendisi en güçlü öğrenme ve hafıza güçlendirme aracıdır.",
+    "source": "Roediger & Karpicke Araştırması",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Von Restorff Etkisi: Bir listede veya tahtada diğerlerinden farklı renk veya boyutta yazılan sıra dışı bir kavram, hafızada anında öne çıkar ve ilk hatırlanan olur.",
+    "source": "Bilişsel Psikoloji İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zeigarnik Etkisi: İnsan zihni tamamlanmamış işleri tamamlananlara göre çok daha diri tutar. Dersin sonunda bir soruyu askıda bırakarak bir sonraki derse kadar merakı diri tutun.",
+    "source": "Bluma Zeigarnik Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Seri Konum Etkisi (Primacy and Recency): Dersin ilk 10 dakikası ve son 5 dakikası en yüksek hatırlama oranına sahiptir. En kritik kavramları bu zaman dilimlerine yerleştirin.",
+    "source": "Bellek Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenilmiş Çaresizlikten Kurtarma: Sürekli 'Ben matematikten anlamam' diyen öğrenciye küçük, kolay başarılabilir mikro görevler vererek başarı duygusunu yeniden tattırın.",
+    "source": "Martin Seligman Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İçsel Motivasyon vs Dışsal Ödül: Sürekli çikolata veya maddi ödül vermek içsel öğrenme merakını öldürür. Asıl ödül, problemin çözümünden duyulan keşif hazzıdır.",
+    "source": "Öz Belirleme Kuramı (Deci & Ryan)",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ayna Nöronlar: Öğretmenin derse olan heyecanı, yüz ifadesi ve tutkusu öğrencilerin ayna nöronlarını uyarır. Şevksiz bir öğretmenin sınıfında şevkli öğrenci bulunamaz.",
+    "source": "Sosyal Nörobilim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Oksitosin ve Güven Ortamı: Sınıfta koşulsuz kabul ve samimiyet gören öğrencilerde oksitosin salgılanır; bu da sınıf içi işbirliğini ve paylaşma arzusunu tetikler.",
+    "source": "Pozitif Sınıf İklimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Stres ve Kortizol: Kronik sınav kaygısı yaşayan çocukta kortizol hormonu hipokampusu küçültür ve bellek fonksiyonlarını zayıflatır. Sınavları bir yarış değil, öğrenme durağı olarak konumlandırın.",
+    "source": "Stres Biyolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hareket ve Öğrenme: Ders esnasında 20 dakikada bir öğrencileri ayağa kaldırıp kısa bir esneme veya el çırpma ritmi yaptırmak beyne giden kan akışını anında %15 artırır.",
+    "source": "Kinestetik Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Su Tüketiminin Zihne Etkisi: Vücuttaki %2'lik bir susuzluk bile odaklanma ve kısa süreli bellek kapasitesinde %10'a varan düşüşe yol açar. Masada su bulundurulmalıdır.",
+    "source": "Fizyolojik Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Doğal Işık ve Sirkadiyen Ritim: Doğal gün ışığı alan sınıflarda öğrencilerin matematik ve okuma başarılarının karanlık sınıflara göre %20 daha yüksek olduğu kanıtlanmıştır.",
+    "source": "Mekân Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çalışma Ortamında Dikkat Dağıtıcılar: Masada ders dışı eşyaların (açık telefon, oyuncak vb.) bulunması çalışma belleğinde sürekli mikro dikkat kaçışlarına yol açar.",
+    "source": "Dikkat Ekonomisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zihin Haritası (Mind Mapping): Doğrusal not tutmak yerine merkezden dallara ayrılan renkli zihin haritaları çizmek beynin iki yarım küresini birden aktive eder.",
+    "source": "Tony Buzan Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akronim Oluşturma: Karmaşık bir konunun maddelerinin ilk harflerinden anlamlı veya komik bir kelime türetmek hafızada kalıcı bir şifreleme sağlar.",
+    "source": "Mnemonik Bellek Tekniği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Benzerlik ve Analoji Kurma: Elektrik akımını su borularındaki su akışına benzetmek gibi somut analojiler, soyut kavramların zihinde kolayca modellenmesini sağlar.",
+    "source": "Bilişsel Analoji Teorisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Açık Uçlu Düşünme: Öğrencilere tek doğru cevabı olan test soruları yerine 'Eğer yerçekimi yarıya inseydi dünyada neler değişirdi?' gibi senaryolar sorarak yaratıcılığı kışkırtın.",
+    "source": "Yaratıcı Problem Çözme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hata Analiz Defteri: Öğrencilerin denemelerde yanlış yaptığı soruları kesip bir deftere yapıştırması ve altına 'Neden yanlış yaptım? Doğru mantık ne?' yazması net artışının en hızlı yoludur.",
+    "source": "Bilişsel Hata Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Odaklanma Süresi Kuralı: Bir çocuğun tek bir noktaya kesintisiz odaklanma süresi ortalama yaşı artı 2-3 dakikadır (Örn: 10 yaşındaki bir çocuk için yaklaşık 12-15 dakika). Anlatımı blok halinde tutmayın.",
+    "source": "Gelişimsel Nöroloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çoklu Duyusal Öğrenme (VARK Modeli): Bir dersi hem kulağa (işitsel), hem göze (görsel), hem de dokunmaya (kinestetik) hitap edecek materyallerle zenginleştirin.",
+    "source": "Neil Fleming Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Döngüsü (Kolb): Somut Deneyim -> Yansıtıcı Gözlem -> Soyut Kavramsallaştırma -> Aktif Deneme. Dört aşamayı da içeren bir ders tam öğrenmeyi sağlar.",
+    "source": "David Kolb Deneyimsel Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zihinsel Prova (Mental Rehearsal): Bir sunum veya sınav öncesi süreci zihinde baştan sona sakin ve başarılı bir şekilde hayal etmek kaygıyı azaltır ve performansı artırır.",
+    "source": "Spor ve Eğitim Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öncelik-Sonralık Hatırlama Eğrisi: Dersin tam ortasındaki 15 dakikalık bölüm en az hatırlanan bölümdür; bu bölümde pasif dinleme değil, grup çalışması ve uygulama yaptırın.",
+    "source": "Bilişsel Ritim Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çalışırken Müzik Dinleme Gerçeği: Sözlü müzikler çalışma belleğinde sözel kodlamayı bozar; odaklanma için sözsüz, düşük tempolu barok veya enstrümantal müzikler tercih edilmelidir.",
+    "source": "Bilişsel Müzikoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Söz Hakkı Vermede Rastlantısallık: Hep aynı parmak kaldıranlara söz vermek yerine isim çubukları veya dijital çark kullanmak sınıftaki herkesin tetikte ve derse bağlı kalmasını sağlar.",
+    "source": "Sınıf İçi Eşit Katılım Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sandviç Geri Bildirim Formülü: Öğrenciye geri bildirim verirken önce güçlü yönünü övün (Ekmek), sonra geliştirilmesi gereken öğrenme çıktısını somutlaştırın (İçerik), ardından güven aşılayarak bitirin (Ekmek).",
+    "source": "Ölçme & Değerlendirme Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Övgünün Gücü (Süreç Odaklı Övgü): Öğrenciye 'Çok zekisin' demek sabit zihniyet üretir. Bunun yerine 'Bu zor problemde gösterdiğin sabır ve denediğin yöntem harikaydı' demek gelişim zihniyetini (Growth Mindset) besler.",
+    "source": "Carol Dweck - Zihniyet Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Olumlu Davranış Pekiştirme (4'e 1 Kuralı): Sınıfta bir olumsuz davranışı düzeltmeden önce, en az 4 olumlu davranışı fark edip takdir etmeyi alışkanlık haline getirin. Sınıf iklimi hızla sakinleşir.",
+    "source": "Pozitif Sınıf İklimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Göz Teması ve Sınıfta Dolaşım (Proximity Control): İstenmeyen bir davranış başladığında dersi bölüp bağırmak yerine, konuşmanızı sürdürerek sakince o öğrencinin sırasının yanına doğru yürüyün. Davranış kendiliğinden durur.",
+    "source": "Proaktif Disiplin",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kırık Camlar Teorisi Sınıfta: Sınıftaki küçük bir düzensizlik (yerdeki çöpler, eğri sıralar, tahtadaki karalamalar) hemen düzeltilmezse, öğrencilerde 'Burada kural yok' algısı oluşur ve disiplin hızla bozulur.",
+    "source": "Sınıf Ekolojisi Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Topluluk Önünde Öv, Baş Başa Uyar: Bir öğrenciyi asla bütün sınıfın önünde azarlamayın; bu onu savunmaya ve kibre iter. Olumsuz davranışı teneffüste sakince ve göz göze konuşun.",
+    "source": "Öğrenci Onuru ve İletişim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sözsüz İşaretler ve Ritim: Gürültüyü bastırmak için bağırmak yerine, iki kere el çırpıp tek bir ritim tutturun; öğrencilerin size aynı ritimle cevap vermesini isteyin. Sınıf saniyeler içinde sessizleşir.",
+    "source": "Sınıf Yönetimi Ritüeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Net ve Pozitif Yönergeler: 'Koşma!', 'Konuşma!' gibi negatif komutlar yerine 'Yavaş yürüyelim', 'Sessizce dinleyelim' gibi yapılması istenen davranışı pozitif ifade edin.",
+    "source": "Davranışsal Dil Kalıpları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Seçenek Sunma Mimarisi: Ders çalışmak istemeyen bir öğrenciye 'Çalışacaksın!' demek inatlaşma doğurur. 'Önce birinci sorudan mı başlamak istersin yoksa üçüncüden mi?' diyerek ona kontrol hissi verin.",
+    "source": "Çatışmasız Yönetim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ben Dili Kullanımı: 'Çok saygısızsın, dersi kaynatıyorsun' (Sen dili) yerine 'Söz kesildiğinde dikkatim dağılıyor ve anlatmak istediklerimi aktaramadığım için üzülüyorum' (Ben dili) demek savunma duvarlarını indirir.",
+    "source": "Thomas Gordon - Etkili Öğretmenlik Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Geçiş Ritüelleri (Transitions): Bir dersten diğerine veya anlatımdan grup çalışmasına geçerken net bir zaman sınırı ve sesli bir sayaç kullanın (Örn: 'Kitapları açıp 3. sayfaya geçmek için 30 saniyemiz var').",
+    "source": "Zaman Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Davranışın Altındaki İhtiyacı Okuma: Sürekli dersi bölen çocuk ya dikkat çekmeye çalışıyordur, ya görevden kaçıyordur ya da güç savaşı veriyordur. Nedeni çözmeden davranışı çözemezsiniz.",
+    "source": "Alfred Adler Bireysel Psikoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenci ile Göz Hizasına İnme: İlkokul ve ortaokulda bir öğrenciyle konuşurken ayakta tepeden bakmak korku yaratır; yanına çöküp göz hizasına inmek güven ve eşitlik mesajı verir.",
+    "source": "Gelişimsel Beden Dili",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sakin Kalma Kuralı (Bulaşıcı Sakinlik): Öfke bulaşıcıdır; fakat sakinlik de bulaşıcıdır. Bir öğrenci taşkınlık yaptığında öğretmenin ses tonunu yükseltmek yerine daha da fısıltıya yaklaştırması ortamı yatıştırır.",
+    "source": "Duygusal Öz Düzenleme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi Görev Panosu: Her öğrencinin sınıf düzeninde bir sorumluluğu olsun. Hiçbir işe yaramadığını düşünen haylaz bir öğrenciye yoklama kağıdını taşıma veya tahtayı silme görevi vermek onu aidiyete bağlar.",
+    "source": "Sosyal Sorumluluk Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Veli İletişiminde İlk Arama Kuralı: Bir veliyi sadece çocuğu yaramazlık yaptığında veya notu düştüğünde aramayın. Dönemin ilk haftalarında çocuğun güzel bir davranışını övmek için arayın; güven bağı kurulur.",
+    "source": "Veli İşbirliği Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Haftalık Sınıf Meclisi: Cuma gününün son 15 dakikasında 'Bu hafta sınıfımızda ne iyi gitti, neyi daha iyi yapabiliriz?' gündemiyle mini bir meclis toplamak aidiyeti zirveye taşır.",
+    "source": "Demokratik Okul Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Duygu Termometresi: Kapı girişine öğrencilerin sabah gelirken nasıl hissettiklerini (Mutlu, Yorgun, Kızgın, Heyecanlı) işaretleyebilecekleri bir termometre asın; ruh halini bilmek öğretimi kolaylaştırır.",
+    "source": "Sosyo-Duygusal Farkındalık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Masa Düzeni ve Pedagoji: Düz sıralar bireysel çalışmaya, U düzeni tartışmaya, küme (ada) düzeni ise işbirlikçi proje çalışmalarına uygundur. Amacınıza göre oturma planını esnetin.",
+    "source": "Sınıf Ergonomisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Giriş Ritüeli: Zilin çalmasıyla ders anında başlamaz. Masaların toplanması, 3 saniyelik derin bir nefes alma ve ortak bir selamlama zihinsel bir eşik ritüelidir.",
+    "source": "Odaklanma Protokolü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Söz Kesmeden Dinleme Kuralı: Sınıf tartışmalarında elinde 'Söz Nesnesi' (küçük bir top veya maskot) olan konuşur, diğerleri dinler. Dinleme saygısı bu şekilde somutlaşır.",
+    "source": "Aktif Dinleme Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İnatlaşmayı Durdurma Tekniği: Öğrenci 'Yapmayacağım!' dediğinde 'Şu an öfkelisin, bunu 5 dakika sonra konuşalım' diyerek tartışmayı anında erteleyin; seyirci önünde güç savaşı vermeyin.",
+    "source": "Kriz Yönetimi İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Bölünmelerine Karşı 'Soru Kutusu': Dersin ortasında konu dışı soru soran meraklı öğrencilere 'Bu harika bir soru, bunu dersin sonundaki Soru Kutusu'na bırakalım' diyerek akışı koruyun.",
+    "source": "Ders Akış Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tutarlılık İlkesi: Bir kural bir gün uygulanıp ertesi gün gevşetilirse, kuralların hiçbir inandırıcılığı kalmaz. Disiplinin temeli katılık değil, mutlak tutarlılıktır.",
+    "source": "Sınıf Yönetimi Esasları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Dışı Teneffüs Sohbetleri: Teneffüste nöbet tutarken bir öğrenciyle hobileri, tuttuğu takım veya sevdiği kitap hakkında ayaküstü 1 dakika konuşmak, sınıftaki 40 dakikalık dersten daha derin bağ kurar.",
+    "source": "İlişki Odaklı Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Teşekkür Kartları: Beklenmedik bir anda sırasına 'Bugün dersteki katkın için teşekkür ederim' yazılı mini bir yapışkanlı not bırakılan bir öğrenci, o dersin en sadık dinleyicisi olur.",
+    "source": "Pozitif Güçlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Beden Dilinde Açık Duruş: Kollarınızı göğsünüzde bağlamak bilinçaltında savunma ve mesafe sinyali verir. Açık avuçlar ve dik, rahat bir duruş güven ve otorite hissettirir.",
+    "source": "Beden Dili Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İçeriğe Uygun Ses Tonu: Monoton bir ses tonu hipnotize edici bir uyku etkisi yapar. Sesinizi bir müzik eseri gibi kimi yerde yükseltin, kimi yerde önemli bir sır verircesine fısıldayın.",
+    "source": "Vokal Dinamizm",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfın Ortak Şakası: Sınıfça paylaşılan masum ve neşeli bir espri veya ders içi küçük bir anekdot, grubu birleştiren en güçlü sosyal çimentodur.",
+    "source": "Mizah ve Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kural Sayısını Az Tutma Kuralı: 20 maddelik bir sınıf kuralı listesi kimse tarafından hatırlanmaz. 3 ila 5 temel, pozitif ilke belirleyin (Örn: Birbirimize saygılıyız, Çaba gösteririz, Güvenliği koruruz).",
+    "source": "Kural Mimarisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akran Dışlanmasını Önleme: Grup çalışmalarında öğrencilerin birbirini seçmesine izin verirseniz hep aynı çocuklar dışarıda kalır. Grupları öğretmen adil ve dengeli kurmalıdır.",
+    "source": "Kapsayıcı Sınıf Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Özel Eğitim ve Kaynaştırma Hassasiyeti: BEP'li bir öğrencinin sınıf içindeki küçük bir başarısını fark edip onaylamak, diğer öğrencilerin de ona destek olmasını teşvik eder.",
+    "source": "Özel Eğitim ve Kaynaştırma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sessizlik Molası (Brain Break): Yorucu ve yoğun bir problem çözümünün ardından 60 saniyelik gözleri kapatıp derin nefes alma molası zihni sıfırlar.",
+    "source": "Bilişsel Dinlenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dedikodu ve İspiyonculuğu Ayırt Etme: Öğrencilere 'Biri zarar görüyor veya tehlikedeyse haber vermek yardımdır; ama birinin açığını yakalayıp anlatmak dedikodudur' farkını öğretin.",
+    "source": "Ahlaki Gelişim Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Sonu Toparlanma Disiplini: Zilin çalması dersin bittiği anlamına gelmez; dersi öğretmen bitirir. Sıraların düzenlenmesi ve vedalaşma olmadan sınıftan çıkılmamalıdır.",
+    "source": "Sınıf Rutinleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenci Günlüğü Gizliliği: Eğer öğrencilere duygu veya öğrenme günlüğü yazdırıyorsanız, onların rızası olmadan asla yüksek sesle okumayın; güven bir kez kırılırsa telafisi imkânsızdır.",
+    "source": "Etik Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Panosunu Güncel Tutma: 6 ay önce asılmış sararmış kağıtlar sınıfta ilgisizlik hissi yaratır. Panolar her ay öğrencilerin yeni ürünleriyle yenilenmelidir.",
+    "source": "Görsel Öğrenme Ortamı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Her Çocuğun Bir Güçlü Yönünü Keşfetme: Akademik olarak zayıf bir öğrencinin çizim yeteneği, tamir becerisi veya spor kabiliyeti olabilir; o yönünü sınıfta öne çıkararak özsaygısını kurtarın.",
+    "source": "Bütüncül Başarı Anlayışı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi Anlaşmazlıklarda 'Tamir Masası': İki öğrenci kavga ettiğinde onları suçlamak yerine 'Gelin bunu Tamir Masası'nda konuşalım; ne oldu ve birbirimizden ne bekliyoruz?' diye çözdürün.",
+    "source": "Onarıcı Adalet Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ödül Panosunda Bireysel Yarış Değil Sınıf Hedefi: 'En çok yıldızı kim alacak?' yerine 'Tüm sınıf olarak hedefimize ulaştığımızda hep birlikte ne yapacağız?' demek dayanışmayı güçlendirir.",
+    "source": "İşbirlikçi İklim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tehlikeli Durumlarda Sakin Tahliye Refleksi: Deprem, yangın veya acil durumlarda öğretmenin sesi paniksiz ve emir kipiyle net olmalıdır; çocuklar rehberin sakinliğini taklit eder.",
+    "source": "Okul Güvenliği Protokolü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders İçi Söz Alma İşaretleri: Parmak kaldırmak yerine 'Başparmak yukarı' (Katılıyorum), 'Başparmak aşağı' (Farklı düşünüyorum) gibi sessiz el işaretleri tüm sınıfın aynı anda fikrini bildirir.",
+    "source": "Sözsüz Katılım Araçları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrencinin İsmini Doğru Telaffuz Etmek: İsmi zor veya farklı olan bir öğrencinin adını doğru söylemek için çaba göstermek, onun kültürel kimliğine ve ailesine duyulan en derin saygıdır.",
+    "source": "Kültürel Duyarlılık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mazeretleri Anlayışla Karşılama Sınırı: Bir defalık ödev unutmayı anlayışla karşılayıp 'Bugünlük telafi et ama yarın bekliyorum' demek şefkattir; alışkanlık haline gelmesini engellemek ise disiplindir.",
+    "source": "Şefkatli Sınır Koyma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Veli Toplantısında 'Kelle Sayımı' Yapmama: Veli toplantılarında sadece not listesi okumayın; çocukların karakter gelişimini, erdemlerini ve sınıftaki dostluklarını paylaşın.",
+    "source": "Nitelikli Veli Diyaloğu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tahta Başında Utandırmama: Bir öğrenciyi bilemeyeceğini bildiğiniz bir soru için tahtaya kaldırıp mahcup etmeyin; tahtaya kaldırmak başarıyı kutlamak için olmalıdır.",
+    "source": "Öğrenci Ruh Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta Mizahın Dozu: Mizah dersi canlı tutar; fakat asla bir öğrencinin fiziksel özelliği, soyadı veya eksikliği üzerinden şaka yapılmamalıdır.",
+    "source": "Öğretmenlik Etiği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Derse Vaktinde Başlama Disiplini: Öğretmen derse 5 dakika geç girerse, öğrencilerden dakiklik bekleyemez. En iyi model, bizzat vaktinde orada olmaktır.",
+    "source": "Zaman Etiği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Güven Vermek: 'Sana inanıyorum, bu konunun üstesinden gelebileceğini biliyorum' cümlesi, bir çocuğun hayatında yıllar sonra bile yankılanan bir tılsımdır.",
+    "source": "Pygmalion Etkisi (Beklenti Kuramı)",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Vedalaşırken Göz Teması: Ders bittiğinde kapıdan çıkan her öğrenciye sıcak bir tebessümle 'İyi günler, yarın görüşürüz' demek günü güzellikle mühürler.",
+    "source": "Öğretmen Zarafeti",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Jigsaw (Ayrılıp Birleşme) Tekniği: Konuyu 4 parçaya bölün. Her gruptan birer temsilci 'Uzman Grubu' kurup o konuyu çalışır, sonra ana gruplarına dönüp arkadaşlarına öğretir.",
+    "source": "İşbirlikçi Öğrenme Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İstasyon Tekniği: Sınıfı 3-4 farklı istasyona bölün (Şiir/Yazma İstasyonu, Deney İstasyonu, Kavram Haritası İstasyonu). Gruplar 10'ar dakika arayla istasyon değiştirerek önceki grubun bıraktığı işi tamamlar.",
+    "source": "Farklılaştırılmış Öğretim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Balık Kılçığı (Ishikawa) Diyagramı: Karmaşık bir problemin kök nedenlerini analiz ederken omurgaya ana sorunu, yan kılçıklara ise insan, yöntem, çevre gibi faktörleri yazarak derinlemesine analiz yaptırın.",
+    "source": "Kök Neden Analizi Yöntemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Altı Şapkalı Düşünme Tekniği (Edward de Bono): Beyaz (Veriler), Kırmızı (Duygular), Siyah (Riskler), Sarı (Fırsatlar), Yeşil (Yaratıcılık), Mavi (Yönetim). Bir konuyu tüm yönleriyle ele aldırır.",
+    "source": "Düşünme Becerileri Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Köşelenme Tekniği: Bir tartışma sorusunda sınıfa 'Katılıyorum', 'Kararsızım', 'Katılmıyorum' köşeleri belirleyin. Herkes savunduğu köşeye gitsin ve grup adına argümanını sunsun.",
+    "source": "Tartışma Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kartopu Tekniği: Önce öğrenci 1 dakika kendi başına düşünür -> Sonra yanındakiyle 2 kişi olur -> Sonra 4 kişi -> En son 8 kişilik grup ortak karara varır. Fikirler kartopu gibi büyür.",
+    "source": "Aktif Öğrenme Metodolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Pazar Yeri (Gallery Walk) Tekniği: Gruplar hazırladıkları afiş veya projeleri sınıf duvarlarına asar. Bir kişi stand başında kalıp anlatır, diğerleri gezerek sorular sorar ve yapışkan notla geri bildirim bırakır.",
+    "source": "Görsel Sunum ve Paylaşım",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sokratik Çember (Fishbowl): İç çemberde 5-6 öğrenci derin bir konuyu tartışırken, dış çemberdeki öğrenciler sessizce onları dinleyip argümanlarını not alır. Sonra roller değişir.",
+    "source": "Derinlemesine Tartışma Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Ağları (Semantic Maps): Bir kavramın zihindeki çağrışımlarını, alt türlerini ve zıt anlamlılarını tahtada ağ şeklinde modellemek sözcük dağarcığını ve kavram derinliğini katlar.",
+    "source": "Dil ve Anlam Bilgisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Venn Şeması ile Karşılaştırma: İki farklı tarihi olayı, canlı türünü veya edebi eseri kesişen iki küme içinde inceletmek analitik mukayese becerisini hızla geliştirir.",
+    "source": "Görsel Karşılaştırma Aracı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Konuşma Halkası Tekniği: Duygusal veya ahlaki bir ikilem içeren hikâyenin ardından sınıfça çember olunur; eline konuşma nesnesi gelen çocuk hikâye kahramanının yerine geçip hislerini paylaşır.",
+    "source": "Duygusal Empati Becerisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akvaryum Tekniği: İçteki sandalyeye oturan öğrenci bir tez savunur; dinleyicilerden biri karşı tez sunmak istediğinde boş sandalyeye oturup münazaraya dahil olur.",
+    "source": "Dinamik Tartışma Sanatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Rulman (Top Taşıma) Tekniği: İç içe iki daire oluşturulur; yüz yüze bakan öğrenciler 2 dakika konuyu tartışır. Süre bitince dış daire 1 adım kayar ve yeni eşle tartışma başlar.",
+    "source": "Hızlı Fikir Alışverişi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dedikodu Tekniği (Pedagojik Dedikodu): İkişerli başlayan tartışmada öğrenciler edindikleri fikirleri bir sonraki eşleşmede 'Arkadaşım bu konuda şöyle ilginç bir nokta söyledi' diyerek aktarır.",
+    "source": "Fikir Yayılım Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tereyağı-Ekmek Tekniği: Bir soru sorulur; öğrenci önce tek başına düşünür (tereyağı), sonra yanındakiyle tartışıp fikirleri kaynaştırır (ekmek). Fikirler sağlamlaşır.",
+    "source": "Hızlı Düşünme Tekniği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kart Eşleştirme (Flashcards): Bir yüzde kavram, diğer yüzde tanım veya problem olan kartlarla yapılan 5 dakikalık oyunlar ezber bozan bir geri çağırma pratiğidir.",
+    "source": "Bellek Güçlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Münazara Kuralları: Münazara bir kavga değil, argüman ve delil yarışıdır. Öğrencilere karşı tarafın fikrine değil, kanıtlarına odaklanma nezaketi öğretilmelidir.",
+    "source": "Retorik ve Mantık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mahkeme Simülasyonu: Tarihteki veya edebiyattaki tartışmalı bir karakteri (Örn: Brütüs, Lale Devri Sadrazamı vb.) sınıfta hâkim, savcı, avukat ve jüri rolleriyle yargılatıp karar verdirin.",
+    "source": "Hukuki ve Tarihsel Muhakeme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Rol Oynama ve Canlandırma (Drama): Soyut bir tarihi olayı veya fen bilimlerindeki atomun hareketini öğrencilere bedenleriyle canlandırtmak konuyu zihne kazır.",
+    "source": "Yaratıcı Drama Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Beyin Fırtınası (Brainstorming) Altın Kuralı: Fikir üretme aşamasında asla ve asla eleştiri yapılamaz! En çılgın fikir bile tahtaya yazılır; eleme ve analiz aşaması sonraya bırakılır.",
+    "source": "Alex Osborn - Yaratıcılık Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ters Beyin Fırtınası: 'Bu projeyi nasıl başarılı yaparız?' yerine 'Bu projeyi mahvetmek için neler yapmalıyız?' diye sordurun; gizli riskleri görmek çok daha kolaylaşır.",
+    "source": "Yaratıcı Problem Çözme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "SCAMPER Tekniği: Bir nesneyi veya fikri geliştirmek için 7 soru: Yerine koy (S), Birleştir (C), Uyarla (A), Değiştir (M), Başka amaçla kullan (P), Yok et (E), Tersine çevir (R).",
+    "source": "Bob Eberle Yaratıcılık Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Karikatürü Oluşturma: Öğrencilerin kendi el yazılarıyla iki karakter çizip konuya dair yaygın bir yanılgıyı ve doğrusunu konuşturmasını isteyin.",
+    "source": "Yansıtıcı Çizim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kelime İlişkilendirme Testi (KİT): Anahtar bir kelime verip öğrencilerden 30 saniye içinde akıllarına gelen ilk 5 kavramı yazmalarını istemek bilişsel yapıyı anında röntgenler.",
+    "source": "Kavramsal Haritalama",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Güdümlü Okuma (Guided Reading): Uzun bir metni tek seferde okutmak yerine, her paragrafta durup 'Burada ne oldu? Bir sonraki paragrafta ne olabilir?' diye tahmin ettirin.",
+    "source": "Okuduğunu Anlama Stratejisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Metinlerarası İlişki Kurma: Okunan bir şiiri dönemin tarihi olaylarıyla, resim sanatıyla veya günümüzün bir toplumsal meselesiyle bağdaştırmak öğrenciyi derinleştirir.",
+    "source": "Edebiyat ve Kültür Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Problem Temelli Öğrenme (PBL): Derse doğrudan konuyu anlatarak değil, gerçek hayatta karşılaşılabilecek karmaşık bir vaka senaryosuyla (Örn: 'Şehirdeki su kirliliği nasıl çözülür?') başlayın.",
+    "source": "Yapılandırmacı Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Proje Tabanlı Öğrenme: Öğrencilerin haftalar süren bir araştırma sonunda somut bir ürün (maket, broşür, web sitesi, podcast) ortaya koyması kalıcı sahiplenme üretir.",
+    "source": "Ürün Odaklı Maarif",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Matematikte Hata Avcılığı: Tahtaya baştan sona çözülmüş fakat kasıtlı olarak 3. satırında işlem hatası yapılmış bir soru yazın; öğrencilerin dedektif gibi hatayı bulmasını isteyin.",
+    "source": "Analitik Dikkat Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendi Sorunu Kendin Yaz: Dersin sonunda öğrencilere 'Eğer yarın sınavı sen hazırlasaydın bugünkü konudan nasıl bir soru sorardın?' dedirtip birer soru yazdırın.",
+    "source": "Üst Düzey Bilişsel Soru Yazımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenci Sunumlarında 5 Kuralı: Bir slaytta en fazla 5 satır, her satırda en fazla 5 kelime olmalı; slayt bir kitap sayfası değil, konuşmacının feneri olmalıdır.",
+    "source": "Etkili Sunum Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mikro Deneyler (Kitchen Science): Fen derslerinde pahalı laboratuvar yerine bir bardak su, tuz, sirke veya karbonatla yapılabilecek basit ev deneyleri bilimi tabana yayar.",
+    "source": "STEM ve Günlük Hayat",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tarihsel Empati: 'Fatih Sultan Mehmet'in yerinde olsaydınız gemileri karadan yürütme kararını hangi stratejik gerekçelerle alırdınız?' sorusu tarihi ezberden çıkarır.",
+    "source": "Tarih Öğretimi Metodolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Coğrafyada 'Yerinde Gözlem': Okul bahçesindeki bir ağacın gölge boyunu günün farklı saatlerinde ölçtürmek mevsim ve güneş açısı konusunu tahtadaki çizimden 100 kat daha iyi kavratır.",
+    "source": "Uygulamalı Coğrafya",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kelime Avı ve Sözlük Keşfi: Haftada bir gün öğrencilere Kubbealtı veya TDK sözlüğünden hiç bilmedikleri güzel bir Türkçe kelime seçtirip bunu bir cümlede kullandırmak lügat zenginliği kazandırır.",
+    "source": "Dilimizin Zenginlikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yaratıcı Yazarlık Kutusu: Bir kutunun içine rastgele 3 kelime (Örn: 'Pusula', 'Yağmur', 'Eski bir mektup') atın; öğrencilerden bu 3 kelimenin geçtiği 1 sayfalık bir öykü yazmalarını isteyin.",
+    "source": "Yazma Becerisi Atölyesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bilişimde 'Bilgisayarsız Kodlama' (Unplugged): Algoritma mantığını bilgisayar olmadan kağıt bardaklar, yön okları ve labirent oyunlarıyla öğretmek soyut mantığı somutlaştırır.",
+    "source": "Algoritmik Düşünme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Müzikle Hafıza Köprüsü: Formülleri veya kronolojik sıralamaları basit ve akılda kalıcı bir melodiye uyarlamak öğrencilerin sınav anında melodiyi hatırlayarak soruyu çözmesini sağlar.",
+    "source": "Ritmik Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sessiz Sinema ile Kavram Anlatımı: Fen veya sosyal derslerindeki bir kavramı hiç konuşmadan sadece jest ve mimiklerle arkadaşlarına anlattırmak kavramın özünü kavratır.",
+    "source": "Eğitici Oyunlar",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tabu Oyunu ile Tanımlama: 'Hücre' kelimesini anlatırken 'sitoplazma, çekirdek, zar' kelimelerini kullanmayı yasaklayın; öğrenci kavramı ezber kalıpların dışında kendi kelimeleriyle ifade etmeye zorlanır.",
+    "source": "Kavramsal Esneklik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Gazetesi / Bülteni Çıkarma: Öğrencilerin dönem boyunca öğrendikleri konuları bir gazete haberi gibi tasarlayıp okul panosuna asması yazılı ifade becerisini taçlandırır.",
+    "source": "Medya Okuryazarlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Röportaj Tekniği: Tarihi bir şahsiyet veya meslek erbabı hakkında bilgi toplarken bir öğrencinin muhabir, diğerinin o şahsiyet olduğu canlandırmalı röportajlar yapmak konuyu canlandırır.",
+    "source": "Sözlü Tarih ve İletişim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Okuma ve Karikatür Analizi: Derse bir karikatürle başlayıp 'Çizer burada hangi toplumsal yaraya parmak basmış? Hangi sembolleri kullanmış?' diye sormak eleştirel gözü keskinleştirir.",
+    "source": "Görsel Eleştiri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çapraz Sorgu Münazarası: Klasik münazara yerine takımların birbirine doğrudan soru sorup 60 saniye içinde delilli cevap beklediği format, dikkati en üst düzeye çıkarır.",
+    "source": "Retorik ve Savunma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Haritası Bağlaçları: Kavram haritasında sadece iki kutuyu çizgiyle bağlamak yetmez; çizginin üzerine '... neden olur', '... bir parçasıdır' gibi bağlaç ifadeleri yazılmalıdır.",
+    "source": "Joseph Novak Kavram Haritası",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tersine Mühendislik (Reverse Engineering): Öğrencilere bitmiş, mükemmel bir kompozisyon veya proje gösterip 'Bunu yapan kişi ilk hangi adımla başlamış olabilir?' diye parçalara ayırttırın.",
+    "source": "Analitik Ayrıştırma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Merak Duvarı: Sınıfın bir köşesine boş bir pano asın; öğrenciler ders esnasında akıllarına gelen fakat derste soramadıkları ilginç soruları yapışkanlı kağıtla buraya assın. Haftada bir cevaplayın.",
+    "source": "Sorgulayan Sınıf İklimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hızlı Kroki Çizimi: Coğrafya dersinde tahtaya bakmadan Türkiye haritasının ana hatlarını veya bir dağ sırasını 30 saniyede şematik çizmeyi öğretmek mekânsal zekâyı uçurur.",
+    "source": "Mekânsal Haritalama",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hikâye Çemberi: Öğretmen bir cümlenin girişini söyler, yanındaki öğrenci bir cümle ekler; 30 kişilik sınıfın sonunda ortaya ortak ve yaratıcı bir öğrenme öyküsü çıkar.",
+    "source": "Kolektif Yaratıcılık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Sonu 1 Cümle Özeti: Zilden 2 dakika önce her öğrenciye bugünkü dersin özünü tek bir cümleye sığdırma görevi verin; sentez yapabilme becerisinin en pratik antrenmanıdır.",
+    "source": "Bilişsel Sentez Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Açık Uçlu Soru Hazırlama Kuralı: Sorularınız ezber bilgi ('... nedir?') yerine transfer ve analiz düzeyinde ('... olursa ne gibi sonuçlar doğar, neden?') olmalıdır. MEB ortak yazılı baremleri bu düzeydedir.",
+    "source": "Bloom Taksonomisi & MEB ÖDSGM",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Biçimlendirici (Formative) vs Düzey Belirleyici (Summative) Değerlendirme: Çorbayı aşçı tadarsa bu biçimlendirici değerlendirmedir (tuzunu ayarlar); müşteri tadarsa bu düzey belirleyicidir. Ders esnasında sürekli aşçı gibi tadım yapın.",
+    "source": "Paul Black & Dylan Wiliam Araştırması",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "3-2-1 Özeti: Bir ünitenin sonunda öğrencilerden şu 3 maddeyi yazmasını isteyin: Öğrendiğim 3 yeni bilgi, ilginç bulduğum 2 ayrıntı, hala aklımı kurcalayan 1 soru.",
+    "source": "Hızlı Değerlendirme Aracı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Trafik Işıkları Değerlendirmesi: Öğrencilere yeşil (Tam anladım), sarı (Biraz kafam karışık), kırmızı (Hiç anlamadım) kartları verin; konunun sonunda kartları kaldırtarak sınıfın nabzını 3 saniyede ölçün.",
+    "source": "Görsel Geri Bildirim Sistemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Holistik (Bütüncül) Rubrik: Karmaşık ve yaratıcı bir kompozisyon veya proje ödevini tek bir genel başarı baremiyle (Çok İyi, Orta, Geliştirilmeli) değerlendirmek için idealdir.",
+    "source": "Ölçme Değerlendirme Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Analitik Rubrik: Öğrencinin çalışmasını içerik, organizasyon, dil bilgisi ve kaynakça gibi alt boyutlara ayırıp her boyut için ayrı puan tanımlamak öğrenciye nerede eksik olduğunu tam gösterir.",
+    "source": "Analitik Değerlendirme Standardı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İki Yıldız Bir Dilek (Two Stars and a Wish): Akran değerlendirmesinde öğrenci arkadaşının ödevine önce beğendiği 2 güçlü yönü (Yıldız), sonra geliştirmesini önerdiği 1 somut tavsiyeyi (Dilek) yazar.",
+    "source": "Akran Geri Bildirim Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Kökünde 'Değildir' ve 'Ulaşılamaz' Vurgusu: Çoktan seçmeli sorularda olumsuz ifadeler mutlaka koyu ve altı çizili yazılmalı; soru kökü karmaşık değil yalın olmalıdır.",
+    "source": "Test Yazım Standartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çeldirici Yazma Sanatı: Çoktan seçmeli bir soruda iyi bir çeldirici, öğrencilerin en sık düştüğü kavram yanılgısına dayanmalıdır; rastgele uydurulan bir şık çeldirici niteliği taşımaz.",
+    "source": "Madde Analizi İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ayırt Edicilik İndeksi: Bir soruyu üst başarı grubundaki (%27) tüm öğrenciler doğru yapıp, alt gruptaki (%27) tüm öğrenciler yanlış yapıyorsa o soru mükemmel ayırt edicidir.",
+    "source": "Psikometri ve İstatistik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Güçlük İndeksi (p değeri): Bir testteki soruların ortalama güçlüğü 0.50 civarında olmalıdır; ne herkesin yapabileceği kadar kolay ne de kimsenin çözemeyeceği kadar imkânsız olmalıdır.",
+    "source": "Ölçme Kuramı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yazılı Kağıdı Okurken İsimleri Kapatma: Öğretmenin öğrenci hakkındaki ön yargılarının (hal ve gidiş, önceki notlar) notu etkilememesi için sınav kağıtları isimler katlanarak okunmalıdır.",
+    "source": "Halo Etkisini Önleme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Başına Puan Dağılımının Şeffaflığı: Sınav kağıdının üzerinde her sorunun kaç puan olduğu ve çözüm basamaklarının ara puanları baştan belirtilmelidir.",
+    "source": "MEB Yazılı Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Sonrası 'Soru Kliniği': Sınav sonuçlarını dağıttıktan sonra doğru cevapları tahtada çözüp geçmeyin; sınıfın en çok döküldüğü 2 soruyu 'Klinik Masası'na yatırıp hata kökünü birlikte tartışın.",
+    "source": "Onarıcı Değerlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çoktan Seçmeli Testlerin Sınırı: Çoktan seçmeli testler tanıma ve hatırlamayı ölçer; yaratıcı sentez, özgün yazı ve problem kurma becerisini asla tam ölçemez. Açık uçlu sorular şarttır.",
+    "source": "Maarif Ölçme Yaklaşımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sözlü Notu Verme Ölçütleri: Sözlü notu öğretmenin hissiyatına veya anlık kanaatine göre değil; derse hazırlık, derse aktif katılım ve ödev sorumluluğunu gösteren somut bir bareme dayanmalıdır.",
+    "source": "Mevzuat ve Adalet",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kısa Yanıtlı Testler (Boşluk Doldurma): Cümledeki boşluk asla cümlenin en başında olmamalıdır; öğrenci önce cümlenin bağlamını okumalı, boşluk cümlenin sonuna doğru yerleştirilmelidir.",
+    "source": "Soru Hazırlama Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Doğru-Yanlış Testlerinde 'Şans Başarısı': Doğru-yanlış testlerinde şans başarısı %50'dir; bu nedenle puanlama yapılırken yanlışın doğruyu götürmesi veya ifadenin düzeltilmesinin istenmesi gerekir.",
+    "source": "Ölçme Güvenilirliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Eşleştirme Maddeleri Kuralı: Eşleştirme sorularında öncüller sütunu ile cevaplar sütunundaki madde sayısı eşit olmamalıdır; en az 1-2 fazla çeldirici seçenek konulmalıdır.",
+    "source": "Madde Yazım Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tanılayıcı Dallanmış Ağaç (TDA): Birbiriyle bağlantılı doğru/yanlış kararlarıyla bir ağacın dalları boyunca ilerleyen sistem, öğrencinin hangi adımda kavram yanılgısına düştüğünü nokta atışı tespit eder.",
+    "source": "Alternatif Ölçme Aracı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yapılandırılmış Grid (Grid Testi): 9 veya 12 kutucuktan oluşan bir tabloda kavramlar yer alır; sorulara verilen cevaplarda kutucuk numaraları seçilerek çok boyutlu anlama ölçülür.",
+    "source": "Görsel Değerlendirme Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Haritası ile Ölçme: Öğrenciye sadece kavramları verip aralarındaki ilişkileri ve bağlaçları kendisinin çizmesini istemek zihindeki derin şemayı görünür kılar.",
+    "source": "Yapılandırmacı Ölçme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gelişim Portfolyosu Puanlama Kuralı: Portfolyoda sadece en mükemmel çalışmalar değil; öğrencinin ilk taslağı ile düzeltilmiş son hali yan yana konmalı ve kat ettiği mesafe puanlanmalıdır.",
+    "source": "Süreç Odaklı Portfolyo",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Quizlerin Gücü (Kahoot/Quizizz): Dersin ilk 5 dakikasında yapılan 4 soruluk eğlenceli bir dijital anket, kimin ön bilgide eksik olduğunu anında renkli grafiklerle öğretmenin önüne serer.",
+    "source": "Anlık Ölçme Teknolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendi Kendini Puanlama Şeffaflığı: Öğrenciye sınav kağıdını vermeden önce 'Sence bu sınavdan kaç alacaksın?' diye tahmin ettirin; zamanla tahmin ile gerçek not arasındaki fark sıfırlanır, öz farkındalık artar.",
+    "source": "Metakognitif Kalibrasyon",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ödev Vermede 'Miktar Değil Nitelik': 50 sayfa ezber ödev öğrenciyi okuldan soğutur; düşünmeye, araştırmaya ve bir problem çözmeye yönelik 3 nitelikli soru çok daha kalıcıdır.",
+    "source": "Ödev Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Geri Bildirimde 'Zaman' Kuralı: Bir hafta sonra verilen geri bildirim unutulmuştur; ders esnasında sıranın başındayken fısıldanan 10 saniyelik düzeltme en güçlü öğrenme anıdır.",
+    "source": "Mikro Geri Bildirim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Çıktısı Tablosu (Belirtke Tablosu): Sınav hazırlamadan önce hangi öğrenme çıktısından kaç soru sorulacağını gösteren bir tablo hazırlamak sınavın kapsam geçerliğini garanti eder.",
+    "source": "Test Planlama Esasları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Güvenilirlik ve Soru Sayısı: Bir sınavda soru sayısı arttıkça tesadüfi hatalar azalır ve sınavın güvenilirliği artar; ancak süre öğrencinin yorulmayacağı makul bir dengede tutulmalıdır.",
+    "source": "Psikometrik Standartlar",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Önyargısız Gözlem Formu: Proje sunumlarında veya laboratuvar derslerinde önceden belirlenmiş 'Gözlem Formu' kullanmak sübjektif kanaatleri sıfırlar.",
+    "source": "Performans Değerlendirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Grup Değerlendirmesinde 'Serbest Yolcu' Tuzağı: Grup ödevlerinde gruptaki herkesin eşit not alması tembel öğrenciyi ödüllendirir; grup notunun yanında her üyenin kendi katkısını gösteren akran formu alınmalıdır.",
+    "source": "Adil Grup Değerlendirmesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hata Odaklı Barem: Açık uçlu sorularda öğrencinin işlem hatası yapması durumunda sorunun tamamı çizilmemeli; formülü doğru kurduğu kısma kadar hak ettiği puan verilmelidir.",
+    "source": "MEB Ölçme Adaleti",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Geri Bildirimi Soruyla Bitirmek: Öğrenciye sadece 'Burası hatalı' demek yerine 'Sence buradaki formülü neden uygulayamayız?' diye bir soruyla bırakmak zihni aktif tutar.",
+    "source": "Düşündürücü Geri Bildirim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ölçme Sonuçlarının Zümreyle Paylaşımı: Bir zümredeki tüm öğretmenlerin ortak yazılı sonuçlarını masaya yatırıp 'Hangi öğrenme çıktısında ortak eksiklik var?' diye analiz etmesi okul başarısını zıplatır.",
+    "source": "Zümre İşbirliği Kültürü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Kaygısını Azaltma Formülü: Sınavdan hemen önce tahtaya motivasyon dolu, içten ve gülümseten bir not yazmak öğrencilerin kalp atışlarını sakinleştirir.",
+    "source": "Sınav Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Klasik Sözlü Sınavların Sakıncası: Tüm sınıfın önünde ayağa kaldırıp soru yağmuruna tutmak ölçmeden çok sahne korkusunu tetikler; bireysel mülakat veya küçük grup görüşmesi tercih edilmelidir.",
+    "source": "Sözlü Değerlendirme İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Standart Sapma Ne Anlatır?: Bir sınavda standart sapmanın yüksek olması sınıftaki öğrenci düzeylerinin birbirinden çok farklı ve heterojen olduğunu; düşük olması ise sınıfın birbirine yakın olduğunu gösterir.",
+    "source": "Eğitim İstatistiği Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kopya ile Mücadelede En Etkili Yol: Soruları doğrudan kitaptan ezber cümlelerle değil, öğrencinin kendi yorumunu ve çözüm yolunu katmak zorunda olduğu senaryo tarzında sormaktır.",
+    "source": "Soru Güvenliği ve Özgünlük",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Kağıdını Geri Verme Töreni: Kağıtları en yüksekten en düşüğe sırayla okuyarak dağıtmak düşük alanları ezmektir; kağıtlar sessizce, kapalı olarak ve her öğrenciye göz temasıyla teslim edilmelidir.",
+    "source": "Öğrenci Onuru Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenme Çıktısının Yaşamsallığı: Bir sorunun sonunda öğrenci 'Ben bunu gerçek hayatta nerede kullanacağım?' sorusuna otomatikman cevap bulabilmelidir.",
+    "source": "Bağlamsal Soru Tasarımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Nöbet Görevi Esasları: Nöbet görevi, ders görevinin olmadığı boş günlere verilemez. Nöbet görevi için haftada en fazla 3 saat ek ders ücreti tahakkuk ettirilir.",
+    "source": "MEB Yönetici ve Öğretmen Ders Saatleri Kararı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Doğum Sonrası Nöbet Muafiyeti: Kadın öğretmenlere doğum yaptığı tarihten itibaren 2 yıl süreyle istememeleri halinde nöbet görevi verilemez.",
+    "source": "MEB Ortaöğretim ve İlköğretim Kurumları Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mazeret İzni Süreleri (657 DMK): Evlilik halinde 7 gün, eşin doğum yapması halinde (babalık izni) 10 gün, anne-baba-eş-çocuk-kardeş vefatında 7 gün mazeret izni verilir.",
+    "source": "657 Sayılı Devlet Memurları Kanunu Madde 104",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yıllık İzin Hakkı: Öğretmenler yaz tatili ve ara tatillerde izinli sayıldıklarından, hizmet yılına bağlı normal memur yıllık izni uygulamasına tabi değildirler.",
+    "source": "657 DMK Madde 103",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Resmi Tatil ve İdari Tatillerde Ek Ders: Kar tatili, resmi tatil veya idari izin gibi mülki amir kararıyla tatil edilen günlerde öğretmenlerin üzerindeki ders görevleri yapılmış sayılarak ek dersleri ödenir.",
+    "source": "MEB Ders ve Ek Ders Saatlerine İlişkin Karar",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Maaş Karşılığı Ders Saatleri: Branş öğretmenleri için haftalık maaş karşılığı 15 saat, sınıf öğretmenleri için ise 18 saattir. Üzeri ek ders olarak değerlendirilir.",
+    "source": "MEB Ek Ders Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zorunlu Ek Ders Sınırı: Branş öğretmenlerine maaş karşılığı olan 15 saatin üzerine ihtiyaç halinde haftada 6 saate kadar zorunlu ek ders görevi verilebilir; fazlası isteğe bağlıdır.",
+    "source": "657 DMK & MEB Mevzuatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Dışı Eğitim Çalışmaları (Egzersiz): İzcilik, spor, satranç, tiyatro, resim, müzik veya bilim olimpiyatı gibi egzersiz çalışmaları haftada en fazla 6 saat olarak açılabilir.",
+    "source": "MEB Ders Dışı Çalışmalar Genelgesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Haftalık Ders Dağıtımında Pedagojik Esaslar: Ders programı hazırlanırken derslerin günlere dengeli dağıtılması, blok derslerin öğrencilerin dikkatini boğmayacak şekilde planlanması esastır.",
+    "source": "MEB Okul Öncesi ve İlköğretim Kurumları Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Öğretmenliği ve Kulüp Ek Dersi: Bir sınıfın rehberliğini veya bir sosyal kulüp danışmanlığını yürüten öğretmene haftada 2 saat ek ders ücreti ödenir.",
+    "source": "MEB Ek Ders Kararı Madde 6",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hazırlık ve Planlama Ek Dersi: Öğretmenlere okuttukları her 10 saat ders için 1 saat hazırlık ve planlama ek dersi verilir; haftada en fazla 3 saate kadar tahakkuk eder.",
+    "source": "MEB Ek Ders Kararı Madde 11",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hizmet İçi Eğitim Süreci ve ÖBA: Öğretmen Bilişim Ağı (ÖBA) üzerinden tamamlanan uzaktan eğitimler MEBBİS hizmet içi eğitim modülüne otomatik işlenir ve kariyer basamaklarında puan sağlar.",
+    "source": "ÖBA ve Öğretmen Yetiştirme Genel Müdürlüğü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kılık Kıyafet ve Yönetmelik Hakları: Öğretmenler mesleğin vakar ve ciddiyetine uygun, sade ve temiz bir giyim kuşamla derslere girer; mevzuat çerçevesinde sendika kararları da uygulanabilir.",
+    "source": "Kamu Kurum ve Kuruluşlarında Kılık Kıyafet Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dilekçe Hakkı ve Cevap Süresi: 3071 sayılı Dilekçe Kanunu'na göre kurum amirine verilen resmi dilekçelere en geç 30 gün içinde yazılı ve gerekçeli cevap verilmesi zorunludur.",
+    "source": "3071 Sayılı Dilekçe Hakkının Kullanılmasına Dair Kanun",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disiplin Soruşturmasında Savunma Hakkı: Savunma hakkı tanınmadan memura hiçbir disiplin cezası verilemez; öğretmene savunmasını yapması için en az 7 gün süre tanınır.",
+    "source": "657 DMK Madde 130",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disiplin Cezalarının Sicilden Silinmesi: Uyarma ve kınama cezaları 5 yıl, aylıktan kesme ve kademe ilerlemesinin durdurulması cezaları 10 yıl sonra iyi hal şartıyla sicilden sildirilebilir.",
+    "source": "657 DMK Madde 133",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hastalık Raporlarının İzne Çevrilmesi: Alınan sağlık raporları okul müdürlüğüne gecikmeksizin intikal ettirilir ve idare tarafından mevzuata uygun olarak hastalık iznine dönüştürülür.",
+    "source": "Devlet Memurlarına Verilecek Hastalık Raporları Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Refakat İzni Esasları: Anne, baba, eş ve çocukların ağır kaza veya hayati tehlike içeren hastalıklarında, sağlık kurulu raporuyla belgelenmek şartıyla 3 aya kadar refakat izni verilebilir.",
+    "source": "657 DMK Madde 105",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "BEP (Bireyselleştirilmiş Eğitim Programı) Zorunluluğu: Özel eğitim ihtiyacı olan (kaynaştırma) her öğrenci için okul BEP birimi tarafından ders bazlı özel öğrenme çıktıları belirlenmesi yasal zorunluluktur.",
+    "source": "MEB Özel Eğitim Hizmetleri Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Destek Eğitim Odası Hakkı: Kaynaştırma öğrencileri için okulda açılan Destek Eğitim Odası'nda ders veren öğretmenlere ek ders ücreti %25 artırımlı olarak ödenir.",
+    "source": "MEB Ek Ders Kararı Madde 8",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Özel Eğitim Sınıfı Ek Ders Artırımı: Özel eğitim sınıflarında ve hastane sınıflarında görev yapan öğretmenlerin ek ders ücretleri yasal olarak %25 fazlasıyla tahakkuk eder.",
+    "source": "657 DMK Ek Ders Düzenlemeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Görevleri ve Ücretleri: ÖSYM, MEB e-Sınav ve Açık Lise gibi merkezi sınavlarda salon başkanı ve gözetmen ücretleri KBS sistemi üzerinden bağımsız olarak yatırılır.",
+    "source": "MEB Merkezi Sınav Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Veli Toplantısı Evrakları: Dönemde en az bir kez yapılan şube veli toplantısının tutanakları, imza sirküleri ve alınan kararlar şube rehber öğretmeni tarafından okul idaresine teslim edilir.",
+    "source": "Rehberlik Hizmetleri Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zümre Öğretmenler Kurulu Kararları: Sene başı, dönem ortası ve sene sonunda yapılan zümre toplantı tutanakları okulun eğitim kalitesinin resmi anayasasıdır; müfredat planı buna göre yürütülür.",
+    "source": "MEB Eğitim Kurulları ve Zümreleri Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sosyal Kulüp Dosyası: Her kulüp danışman öğretmeni yıllık çalışma planı, toplum hizmeti projesi ve öğrenci listesini içeren kulüp dosyasını düzenli olarak tutmakla yükümlüdür.",
+    "source": "MEB Sosyal Etkinlikler Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenci İzin Verme Yetkisi: Derste rahatsızlanan bir öğrenciye öğretmen tarafından revir veya nöbetçi idareciye gitmesi için imzalı sevk pusulası verilmelidir; öğrenci başıboş bırakılamaz.",
+    "source": "Okul Güvenliği Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenin Hukuki Sorumluluğu (Gözetim Görevi): Öğretmen, derste ve nöbet saatinde öğrencilerin can güvenliğini gözetmekle yasal olarak mükelleftir; sınıfı izinsiz terk etmemelidir.",
+    "source": "Borçlar Kanunu ve TCK İlgili Maddeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kişisel Verilerin Korunması (KVKK): Öğrencilerin fotoğraflarını, sınav kağıtlarını veya özel durumlarını velinin yazılı açık rızası olmadan sosyal medyada paylaşmak yasal suç teşkil eder.",
+    "source": "6698 Sayılı KVKK ve MEB Genelgesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "E-Okul Not Giriş Süreleri: Sınav tarihinden itibaren en geç 10 iş günü içinde sınav sonuçlarının e-Okul sistemine girilmesi ve öğrencilere duyurulması yönetmelik gereğidir.",
+    "source": "MEB Ortaöğretim ve Temel Eğitim Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Kağıtlarının Saklanma Süresi: Yazılı sınav kağıtları ve performans görevleri okul idaresi arşivinde en az 1 yıl süreyle saklanmak zorundadır; sonrasında tutanakla imha edilir.",
+    "source": "Resmi Yazışma ve Arşiv Mevzuatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Sonucuna İtiraz Süreci: Öğrenci veya veli, sınav sonucunun ilanından itibaren 5 iş günü içinde okul müdürlüğüne yazılı itirazda bulunabilir; komisyon kağıdı yeniden inceler.",
+    "source": "MEB Sınav İtiraz Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yabancı Uyruklu Öğrencilerin Eğitimi (PIKTES): Uyum sınıflarında görev alan veya yabancı uyruklu öğrencilere Türkçe öğreten öğretmenler ilgili mevzuat kapsamında ek haklara sahiptir.",
+    "source": "PIKTES Proje Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Rehberlik ve Psikolojik Danışma Servisi Sevk: Sınıfta ciddi davranış veya uyum sorunu yaşayan öğrenci için 'Psikolojik Destek Sevk Formu' doldurularak PDR servisine resmi sevk yapılır.",
+    "source": "MEB PDR Hizmetleri Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İhmal ve İstismar Bildirim Yükümlülüğü: Çocuk ihmali veya istismarı şüphesi duyan bir öğretmenin durumu derhal okul idaresine ve adli mercilere bildirmesi yasal bir zorunluluktur.",
+    "source": "TCK Madde 279 & Çocuk Koruma Kanunu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sendikal Faaliyet ve Eylem Güvencesi: Anayasa ve uluslararası sözleşmeler gereği, sendikanın aldığı yasal karar doğrultusunda yapılan iş bırakma eylemleri disiplin cezasına konu edilemez.",
+    "source": "Danıştay ve Anayasa Mahkemesi İçtihatları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ödül ve Başarı Belgesi Kriterleri: Üstün gayret ve başarı gösteren öğretmenlere ilçe milli eğitim müdürü, kaymakam veya vali tarafından Başarı Belgesi, 3 başarı belgesi alana ise Üstün Başarı Belgesi verilir.",
+    "source": "657 DMK Madde 122",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Maaşla Ödüllendirme: Üstün Başarı Belgesi alan öğretmenler arasından komisyon değerlendirmesiyle en yüksek puana sahip olanlara maaş ödülü verilebilir.",
+    "source": "MEB Ödül Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kariyer Basamakları (Uzman ve Başöğretmen): Belirlenen mesleki kıdem ve eğitim şartlarını tamamlayan öğretmenler Uzman Öğretmen ve Başöğretmen unvanı ve ek tazminat hakkı kazanır.",
+    "source": "Öğretmenlik Mesleği Kanunu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İl İçi ve İl Dışı Yer Değiştirme: Her yıl mayıs-haziran döneminde MEBBİS üzerinden hizmet puanı üstünlüğüne göre yer değiştirme başvuruları alınır; hizmet puanı adil dağılımın esasıdır.",
+    "source": "MEB Atama ve Yer Değiştirme Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mazerete Bağlı Yer Değiştirme (Eş ve Sağlık Durumu): Eş durumu veya sağlık mazereti bulunan öğretmenler yarıyıl ve yaz tatillerinde mazeret atamasına başvurma hakkına sahiptir.",
+    "source": "MEB Atama Mevzuatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Norm Kadro Fazlası (Artığı) Öğretmenler: Okuldaki ders saatinin azalması durumunda hizmet puanı en düşük olan öğretmen norm fazlası olur; ilçe emrine veya ihtiyaç olan okullara atanır.",
+    "source": "MEB Norm Kadro Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Dışı Okul Gezileri İzni: Okul dışına yapılacak günübirlik veya yatılı geziler için gezi planı, veli izin belgeleri ve araç sözleşmesi en az 7 gün önceden idareye sunulup onay alınmalıdır.",
+    "source": "MEB Okul Gezileri Çerçeve Sözleşmesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bayrak Töreni Disiplini: Pazartesi sabahı ve Cuma akşamı yapılan İstiklal Marşı bayrak törenlerine tüm idareci ve öğretmenlerin eksiksiz katılması milli ve mesleki bir görevdir.",
+    "source": "Milli Eğitim Bakanlığı Bayrak Törenleri Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenler Kurulu Kararları Bağlayıcılığı: Sene başında Öğretmenler Kurulu'nda oy çokluğuyla alınan kararlar mevzuata aykırı olmamak kaydıyla tüm okul personeli için bağlayıcıdır.",
+    "source": "Eğitim Kurumları Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Okul Aile Birliği ile Mesleki Mesafe: Öğretmenler Okul Aile Birliği yönetimine seçilebilir; ancak aidat veya bağış toplama gibi nakdi işlemler kesinlikle öğretmen tarafından yürütülemez.",
+    "source": "MEB Okul Aile Birliği Yönetmeliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi Kamera Yasağı: Sınıfın içine ders esnasını kaydedecek şekilde güvenlik kamerası yerleştirilmesi hukuka ve kişilik haklarına aykırıdır; kameralar sadece ortak alanlarda olabilir.",
+    "source": "Danıştay Emsal Kararı & KVKK",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenler Odası Mahremiyeti: Öğretmenler odası, eğitimcilerin zihinsel dinlenme ve mesleki paylaşım alanıdır; öğrencilerin ve velilerin izinsiz girişi sınırlandırılmalıdır.",
+    "source": "Kurum Kültürü ve Çalışma Ortamı Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mesleki Çalışma Dönemi (Seminer): Eğitim öğretim yılı başı ve sonunda yapılan mesleki çalışma dönemleri ek ders karşılığı olup öğretmenlerin pedagojik gelişimini hedefler.",
+    "source": "MEB Çalışma Takvimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Telif Hakları ve Ders Notları: Öğretmenin kendi emeğiyle hazırladığı özgün ders notları ve materyalleri fikir ve sanat eserleri kanunu kapsamında telif hakkına tabidir.",
+    "source": "5846 Sayılı Fikir ve Sanat Eserleri Kanunu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Emeklilik Başvuru Dönemleri: Öğretmenler mevzuat gereği eğitim öğretim yılının aksamaması için emeklilik başvurularını kural olarak haziran ve temmuz aylarında yaparlar.",
+    "source": "5510 Sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ses Telleri ve Hidrasyon: Ses tellerinin (vokal kordların) sağlıklı titreşmesi için günde en az 2-2.5 litre oda sıcaklığında su tüketilmelidir. Kahve ve çay idrar söktürücü olduğundan suyun yerini tutmaz.",
+    "source": "Kulak Burun Boğaz & Foniyatri Uzmanları Derneği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Boğaz Temizleme Refleksinin Zararı: 'Hımm-hımm' diyerek boğazı kazımak iki ses telini birbirine sertçe çarparak mikrotravma yaratır. Bunun yerine bir yudum su için veya sertçe yutkunun.",
+    "source": "Ses Hijyeni Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Diyafram Nefesi ile Konuşma: Sadece göğüsten alınan sığ nefesle bağırmak ses tellerinde nodül ve polip oluşturur. Konuşurken nefesi karın ve diyafram boşluğundan yönlendirin.",
+    "source": "Vokal Terapi Metodolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta Mikrofon ve Ses Yükseltici Kullanımı: Geniş amfilerde veya kalabalık sınıflarda taşınabilir bel tipi mikrofon kullanmak ses tellerine binen yükü %70 oranında azaltır.",
+    "source": "Mesleki Ses Sağlığı Araştırması",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Fısıltıyla Konuşmanın Tehlikesi: Ses kısıklığı yaşadığınızda fısıldayarak konuşmak ses tellerini normal konuşmadan daha çok zorlar; fısıldamak yerine sessiz dinlenme (vokal istirahat) yapın.",
+    "source": "Foniatrik İlkeler",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tahtada Yazı Yazarken Boyun Açısı: Tahtaya yazı yazarken kafayı sürekli aşırı yukarı kaldırmak servikal omurgayı sıkıştırır; tahtanın orta hizasını kullanmaya özen gösterin.",
+    "source": "Ergonomi ve Omurga Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ayakta Ders Anlatırken Ağırlık Dağılımı: Ağırlığı sürekli tek bir bacağa vermek bel fıtığı ve pelvik eğriliğe davetiye çıkarır; iki ayak omuz genişliğinde açık ve ağırlık eşit dağıtılmalıdır.",
+    "source": "Fizyoterapi Uzmanları Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "20-20-20 Göz Kuralı: Akıllı tahta veya bilgisayar ekranına bakarken her 20 dakikada bir 20 saniye boyunca en az 20 fit (yaklaşık 6 metre) uzağa bakarak göz kaslarını gevşetin.",
+    "source": "Göz Sağlığı ve Dijital Ergonomi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ayakkabı Seçimi ve Tabanlık: 6 saat beton zemin üzerinde ayakta kalan bir öğretmenin ayakkabısı sert kösele değil, topuk şokunu emen ortopedik veya spor tabanlı olmalıdır.",
+    "source": "Mesleki Ayak Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Teneffüste Ses Dinlenmesi: Ders aralarında sürekli öğretmenler odasında yüksek sesle sohbet etmek yerine 5 dakika sessiz kalarak ses tellerinin ödemini yatıştırın.",
+    "source": "Ses Koçluğu Tavsiyesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tükenmişlik Sendromu (Burnout) Erken Belirtileri: Pazar akşamı başlayan yoğun kaygı, öğrencilere karşı tahammülsüzlük ve sürekli yorgunluk hissi profesyonel destek ve mola vaktinin geldiğini gösterir.",
+    "source": "Christina Maslach Tükenmişlik Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Eşik Ritüeli (Decompression Ritual): Okuldan çıkıp eve girerken kapıda 1 dakika durun ve derin bir nefes vererek 'Bugünkü okul mesaisi burada bitti, şimdi ailem ve kendim için varım' deyin.",
+    "source": "Psikolojik Sağlamlık Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Güne 3 Dakikalık Esneme ile Başlama: Sabah yataktan kalkınca omuz dairesi, boyun esnetme ve kedi-deve hareketi yapmak omurilik sıvısını hareketlendirir ve gün boyu enerjiyi korur.",
+    "source": "Beden Farkındalığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mide Reflüsü ve Ses Kısıklığı: Akşam geç saatte yemek yemek veya aşırı asitli içecekler gece uyurken asidin boğaza kaçıp ses tellerini yakmasına neden olur. Yastığınızı hafif yüksek tutun.",
+    "source": "Gastroenteroloji ve Ses Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Oda Havasının Nemi: Kışın kaloriferli sınıflarda hava aşırı kurur; sınıfta su kabı bulundurmak veya nemlendirici kullanmak boğaz kuruluğunu ve gıcığı önler.",
+    "source": "Ortam Hijyeni Standartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zümre Dayanışmasının Koruyucu Gücü: Zor bir veli veya disiplin sorunu yaşayan bir öğretmenin zümre arkadaşlarıyla duygusunu paylaşması yalnızlık hissini kırar ve stresi %50 azaltır.",
+    "source": "Sosyal Destek ve Ruh Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hayır Diyebilme Sınırı: Okulda her komisyona, her projeye ve her ek göreve evet demek tükenmişliğin bir numaralı sebebidir; önceliklerinizi belirleyin ve nazikçe sınır çizin.",
+    "source": "Kişisel Sınır Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Esnasında Su Yudumlamak: Masanızda daima kapalı bir matara su bulunsun; her 15 dakikada bir küçük bir yudum su almak boğaz mukozasını nemli tutar.",
+    "source": "Vokal Koruma Rutini",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zihinsel Detoks Günü: Haftanın bir gününü (tercihen Pazar gününün bir bölümünü) hiçbir e-Okul, MEBBİS veya veli WhatsApp mesajına bakmadan doğaya ve sevdiklerinize ayırın.",
+    "source": "Dijital Denge İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ilık Ihlamur ve Adaçayı Terapisi: Boğazda yanma veya batma hissi başladığında kaynar olmayan ılık ıhlamur bal karışımı içmek ses telleri üzerindeki tahrişi hafifletir.",
+    "source": "Doğal Vokal Destek",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Göz Temasıyla Dinlenme: Öğrenciler grup çalışması veya bireysel test çözerken öğretmenin masada sırtını dikleştirip gözlerini 30 saniye kapatması mikro bir zihinsel yenilenmedir.",
+    "source": "Sınıfta Mikro Mola",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Gürültüsüne Karşı 'Ses Yarışı' Yapmama: Sınıfın gürültüsü arttığında sesinizi onların üstüne çıkarmaya çalışmak vokal kord kanamasına yol açabilir; gürültüyü sesle değil sessizlikle yönetin.",
+    "source": "Sınıf İklimi ve Vokal Güvenlik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "D Vitamini ve Güneş Işığı: Öğretmenler kapalı sınıflarda çalıştıkları için D vitamini eksikliği kronik yorgunluğun baş sebebidir; öğle arasında 15 dakika güneşe çıkmak şarttır.",
+    "source": "Mesleki Biyokimya",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zihinsel Yeniden Çerçeveleme (Reframing): Yaramazlık yapan bir çocuğu 'Bana saygısızlık yapıyor' diye değil, 'Şu an dikkat çekmeye ve sevilmeye ihtiyacı var' diye okumak öğretmenin öfkesini şefkate dönüştürür.",
+    "source": "Bilişsel Davranışçı Terapi (BDT)",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Duygusal Bulaşıcılığı Fark Etme: Sınıfa girdiğinizde sınıftaki negatif gerginliği üstünüze sünger gibi çekmek yerine, kendi içsel huzurunuzu sınıfa yayan bir verici (radyo) gibi davranın.",
+    "source": "Duygusal Dayanıklılık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ağır Çanta Taşıma Ergonomisi: Sınav kağıtları ve kitaplarla dolu çantayı tek omuzda taşımak skolyoz ve omuz ağrısı yapar; sırt çantası kullanılmalı ve ağırlık eşit dağıtılmalıdır.",
+    "source": "Kas İskelet Sistemi Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akşam Yürüyüşünün Nörolojik Faydası: Okul çıkışında yapılan 20 dakikalık tempolu bir doğa yürüyüşü beyindeki prefrontal korteksi rahatlatır ve ders yorgunluğunu süpürür.",
+    "source": "Egzersiz ve Beyin Plastisitesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sıcak ve Soğuk Şokundan Kaçınma: Derste terleyip ardından teneffüste soğuk rüzgâra çıkmak veya buzlu su içmek ses tellerinde ani spazma yol açar; ılık su tercih edilmelidir.",
+    "source": "Ses Hijyeni Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mizah ve Gülmenin Bağışıklığa Etkisi: Günde içtenlikle birkaç kez gülmek endorfin salgılatır, kan basıncını düşürür ve bağışıklık sistemini enfeksiyonlara karşı korur.",
+    "source": "Psikonöroimmünoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendine Şefkat (Self-Compassion): Her ders mükemmel geçmek zorunda değildir; bazen planlar aksar. Öğretmen kendi eksikliklerine karşı da şefkatli bir dost gibi yaklaşmalıdır.",
+    "source": "Kristin Neff Öz Şefkat Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenler Odasında Pozitif Dil: Öğretmenler odasında sürekli öğrencilerden veya sistemden şikayet eden toksik sohbetlerden uzak durup ilham verici projelere odaklanmak ruhu korur.",
+    "source": "Mesleki Moral Çevresi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Nefes Farkındalığı (4-7-8 Tekniği): 4 saniyede burundan nefes al -> 7 saniye tut -> 8 saniyede ağızdan yavaşça ver. Bu teknik parasempatik sinir sistemini 1 dakikada devreye sokarak kaygıyı dindirir.",
+    "source": "Dr. Andrew Weil Nefes Protokolü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta Sıcaklık ve Havalandırma: İdeal sınıf sıcaklığı 20-22 derecedir. Her teneffüste pencerelerin karşılıklı açılarak sınıfın havasının tazelenmesi baş ağrısını önler ve oksijeni artırır.",
+    "source": "Okul Sağlığı Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Magnezyum ve Kas Gevşemesi: Gün boyu ayakta duran bacak kaslarındaki krampları önlemek için akşamları magnezyum zengini besinler (badem, ceviz, muz, ıspanak) tüketilmelidir.",
+    "source": "Beslenme ve Kas Sağlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Haftalık Bir Hobi Molası: Öğretmenlik dışında bir sanat, enstrüman, bahçe işi veya ahşap oymacılığı ile uğraşmak mesleki körlüğü engeller ve zihni taze tutar.",
+    "source": "Yaratıcı Dinlenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ses Isınması Egzersizi (Lip Trill): Sabah okula giderken dudakları gevşek bırakıp 'Brrrr' sesiyle dudak titretmek ses tellerini zorlamadan güne uyandırır.",
+    "source": "Şan ve Ses Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Boğaz Pastilleri Seçimi: Uyuşturucu içeren pastiller boğazdaki acı hissini maskelediği için ses tellerini daha çok zorlamanıza yol açabilir; gliserin ve bal içerikli yumuşatıcılar tercih edilmelidir.",
+    "source": "İlaç ve Ses Terapisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Uyku Ortamının Karanlığı: Yatak odasında telefon ışığı veya sokak lambası melatonini baskılar; zifiri karanlık bir odada uyumak hücresel yenilenmeyi sağlar.",
+    "source": "Kronobiyoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta Yürürken Adım Sayımı: Günlük 8.000 - 10.000 adım atmak kalp ve damar sağlığını korur; sınıfta ders anlatırken sıraların arasında aktif dolaşmak bu hedefi kendiliğinden doldurur.",
+    "source": "Kardiyovasküler Sağlık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendi Değerini Notlarla Ölçmeme: Bir öğretmenin mesleki kıymeti sınıfındaki sınav ortalamasıyla değil; öğrencilerin kalbine ektiği insanlık ve erdem tohumlarıyla ölçülür.",
+    "source": "Maarif Ruhu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Eratosthenes'in Dünya'nın Çevresini Ölçmesi: M.Ö. 240 yılında İskenderiye'de yaşayan Eratosthenes, aynı gün ve saatte iki farklı şehirdeki kuyu gölgelerinin açısını (7.2 derece) ölçerek Dünya'nın çevresini %2 gibi inanılmaz bir hata payıyla hesaplamıştır.",
+    "source": "Antik Bilim Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İbnü'l-Heysem ve Kamera Obscura: Karanlık bir odanın duvarında açılan küçük bir delikten dışarıdaki görüntünün karşı duvara ters yansıdığını keşfeden Heysem, modern fotoğraf makinelerinin ve gözün optik prensiplerinin temelini atmıştır.",
+    "source": "İslam Bilim Mirası (Kitâbü'l-Menâzır)",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Alexander Fleming ve Küfün Mucizesi: 1928'de tatile çıkarken açık unuttuğu stafilokok bakteri kültürünün üzerinde yeşil bir küf mantarının bakterileri yok ettiğini fark eden Fleming, penisilini keşfederek tıpta devrim yapmıştır.",
+    "source": "Tıbbi Keşifler Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Arşimet ve Su Yoğunluğu: Hamamda suya girdiğinde taşan suyun hacminin kendi vücut hacmine eşit olduğunu ve suyun kaldırma kuvvetini fark eden Arşimet, saf altından tacın içine gümüş katılıp katılmadığını bu yöntemle çözmüştür.",
+    "source": "Fizik Tarihi Anekdotu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mendeleyev'in Periyodik Tablo Sezgisi: Elementlerin atom ağırlıklarına göre periyodik bir özellik gösterdiğini fark eden Mendeleyev, henüz keşfedilmemiş olan galyum, germanyum ve skandiyum gibi elementlerin boşluklarını bırakmış ve özelliklerini önceden tahmin etmiştir.",
+    "source": "Kimya Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Cahit Arf ve Arf Değişmezi: 1941 yılında cebirsel geometri ve kuadratik formlar alanında geliştirdiği 'Arf Değişmezi', günümüzde kuantum bilgisayarlarından kodlama teorisine kadar küresel bilimde temel kabul edilir.",
+    "source": "Türk Matematik Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Aziz Sancar ve DNA Onarımı: Hücrelerin UV ışınlarının DNA'da oluşturduğu hasarı 'Nükleotid Kesip Çıkarma Onarımı' mekanizmasıyla nasıl tamir ettiğini aydınlatan Aziz Sancar, 2015 Nobel Kimya Ödülü'nü ülkemize kazandırmıştır.",
+    "source": "Biyokimya ve Genetik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Galileo'nun Katedral Avizesi Deneyi: Pisa Katedrali'ndeki sallanan bir avizenin nabız vuruşlarıyla periyodunu ölçen Galileo, salınım süresinin genişlikten bağımsız (izokronizm) olduğunu keşfedip sarkaçlı saatlerin kapısını aralamıştır.",
+    "source": "Mekanik Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Margaret Hamilton ve Apollo 11 Kurtarışı: 1969'da Apollo 11 Ay'a inerken bilgisayarın aşırı yüklenmesi sonucu sistemi çöküşten kurtaran öncelikli görev yazılımını elle yazan Margaret Hamilton, yazılım mühendisliği terimini dünyaya kazandırmıştır.",
+    "source": "Uzay ve Yazılım Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "El-Cezerî'nin Otomatik Su Saatleri: 12. yüzyılda Diyarbakır Artuklu Sarayı'nda hidrolik güç ve dişli çarklarla çalışan fil saati ve otomatik abdest alma robotları yapan Cezerî, sibernetik ve robotiğin babasıdır.",
+    "source": "Mühendislik Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Marie Curie'nin Fedakârlığı: Radyoaktiviteyi keşfedip iki farklı alanda (Fizik ve Kimya) Nobel kazanan tek bilim insanı olan Curie, Birinci Dünya Savaşı'nda seyyar röntgen araçlarıyla cephedeki binlerce askeri kurtarmıştır.",
+    "source": "Nükleer Fizik Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Uluğ Bey ve Semerkant Rasathanesi: 15. yüzyılda inşa ettirdiği devasa sekstant ile 1018 yıldızın konumunu teleskop olmadan günümüz modern astronomi değerlerine saniyeler kadar yakın hesaplamıştır.",
+    "source": "Astronomi Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gregor Mendel ve Bezelyeler: Manastır bahçesinde binlerce bezelye bitkisini çaprazlayarak baskın ve çekinik gen yasalarını keşfeden Mendel, modern genetik biliminin temellerini atmıştır.",
+    "source": "Genetik Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Pisagor Teoremi ve Mısırlı İp Gericiler: Eski Mısırlılar, Nil taşkınlarından sonra tarlaları dik açıyla bölmek için 3-4-5 düğümlü ipler kullanırlardı; Pisagor bu pratik bilgiyi matematiksel olarak kanıtlamıştır.",
+    "source": "Geometri Arkeolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kutup Yıldızı (Polaris) ve Yön Bulma: Kutup Yıldızı, Dünya'nın dönme ekseninin tam üzerinde yer aldığı için gece gökyüzünde konumu hiç değişmez; baktığı yön daima gerçek kuzeyi gösterir.",
+    "source": "Doğada Yön Bulma Bilgisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Işık Yılı Bir Zaman Değil Mesafe Birimidir: Işık yılı bir zaman ölçüsü değil; ışığın boşlukta bir yılda kat ettiği yaklaşık 9.46 trilyon kilometrelik muazzam mesafedir.",
+    "source": "Astrofizik Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "DNA Sarmalının Boyutu: Bir insan vücudundaki tüm hücrelerin DNA iplikçikleri uç uca eklenseydi, Güneş Sistemi'nin sınırlarına kadar gidip geri dönebilecek uzunlukta (yaklaşık 10 milyar km) olurdu.",
+    "source": "Moleküler Biyoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ağaçların Mantar Ağıyla İletişimi (Wood Wide Web): Ormandaki ağaçlar köklerindeki mikoriza mantar ağları sayesinde birbirleriyle besin paylaşır, kuraklık veya böcek saldırısı olduğunda birbirlerine kimyasal sinyallerle uyarı gönderirler.",
+    "source": "Ekoloji ve Doğa Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Su Döngüsü ve Dinozorlar: Dünya'daki su miktarı milyarlarca yıldır sabittir; bugün içtiğimiz bir bardak su, milyonlarca yıl önce bir dinozorun içtiği veya buharlaştığı aynı moleküllerden oluşuyor olabilir.",
+    "source": "Hidroloji ve Doğa Döngüleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Fotosentezin Hayati Dengesi: Bitkiler güneş ışığını, suyu ve karbondioksiti şekere ve oksijene dönüştürür; soluduğumuz oksijenin yaklaşık %70'ini karadaki ormanlar değil, okyanuslardaki mikroskobik fitoplanktonlar üretir.",
+    "source": "Deniz Biyolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Altın Oran (Phi - 1.618): Ayçiçeği çekirdeklerinin dizilişinde, çam kozalağında, insan yüzünde ve Selçuklu taç kapılarında görülen altın oran, doğanın ve sanatın en estetik matematiksel ölçütüdür.",
+    "source": "Matematik ve Estetik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Fibonacci Dizisi Doğada: 1, 1, 2, 3, 5, 8, 13... dizisindeki her sayı kendinden önceki ikisinin toplamıdır; çiçeklerin taç yaprak sayıları neredeyse istisnasız bu dizideki sayılardan biridir.",
+    "source": "Biyo-Matematik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Helyumun Keşfi Önce Güneş'te Yapıldı: Helyum elementi Dünya'da bulunmadan önce, 1868 güneş tutulmasında Güneş ışığının spektroskopik analizi sırasında keşfedilmiş ve adını Yunan Güneş Tanrısı Helios'tan almıştır.",
+    "source": "Spektroskopi Tarihi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Grafen: Dünyanın En İnce ve En Güçlü Malzemesi: Karbon atomlarının tek katmanlı altıgen dizilimi olan grafen, çelikten 200 kat daha güçlü, elektrik ve ısıyı bakırdan katbekat iyi ileten 2 boyutlu bir harikadır.",
+    "source": "Nanoteknoloji ve Malzeme Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kuantum Dolanıklık (Spooky Action): İki dolanık parçacık birbirlerinden evrenin iki zıt ucuna kadar uzaklaşsalar bile, birinde yapılan ölçüm anında diğerinin durumunu belirler; Einstein bunu 'uzaktan hayaletimsi etki' olarak adlandırmıştır.",
+    "source": "Kuantum Mekaniği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kar Tanelerinin Altıgen Simetrisi: Su moleküllerinin donarken hidrojen bağlarının oluşturduğu açı (104.5 derece) nedeniyle her kar tanesi 6 köşelidir ve sıcaklık-nem değişimleri sebebiyle hiçbiri birbirinin tıpatıp aynısı değildir.",
+    "source": "Kristalografi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Termodinamiğin İkinci Yasası (Entropi): Evrendeki düzensizlik (entropi) kendiliğinden daima artma eğilimindedir; düzenli bir çalışma ortamı ve bilgi inşası ancak sürekli enerji ve çaba harcayarak korunabilir.",
+    "source": "Fizik Felsefesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Doppler Etkisi: Yaklaşan bir ambulansın siren sesinin tizleşmesi, uzaklaşırken ise kalınlaşması gibi; bizden uzaklaşan galaksilerin ışığı da kırmızıya kayar. Hubble, evrenin genişlediğini bu şekilde keşfetmiştir.",
+    "source": "Kozmoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gözdeki Kör Nokta (Blind Spot): Optik sinirin retinadan çıkıp beyne gittiği noktada ışık reseptörü (koni ve çubuk) bulunmaz; fakat beynimiz iki gözden gelen bilgiyi birleştirerek bu boşluğu fark ettirmeden doldurur.",
+    "source": "Göz Fizyolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Toprağın Kokusu (Petrikor): Yağmur yağdıktan sonra duyulan o huzur verici toprak kokusu, aslında toprakta yaşayan 'Aktinobakteri' isimli bakterilerin ürettiği 'Geosmin' molekülüdür.",
+    "source": "Toprak Biyolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hücredeki Enerji Santrali: Mitokondri: Hücrelerimizin besinleri parçalayarak ATP enerjisi ürettiği mitokondriler, kendi bağımsız DNA'larına sahiptir ve bize sadece annemizden miras kalır.",
+    "source": "Hücresel Biyoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gökkuşağının Gerçek Şekli Tam Bir Çemberdir: Yerden baktığımızda ufuk çizgisi kestiği için yarım daire görürüz; fakat uçaktan veya yüksek bir kuleden baktığımızda gökkuşağı tam bir daire olarak görünür.",
+    "source": "Meteorolojik Optik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Karasineklerin Uçuş Akrobasisi: Bir karasinek saniyede 200 kez kanat çırpar ve yön değiştirmek için gözleri saniyede 250 kare işleyebilir; bu yüzden elimizle vurmak istediğimizde hareketi ağır çekimde görür.",
+    "source": "Biyo-Mekanik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Periyodik Tablodaki 'J' ve 'Q' Harfleri: İngilizce periyodik tabloda 118 elementin sembolleri arasında 'J' harfi hiçbir elementin sembolünde yer almayan tek harftir.",
+    "source": "Kimya Trivia",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Okyanus Tabanındaki Hidrotermal Bacalar: Güneş ışığının hiç ulaşmadığı zifiri karanlık okyanus diplerinde, volkanik bacalardan çıkan sülfürü kemosentezle enerjiye dönüştürerek yaşayan dev tüp solucanları ve kör karidesler bulunur.",
+    "source": "Derin Deniz Ekolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Güneş'in Işığı Bize 8 Dakika 20 Saniyede Ulaşır: Güneş'e baktığımızda onun şu anki halini değil, 8 dakika 20 saniye önceki geçmişini görürüz; gökyüzüne bakmak bir zaman makinesine bakmak gibidir.",
+    "source": "Gökbilim Temelleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Karbon Döngüsü ve Elmas: Kurşun kalemimizin ucu olan grafit ile paha biçilemez elmas tamamen aynı atomdan (Karbon) oluşur; aralarındaki tek fark atomların kristal kafes dizilimidir.",
+    "source": "Mineraloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ahtapotların 3 Kalbi ve Mavi Kanı Vardır: Ahtapotların kanında demir yerine bakır içeren hemosiyanin proteini bulunduğu için kanları oksijen taşıdığında mavi renk alır.",
+    "source": "Deniz Canlıları Biyolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gezegenlerin En Büyüğü: Jüpiter: Jüpiter o kadar büyüktür ki, Güneş Sistemi'ndeki diğer tüm gezegenler bir araya gelse bile Jüpiter'in içine sığabilir ve ünlü 'Kırmızı Leke'si Dünya'dan daha geniştir.",
+    "source": "Gezegenler Bilimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ses Boşlukta Yayılmaz: Ses mekanik bir dalga olduğu için titreşecek bir maddeye (hava, su, katı) ihtiyaç duyar; bu yüzden uzay boşluğunda en büyük patlamalar bile mutlak bir sessizlik içinde gerçekleşir.",
+    "source": "Dalga Mekaniği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akıllı Tahtada 'Örtme' (Curtain) Aracı: Sorunun veya metnin cevabını bir perde aracıyla kapatıp, sınıfla tartıştıktan sonra perdeyi yavaşça aşağı çekmek dikkati en üst düzeyde tutar.",
+    "source": "İnteraktif Tahta Teknikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Simülasyon Odaklı Fen Eğitimi (PhET): Soyut fizik veya kimya kavramlarını (Örn: atom altı parçacıklar, devre akımı) görsel ve dinamik laboratuvar simülasyonlarıyla deneyimletmek öğrenmeyi somutlaştırır.",
+    "source": "STEM Eğitim Teknolojileri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yapay Zekâyı Ders Planlamasında Asistan Olarak Kullanma: Yapay zekâya doğrudan plan yazdırmak yerine, 'Bu öğrenme çıktısı için 7. sınıf öğrencilerine yönelik 3 farklı tartışma senaryosu üret' diyerek yaratıcı alternatifler türetin.",
+    "source": "Eğitimde Yapay Zekâ İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Zihin Haritaları: Öğrencilere konunun özetini kağıt yerine Coggle veya MindMeister gibi interaktif araçlarla çizdirmek kavramlar arası bağlantıları keşfetmelerini sağlar.",
+    "source": "Görsel Düşünme Yazılımları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kahoot ve Quizizz'de 'Grup Modu': Bireysel hız yarışması kaygıyı tetikleyebilir; öğrencileri 3'erli takımlar haline getirip takım puanıyla yarıştırmak işbirliğini güçlendirir.",
+    "source": "Oyunlaştırma Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "QR Kodlu Soru İstasyonları: Sınıfın farklı köşelerine QR kodlar yapıştırın; öğrenciler tablet veya telefonla kodu okutarak soruyu açsın ve cevapları çalışma kağıdına işlesin.",
+    "source": "Mobil Öğrenme Etkinliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sanal Müze Gezileri (360 Derece): Tarih veya görsel sanatlar dersinde Topkapı Sarayı, Ayasofya veya Louvre Müzesi'ni akıllı tahtada 360 derece gezmek mekân hissi kazandırır.",
+    "source": "Dijital Kültür Mirası",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Google Earth ile Coğrafya Keşfi: Dağ oluşumlarını, fay hatlarını ve kanyonları tahtadaki 2 boyutlu harita yerine Google Earth 3D yüzey modeliyle inceletmek coğrafi derinlik katar.",
+    "source": "Uzamsal Coğrafya Araçları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Canva ile Görsel İnfografik Hazırlatma: Öğrencilere klasik yazılı ödev yerine bir tarihi olayı veya fen konusunu özetleyen tek sayfalık bir infografik tasarlatmak görsel okuryazarlığı besler.",
+    "source": "Tasarım Odaklı Öğrenme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Padlet ile Dijital Fikir Panosu: Soru sorduktan sonra tüm öğrencilerin kendi cümleleriyle aynı dijital panoya yapışkan not bırakması, çekingen öğrencilerin de sesini duyurur.",
+    "source": "Eşzamanlı Katılım Aracı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tinkercad ile 3D Tasarım Mantığı: Geometri veya teknoloji tasarım dersinde prizmaları ve silindirleri birleştirerek 3 boyutlu model yaptırmak uzamsal zekâyı geliştirir.",
+    "source": "3D Modelleme Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Scratch ile Blok Tabanlı Kodlama: Bir fen kuralını veya matematik formülünü animasyona dönüştüren bir blok kod yazmak algoritmik düşünme becerisini perçinler.",
+    "source": "Bilişimsel Düşünme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Podcast Hazırlatma Ödevi: Öğrencilerin seçtikleri bir yazar veya bilim insanı hakkında 3 dakikalık bir ses kaydı (podcast) hazırlayıp sınıfla paylaşması hitabet gücünü artırır.",
+    "source": "Sesli İfade Becerisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Hikâye Anlatımı (Digital Storytelling): Bir konuyu görseller, müzik ve kendi seslendirmesiyle birleştiren 1 dakikalık kısa bir video haline getirtmek kalıcı sahiplenme üretir.",
+    "source": "Çoklu Ortam Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "GeoGebra ile Dinamik Geometri: Bir üçgenin köşesini fareyle çekiştirirken iç açılar toplamının 180 derece kaldığını veya çevrel çemberin merkezini canlı görmek ispat mantığını kavratır.",
+    "source": "Dinamik Matematik Yazılımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi Dijital Zamanlayıcı Kullanımı: Grup çalışmalarında veya test çözümlerinde tahtaya dev bir kum saati veya sayaç yansıtmak zaman disiplini kazandırır.",
+    "source": "Görsel Zaman Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ters Arama ile Görsel Doğrulama: Öğrencilere internette gördükleri her resmin gerçek olmadığını, görseli Google Görsellerde aratarak sahte haberleri nasıl tespit edeceklerini öğretin.",
+    "source": "Medya Okuryazarlığı ve Teyitçilik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Tahtayı Karalama Değil Etkileşim Alanı Yapma: Öğretmenin sadece tahtada slayt ilerletmesi yerine, öğrencileri tahtaya kaldırıp nesneleri sürükletmesi veya grafik çizdirmesi gerekir.",
+    "source": "İnteraktif Tahta Kullanım İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Siber Zorbalık Farkındalığı: WhatsApp gruplarında bir arkadaşı gruptan atmanın veya komik fotoğrafını izinsiz yaymanın akran zorbalığı ve suç olduğunu sınıfta açıkça konuşun.",
+    "source": "Siber Güvenlik ve Hukuk",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "E-Kitap ve Açık Kaynak Kütüphaneler: MEB EBA Kütüphanesi ve TÜBİTAK Popüler Bilim yayınlarının PDF arşivlerine öğrencilerin ücretsiz nasıl erişebileceğini derste gösterin.",
+    "source": "Açık Erişim Kültürü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kelime Bulutu (Word Cloud) ile Giriş: Bir kavram hakkında öğrencilerin söylediği ilk kelimeleri Mentimeter gibi bir araçla tahtada toplayıp anında dev bir kelime bulutuna dönüştürün.",
+    "source": "Bilişsel Çağrışım Görselleştirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Formlar ile Anında Sınav Analizi: Google Formlar veya Microsoft Forms üzerinden yapılan testlerde her sorunun başarı yüzdesini anında sütun grafiklerle görüp zayıf öğrenme çıktılarına geri dönün.",
+    "source": "Veriye Dayalı Öğretim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Dosya Düzenleme Becerisi: Öğrencilere dosyaları 'adsız1.docx' yerine 'Tarih_Proje_AdSoyad.pdf' formatında kaydetme ve klasörleme disiplinini öğretmek ömür boyu fayda sağlar.",
+    "source": "Temel Dijital Okuryazarlık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ekran Süresi Hijyeni: Öğrencilere gece yatmadan 1 saat önce mavi ışık saçan telefon ve tabletleri bırakmanın melatonin salgısı ve öğrenme kalitesi için şart olduğunu anlatın.",
+    "source": "Uyku Hijyeni ve Teknoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Algoritmada Hata Ayıklama (Debugging) Sabrı: Kodlamada çalışan ilk kod nadirdir; hatayı sabırla arayıp adım adım düzeltme alışkanlığı hayattaki problem çözme dirayetini besler.",
+    "source": "Yazılım Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yapay Zekâ Metinlerinde İntihal Sınırı: Öğrencilere ChatGPT veya benzeri araçların bir başlangıç taslağı olabileceğini, fakat doğrudan kopyalanan metnin kendi düşüncelerini körelteceğini açıklayın.",
+    "source": "Akademik Etik ve Yapay Zekâ",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Desmos ile Fonksiyon Dansı: Matematikte f(x) fonksiyonunun katsayıları değiştikçe grafiğin nasıl daralıp genişlediğini veya kaydığını kaydırıcılarla canlı göstermek formülleri canlandırır.",
+    "source": "Görsel Fonksiyon Analizi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çevrimiçi Sözlük Kullanım Alışkanlığı: Yabancı dil dersinde tek kelimelik çeviri siteleri yerine kelimenin cümle içindeki kullanımını ve telaffuzunu veren kaliteli lügatleri tanıtın.",
+    "source": "Dil Öğretimi Teknolojileri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ses Kaydıyla Kendi Okumasını Dinleme: Türkçe dersinde öğrencilerin bir şiiri kaydedip sonra kulaklıkla kendi vurgu ve tonlamasını dinlemesi diksiyonu hızla düzeltir.",
+    "source": "Öz Değerlendirmeli Okuma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İnteraktif Zaman Çizelgesi (Timeline): Tarih dersinde olayları kronolojik bir dijital şerit üzerinde resimler ve kaynak bağlantılarıyla dizmek neden-sonuç zincirini netleştirir.",
+    "source": "Tarihsel Kronoloji Yazılımları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Artırılmış Gerçeklik (AR) ile Anatomi: Bir tablet kamerasıyla insan vücudunun organlarını veya kalbin çalışmasını sıranın üzerinde 3 boyutlu canlandırmak tıp seviyesinde merak uyandırır.",
+    "source": "AR Eğitim Uygulamaları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Bulut Depolama ile Grup Çalışması: Ortak bir döküman üzerinde 4 öğrencinin aynı anda farklı renkli imleçlerle çalışıp birbirinin yazdığını düzenlemesi gerçek işbirliğini öğretir.",
+    "source": "Kolektif Belge Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Güvenlik: Güçlü Şifre Oluşturma: Öğrencilere doğum tarihi veya 123456 yerine en az 12 karakterli, harf-rakam-sembol içeren karmaşık parolalar kurma bilinci aşılayın.",
+    "source": "Kişisel Veri Güvenliği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Telif Hakları (Creative Commons): Öğrencilere bir projede Google'dan rastgele resim kopyalamak yerine telifsiz veya atıflı görseller (Unsplash, Pixabay) kullanma ahlakını öğretin.",
+    "source": "Dijital Telif Etiği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akıllı Tahtada 'Geri Al' (Undo) Güvencesi: Tahtada yapılan bir hatanın tek bir dokunuşla geri alınabilmesi, öğrencilerin hata yapmaktan korkmadan cesurca çizim yapmasını sağlar.",
+    "source": "Psikolojik Rahatlık ve Teknoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Webinar ve Canlı Bilim İnsanı Bağlantısı: İmkan varsa sınıfa uzaktan görüntülü bağlantıyla bir astronom, arkeolog veya mühendisi 15 dakika bağlamak vizyonu fersah fersah genişletir.",
+    "source": "Dünyayı Sınıfa Getirme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dijital Portfolyo Web Sitesi: Lise öğrencilerine Google Sites veya benzeri ücretsiz araçlarla kendi projelerini sergiledikleri bir kişisel portfolyo açtırmak üniversite ve iş hayatına hazırlar.",
+    "source": "Kariyer Becerileri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Mikrobit ile Fiziksel Programlama: Küçük bir devre kartının üzerindeki LED ekrana yazı yazdırmak veya sıcaklık sensörüyle sınıfın ısısını ölçtürmek kodlamayı fiziksel dünyaya bağlar.",
+    "source": "Fiziksel Bilişim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kavram Karşılaştırma Tabloları: Çevrimiçi dinamik tablolarda iki teoriyi veya canlı sınıfını kriterlere göre sıralayıp filtrelemek analitik sınıflama kabiliyetini biler.",
+    "source": "Veri Analitiği Temelleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Teknoloji Bir Amaç Değil Araçtır Kuralı: En pahalı teknoloji bile pedagojik bir amaca, etkileşime ve sıcak bir öğretmen sevgisine hizmet etmiyorsa hiçbir değer taşımaz.",
+    "source": "Eğitim Teknolojileri Felsefesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "DEHB (Dikkat Eksikliği ve Hiperaktivite): DEHB'li öğrenciye 'Dikkatsiz' demek yanlıştır; onun sorunu dikkatsizlik değil, dikkatini regüle edememesidir. Onu ön sıralara oturtun ve yönergeleri tek tek verin.",
+    "source": "Özel Eğitim ve Nörogelişim Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "DEHB'de Fiziksel Hareket Molası: Sürekli kıpırdanan bir çocuğa tahtayı silme veya tebeşir getirme gibi meşru bir hareket görevi vermek enerjisini olumluya kanalize eder.",
+    "source": "Sınıfta DEHB Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disleksi (Özgül Öğrenme Güçlüğü): Disleksi bir zekâ geriliği değil, beynin yazılı dili farklı işlemesidir. 'b' ve 'd' harflerini karıştıran öğrenciye renkli zeminli kağıtlar ve geniş aralıklı yazılar sunun.",
+    "source": "Disleksi Farkındalık Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dislekside Yüksek Sesle Zorla Okutmama: Disleksili bir çocuğu tüm sınıfın önünde habersizce tahtaya kaldırıp kitap okutmak ağır travma yaratır; ona önceden haber verip hazırlıklı okutun.",
+    "source": "Kapsayıcı Eğitim İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Disgrafi (Yazma Güçlüğü): Yazısı aşırı düzensiz ve yavaş olan öğrencinin sınavlarını gerekirse sözlü veya dijital formda yapmak onun gerçek bilgi seviyesini ortaya çıkarır.",
+    "source": "Özel Öğrenme Güçlüğü Notu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Diskalkuli (Matematik Öğrenme Güçlüğü): Rakamları ve büyüklükleri kavramakta zorlanan öğrenciye formül ezberletmek yerine fasulye, çubuk ve somut nesnelerle işlem yaptırın.",
+    "source": "Matematik Öğrenme Güçlüğü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Özel Yetenekli Çocukların İhtiyacı: Sınıfın hızının çok önünde olan özel yetenekli öğrenciye aynı problemden 20 tane daha çözdürmek ceza gibidir; ona derinleşme ve proje araştırma rotası verin.",
+    "source": "BİLSEM ve Özel Yetenekliler Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Özel Yeteneklilerde Asenkron Gelişim: Zihinsel yaşı 15 olan bir çocuğun duygusal yaşı 8 olabilir; onun zekâsına hayran kalırken duygusal olarak hala bir çocuk olduğunu unutmayın.",
+    "source": "Üstün Zekâ ve Gelişim Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Hafif Otizm Spektrumu (Asperger) Özelliği: Mecaz, kinaye ve şakaları anlamakta zorlanıp her şeyi harfi harfine (lafzi) algılarlar. Onlarla konuşurken net, somut ve doğrudan ifadeler kullanın.",
+    "source": "Otizm Spektrum Bozukluğu Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Duyusal Hassasiyetler (Sensorimotor): Otizmli veya duyusal hassasiyeti olan bir çocuk için floresan lambanın vızıltısı veya tebeşir gıcırtısı dayanılmaz bir acı olabilir; ortamı sakinleştirin.",
+    "source": "Duyusal Bütünleme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akran Zorbalığı Türleri: Zorbalık sadece fiziksel itme-kakma değildir; dedikodu yaymak, gruptan dışlamak ve alaycı lakap takmak da ağır birer psikolojik zorbalıktır.",
+    "source": "Akran Zorbalığını Önleme Programı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zorbalıkta Seyirci (Bystander) Rolü: Zorbalığı besleyen en büyük güç seyircilerin gülmesi veya sessiz kalmasıdır. Sınıfta 'Zorbalığa sessiz kalmayan cesur arkadaşlar' kültürü inşa edin.",
+    "source": "Dan Olweus Zorbalık Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zorba ile Kurbanı Yan Yana Oturtmama: Bir çatışma çözülene kadar zorbalığa maruz kalan çocuğu koruma altına almak ve kendini güvende hissettirmek ilk önceliktir.",
+    "source": "Okul Güvenlik Protokolü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye 'Şikâyetçi' Dememe: Bir haksızlığı veya zorbalığı öğretmene haber veren çocuğa 'İspiyoncu' damgası vurulmasına izin vermeyin; güvenli bildirim kanalları açın.",
+    "source": "Pozitif İklim Güvencesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "BEP Toplantılarında Ailenin Yeri: BEP hazırlanırken ailenin görüşü ve evdeki gözlemleri programa mutlaka dâhil edilmelidir; okul-aile ortaklığı olmadan özel eğitim yürütülemez.",
+    "source": "MEB BEP Yönergesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İçe Kapanık (İntrovert) Öğrencileri Anlama: Sessiz ve sakin bir çocuk 'problemli' değildir; o enerjisini yalnızlıktan alır ve yazılı ifadede sözlüden çok daha derin olabilir.",
+    "source": "Susan Cain - Sessizliğin Gücü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Aşırı Mükemmeliyetçi Öğrenci Kaygısı: 100 yerine 95 aldığında ağlayan bir çocuğa başarının notla değil çabayla ölçüldüğünü ve hataların doğal olduğunu sabırla aşılayın.",
+    "source": "Çocukluk Kaygıları Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınav Kaygısında Bedensel Belirtiler: Mide bulantısı, baş ağrısı ve kalp çarpıntısı yaşayan öğrenciye 'Korkacak bir şey yok' demek işe yaramaz; duygusunu onaylayıp nefes egzersizi yaptırın.",
+    "source": "Sınav Kaygısı Müdahale Rehberi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenilmiş Güçsüzlük Döngüsü: Sürekli 'Zaten yapamayacağım' diyen bir öğrencinin geçmişteki başarılarını hatırlatın ve 'Daha önce de zorlanmıştın ama başarmıştın' diyerek güven aşılayın.",
+    "source": "Bilişsel Yeniden Yapılandırma",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Destekli Günlük Akış: Özel eğitim ve ilkokul sınıflarında günün ders programını resimli kartlarla tahtaya asmak, çocukların belirsizlik kaygısını sıfıra indirir.",
+    "source": "Görsel Çizelge Yöntemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Somutlaştırılmış Zaman Algısı: '10 dakika kaldı' demek yerine kum saati veya dijital görsel sayaç göstermek zaman algısı zayıf çocukların paniklemesini önler.",
+    "source": "Zaman Yönetimi Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öfke Patlaması Anında Mantık Aramama: Bir çocuk öfke nöbeti geçirirken ona nasihat vermek veya hesap sormak yangına körükle gitmektir; önce sakinleşmesini bekleyin, sonra konuşun.",
+    "source": "Duygusal Kriz Müdahalesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sakinleşme Köşesi (Calm Down Corner): Sınıfın bir köşesinde yumuşak minderler, stres topu ve resim defteri olan sessiz bir alan oluşturmak çocukların kendi duygularını regüle etmesini sağlar.",
+    "source": "Pozitif Sınıf Ortamı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Duygu Çarkı Kullanımı: 'Kötüyüm' diyen bir öğrenciye Duygu Çarkı göstererek 'Kırgın mısın, hayal kırıklığı mı yaşıyorsun, yalnız mı hissediyorsun?' diye sormak duygusal okuryazarlık kazandırır.",
+    "source": "Robert Plutchik Duygu Teorisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akran Destek Grubu (Buddy Sistemi): Sınıfa yeni gelen veya özel eğitime ihtiyacı olan bir öğrenciye şefkatli bir arkadaşını 'Rehber Eş' olarak atamak uyum sürecini yarıya indirir.",
+    "source": "Kapsayıcı Okul Kültürü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Övgüde 'Sosyal Etiketleme' Tehlikesi: Bir çocuğu överken diğerlerini yermek ('Bakın Ali ne kadar uslu, siz de onun gibi olun') Ali'yi sınıfta hedef tahtası haline getirir; bireysel övgü bireysel kalmalıdır.",
+    "source": "Grup Dinamikleri ve Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Boşanmış Aile Çocuklarına Yaklaşım: Anne babası ayrılan çocuklarda suçluluk ve terk edilme kaygısı yüksektir; öğretmenin tutarlı sevgisi ve güvenli liman olması hayati bir kalkandır.",
+    "source": "Travma Odaklı Okul Yaklaşımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yası Olan Öğrenciye Yaklaşım: Yakınını kaybeden bir çocuğa 'Artık ağlama, cennete gitti' gibi bastırıcı sözler yerine 'Üzüntünü anlıyorum, buradayım ve seni dinlemeye hazırım' demek şifadır.",
+    "source": "Çocuk ve Yas Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kayıp ve Değişimlerde Rutinlerin Gücü: Hayatında sarsıntı yaşayan bir çocuk için okuldaki değişmeyen ders saatleri, zil sesi ve kurallar en büyük güvenlik duygusudur.",
+    "source": "Psikolojik Dayanıklılık",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta 'Sıfır Reddetme' İlkesi: Hiçbir çocuk zekâsı, engeli veya sosyoekonomik durumu yüzünden dışlanamaz; maarif her bir ferdi bağrına basan bir çatıdır.",
+    "source": "Kapsayıcı Eğitim Felsefesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görme Yetersizliği Olan Öğrenciye Alan: Sınıftaki eşyaların ve sıraların yerini sık sık değiştirmemek görme engelli öğrencinin güvenle hareket etmesini sağlar.",
+    "source": "Erişilebilir Sınıf Ergonomisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İşitme Yetersizliğinde Dudak Okuma: İşitme cihazı kullanan öğrenciyle konuşurken arkası dönük tahtaya yazı yazarak değil, yüz yüze ve dudakların net görüleceği şekilde konuşulmalıdır.",
+    "source": "İşitme Engelliler Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Fiziksel Engelli Öğrenciler İçin Ortak Alanlar: Okul gezilerinde ve bahçe oyunlarında bedensel engelli öğrencinin kenarda seyirci kalmayacağı uyarlanmış roller üretilmelidir.",
+    "source": "Bütünleştirici Oyun Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akademik Benlik Saygısı: 'Ben bu derste başarısızım' inancı kırılmadan öğrenme başlayamaz; ilk hedef küçük bir başarıyla bu inancı sarsmaktır.",
+    "source": "Benlik Kuramları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Çekingen Çocuğa Söz Verme Yolu: Sınıfın ortasında aniden söz vermek yerine, dersten önce sırasına gidip 'Bugün şu soruyu sana soracağım, hazırlanmak ister misin?' demek özgüvenini inşa eder.",
+    "source": "Şefkatli Rehberlik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Sormaktan Çekinen Sınıfı Kırma: 'Bunu anlamayacak ne var?' tepkisi sınıfta soru sormayı öldürür; en basit soruya bile 'Bunu sorman harika oldu' demek kapıları ardına kadar açar.",
+    "source": "Psikolojik Güvenlik Kültürü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yaratıcı Çocuğun 'Tuhaf' Soruları: Müfredat dışı ve garip sorular soran bir çocuğu susturmak yerine 'Ne kadar sıra dışı bir bakış açısı, bunu teneffüste araştıralım' demek dehayı besler.",
+    "source": "Yaratıcılık Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Lider Ruhlu Öğrencileri Olumluya Yönlendirme: Sınıfın doğal lideri olan haylaz bir öğrenciye disiplin cezası vermek yerine sorumluluk vermek tüm sınıfın dinamiğini pozitife çevirir.",
+    "source": "Grup Dinamiği Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Adalet ile Eşitlik Arasındaki Fark: Herkese aynı boyutta ayakkabı vermek eşitliktir; herkese ayağına uyan ayakkabıyı vermek ise adalettir. Eğitimde asıl olan adalettir.",
+    "source": "Eğitim Felsefesi İlkesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Rehberlik Servisi ile İşbirliği: Çözmekte zorlandığınız kronik bir davranış sorununda tek başınıza mücadele etmeyin; okul PDR servisiyle erken aşamada ortak plan yapın.",
+    "source": "Okul Psikolojik Danışmanlığı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Pabucu Dama Atılmak' Deyiminin Hikâyesi: Osmanlı lonca teşkilatında (Ahilik) bir ayakkabıcı kalitesiz ve çürük ayakkabı üretirse, Ahiler heyeti o ayakkabıyı dükkânın damına atardı; bu, ustanın itibarının bittiğini ve meslekten men edildiğini gösterirdi.",
+    "source": "Türk Kültürü ve Ahilik Teşkilatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'İki Dirhem Bir Çekirdek' Deyiminin Hikâyesi: Osmanlı'da altın paralar dirhem ve çekirdek (kırat) ile tartılırdı; 1 dirhem 16 çekirdekti. Giyimine aşırı özen gösteren ve şık giyinen zarif insanlara bu yüzden 'iki dirhem bir çekirdek' denirdi.",
+    "source": "Kültür Tarihi ve Deyimler",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Çizmeyi Aşmak' Deyiminin Hikâyesi: Fransız ressam Delacroix sergisinde bir kunduracı tablodaki çizmeyi eleştirir, ressam düzeltir. Cesaret alan kunduracı pantolonu da eleştirmeye kalkınca ressam: 'Usta, çizmeyi aşma!' der.",
+    "source": "Sanat Tarihi ve Deyimler",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Ateş Pahası' Deyiminin Hikâyesi: Kanuni Sultan Süleyman fırtınalı bir av gününde bir kulübeye sığınır; kulübedeki odun ateşinde ısınıp kurulanınca köylüye borcunu sorar. Köylü 'Bin altın' deyince padişah 'Ateş bu kadar pahalı mı?' der; köylü 'Padişahım, can kurtaran ateş pahalıdır' der.",
+    "source": "Tarihsel Deyim Hikâyeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Eski Çamlar Bardak Oldu' Hikâyesi: Eskiden çam ağaçlarından su bardağı ve testiler oyulurdu; zamanla porselen ve cam yaygınlaşınca eski ahşap bardakların dönemi kapandı ve bu deyim 'devir değişti, eski usuller geride kaldı' manasında kaldı.",
+    "source": "Geleneksel Türk Zanaatları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'De/Da' Bağlacının Yazımı Pratik Kuralı: Cümleden 'de/da'yı çıkardığınızda cümlenin anlamı tamamen bozulmuyorsa o bir bağlaçtır ve ayrı yazılır; eğer anlam tamamen anlamsızlaşıyorsa bulunma ekidir ve bitişik yazılır.",
+    "source": "TDK Yazım Kılavuzu Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Ki' Bağlacının Yazımı (SOMBAHÇEMİ Formülü): Kalıplaşmış olduğu için bitişik yazılan 'ki'ler: Sanki, Oysaki, Mademki, Belki, Halbuki, Çünkü, Meğerki, İllaki.",
+    "source": "Türkçe Dil Bilgisi Formülleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Düzeltme İşareti (Şapka ^) Kalkmadı!: TDK kurallarına göre anlam karışıklığını önlemek için (kar / kâr, adet / âdet, hala / hâlâ) ve ince 'k, g, l' seslerinden sonra (kâğıt, sükût, ahlâk) düzeltme işareti kullanılmaya devam etmektedir.",
+    "source": "TDK İmla Kuralları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kesme İşaretinin Kurum ve Kuruluş Adlarında Kullanılmaması: 'Türkiye Büyük Millet Meclisine', 'Milli Eğitim Bakanlığına', 'İstanbul Üniversitesine' gibi kurum ve kuruluş adlarına gelen ekler kesme işaretiyle ayrılmaz.",
+    "source": "TDK Noktalama Kılavuzu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Büyük Harflerin Noktası: Türkçede küçük 'i'nin büyüğü noktalı 'İ', küçük 'ı'nın büyüğü ise noktasız 'I'dır. Yazılım ve metinlerde dil kodu olarak her zaman 'tr-TR' seçilmelidir.",
+    "source": "Türk Dili Tipografi Standartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Türkçenin Matematiksel Yapısı (Sondan Eklemeli Dil): Türkçe, kök ve eklerin kurallı birleşimiyle bilgisayar diline ve yapay zekâ algoritmalarına dünyadaki en yatkın dillerden biridir.",
+    "source": "Dilbilim ve Hesaplamalı Morfoloji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ünlü Uyumu (Büyük ve Küçük Ünlü Uyumu): Bir kelimenin Türk kökenli olup olmadığını anlamanın en güçlü filtresi kalınlık-incelik ve düzlük-yuvarlaklık uyumudur.",
+    "source": "Türkçe Ses Bilgisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Noktalı Virgül (;) Kullanım Sırrı: Bir cümlede noktalı virgül kullanabilmek için cümlenin içinde daha önceden virgülle ayrılmış en az bir öge veya tür bulunması şarttır; yoksa doğrudan nokta konur.",
+    "source": "Noktalama Sanatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "İki Nokta (:) Sonrası Büyük Harf Kuralı: İki noktadan sonra gelen kısım bağımsız bir cümle ise büyük harfle başlar; sadece örnekler sıralanıyorsa küçük harfle başlar.",
+    "source": "Yazım Kuralları İncelikleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Üç Nokta (...) ile Anlatımı Zenginleştirme: Bitmemiş, yüklemi söylenmemiş cümlelerin sonuna üç nokta konur; bu okuyucunun hayal gücünü ve tefekkürünü metne davet etmektir.",
+    "source": "Edebi Noktalama",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru İşaretinin Bilinmeyen Bilgilerde Kullanımı: Parantez içinde kullanılan soru işareti (?) şüphe duyulan veya kesin olmayan bilgileri (Örn: Yunus Emre [1240? - 1320]) belirtmek için kullanılır.",
+    "source": "Akademik Yazım Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ünlem İşaretinin Parantez İçi Alay Anlamı: Parantez içinde ünlem (!), bir söze alay, kinaye veya küçümseme anlamı kazandırmak için kullanılır.",
+    "source": "Retorik Noktalama",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "'Şey' Sözcüğü Daima Ayrı Yazılır: 'Bir şey', 'her şey', 'hiçbir şey' tamlamalarında 'şey' sözcüğü her zaman ayrı yazılır; çünkü o müstakil bir zamirdir.",
+    "source": "TDK Temel Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sayıların Yazımı: Metin içinde sayılar kural olarak yazıyla yazılır (Örn: 'üç ay sonra', 'on beş öğrenci'); sadece saat, para tutarı, ölçü ve istatistik verilerinde rakam kullanılır.",
+    "source": "Yazım ve İmla Standartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sıra Sayılarının Yazımı: Rakamdan sonra nokta konmuşsa ayrıca kesme işareti ve ek yazılmaz (Örn: '2.' veya '2'nci' doğrudur; '2.'nci' hatalıdır).",
+    "source": "TDK Yazım Esasları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Üleştirme Sayıları Rakamla Yazılmaz: Üleştirme sayıları ('ikişer', 'beşer', 'onaltışar') kural olarak rakamla (2'şer değil) harfle yazılmalıdır.",
+    "source": "Türkçe İmla Kuralı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ara Sözlerin Ayrımı: Cümle içindeki ara sözler veya ara cümleler ya iki virgül arasında ya da iki kısa çizgi (--) arasında gösterilir.",
+    "source": "Cümle Bilgisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yabancı Sözcüklere Türkçe Karşılık: 'Selfie' yerine 'Özçekim', 'Online' yerine 'Çevrim içi', 'Link' yerine 'Bağlantı' demek dilimizin bağımsızlığını korumaktır.",
+    "source": "TDK Yabancı Sözlere Karşılıklar",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Atasözleri ve Deyimler Arasındaki Fark: Atasözleri genel bir hayat dersi ve öğüt verir (yargı bildirir); deyimler ise sadece bir durumu veya duyguyu mecazla tasvir eder.",
+    "source": "Halk Edebiyatı ve Anlambilim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kitap Adlarının Tırnak İçi Yazımı: Metin içinde geçen kitap, dergi ve makale adları tırnak içine alınır veya eğik (italik) yazılır.",
+    "source": "Yayın Standartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Göz Temasının Pedagojik Gücü: Bir öğrenciye ders anlatırken gözlerinin içine 3 saniye odaklanarak konuşmak, onun kendini özel ve değerli hissetmesini sağlar.",
+    "source": "Sözsüz İletişim İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenin Gülümsemesi: Güler yüzlü bir öğretmenin sınıfındaki öğrencilerin kortizol seviyesi düşük, derse katılım isteği %40 daha fazladır.",
+    "source": "Pozitif Pedagoji Araştırması",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciyi Arkadaşlarına Örnek Gösterirken Dikkat: 'Bakın o ne kadar çalışkan' demek diğerlerinde kıskançlık doğurur; 'Bu yaklaşım tarzı hepimize ilham verebilir' demek yapıcıdır.",
+    "source": "Sınıf Dinamiği İlkeleri",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sessizliği Bekleme Sabrı: Sınıfın susması için bağırmayın; tahtanın önüne geçip saatine bakarak sakince beklemek öğrencilerin kendi kendini susturmasını sağlar.",
+    "source": "Proaktif Sınıf Yönetimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ödev Tesliminde Esneklik: Kronik olmayan, tek seferlik bir ödev aksamasında öğrenciye ek 24 saat süre vermek sorumluluk bilincini pekiştirir.",
+    "source": "Şefkatli Disiplin",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfın Ortak Şarkısı: Özellikle ilkokul ve ortaokulda derse başlamadan önce söylenen 30 saniyelik neşeli bir sınıf tekerlemesi öğrencilerin enerjisini hizalar.",
+    "source": "Müziksel Pedagoji",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Bir Sır Verir Gibi Anlatmak: 'Şimdi size sınavda herkesin yanıldığı çok önemli bir ipucu vereceğim' diyerek fısıltıya geçmek sınıftaki dikkati bir anda zirveye taşır.",
+    "source": "Dramatik Anlatım Sanatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Dersin Başındaki 3 Dakika: Dersin ilk 3 dakikasında yoklama almak yerine konuya dair merak uyandırıcı bir soruyla başlamak akademik başarıyı katlar.",
+    "source": "Zamanın Etkili Kullanımı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrencinin Adını Unutmamak: Sene başında 1 hafta içinde tüm öğrencilerin isimlerini ezberleyen öğretmen sınıf yönetiminde %80 avantaj sağlar.",
+    "source": "Bağ Kurma Sanatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf Kapısındaki Karşılama: Kapıda durup gelen her öğrenciye 'Hoş geldin Ahmet', 'Günaydın Ayşe' demek aidiyeti sabahın ilk saniyesinde başlatır.",
+    "source": "Karşılama Ritüeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrencinin Ailesini Tanımak: Çocuğun evdeki şartlarını, kardeş sayısını ve ilgi alanlarını bilmek ders içi davranışlarını doğru anlamlandırmanın anahtarıdır.",
+    "source": "Bütüncül Rehberlik",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta 'Hata Panosu': Sınıfın panosuna 'Haftanın En Eğitici Hatası' başlığı açıp oraya yapılan bir hatayı ve ondan öğrenilen dersi asmak hata korkusunu yıkar.",
+    "source": "Büyüme Zihniyeti Pratiği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tahtayı Temiz Bırakma Nezaketi: Ders bittiğinde tahtayı pırıl pırıl silip bir sonraki zümre arkadaşına temiz teslim etmek mesleki zarafetin göstergesidir.",
+    "source": "Meslektaş Dayanışması ve Nezaket",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenin Kendi Öğrenme Heyecanı: Öğretmen yeni bir kitap okuduğunda veya yeni bir bilgi öğrendiğinde heyecanla sınıfla paylaşırsa, çocuklar da öğrenmeye aşık olur.",
+    "source": "Rol Model Olma Felsefesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Her Çocuğun Bir Yıldız Olduğu Gerçeği: Kimi öğrenci gökyüzünde kutup yıldızı gibi hemen parlar; kimi ise derin bir süpernova gibi zamanı gelince ışığını saçar. Sabırla bekleyiniz.",
+    "source": "Maarif Hikmeti",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Beyin Fırtınasında 3-12-3 Tekniği: 3 dakika bireysel düşünme -> 12 dakika grupça fikirleri tahtaya saçma -> 3 dakika en iyi 3 fikri oylama. Zaman sınırlı olduğunda verimi katlar.",
+    "source": "Hızlı İnovasyon Yöntemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Soru Sormada 'Topu Döndürme' (Bounce): Bir öğrenci cevap verdiğinde öğretmen doğrudan 'Doğru' veya 'Yanlış' dememeli; 'Peki Elif, Mehmet'in bu fikrine katılıyor musun?' diyerek topu sınıfta paslaştırmalıdır.",
+    "source": "Sokratik Tartışma Tekniği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Gözleri Kapatarak Dinleme: Şiir veya edebi metin tahlillerinde öğrencilere gözlerini kapattırıp sadece okunan metnin sesine ve ritmine odaklanmalarını istemek hayal gücünü katlar.",
+    "source": "İşitsel İmgelem",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Akıllı Tahtada 'Günün Kelimesi' Köşesi: Tahtanın sağ üst köşesine her sabah yeni ve az bilinen bir Türkçe kelime ve anlamını yazmak öğrencilerin lügat dağarcığını zenginleştirir.",
+    "source": "Kelime Hazinesi Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Laboratuvar Güvenliğinde 'Önce Tedbir': Fen derslerinde deney yapmadan önce mutlaka önlük, gözlük ve güvenlik kuralları hatırlatılmalı; güvenlik bilinci bilimin ilk adımıdır.",
+    "source": "Laboratuvar Güvenlik Protokolü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Bir 'Çırak' Gibi Bakmak: Öğretmenlik sadece hoca-talebe ilişkisi değil, aynı zamanda köklü bir usta-çırak geleneğidir; işin ahlakı ve adabı yaşayarak aktarılır.",
+    "source": "Ahilik ve Maarif Geleneği",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta 'Soru Kutusu' Açma: Haftalık olarak öğrencilerin isimsiz merak ettikleri soruları attığı bir kutu açıp Cuma günü cevaplamak çekingen öğrencilerin ufkunu açar.",
+    "source": "Anonim Katılım Modeli",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zor Bir Konuyu 'Tersine Çevirerek' Anlatma: Önce kuralı verip sonra örnek çözmek yerine; önce 3 ilginç örnek gösterip kuralı öğrencilerin kendisinin keşfetmesini sağlayın.",
+    "source": "Tümevarım Yöntemi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıf İçi mini Münazaralarda 1 Dakika Kuralı: Öğrencilere fikirlerini savunurken 60 saniye zaman sınırı koymak, lafı uzatmadan ana fikre odaklanma becerisi kazandırır.",
+    "source": "Kısa ve Öz Hitabet",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Matematikte 'Görselleştirme': Kesirleri tahtadaki sayılarla anlatmak yerine bir elmayı veya pizzayı dilimleyerek somutlaştırmak zihindeki soyut engeli kaldırır.",
+    "source": "Somuttan Soyuta Öğretim",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenin Kendi Zayıflığını Kabul Edebilmesi: Öğrencinin sorduğu zor bir soruya 'Bunu şu an tam bilmiyorum, gelin birlikte araştıralım' demek öğrenciye bilimin sınırlarını ve dürüstlüğü öğretir.",
+    "source": "Akademik Dürüstlük ve Tevazu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Ders Esnasında 'Rol Değişimi': 10 dakikalığına bir öğrenciyi öğretmen kürsüsüne geçirip konunun bir alt başlığını arkadaşlarına anlattırmak liderlik becerisini coşturur.",
+    "source": "Öğrenci Liderliği Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta 'Teşekkür Duvarı': Bir öğrencinin arkadaşından gördüğü bir yardımı veya nazik davranışı küçük bir karta yazıp astığı duvar, akran zorbalığını kökünden kurutur.",
+    "source": "Nezaket Kültürü İnşası",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Görsel Sanatlarda 'Kusursuzluk Değil İfade': Resim dersinde herkesin aynı vazoyu çizmesini beklemek yerine çocuğun kendi iç dünyasını renklerle yansıtmasını teşvik etmek ruhu besler.",
+    "source": "Sanat Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Müzik Dinletisiyle Derse Giriş: Derse girişte arka planda çalınan 2 dakikalık hafif bir ney, kanun veya klasik müzik ezgisi sınıfın gerginliğini anında süpürür.",
+    "source": "Müzikoterapi ve Konsantrasyon",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Beden Eğitimi ve Karakter Eğitimi: Sporda kazanmaktan çok rakibe saygı duymak, centilmenlik ve yenilgiyi olgunlukla kabul edebilmek erdemli karakterin göstergesidir.",
+    "source": "Spor Ahlakı Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Bir 'Görev Rozeti' Vermek: Haftalık nöbetçi veya kütüphane sorumlusuna yakasına takacağı minik bir kurdele veya rozet vermek sorumluluk ciddiyeti aşılar.",
+    "source": "Görsel Sorumluluk Simgesi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Tarih Dersinde 'Zaman Makinesi': 'Eğer Malazgirt Savaşı'nda Sultan Alparslan'ın yanında bir okçu olsaydın o gün ovada neler hissederdin?' sorusu tarihi canlandırır.",
+    "source": "Tarihsel Canlandırma Metodu",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Coğrafyada 'Harita Okuryazarlığı': Haritadaki renklerin yükseklik basamaklarını (yeşil alçak, kahverengi yüksek) gösterdiğini, bitki örtüsü olmadığını öğrencilere kavratın.",
+    "source": "Temel Harita Bilgisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Felsefede 'Düşünce Deneyleri': 'Trolley Problemi' veya 'Platon'un Mağarası' gibi düşünce deneyleriyle derse başlamak öğrencilerin ahlaki muhakemesini biler.",
+    "source": "Felsefi Düşünce Eğitimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Din Kültüründe 'Evrensel Ahlak Vurgusu': İbadetlerin temel gayesinin güzel ahlak, komşu hakkı, dürüstlük ve kul hakkından sakınmak olduğunu somut hayat olaylarıyla işleyin.",
+    "source": "Ahlak ve İrfan Pedagojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Yabancı Dilde 'Hata Yapma Cesareti': Yabancı dil öğrenirken en büyük engel telaffuzda hata yapma korkusudur; 'Önemli olan konuşabilmek, hata yaptıkça düzeltiriz' rahatlığını verin.",
+    "source": "Dil Edinimi Psikolojisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Rehberlikte 'Gizlilik İlkesi': Bir öğrencinin rehber öğretmene veya sınıf öğretmenine anlattığı özel sırlar (hukuki ve can güvenliği tehdidi hariç) asla başkalarıyla paylaşılmaz.",
+    "source": "Mesleki Etik Kuralları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciye Soru Sorarken Göz Teması Dağılımı: Soruyu sınıfa sorarken sadece ön sıralara değil, en arka ve köşelerdeki öğrencilerin de gözlerine bakarak tüm sınıfı kapsayın.",
+    "source": "Kapsayıcı Beden Dili",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Zil Çalmadan Önce Masayı Toparlamama Kuralı: Öğrencilerin zil çalmadan 5 dakika önce çantalarını toplayıp fermuar sesi çıkarmasını nazikçe engelleyin; son saniyeye kadar odak korunsun.",
+    "source": "Ders Bitiş Disiplini",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenin Kitap Okurken Görülmesi: Teneffüste veya serbest okuma saatinde öğretmenin de elinde bir kitapla sessizce okuması, bin nasihatten daha tesirli bir örnektir.",
+    "source": "Model Öğretmen Davranışı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfın Isısını Kontrol Etme: 24 derecenin üzerindeki aşırı sıcak sınıflarda uyku hali başlar, 18 derecenin altında ise üşüme dikkat dağıtır; ideal ısı 20-21 derecedir.",
+    "source": "Sınıf Fiziksel Şartları",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrencinin Başarısını Aileye Mesajla Kutlama: Çocuğun güzel bir davranışını akşam veliye kısa bir WhatsApp mesajıyla iletmek aile içi iletişimi ve saygıyı ihya eder.",
+    "source": "Pozitif Veli İletişimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Kendi Öğrenme Çıktısını Test Eden Öğrenci: Dersin sonunda öğrenciye 'Bugün öğrendiğin en önemli kuralı tek bir soruyla bana sor' demek öğrenme çıktısının oturup oturmadığını gösterir.",
+    "source": "Soru Odaklı Ölçme",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta 'Barışma Çubuğu': İki arkadaş küstüğünde iki ucundan tuttukları barışma çubuğu eşliğinde birbirlerine duygu ve düşüncelerini anlatıp el sıkışması dostluğu pekiştirir.",
+    "source": "Onarıcı Akran İletişimi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmenlikte 'Tükenmeyen Ümit': Toprağa atılan her tohum aynı gün başak vermez; bir çocuğun bugün anlamadığı bir öğüt, on yıl sonra bir gün aniden zihninde şimşek gibi çakabilir.",
+    "source": "Maarif İnancı ve Sabır",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğrenciyi Dinlerken Baş Sallama ve Tasdik: Konuşan bir öğrenciye göz temasıyla baş sallayarak 'Seni anlıyorum' mesajı vermek onun kendini ifade etme cesaretini ikiye katlar.",
+    "source": "Aktif Dinleme Becerisi",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sınıfta Her Gün Yeni Bir Başlangıçtır: Dün yaramazlık yapan veya dersi kaynatan bir öğrenciye bugün yeni ve temiz bir sayfa açarak bakmak onun değişebilmesine fırsat tanır.",
+    "source": "Pedagojik Hoşgörü",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Sevginin Açamayacağı Kapı Yoktur: Bilginin kapısı zorla kırılamaz; fakat sevgi ve şefkat anahtarıyla dokunulan her kalp sonuna kadar açılır.",
+    "source": "Öğretmenlik Sanatı",
+    "icon": "💡"
+  },
+  {
+    "title": "Günün Bilgisi",
+    "text": "Öğretmen Bir Bahçıvandır: Bahçıvan her çiçeğe aynı miktarda su vermez; kaktüse ayrı, güle ayrı, zambak için ayrı bakım gerekir. Her çocuk nev-i şahsına münhasır bir cevherdir.",
+    "source": "Bireyselleştirilmiş Maarif Ruhu",
+    "icon": "💡"
+  }
+]
