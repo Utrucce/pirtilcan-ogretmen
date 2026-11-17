@@ -1,0 +1,114 @@
+{
+  "grades": [
+    {
+      "id": "grade_1",
+      "name": "1. Sınıf",
+      "level": "İlkokul"
+    },
+    {
+      "id": "grade_2",
+      "name": "2. Sınıf",
+      "level": "İlkokul"
+    },
+    {
+      "id": "grade_3",
+      "name": "3. Sınıf",
+      "level": "İlkokul"
+    },
+    {
+      "id": "grade_4",
+      "name": "4. Sınıf",
+      "level": "İlkokul"
+    },
+    {
+      "id": "grade_5",
+      "name": "5. Sınıf",
+      "level": "Ortaokul"
+    },
+    {
+      "id": "grade_6",
+      "name": "6. Sınıf",
+      "level": "Ortaokul"
+    },
+    {
+      "id": "grade_7",
+      "name": "7. Sınıf",
+      "level": "Ortaokul"
+    },
+    {
+      "id": "grade_8",
+      "name": "8. Sınıf",
+      "level": "Ortaokul"
+    },
+    {
+      "id": "grade_9",
+      "name": "9. Sınıf",
+      "level": "Lise"
+    },
+    {
+      "id": "grade_10",
+      "name": "10. Sınıf",
+      "level": "Lise"
+    },
+    {
+      "id": "grade_11",
+      "name": "11. Sınıf",
+      "level": "Lise"
+    },
+    {
+      "id": "grade_12",
+      "name": "12. Sınıf",
+      "level": "Lise"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "turkce",
+      "name": "Türkçe / Türk Dili ve Edebiyatı",
+      "icon": "📖",
+      "color": "#6366F1"
+    },
+    {
+      "id": "matematik",
+      "name": "Matematik",
+      "icon": "📐",
+      "color": "#EC4899"
+    },
+    {
+      "id": "fen",
+      "name": "Fen Bilimleri / Fizik-Kimya-Biyoloji",
+      "icon": "🔬",
+      "color": "#10B981"
+    },
+    {
+      "id": "sosyal",
+      "name": "Sosyal Bilgiler / Tarih-Coğrafya",
+      "icon": "🌍",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "ingilizce",
+      "name": "İngilizce (Yabancı Dil)",
+      "icon": "🗣️",
+      "color": "#06B6D4"
+    },
+    {
+      "id": "din",
+      "name": "Din Kültürü ve Ahlak Bilgisi",
+      "icon": "🕊️",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "bilisim",
+      "name": "Bilişim Teknolojileri ve Yazılım",
+      "icon": "💻",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "sanat",
+      "name": "Görsel Sanatlar & Müzik",
+      "icon": "🎨",
+      "color": "#F43F5E"
+    }
+  ]
+}

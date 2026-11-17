@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="pgrad" cx="50%" cy="50%" r="70%">
+          <stop offset="0%" stop-color="#fff9ef"/>
+          <stop offset="65%" stop-color="#f5e8d3"/>
+          <stop offset="100%" stop-color="#e2cfb3"/>
+        </radialGradient>
+        <filter id="pnoise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0.85  0 0 0 0 0.75  0 0 0 0 0.6  0 0 0 0.08 0" result="col"/>
+          <feBlend in="SourceGraphic" in2="col" mode="multiply"/>
+        </filter>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#pgrad)"/>
+      <rect width="1080" height="1920" filter="url(#pnoise)" opacity="0.65"/>
+      <rect x="36" y="36" width="1008" height="1848" fill="none" stroke="#b98a4a" stroke-width="2.5" opacity="0.45"/>
+      <rect x="48" y="48" width="984" height="1824" fill="none" stroke="#6b4426" stroke-width="1.2" opacity="0.3"/>
+      <!-- Selcuk corner accents -->
+      <g fill="#b98a4a" opacity="0.55">
+        <polygon points="56,56 76,56 76,62 62,62 62,76 56,76"/>
+        <polygon points="1024,56 1004,56 1004,62 1018,62 1018,76 1024,76"/>
+        <polygon points="56,1864 76,1864 76,1858 62,1858 62,1844 56,1844"/>
+        <polygon points="1024,1864 1004,1864 1004,1858 1018,1858 1018,1844 1024,1844"/>
+      </g>
+    </svg>

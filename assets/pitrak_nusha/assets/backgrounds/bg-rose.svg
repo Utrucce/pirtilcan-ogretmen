@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="rgrad" cx="50%" cy="50%" r="65%">
+          <stop offset="0%" stop-color="#fff8f7"/>
+          <stop offset="70%" stop-color="#f7e8e7"/>
+          <stop offset="100%" stop-color="#ebcfcd"/>
+        </radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#rgrad)"/>
+      <rect x="44" y="44" width="992" height="1832" fill="none" stroke="#c79857" stroke-width="2.2" opacity="0.6"/>
+      <rect x="56" y="56" width="968" height="1808" fill="none" stroke="#8a2b3b" stroke-width="1" opacity="0.3"/>
+    </svg>

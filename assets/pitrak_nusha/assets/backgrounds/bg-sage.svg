@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="sgrad" cx="50%" cy="40%" r="65%">
+          <stop offset="0%" stop-color="#f8fbf9"/>
+          <stop offset="70%" stop-color="#ebf4ee"/>
+          <stop offset="100%" stop-color="#d9ebdF"/>
+        </radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#sgrad)"/>
+      <!-- Soft leafy watercolor wash accents -->
+      <circle cx="200" cy="250" r="280" fill="#a4cfb7" opacity="0.12"/>
+      <circle cx="880" cy="1650" r="320" fill="#90c4a6" opacity="0.14"/>
+      <rect x="42" y="42" width="996" height="1836" fill="none" stroke="#3f7858" stroke-width="2" opacity="0.4" rx="14"/>
+    </svg>

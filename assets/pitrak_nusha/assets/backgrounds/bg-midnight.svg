@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="mngrad" cx="50%" cy="30%" r="85%">
+          <stop offset="0%" stop-color="#141c2b"/>
+          <stop offset="60%" stop-color="#0b111c"/>
+          <stop offset="100%" stop-color="#05080e"/>
+        </radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#mngrad)"/>
+      <!-- Stardust & subtle gold constellations -->
+      <g fill="#f7d37a" opacity="0.4">
+        <circle cx="120" cy="180" r="2.5"/><circle cx="240" cy="140" r="1.5"/><circle cx="340" cy="220" r="2"/>
+        <circle cx="890" cy="160" r="3"/><circle cx="980" cy="240" r="1.5"/><circle cx="820" cy="280" r="2"/>
+        <circle cx="140" cy="1720" r="2"/><circle cx="220" cy="1800" r="3"/><circle cx="310" cy="1740" r="1.5"/>
+        <circle cx="880" cy="1780" r="2.5"/><circle cx="960" cy="1710" r="2"/><circle cx="790" cy="1830" r="3"/>
+      </g>
+      <rect x="45" y="45" width="990" height="1830" fill="none" stroke="#e6c36a" stroke-width="2" opacity="0.5"/>
+      <rect x="55" y="55" width="970" height="1810" fill="none" stroke="#e6c36a" stroke-width="0.8" opacity="0.3"/>
+    </svg>

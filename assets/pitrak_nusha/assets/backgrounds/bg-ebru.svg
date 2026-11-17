@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <linearGradient id="egrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fefbf6"/>
+          <stop offset="50%" stop-color="#f9f1e4"/>
+          <stop offset="100%" stop-color="#efe2cc"/>
+        </linearGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#egrad)"/>
+      <!-- Ebru swirled waves on edges -->
+      <path d="M-50,150 Q180,240 380,140 T850,220 T1150,110" fill="none" stroke="#a65b45" stroke-width="8" opacity="0.18"/>
+      <path d="M-50,210 Q210,290 440,190 T900,280 T1150,160" fill="none" stroke="#487a7b" stroke-width="6" opacity="0.15"/>
+      <path d="M-50,1750 Q280,1650 580,1740 T1150,1660" fill="none" stroke="#a65b45" stroke-width="10" opacity="0.18"/>
+      <path d="M-50,1810 Q320,1710 640,1800 T1150,1720" fill="none" stroke="#487a7b" stroke-width="7" opacity="0.15"/>
+      <rect x="40" y="40" width="1000" height="1840" fill="none" stroke="#a65b45" stroke-width="2.5" opacity="0.35"/>
+    </svg>

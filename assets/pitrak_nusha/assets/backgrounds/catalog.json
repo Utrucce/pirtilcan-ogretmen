@@ -1,0 +1,92 @@
+[
+  {
+    "id": "parchment",
+    "name": "Antik Parşömen",
+    "file": "assets/backgrounds/bg-parchment.svg",
+    "fallbackFile": "bg-parchment.svg",
+    "textColor": "#2b211a",
+    "accentColor": "#6b4426",
+    "borderDefault": "#b98a4a"
+  },
+  {
+    "id": "blackboard",
+    "name": "Akademik Kara Tahta",
+    "file": "assets/backgrounds/bg-blackboard.svg",
+    "fallbackFile": "bg-blackboard.svg",
+    "textColor": "#fbfbfb",
+    "accentColor": "#f7d070",
+    "borderDefault": "#a88d6a"
+  },
+  {
+    "id": "marble",
+    "name": "Mermer & Altın Damarlar",
+    "file": "assets/backgrounds/bg-marble.svg",
+    "fallbackFile": "bg-marble.svg",
+    "textColor": "#1a1918",
+    "accentColor": "#8a6229",
+    "borderDefault": "#c49b45"
+  },
+  {
+    "id": "ebru",
+    "name": "Klasik Ebru Sanatı",
+    "file": "assets/backgrounds/bg-ebru.svg",
+    "fallbackFile": "bg-ebru.svg",
+    "textColor": "#211c18",
+    "accentColor": "#8c3f2d",
+    "borderDefault": "#8c3f2d"
+  },
+  {
+    "id": "midnight",
+    "name": "Kraliyet Gece Laciverti",
+    "file": "assets/backgrounds/bg-midnight.svg",
+    "fallbackFile": "bg-midnight.svg",
+    "textColor": "#f5f5f7",
+    "accentColor": "#f7d37a",
+    "borderDefault": "#e6c36a"
+  },
+  {
+    "id": "kraft",
+    "name": "Doğal Saman / Kraft",
+    "file": "assets/backgrounds/bg-kraft.svg",
+    "fallbackFile": "bg-kraft.svg",
+    "textColor": "#332417",
+    "accentColor": "#78461f",
+    "borderDefault": "#8a5a34"
+  },
+  {
+    "id": "espresso",
+    "name": "Pıtrak Koyu Espresso",
+    "file": "assets/backgrounds/bg-espresso.svg",
+    "fallbackFile": "bg-espresso.svg",
+    "textColor": "#f9f3ea",
+    "accentColor": "#e0a96d",
+    "borderDefault": "#b98a4a"
+  },
+  {
+    "id": "sage",
+    "name": "Adaçayı Suluboya",
+    "file": "assets/backgrounds/bg-sage.svg",
+    "fallbackFile": "bg-sage.svg",
+    "textColor": "#1a2e22",
+    "accentColor": "#2f6345",
+    "borderDefault": "#3f7858"
+  },
+  {
+    "id": "rose",
+    "name": "Gül Kurusu & Varak",
+    "file": "assets/backgrounds/bg-rose.svg",
+    "fallbackFile": "bg-rose.svg",
+    "textColor": "#2e1919",
+    "accentColor": "#8a2b3b",
+    "borderDefault": "#c79857"
+  },
+  {
+    "id": "linen",
+    "name": "Sıcak Keten & Kum",
+    "file": "assets/backgrounds/bg-linen.svg",
+    "fallbackFile": "bg-linen.svg",
+    "textColor": "#2b231d",
+    "accentColor": "#7a5433",
+    "borderDefault": "#b08b65"
+  }
+]

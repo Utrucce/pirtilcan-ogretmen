@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <linearGradient id="mgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fafafa"/>
+          <stop offset="50%" stop-color="#f2f2f2"/>
+          <stop offset="100%" stop-color="#eaeaea"/>
+        </linearGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#mgrad)"/>
+      <!-- Elegant gold veins -->
+      <path d="M0,320 Q240,400 480,310 T960,420 L1080,450" fill="none" stroke="#d4af37" stroke-width="2.5" opacity="0.35"/>
+      <path d="M120,0 Q360,340 280,680 T400,1200 T180,1800" fill="none" stroke="#d4af37" stroke-width="1.8" opacity="0.25"/>
+      <path d="M850,200 Q920,600 780,1050 T920,1650 T800,1920" fill="none" stroke="#b89326" stroke-width="2" opacity="0.3"/>
+      <path d="M0,1400 Q420,1320 740,1520 L1080,1460" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.28"/>
+      <!-- Inner gold frame -->
+      <rect x="45" y="45" width="990" height="1830" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5"/>
+    </svg>

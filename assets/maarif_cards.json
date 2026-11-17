@@ -1,0 +1,62 @@
+[
+  {
+    "id": "card_1",
+    "category": "Sınıf Yönetimi",
+    "title": "Kırık Cam Teorisi ve İlk 5 Dakika",
+    "summary": "Dersin ilk beş dakikasında kurulan sessizlik ve göz teması, sonraki 35 dakikanın kaderini belirler.",
+    "detail": "Zil çaldığında hemen tahtaya yazmak yerine kapıda durup öğrencileri tebessümle karşılayın. Sınıf sessizleşene kadar tek kelime etmeden sabırla bekleyin; sessizliğin gücü bağırmaktan yüz kat daha etkilidir.",
+    "pirtil_tip": "Pırtılcan diyor ki: Sesini yükseltme, sözünü yükselt! Öğretmenin sükuneti sınıfın aynasıdır.",
+    "tag": "Pratik Yöntem",
+    "color": "#4F46E5"
+  },
+  {
+    "id": "card_2",
+    "category": "Ölçme & Değerlendirme",
+    "title": "Geri Bildirim Sandviç Tekniği",
+    "summary": "Öğrenciye yapıcı eleştiri yaparken moralini bozmadan gelişimini sağlamanın en zarif yolu.",
+    "detail": "Önce samimi bir övgü ile başlayın (Ekmek: Giriş harika olmuş), ardından düzeltilmesi gereken noktayı somut olarak belirtin (Malzeme: Ancak sonuç paragrafında ana fikir biraz havada kalmış), en son güven tazeleyen motive edici bir cümleyle bitirin (Ekmek: Biraz dikkatle bunu en iyi sen yazarsın).",
+    "pirtil_tip": "Pırtılcan diyor ki: Kalbe dokunmayan bilgi, zihinde kalıcı olamaz.",
+    "tag": "Pedagoji",
+    "color": "#059669"
+  },
+  {
+    "id": "card_3",
+    "category": "Türkiye Yüzyılı Maarif Modeli",
+    "title": "Ezberden Beceriye Geçiş",
+    "summary": "Yeni müfredatın kalbi: Bilgiyi ham yük olmaktan çıkarıp eyleme ve ahlaka dönüştürme sanatı.",
+    "detail": "Öğrenciye sadece FORMÜL veya TANIM ezberletmeyin. Bu formül gerçek hayatta hangi köprüyü ayakta tutuyor, bu kelime hangi diplomatik krizi çözebilir sorusunu sordurun. Kavramsal beceriler ve eğilimler birlikte inşa edilir.",
+    "pirtil_tip": "Pırtılcan diyor ki: Bilgi tohumdur; beceri fidan, ahlak ise o fidanın meyvesidir.",
+    "tag": "Maarif Modeli",
+    "color": "#D97706"
+  },
+  {
+    "id": "card_4",
+    "category": "Zor Öğrenci İletişimi",
+    "title": "İki Dakikalık Özel Görüşme Kuralı",
+    "summary": "Sınıfta sürekli dikkat dağıtan öğrenciyi sınıfta rezil etmek yerine teneffüste 2 dakika dinleyin.",
+    "detail": "Ders esnasında çatışmaya girmeyin. Teneffüste sessizce yanına çağırıp: Seni bugün biraz yorgun/dalgın gördüm, canını sıkan bir şey mi var? diye sorun. Problemli görünen çocukların %90 ı aslında sadece görülmek ve onaylanmak ister.",
+    "pirtil_tip": "Pırtılcan diyor ki: Dikenin ardındaki gülü görebilen, gerçek muallimdir.",
+    "tag": "İletişim",
+    "color": "#DC2626"
+  },
+  {
+    "id": "card_5",
+    "category": "Öğretmen Esenliği",
+    "title": "Tükenmişlikten Korunma ve Zihinsel Detoks",
+    "summary": "Okul zili çalıp kapıdan çıktığınızda okul evraklarını ve stresi okulda bırakabilme sanatı.",
+    "detail": "Her gün eve gitmeden önce günün en az bir güzel anını (bir öğrencinin gözündeki ışıltı, güzel bir tebessüm) zihninizde kaydedin. Mükemmeliyetçilik yerine sürdürülebilir gayreti hedefleyin.",
+    "pirtil_tip": "Pırtılcan diyor ki: Kendi bardağı boş olan, başkasına su ikram edemez. Kendine şefkat göster!",
+    "tag": "Motivasyon",
+    "color": "#7C3AED"
+  },
+  {
+    "id": "card_6",
+    "category": "Ders İçi Katılım",
+    "title": "Düşün - Eşleş - Paylaş Tekniği",
+    "summary": "Sınıfta sadece öndeki üç öğrencinin değil, 30 öğrencinin birden derse katılmasını sağlayan teknik.",
+    "detail": "Soruyu sorduktan sonra hemen parmak kaldırtmayın. 1 dakika herkes tek başına düşünsün. 2 dakika yanındaki sıra arkadaşıyla fısıldaşarak fikirlerini birleştirsin. Sonra rastgele bir çiftten cevap isteyin. Çekingen öğrenciler partnerinden güç alır.",
+    "pirtil_tip": "Pırtılcan diyor ki: En sessiz parmakta bile bir deha saklıdır.",
+    "tag": "Öğretim Yöntemi",
+    "color": "#0284C7"
+  }
+]

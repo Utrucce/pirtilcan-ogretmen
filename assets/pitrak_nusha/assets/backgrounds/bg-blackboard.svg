@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="bbgrad" cx="50%" cy="45%" r="75%">
+          <stop offset="0%" stop-color="#243329"/>
+          <stop offset="70%" stop-color="#16221a"/>
+          <stop offset="100%" stop-color="#0e1711"/>
+        </radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#bbgrad)"/>
+      <!-- Soft chalk clouds -->
+      <circle cx="540" cy="960" r="480" fill="#fff" opacity="0.02"/>
+      <circle cx="320" cy="500" r="320" fill="#fff" opacity="0.015"/>
+      <circle cx="760" cy="1400" r="350" fill="#fff" opacity="0.015"/>
+      <!-- Border: Tebeşir çerçeve -->
+      <rect x="40" y="40" width="1000" height="1840" fill="none" stroke="#e8dfce" stroke-width="2" stroke-dasharray="14 6" opacity="0.3"/>
+    </svg>

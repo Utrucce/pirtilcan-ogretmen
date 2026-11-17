@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cal_1",
+    "title": "Okulların Açılışı (1. Dönem Başlangıcı)",
+    "date_range": "08 Eylül 2026 Pazartesi",
+    "target_date": "2026-09-08",
+    "type": "milestone",
+    "badge": "1. Dönem",
+    "color": "#10B981"
+  },
+  {
+    "id": "cal_2",
+    "title": "1. Dönem Ara Tatili",
+    "date_range": "10 - 14 Kasım 2026",
+    "target_date": "2026-11-10",
+    "type": "break",
+    "badge": "1. Ara Tatil",
+    "color": "#F59E0B"
+  },
+  {
+    "id": "cal_3",
+    "title": "24 Kasım Öğretmenler Günü",
+    "date_range": "24 Kasım 2026 Salı",
+    "target_date": "2026-11-24",
+    "type": "celebration",
+    "badge": "Özel Gün",
+    "color": "#EC4899"
+  },
+  {
+    "id": "cal_4",
+    "title": "Yarıyıl Tatili (15 Tatil)",
+    "date_range": "19 - 30 Ocak 2027",
+    "target_date": "2027-01-19",
+    "type": "break",
+    "badge": "Sömestr",
+    "color": "#3B82F6"
+  },
+  {
+    "id": "cal_5",
+    "title": "2. Dönem Başlangıcı",
+    "date_range": "02 Şubat 2027 Pazartesi",
+    "target_date": "2027-02-02",
+    "type": "milestone",
+    "badge": "2. Dönem",
+    "color": "#10B981"
+  },
+  {
+    "id": "cal_6",
+    "title": "2. Dönem Ara Tatili",
+    "date_range": "13 - 17 Nisan 2027",
+    "target_date": "2027-04-13",
+    "type": "break",
+    "badge": "2. Ara Tatil",
+    "color": "#F59E0B"
+  },
+  {
+    "id": "cal_7",
+    "title": "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı",
+    "date_range": "23 Nisan 2027 Cuma",
+    "target_date": "2027-04-23",
+    "type": "holiday",
+    "badge": "Resmi Tatil",
+    "color": "#EF4444"
+  },
+  {
+    "id": "cal_8",
+    "title": "19 Mayıs Atatürk ü Anma, Gençlik ve Spor Bayramı",
+    "date_range": "19 Mayıs 2027 Çarşamba",
+    "target_date": "2027-05-19",
+    "type": "holiday",
+    "badge": "Resmi Tatil",
+    "color": "#EF4444"
+  },
+  {
+    "id": "cal_9",
+    "title": "Ders Yılının Sona Ermesi (Yaz Tatili Başlangıcı)",
+    "date_range": "19 Haziran 2027 Cuma",
+    "target_date": "2027-06-19",
+    "type": "milestone",
+    "badge": "Yaz Tatili",
+    "color": "#8B5CF6"
+  }
+]
